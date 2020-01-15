@@ -1,3 +1,6 @@
+# Files within the "Data" folder
+Data/
+
 # History files
 .Rhistory
 .Rapp.history
