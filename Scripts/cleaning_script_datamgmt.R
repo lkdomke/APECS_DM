@@ -27,7 +27,7 @@ library(readxl)
 seine <- read.csv("Data/seagrass_beach_seine_data_2017_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A91a429e4-33f0-4530-8ae9-4a40686e0a21"))
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
-fishLW <- read.csv("Data/fish_length_weight_conversion05Feb2018.csv", 
+fishLW <- read.csv("Data/fish_length_weight_conversions_05Feb2018.csv", 
                    stringsAsFactors = FALSE, header = TRUE)
   
 ######## Step 1. Classify taxons ######## 
@@ -175,7 +175,8 @@ fish.all.sum <- fish.all %>%
   summarise(abundance = sum(abundance))
 
 fish.all.sum %>%
-  summarise(total = sum(abundance))
+  summarise(total = sum(abundance)) # there is a 242 fish discrepancy... less than a 1% difference. 
+
 
 
 ####### Step 3. Convert length to biomass ######## 
@@ -192,6 +193,7 @@ fish.all.sum %>%
 #' define sp_code for new species, and filter out estimates that were made from 
 #' SL (standard length) and fish calssified as UNFISH or unidentified fish, 
 #' and then summarise by taking the average a and b value for each species.
+
 
 ## put all a values in one column ##
 fishLW$a_cm.g <- ifelse(is.na(fishLW$a_cm.g), fishLW$aTL_cm.g, fishLW$a_cm.g)
@@ -274,10 +276,8 @@ fish.all <- fish.all %>%
 
 ## Check that everything is cool ##
 anti_join(fish.all, LW.master, by = "sp_code")
-```
 
-Finally join the a and b values from above with the master data and calcualte biomass.
-```{r final join and calculate}
+# Finally join the a and b values from above with the master data and calcualte biomass.
 ## Merge a and b values ##
 fish.all.m <- merge(fish.all, LW.master, by = "sp_code")
 
@@ -294,9 +294,19 @@ range(fish.all.m$mass_g)
 
 ## Clean up ##
 fish.all.m$taxon[is.na(fish.all.m$taxon)] <- "Vertebrata"
-```
 
-```{r checking}
+# remove unused rows and readd in tide height
+# extra tide height from original df
+tide_h <- fish %>%
+  group_by(site) %>%
+  dplyr::select(site, tide_height) %>%
+  distinct(tide_height)
+
+fish.all.m <- fish.all.m %>%
+  left_join(tide_h, by = "site") %>%
+  dplyr::select(-c(sex, abundance, tide_height.y)) %>%
+  rename(tide_height = tide_height.x)
+
 ## Checking ##
 fish.site <- fish.all.m %>% 
   group_by(site) %>% 
@@ -311,31 +321,26 @@ m02 <- fish.all.m[fish.all.m$site == "2017_M_02",]
 
 ######## Step 4. Convert date to JD and add year column ######## 
 
-# do this at the end of the script... 
-#fish.all <- fish.all %>% 
-#  mutate(date = ymd(date)) %>% # convert to date format
-#  mutate(julian = yday(date)) %>% # make the date a julian day
-#  mutate(year = year(date)) # make a new column with just year
+fish.all.m <- fish.all.m %>% 
+  mutate(date = mdy(date)) %>% # convert to date format
+  mutate(julian = yday(date)) %>% # make the date a julian day
+  mutate(year = year(date)) # make a new column with just year
 
 
 ######## Step 5. Convert site names to 2-column code system ######## 
 
-# add this step to the end of the script. 
-#fish2 <- fish1 %>% 
-#  left_join(site_meta, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
-#  select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA))
+fish.all.m <- fish.all.m %>% 
+  left_join(site_meta, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
+  select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study))
 
 # place name gives the physical location, bay_code and bay_sample together give you each
 # unique site that was sampled. 
 
 
-
 ## Export
-# Export of raw form and site summary form
+# Export of full mass derived csv
 
-write.csv(fish.all, "../ALL_DATA/Fish_mass_full_2018_derived.csv", row.names = FALSE)
-
-write.csv(dat, "../ALL_DATA/Fish_mass_site_2018_derived.csv", row.names = FALSE)
+write.csv(fish.all.m, "Data/Fish_mass_full_2017_derived.csv", row.names = FALSE)
 
 
 
