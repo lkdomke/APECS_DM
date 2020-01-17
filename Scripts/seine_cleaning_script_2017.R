@@ -11,10 +11,10 @@
 #' 
 #' This script is to clean the *dataset from 2017* of the eelgrass-associated fish community. The script will:
 #' 1. Classify invertebrates and vertebrates so that only fish can be filtered
-#' 4. Convert unmeasured fish to *length measurements*
-#' 5. Convert length data to *biomass*
-#' 3. Change site_code to new naming scheme that includes two column codes
-#' 2. Convert date to julian day and add year column
+#' 2. Convert unmeasured fish to *length measurements*
+#' 3. Convert length data to *biomass*
+#' 4. Change site_code to new naming scheme that includes two column codes
+#' 5. Convert date to julian day and add year column
 
 # Libraries
 library(plyr)
