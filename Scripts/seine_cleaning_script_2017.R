@@ -24,7 +24,8 @@ library(readxl)
 
 # Data input
 
-seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/knb.92404.1"))
+seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/knb.92404.1"),
+                  stringsAsFactors = FALSE, header = TRUE)
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A91a429e4-33f0-4530-8ae9-4a40686e0a21"))
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
 fishLW <- read.csv("Data/fish_length_weight_conversions_05Feb2018.csv", 
