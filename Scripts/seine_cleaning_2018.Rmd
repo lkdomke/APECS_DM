@@ -426,20 +426,20 @@ fish.all.m <- fish.all.m %>%
   
 
 ## Checking ##
-fish.site <- fish.all.m %>% 
+fish.site.g <- fish.all.m %>% 
   group_by(site) %>% 
-  summarise(mass_g = sum(mass_g))
+  dplyr::summarise(site_mass_g = sum(mass_g))
 
-fish.site$mass_kg <- fish.site$mass_g / 1000
+fish.site.g$mass_kg <- fish.site.g$site_mass_g / 1000
 
-boxplot(fish.site$mass_g)
+boxplot(fish.site.g$site_mass_g)
 
 ```
 
 # Step 5. Convert date to JD and add year column
 ```{r}
 fish.all.m <- fish.all.m %>% 
-  mutate(date = mdy(date)) %>% # convert to date format
+  mutate(date = ymd(YYYYMMDD)) %>% # convert to date format
   mutate(julian = yday(date)) %>% # make the date a julian day
   mutate(year = year(date)) # make a new column with just year
 ```
@@ -447,8 +447,8 @@ fish.all.m <- fish.all.m %>%
 # Step 6. Convert site names to 2-column code system
 ```{r}
 fish.all.m <- fish.all.m %>% 
-  left_join(site_meta, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
-  select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study))
+  left_join(site_meta, by = c("site" = "site_2018")) %>% # this needs to be changed for e/a YEAR. 
+  select(-c(site_2017, freshwater, general_description, sediment_description, siteID_NOAA, study))
 
 # place name gives the physical location, bay_code and bay_sample together give you each
 # unique site that was sampled. 
