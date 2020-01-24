@@ -231,7 +231,7 @@ for(s in unique(fish.um.redu$site)){ # cycle through unique sites (only one sein
       filter(sp_code == i)
     unmeas <- u %>% # isolate unmeasured fish
       filter(sp_code == i)
-    unmeas <- (unmeas$unmeasured) # save unmeasured value
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
     dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
     dat.temp2 <- dat.temp1 %>% 
       group_by(size) %>% 
@@ -281,22 +281,14 @@ unique(fish$sp_code) # 33 levels of fish species in the original dataframe, corr
 # count total number of fish in original dataframe
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1)) 
 
-y <- fish %>%
-  group_by(sp_code) %>%
-  dplyr::summarise(total = sum(abundance))
-
 fish %>%
-  dplyr::summarise(counts = sum(abundance))
+  dplyr::summarise(counts = sum(abundance)) # 11033
 
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
 
 fish.all %>%
-  group_by(sp_code) %>%
-  dplyr::summarise(total = sum(abundance))
-
-fish.all %>%
-  dplyr::summarise(counts = sum(abundance))
+  dplyr::summarise(counts = sum(abundance)) # 11032
 ```
 
 # Step 4. Convert length to biomass
@@ -325,7 +317,7 @@ LW <- fishLW %>%
   filter(Type != "SL") %>% 
   filter(sp_code != "UNFISH") %>% 
   group_by(sp_code) %>% 
-  summarise(a = mean(a_cm.g),
+  dplyr::summarise(a = mean(a_cm.g),
             b = mean(b_cm.g))
 ```
 
