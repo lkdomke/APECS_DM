@@ -143,11 +143,6 @@ unique(fish$site) # still have all the sites!
 This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
 
 ```{r}
-#st.er <- function(x, na.rm = TRUE) {
-#  stopifnot(is.numeric(x))
-#  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
-#}
-
 #' From the raw data this script will export a file summarized by site ready for analysis. 
 #' The goal will be to summaries this data at the site level. Summaries will occur in a few different
 #' ways to prep the data for different types on analysis. There is 1 file generated here. 
@@ -160,21 +155,13 @@ unique(fish$unmeasured_sm)
 fish <- fish %>%
   dplyr::select(-c(unmeasured_sm)) # remove unmeasured_sm column because its empty
 
-fish1 <- fish
-fish1$abundance <- as.integer(ifelse(is.na(fish1$fork_length), paste(fish1$unmeasured), 1))
-
-df1 <- fish1 %>%
-  group_by(sp_code) %>%
-  dplyr::summarise(total = sum(abundance))
-write.csv(df1, file = "fish1_counts.csv", row.names = FALSE)
-
 
 fish$unmeasured <- as.numeric(fish$unmeasured)
 fish$fork_length <- as.numeric(fish$fork_length)
 
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1))
 
-df2 <- fish %>%
+df2 <- fish %>% # how many individual fish by site and species?
   group_by(site, sp_code) %>%
   dplyr::summarise(total = sum(abundance))
 
