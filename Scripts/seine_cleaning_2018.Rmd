@@ -38,10 +38,8 @@ library(lubridate)
 # Data input
 
 ```{r data}
-seine <- read.csv("../Data/Beach_seine_eelgrass_2018_RAW.csv", 
-                  stringsAsFactors = FALSE, header = TRUE) # read in WR seines
-seine_trial <- read.csv("../Data/FishSeine_RawData_2018_Trial.csv",
-                        stringsAsFactors = FALSE, header = TRUE) # read in trial exp data
+seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A0475361b-5d7a-4991-8692-725158dc733a"), stringsAsFactors = FALSE, header = TRUE) # read in WR seines
+seine_trial <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A1463f7d8-92aa-40aa-8ae7-f89761c79671"), stringsAsFactors = FALSE, header = TRUE) # read in trial exp data
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Affa06540-6689-41d8-b8ac-052a9f568785"), stringsAsFactors = FALSE, header = TRUE)
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
 fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
