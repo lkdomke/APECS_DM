@@ -27,20 +27,24 @@ This script will:
 # Libraries
 
 ```{r libraries, include = FALSE}
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(vegan)
+library(ggplot2)
 library(lubridate)
-library(readxl)
-library(stringr)
+
 ```
 
 # Data input
 
 ```{r data}
-seine <- read.csv("../Data/Beach_seine_eelgrass_2018_RAW.csv") # read in WR seines
-seine_trial <- read.csv("../Data/FishSeine_RawData_2018_Trial.csv") # read in trial exp data
-sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Affa06540-6689-41d8-b8ac-052a9f568785"))
+seine <- read.csv("../Data/Beach_seine_eelgrass_2018_RAW.csv", 
+                  stringsAsFactors = FALSE, header = TRUE) # read in WR seines
+seine_trial <- read.csv("../Data/FishSeine_RawData_2018_Trial.csv",
+                        stringsAsFactors = FALSE, header = TRUE) # read in trial exp data
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Affa06540-6689-41d8-b8ac-052a9f568785"), stringsAsFactors = FALSE, header = TRUE)
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
-fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926")) 
+fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
 ```
 
 # Step 1. Combine 2 datasets
@@ -51,18 +55,15 @@ In 2018 two different projects occured in similar area along the west coast of P
 ### Remove unnecessary columns
 ```{r}
 glimpse(seine_trial)
-
+glimpse(seine)
 # remove QAQC and unnecessary columns
 seine_trial <- seine_trial %>%
+  mutate(sex = Sex, notes = Notes.) %>%
   dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height,
                 tide_time, species_common, species_scientific, sp_code, 
-                fork_length, unmeasured, Sex, Notes.) %>%
-  dplyr::rename(sex = Sex, notes = Notes.)
+                fork_length, unmeasured, sex, notes)
 
-# fix a few rows where the date is incorrect
-seine_trial[1132:1138,"date"] <- "6/30/2018"
-# removes rows that excel generated with all NAs
-seine_trial <- seine_trial[-(1140:1277),]
+unique(seine_trial$date)
 
 # remove post-experiment beach seines 
 # seines occured at too high of a tide time and weren't sampling seagrass rather it 
@@ -70,6 +71,8 @@ seine_trial <- seine_trial[-(1140:1277),]
 seine_trial_sub <- seine_trial %>%
   group_by(site, date) %>%
   dplyr::filter(YYYYMMDD < 20180700)
+
+unique(seine_trial$date)
 ```
 
 ### Relabel cell values
@@ -102,8 +105,12 @@ seine_trial_sub <- seine_trial_sub %>%
   left_join(sp_names, by = c("sp_code" = "SpCode")) %>%
   mutate(taxon = Taxa) %>%
   dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height, tide_time, 
-                species_common, species_scientific, sp_code, fork_length, unmeasured, sex, notes, 
-                taxon)
+                species_common, species_scientific, sp_code, fork_length, unmeasured, 
+                sex, notes, taxon)
+
+seine_trial_sub$taxon <- as.factor(seine_trial_sub$taxon)
+levels(seine_trial_sub$taxon)[levels(seine_trial_sub$taxon)=="fish"] <- "Vertebrata"
+
 ```
 ## Step 1.2 Combine seine data 
 ```{r}
@@ -117,25 +124,27 @@ levels(as.factor(seine_all$site)) # check!
 ```
 # Step 2. Classify taxons
 ```{r}
-levels(as.factor(seine_all$species_common)) 
-# 41 different species, need to remove non-fish species
+unique(seine_all$species_common)
+# 42 different species, need to remove non-fish species
 
 # remove non-fish species
 fish <- seine_all %>% 
-  filter(taxon == "Vertebrata" | taxon == "fish")
+  filter(taxon == "Vertebrata")
 
-levels(as.factor(fish$species_common)) # only fish!
-levels(as.factor(fish$site)) # still have all the sites! 
+unique(fish$taxon)
+
+unique(fish$species_common) # only fish!
+unique(fish$site) # still have all the sites! 
 ```
 
 #Step 3. Unmeasured -> measured
 This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
 
 ```{r}
-st.er <- function(x, na.rm = TRUE) {
-  stopifnot(is.numeric(x))
-  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
-}
+#st.er <- function(x, na.rm = TRUE) {
+#  stopifnot(is.numeric(x))
+#  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
+#}
 
 #' From the raw data this script will export a file summarized by site ready for analysis. 
 #' The goal will be to summaries this data at the site level. Summaries will occur in a few different
@@ -149,18 +158,35 @@ unique(fish$unmeasured_sm)
 fish <- fish %>%
   dplyr::select(-c(unmeasured_sm)) # remove unmeasured_sm column because its empty
 
+fish1 <- fish
+fish1$abundance <- as.integer(ifelse(is.na(fish1$fork_length), paste(fish1$unmeasured), 1))
+
+df1 <- fish1 %>%
+  group_by(sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+write.csv(df1, file = "fish1_counts.csv", row.names = FALSE)
+
+
 fish$unmeasured <- as.numeric(fish$unmeasured)
+fish$fork_length <- as.numeric(fish$fork_length)
+
+fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1))
+
+df2 <- fish %>%
+  group_by(site, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+
 ```
 
 ## Separate measured and unmeasured fish
 ```{r}
 fish.m <- fish %>%
-  #filter(taxon == "Vertebrata") %>% done above
+  # filter(taxon == "Vertebrata") %>%
   filter(fork_length != "NA")
 
 fish.um <- fish %>%
   # filter(taxon == "Vertebrata") %>% 
-  filter(unmeasured != "estimate") %>% # assume that infield estimates are accurate
+  #filter(unmeasured != "estimate") %>% # assume that infield estimates are accurate
   filter(is.na(fork_length))
 
 ```
@@ -186,85 +212,91 @@ fish.um.redu <- fish.um %>%
   group_by(site, sp_code) %>%
   anti_join(x, by = c("site", "sp_code"))
 
+fish.um.redu$site <- as.factor(fish.um.redu$site)
 # Now calculate a fork_length/total_length for each unmeasured fish based on the 
 # distribution of the existing fish BY site (one site per seine).
 ```
 
 ## Run loop to fill unmeasured fish length to measured
 ```{r}
-d <- data.frame() # empty dataframe to fill with for loop
+q <- data.frame() # empty dataframe to fill with for loop
 
-for(s in unique(fish.um.redu$site)){ # cycle through sites
-  dat.m <- fish.m %>% # subset measured data
+for(s in unique(fish.um.redu$site)){ # cycle through unique sites (only one seine per site)
+  m <- fish.m %>% # subset measured data by interation EventID
     filter(site == s)
-  dat.um <- fish.um.redu %>% #subset unmeasured data
-    filter(site == s)
-  for(i in unique(dat.um$sp_code)){ #cycle through species that are in UNMEASURED data
-    samp <- dat.m %>% # create sample from which to make distrubution
+  u <- fish.um.redu %>% # subset unmeasured data by iteration EventID
+      filter(site == s)
+  for(i in unique(u$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
       filter(sp_code == i)
-    unmeas <- dat.um %>% # isolate unmeasured fish
+    unmeas <- u %>% # isolate unmeasured fish
       filter(sp_code == i)
-    unmeas <- as.numeric(unmeas$unmeasured) # save unmeasured value
-    dat <- data.frame(size = as.character(samp$fork_length))
-    dat2 <- dat %>% 
+    unmeas <- (unmeas$unmeasured) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
       group_by(size) %>% 
-      summarise(count = n())
-    dat2$porb <- (dat2$count/sum(dat2$count))
-    dat2$x <- as.numeric(paste(dat2$size))
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
     fx <- function(n){ # function derived from limits and probabilities of above
-      sample(x = min(dat2$x):max(dat2$x), n, replace = TRUE, prob = dat2$prob)
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
     }
-    dat3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
-    d <- rbind(d, dat3)
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    q <- rbind(q, dat.temp3) # append iteration to full data
+    q[] <- lapply(q, as.character)
   }
-} 
-# this is returning an error in regards to prob, but i am not sure what its talking about
+} # this is returning an error in regards to prob, but i am not sure what its talking about
 ```
-
 ## Loop check/add site info
 Append assigned lengths to master data with all site level data
 
 ```{r}
 # Extract site and sp data
-fish.site <- unique(fish[,c("site", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")])
+fish.site <- unique(seine_all[,c("site", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")])
 
 fish.sp <- unique(fish[,c("species_common", "species_scientific", "sp_code", "taxon")])
 
+
 ## Merge with loop output, the lengths of unmeasured fishes ##
-d.info <- left_join(d, fish.site, by = "site")
+d.info <- left_join(q, fish.site, by = "site")
 
 ## Add species detail ##
 d.info <- merge(d.info, fish.sp, by = "sp_code")
 
-test <- anti_join(d.info, d, by = "sp_code")
+test <- anti_join(d.info, q, by = "sp_code")
 
 ## Merge with original measured fishes ##
-fish.all <- bind_rows(fish.m, d.info)
+d.info$fork_length <- as.numeric(d.info$fork_length)
+fish.all <- fish.m %>%
+  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height,
+                tide_time, species_common, species_scientific, sp_code, fork_length, 
+                taxon, sex, notes) %>%
+  bind_rows(d.info)
 
 # Do some basic checks to make sure the the conversion from unmeasured to measured worked correctly
-unique(as.factor(fish.all$site)) # 21 sites, correct
-unique(as.factor(fish.all$sp_code)) # 56 levels of fish species
-unique(as.factor(fish$sp_code)) # 56 levels of fish species in the original dataframe, correct! 7 unknown sp. 
+unique(fish.all$site) # 8 sites, correct
+unique(fish.all$sp_code) # 33 levels of fish species
+unique(fish$sp_code) # 33 levels of fish species in the original dataframe, correct! 7 unknown sp. 
 
 # count total number of fish in original dataframe
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1)) 
 
-sum_fish <- fish %>%
-  group_by(site) %>%
-  summarise(abundance = sum(abundance))
+y <- fish %>%
+  group_by(sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
 
-sum_fish %>%
-  summarise(total = sum(abundance))
+fish %>%
+  dplyr::summarise(counts = sum(abundance))
 
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
 
-fish.all.sum <- fish.all %>%
-  group_by(site) %>%
-  summarise(abundance = sum(abundance))
+fish.all %>%
+  group_by(sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
 
-fish.all.sum %>%
-  summarise(total = sum(abundance)) # there is a 242 fish discrepancy... less than a 1% difference. 
+fish.all %>%
+  dplyr::summarise(counts = sum(abundance))
 ```
 
 # Step 4. Convert length to biomass
