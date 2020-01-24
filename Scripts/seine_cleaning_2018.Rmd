@@ -89,6 +89,10 @@ levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)=="
 levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
 levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
 
+# fix an instance where Pacific cod was entered incorrectly in the seine csv
+seine$sp_code <- as.factor(seine$sp_code)
+levels(seine$sp_code)[levels(seine$sp_code)=="PACCOD"] <- "CODPAC"
+
 
 # in 2018 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
 # Use the notes section to do this 
@@ -338,6 +342,7 @@ sp <- data.frame(sp_code = unique(fish.all$sp_code))
 ## Species that need stand ins ##
 nomatch <- anti_join(sp, LW, by = "sp_code")
 
+
 ## Summarising stand ins ##
 # Sculpins
 scul <- data.frame(sp_code = "UNSCUL", fishLW %>% 
@@ -416,8 +421,9 @@ tide_h <- fish %>%
 
 fish.all.m <- fish.all.m %>%
   left_join(tide_h, by = "site") %>%
-  dplyr::select(-c(sex, abundance, tide_height.y)) %>%
-  rename(tide_height = tide_height.x)
+  mutate(tide_height = tide_height.x) %>%
+  dplyr::select(-c(sex, abundance, tide_height.y, tide_height.x))
+  
 
 ## Checking ##
 fish.site <- fish.all.m %>% 
@@ -428,7 +434,6 @@ fish.site$mass_kg <- fish.site$mass_g / 1000
 
 boxplot(fish.site$mass_g)
 
-m02 <- fish.all.m[fish.all.m$site == "2017_M_02",]
 ```
 
 # Step 5. Convert date to JD and add year column
@@ -451,7 +456,7 @@ fish.all.m <- fish.all.m %>%
 
 # Export
 ```{r}
-write.csv(fish.all.m, "Data/Fish_mass_full_2017_derived.csv", row.names = FALSE)
+write.csv(fish.all.m, "../Data/Fish_mass_full_2018_derived.csv", row.names = FALSE)
 ```
 
 
