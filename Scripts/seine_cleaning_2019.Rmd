@@ -17,7 +17,7 @@ This script is to clean the *dataset from 2019* of the eelgrass-associated fish 
 
 This script will:
 
-1. Combine beach seine data from two projects in 2018 that used the same methods
+1. Data checking 2019 seines and adjusting df appropriately
 2. Classify invertebrates and vertebrates so that only fish can be filtered
 3. Convert unmeasured fish to *length measurements*
 4. Convert length data to *biomass*
@@ -29,7 +29,6 @@ This script will:
 ```{r libraries, include = FALSE}
 library(dplyr)
 library(tidyr)
-library(vegan)
 library(ggplot2)
 library(lubridate)
 
@@ -38,99 +37,78 @@ library(lubridate)
 # Data input
 
 ```{r data}
-seine <- read.csv(), stringsAsFactors = FALSE, header = TRUE) # read in WR seines
-
+seine <- read.csv("../Data/FishSeine_2019_RAW_10-4-19.csv", stringsAsFactors = FALSE, header = TRUE) 
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Affa06540-6689-41d8-b8ac-052a9f568785"), stringsAsFactors = FALSE, header = TRUE)
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
-fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
+fishLW <- read.csv("../Data/fish_length_weight_conversions_cleaned.csv",
+                   stringsAsFactors = FALSE, header = TRUE) 
 ```
 
-# Step 1. Combine 2 datasets
+# Step 1. Data checking
 
-In 2018 two different projects occured in similar area along the west coast of Prince of Wales using the same methods and the same seine net. 
-
-## Step 1.1 Clean seine_trial
-### Remove unnecessary columns
+### Basic data checking
 ```{r}
-glimpse(seine_trial)
 glimpse(seine)
-# remove QAQC and unnecessary columns
-seine_trial <- seine_trial %>%
-  mutate(sex = Sex, notes = Notes.) %>%
-  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height,
-                tide_time, species_common, species_scientific, sp_code, 
-                fork_length, unmeasured, sex, notes)
+unique(seine$sp_code) # 69 species; however, two sp_codes for shiner perch
 
-unique(seine_trial$date)
+# make sp_code factor so you can recode PERCHSN -> PERCHSH
+seine$sp_code <- as.factor(seine$sp_code)
+# recode sp_code
+levels(seine$sp_code)[levels(seine$sp_code)=="PERCHSN"] <- "PERCHSH"
 
-# remove post-experiment beach seines 
-# seines occured at too high of a tide time and weren't sampling seagrass rather it 
-# sampled the intertidal habitat above seagrass
-seine_trial_sub <- seine_trial %>%
-  group_by(site, date) %>%
-  dplyr::filter(YYYYMMDD < 20180700)
+# change SCULSCA scalyhead sculpin, should be classified with Artedius sp.
+levels(seine$sp_code)[levels(seine$sp_code)=="SCULSCA"] <- "UNARTE"
 
-unique(seine_trial$date)
+# roughback got entered with two species codes SCULRBCK -> SCULRGH
+levels(seine$sp_code)[levels(seine$sp_code)=="SCULRBCK"] <- "SCULRGH"
+
+# change Bocaccio sp_code to UNROCK not because it is unknown but because its
+# length-weight relationship is not in fishbase
+levels(seine$sp_code)[levels(seine$sp_code)=="BOCACCIO"] <- "UNROCK"
+
+# change LORDBI -> UNLORD b/c difficult to impossible to differenciate from Red irish lord
+levels(seine$sp_code)[levels(seine$sp_code)=="LORDBI"] <- "UNLORD"
+
+# check
+unique(seine$sp_code) #Now 67 instead of 69 species
+
+# Note: 
+fish <- seine %>%
+  filter(taxon == "fish")
+nonmatch1 <- unique(anti_join(fish, fishLW, by = c("sp_code" = "sp_code"))$sp_code)
+View(nonmatch1) # There a few more fish w/o length-weight relationship will be dealt with below. 
 ```
 
-### Relabel cell values
-```{r}
-# recode Unknown ID to UNFISH to keep consistent with other data seines
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)=="UNID"] <- "UNFISH"
-levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)== "Unknown ID"] <- "Unknown juvenile teleostei"
-# UNFISH does not have a scientific name, should be Teleostei
-levels(seine_trial_sub$species_scientific)[levels(seine_trial_sub$species_scientific)== "fish"] <- "Teleostei"
-
-# recode greenling to juvenile greenling
-levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)=="Greenling"] <- "Juvenile greenling"
-
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
-
-# fix an instance where Pacific cod was entered incorrectly in the seine csv
-seine$sp_code <- as.factor(seine$sp_code)
-levels(seine$sp_code)[levels(seine$sp_code)=="PACCOD"] <- "CODPAC"
-
-
-# in 2018 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
+### Seperate size classes
+In 2019 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
 # Use the notes section to do this 
-seine_trial_sub$notes <- as.character(seine_trial_sub$notes)
+```{r}
+unique(seine$notes) # two size subsets
 
-# check to see that after subsetting the data what rows are left with notes
-unique(seine_trial_sub$notes) # note there are no notes about two size classes in data. 
-# Data is good to go and be combined with other seine data from 2018
+seine$unmeasured_sm <- ifelse(seine$notes == "small subset", paste(seine$unmeasured), NA)
 ```
 ### Fix taxon classification for trial seines
 ```{r}
 # based on sp_code combine with seine data
-seine_trial_sub <- seine_trial_sub %>%
+seine <- seine %>%
   left_join(sp_names, by = c("sp_code" = "SpCode")) %>%
-  mutate(taxon = Taxa) %>%
+  mutate(taxon = Taxa, sex = Sex) %>%
   dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height, tide_time, 
-                species_common, species_scientific, sp_code, fork_length, unmeasured, 
+                species_common, species_scientific, sp_code, fork_length, unmeasured, unmeasured_sm, 
                 sex, notes, taxon)
 
-seine_trial_sub$taxon <- as.factor(seine_trial_sub$taxon)
-levels(seine_trial_sub$taxon)[levels(seine_trial_sub$taxon)=="fish"] <- "Vertebrata"
+seine$taxon <- as.factor(seine$taxon)
+levels(seine$taxon)[levels(seine$taxon)=="fish"] <- "Vertebrata"
 
 ```
-## Step 1.2 Combine seine data 
-```{r}
-# make character types similar
-seine_trial_sub$tide_time <- as.numeric(seine_trial_sub$tide_time)
 
-# compile datasets, add rows to create a full dataset
-seine_all <- bind_rows(seine, seine_trial_sub)
-# check make sure all sites are there (8 total)
-levels(as.factor(seine_all$site)) # check! 
-```
 # Step 2. Classify taxons
 ```{r}
-unique(seine_all$species_common)
-# 42 different species, need to remove non-fish species
+unique(seine$species_common)
+# 69 different species, need to remove non-fish species
 
 # remove non-fish species
-fish <- seine_all %>% 
+fish <- seine %>% 
   filter(taxon == "Vertebrata")
 
 unique(fish$taxon)
@@ -150,11 +128,6 @@ This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 32
 
 #' All we need is the beach seine data and the fish length-mass conversions. 
 #' make sure columns have appropriate character type
-unique(fish$unmeasured_sm)
-
-fish <- fish %>%
-  dplyr::select(-c(unmeasured_sm)) # remove unmeasured_sm column because its empty
-
 
 fish$unmeasured <- as.numeric(fish$unmeasured)
 fish$fork_length <- as.numeric(fish$fork_length)
@@ -162,8 +135,7 @@ fish$fork_length <- as.numeric(fish$fork_length)
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1))
 
 df2 <- fish %>% # how many individual fish by site and species?
-  group_by(site, sp_code) %>%
-  dplyr::summarise(total = sum(abundance))
+  dplyr::summarise(total = sum(abundance)) # 22752
 
 ```
 
@@ -338,6 +310,12 @@ scul <- data.frame(sp_code = "UNSCUL", fishLW %>%
         summarise(a = mean(a_cm.g),
                   b = mean(b_cm.g)))
 
+# Salmon
+sal <- data.frame(sp_code = "SALSOCK", fishLW %>% 
+        filter(sp_code == "SALCHIN" | sp_code == "SALCOHO" | sp_code == "SALPINK" |
+                 sp_code == "SALCHUM") %>% 
+        summarise(a = mean(a_cm.g),
+                  b = mean(b_cm.g)))
 # Flats
 flat <- data.frame(sp_code = "UNFLAT", fishLW %>% 
                      filter(sp_code == "SDABPAC" | sp_code == "SDABSPKL" | sp_code == "SOLEBUT" |
@@ -348,7 +326,8 @@ flat <- data.frame(sp_code = "UNFLAT", fishLW %>%
 
 # Greenlings
 grns <- data.frame(sp_code = "UNGREEN", fishLW %>% 
-                     filter(sp_code == "GREENKEL" | sp_code == "GREENMAS" | sp_code == "GREENWHI") %>% 
+                     filter(sp_code == "GREENKEL" | sp_code == "GREENMAS" | sp_code == "GREENWHI" |
+                              sp_code == "GREENPAI") %>% 
                      summarise(a = mean(a_cm.g),
                                b = mean(b_cm.g)))
 
@@ -364,13 +343,20 @@ gunn <- data.frame(sp_code = "UNGUNN", fishLW %>%
                      summarise(a = mean(a_cm.g),
                                b = mean(b_cm.g)))
 
+# Artedius
 arte <- data.frame(sp_code = "UNARTE", fishLW %>% 
                      filter(sp_code == "SCULPAD" | sp_code == "SCULSMO") %>% 
                      summarise(a = mean(a_cm.g),
                                b = mean(b_cm.g)))
-
+# Rockfish
+rock <- data.frame(sp_code = "UNROCK", fishLW %>% 
+                     filter(sp_code == "ROCKSEB" | sp_code == "ROCKSLG"
+                            | sp_code == "ROCKCOP" | sp_code == "ROCKQUI"
+                            | sp_code == "ROCKBLA" | sp_code == "ROCKBRO") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
 ## Master a b lsit ##
-LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte)
+LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte, sal)
 
 ## Filter out UNFISH from fish.all ##
 fish.all <- fish.all %>% 
