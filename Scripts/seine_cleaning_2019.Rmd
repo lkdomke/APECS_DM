@@ -281,7 +281,7 @@ for(s in "Salt Lake Bay"){ # cycle through unique sites (only one seine per site
 m_stick <- bind_rows(sm_stick, lg_stick)
 ```
 
-Shiner perch first: based on distributions of known fork length we set a cut off at 100 mm 
+Shiner perch: based on distributions of known fork length we set a cut off at 100 mm 
 ```{r}
 # Need for data frames
 sm.m.sh <- fish.shiner.sub %>%
@@ -390,7 +390,13 @@ Figure out which species at sites that there is not a measured conterpart
 ```{r}
 x <- fish.um %>%
   group_by(site, sp_code) %>%
-  anti_join(fish.m, by = c("site", "sp_code")) # a couple of fish that will be dealt with later in the script. (Will combine with other UN species)
+  anti_join(fish.m, by = c("site", "sp_code")) # only one UNFLAT without measured     counterpart. (Will combine with other UN species)
+
+# take out 1 unm pink salmon, with only one measured counterpart at Klawock Inlet
+x <- fish.um %>%
+  filter(site == "Klawock airport") %>%
+  filter(sp_code == "SALPINK"|sp_code == "SOLEENG") %>%
+  bind_rows(x)
 
 # want to remove these unmeasured fish from unmeasured df
 fish.um.redu <- fish.um %>%
@@ -431,13 +437,16 @@ for(s in unique(fish.um.redu$site)){ # cycle through unique sites (only one sein
     q[] <- lapply(q, as.character)
   }
 } # this is returning an error in regards to prob, but i am not sure what its talking about
+# Bind the now measured fish with fish from above (stick and shiner)
+
+q <- bind_rows(q, m_shiner, m_stick)
 ```
 ## Loop check/add site info
 Append assigned lengths to master data with all site level data
 
 ```{r}
 # Extract site and sp data
-fish.site <- unique(seine_all[,c("site", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")])
+fish.site <- unique(seine[,c("site", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")])
 
 fish.sp <- unique(fish[,c("species_common", "species_scientific", "sp_code", "taxon")])
 
@@ -459,21 +468,21 @@ fish.all <- fish.m %>%
   bind_rows(d.info)
 
 # Do some basic checks to make sure the the conversion from unmeasured to measured worked correctly
-unique(fish.all$site) # 8 sites, correct
-unique(fish.all$sp_code) # 33 levels of fish species
-unique(fish$sp_code) # 33 levels of fish species in the original dataframe, correct! 7 unknown sp. 
+unique(fish.all$site) # 25 sites, correct
+unique(fish.all$sp_code) # 54 levels of fish species
+unique(fish$sp_code) # 55 levels of fish species in the original dataframe, correct! 7
 
 # count total number of fish in original dataframe
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1)) 
 
 fish %>%
-  dplyr::summarise(counts = sum(abundance)) # 11033
+  dplyr::summarise(counts = sum(abundance)) # 22762
 
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
 
 fish.all %>%
-  dplyr::summarise(counts = sum(abundance)) # 11032
+  dplyr::summarise(counts = sum(abundance)) # 25977
 ```
 
 # Step 4. Convert length to biomass
