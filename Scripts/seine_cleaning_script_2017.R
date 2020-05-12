@@ -52,7 +52,6 @@ st.er <- function(x, na.rm = TRUE) {
   return(sd(x, na.rm = na.rm)/sqrt(length(x)))
 }
 
-
 # From the raw data this script will export a file summarized by site ready for analysis. 
 #' The goal will be to summaries this data at the site level. Summaries will occur in a few different
 #' ways to prep the data for different types on analysis. There are 2 files generated here. 
