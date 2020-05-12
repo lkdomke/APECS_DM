@@ -83,7 +83,7 @@ unique(seine$sp_code) #Now 64 instead of 69 species
 fish <- seine %>%
   filter(taxon == "fish")
 nonmatch1 <- unique(anti_join(fish, fishLW, by = c("sp_code" = "sp_code"))$sp_code)
-#View(nonmatch1) # There a few more fish w/o length-weight relationship will be dealt with below. 
+View(nonmatch1) # There a few more fish w/o length-weight relationship will be dealt with below. 
 ```
 
 ### Seperate size classes
@@ -174,6 +174,9 @@ fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasur
 df2 <- fish %>% # how many individual fish by site and species?
   dplyr::summarise(total = sum(abundance)) # 22762
 
+df3 <- fish %>%
+  group_by(site, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
 ```
 ## Separate measured and unmeasured fish
 ### Loop for subset species
@@ -361,7 +364,7 @@ m_shiner <- bind_rows(lg_shiner, sm_shiner)
 ```
 
 
-Subset the rest of the data into m and um (MAKE SURE TO REMOVE THE SPECIES YOU ALREADY DID)
+Subset the rest of the data into m and um 
 ```{r}
 fish.m <- fish %>%
   filter(fork_length != "NA")
@@ -481,8 +484,12 @@ fish %>%
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
 
-fish.all %>%
+df4 <- fish.all %>%
+  group_by(site, sp_code) %>%
   dplyr::summarise(counts = sum(abundance)) # 25977
+
+# check w/ previous numbers (df3)
+merge(df4, df3)
 ```
 
 # Step 4. Convert length to biomass
