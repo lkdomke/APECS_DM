@@ -1,0 +1,135 @@
+---
+title: "combine_2018_seine"
+author: "Lia Domke"
+date: "5/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Data cleaning for beach seine data
+
+As apart of a project studying eelgrass ecosystems in southern Southeast Alaska, beach seines were done along the outer coast of Prince of Wales Island. A 37-m variable mesh net and a 16ft skiff was used to set a 'round haul' beach seine through eelgrass meadows. Fish were identified to the finest taxonomic level, enumerated, and measured either total length for most fish species or to fork length if the caudal fin was forked (e.g. salmon, shiner perch). After 30 measured fish, fish were no longer measured and lengths will be extrapolated from the 30 measured fish. 
+
+Two different projects occured during the 2018 summer field season (one associated with a *trial* experiment and the other with monitoring and biomarker collection). However, they used the same methods and sampled the same habitat.
+They should be combined to be archieved as one data file for seines in 2018 on KNB. 
+
+This script will: 
+1. Clean trial data 
+2. Include only seines that occured at the appropriate tide
+3. Recode species_codes in trial seine to match 2018 seine
+4. Fix taxon classification
+5. Combine seines
+6. Write out combined dataframe
+
+# Libraries
+```{r}
+library(dplyr)
+library(tidyr)
+library(vegan)
+library(ggplot2)
+library(lubridate)
+```
+
+# Data input
+```{r}
+seine_trial <- read.csv("../Data/FishSeine_RawData_2018_Trial.csv", stringsAsFactors = FALSE, header = TRUE)
+
+seine <- read.csv("Data/Beach_seine_eelgrass_2018_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
+
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aad2ae4aa-13ed-44b4-a3f1-c1be66c322b1"), stringsAsFactors = FALSE, header = TRUE)
+
+```
+
+# Step 1. Clean seine_trial
+## Remove unnecessary columns
+```{r}
+glimpse(seine_trial)
+glimpse(seine)
+# remove QAQC and unnecessary columns
+seine_trial <- seine_trial %>%
+  mutate(sex = Sex, notes = Notes.) %>% # match column names between datasets
+  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height,
+                tide_time, species_common, species_scientific, sp_code, 
+                fork_length, unmeasured, sex, notes) # drop QA/QC column from original data entry
+```
+
+# 2. Include only seines at the appropriate tide height 
+```{r}
+unique(seine_trial$date) # what dates did the trial seine happen?
+#' remove post-experiment beach seines 
+#' seines occured at too high of a tide time and weren't sampling seagrass 
+#' rather it sampled the intertidal habitat at a higher tidal heigbht than seagrass
+#' you see this in the species of fish that we catch. 
+unique(seine_trial$tide_height) # want to remove the seines that occured at 0.6 ft tidal height. 
+
+seine_trial_sub <- seine_trial %>%
+  group_by(site, date) %>%
+  dplyr::filter(YYYYMMDD < 20180700)
+
+unique(seine_trial_sub$date) # check to make sure the correct dates/tidal heights were removed. 
+unique(seine_trial_sub$tide_height)
+```
+
+# 3. Relabel cell values
+```{r}
+# recode Unknown ID to UNFISH to keep consistent with other data seines
+levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)=="UNID"] <- "UNFISH"
+levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)== "Unknown ID"] <- "Unknown juvenile teleostei"
+# UNFISH does not have a scientific name, should be Teleostei
+levels(seine_trial_sub$species_scientific)[levels(seine_trial_sub$species_scientific)== "fish"] <- "Teleostei"
+
+# recode greenling to juvenile greenling
+levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)=="Greenling"] <- "Juvenile greenling"
+
+levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
+levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
+
+# fix an instance where Pacific cod was entered incorrectly in the seine csv
+seine$sp_code <- as.factor(seine$sp_code)
+levels(seine$sp_code)[levels(seine$sp_code)=="PACCOD"] <- "CODPAC"
+
+
+# in 2018 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
+# Use the notes section to do this 
+seine_trial_sub$notes <- as.character(seine_trial_sub$notes)
+
+# check to see that after subsetting the data what rows are left with notes
+unique(seine_trial_sub$notes) # note there are no notes about two size classes in data. 
+# Data is good to go and be combined with other seine data from 2018
+```
+
+# 4. Fix taxon classification for trial seines
+```{r}
+# based on sp_code combine with sp_names, this is so we can add a taxon column with "vertebrate" or "invertebrate"
+seine_trial_sub <- seine_trial_sub %>%
+  left_join(sp_names, by = c("sp_code" = "SpCode")) %>%
+  mutate(taxon = Taxa) %>%
+  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height, tide_time, 
+                species_common, species_scientific, sp_code, fork_length, unmeasured, 
+                sex, notes, taxon)
+
+seine_trial_sub$taxon <- as.factor(seine_trial_sub$taxon)
+levels(seine_trial_sub$taxon)[levels(seine_trial_sub$taxon)=="fish"] <- "Vertebrata"
+
+```
+
+# 5. Combine seine data 
+```{r}
+# make character types similar
+seine_trial_sub$tide_time <- as.numeric(seine_trial_sub$tide_time)
+
+# compile datasets, add rows to create a full dataset
+seine_all <- bind_rows(seine, seine_trial_sub)
+# check make sure all sites are there (8 total)
+levels(as.factor(seine_all$site)) # check! 
+```
+
+# 6. Write out combined dataframe
+
+```{r}
+write.csv(seine_all, "Data/all_beach_seine_data_2018.csv")
+```
+
