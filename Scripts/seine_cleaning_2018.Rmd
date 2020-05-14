@@ -17,12 +17,11 @@ This script is to clean the *dataset from 2018* of the eelgrass-associated fish 
 
 This script will:
 
-1. Combine beach seine data from two projects in 2018 that used the same methods
-2. Classify invertebrates and vertebrates so that only fish can be filtered
-3. Convert unmeasured fish to *length measurements*
-4. Convert length data to *biomass*
-5. Change site_code to new naming scheme that includes two column codes
-6. Convert date to julian day and add year column
+1. Classify invertebrates and vertebrates so that only fish can be filtered
+2. Convert unmeasured fish to *measured* based on distributions of measured fish
+3. Convert length data to *biomass* based on known relationships compiled from FishBase
+4. Change site_code to new naming scheme that includes two column codes
+5. Convert date to julian day and add year column
 
 # Libraries
 
@@ -32,99 +31,22 @@ library(tidyr)
 library(vegan)
 library(ggplot2)
 library(lubridate)
-
 ```
 
 # Data input
 
 ```{r data}
-seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A0475361b-5d7a-4991-8692-725158dc733a"), stringsAsFactors = FALSE, header = TRUE) # read in WR seines
-seine_trial <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A1463f7d8-92aa-40aa-8ae7-f89761c79671"), stringsAsFactors = FALSE, header = TRUE) # read in trial exp data
-sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Affa06540-6689-41d8-b8ac-052a9f568785"), stringsAsFactors = FALSE, header = TRUE)
+seine_all <- read.csv("../Data/all_beach_seine_data_2018.csv", stringsAsFactors = FALSE, header = TRUE)
+
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aad2ae4aa-13ed-44b4-a3f1-c1be66c322b1"), stringsAsFactors = FALSE, header = TRUE)
+
 site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
+
 fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
 ```
 
-# Step 1. Combine 2 datasets
 
-In 2018 two different projects occured in similar area along the west coast of Prince of Wales using the same methods and the same seine net. 
-
-## Step 1.1 Clean seine_trial
-### Remove unnecessary columns
-```{r}
-glimpse(seine_trial)
-glimpse(seine)
-# remove QAQC and unnecessary columns
-seine_trial <- seine_trial %>%
-  mutate(sex = Sex, notes = Notes.) %>%
-  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height,
-                tide_time, species_common, species_scientific, sp_code, 
-                fork_length, unmeasured, sex, notes)
-
-unique(seine_trial$date)
-
-# remove post-experiment beach seines 
-# seines occured at too high of a tide time and weren't sampling seagrass rather it 
-# sampled the intertidal habitat above seagrass
-seine_trial_sub <- seine_trial %>%
-  group_by(site, date) %>%
-  dplyr::filter(YYYYMMDD < 20180700)
-
-unique(seine_trial$date)
-```
-
-### Relabel cell values
-```{r}
-# recode Unknown ID to UNFISH to keep consistent with other data seines
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)=="UNID"] <- "UNFISH"
-levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)== "Unknown ID"] <- "Unknown juvenile teleostei"
-# UNFISH does not have a scientific name, should be Teleostei
-levels(seine_trial_sub$species_scientific)[levels(seine_trial_sub$species_scientific)== "fish"] <- "Teleostei"
-
-# recode greenling to juvenile greenling
-levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)=="Greenling"] <- "Juvenile greenling"
-
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
-levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)==""] <- "UNGREEN"
-
-# fix an instance where Pacific cod was entered incorrectly in the seine csv
-seine$sp_code <- as.factor(seine$sp_code)
-levels(seine$sp_code)[levels(seine$sp_code)=="PACCOD"] <- "CODPAC"
-
-
-# in 2018 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
-# Use the notes section to do this 
-seine_trial_sub$notes <- as.character(seine_trial_sub$notes)
-
-# check to see that after subsetting the data what rows are left with notes
-unique(seine_trial_sub$notes) # note there are no notes about two size classes in data. 
-# Data is good to go and be combined with other seine data from 2018
-```
-### Fix taxon classification for trial seines
-```{r}
-# based on sp_code combine with seine data
-seine_trial_sub <- seine_trial_sub %>%
-  left_join(sp_names, by = c("sp_code" = "SpCode")) %>%
-  mutate(taxon = Taxa) %>%
-  dplyr::select(site, date, YYYYMMDD, start_time, end_time, slope, tide_height, tide_time, 
-                species_common, species_scientific, sp_code, fork_length, unmeasured, 
-                sex, notes, taxon)
-
-seine_trial_sub$taxon <- as.factor(seine_trial_sub$taxon)
-levels(seine_trial_sub$taxon)[levels(seine_trial_sub$taxon)=="fish"] <- "Vertebrata"
-
-```
-## Step 1.2 Combine seine data 
-```{r}
-# make character types similar
-seine_trial_sub$tide_time <- as.numeric(seine_trial_sub$tide_time)
-
-# compile datasets, add rows to create a full dataset
-seine_all <- bind_rows(seine, seine_trial_sub)
-# check make sure all sites are there (8 total)
-levels(as.factor(seine_all$site)) # check! 
-```
-# Step 2. Classify taxons
+# Step 1. Filter by taxon
 ```{r}
 unique(seine_all$species_common)
 # 42 different species, need to remove non-fish species
@@ -139,7 +61,7 @@ unique(fish$species_common) # only fish!
 unique(fish$site) # still have all the sites! 
 ```
 
-#Step 3. Unmeasured -> measured
+#Step 2. Unmeasured -> measured
 This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
 
 ```{r}
@@ -280,7 +202,7 @@ fish.all %>%
   dplyr::summarise(counts = sum(abundance)) # 11032
 ```
 
-# Step 4. Convert length to biomass
+# Step 3. Convert length to biomass
 ## Calculate Biomass
 Using the length-weight conversion values individual lengths will be converted to biomass. Coefficients are in cm*g so fork lengths will need to be converted to cm from mm.
 
@@ -421,7 +343,7 @@ boxplot(fish.site.g$site_mass_g)
 
 ```
 
-# Step 5. Convert date to JD and add year column
+# Step 4. Convert date to JD and add year column
 ```{r}
 fish.all.m <- fish.all.m %>% 
   mutate(date = ymd(YYYYMMDD)) %>% # convert to date format
@@ -429,7 +351,7 @@ fish.all.m <- fish.all.m %>%
   mutate(year = year(date)) # make a new column with just year
 ```
 
-# Step 6. Convert site names to 2-column code system
+# Step 5. Convert site names to 2-column code system
 ```{r}
 fish.all.m <- fish.all.m %>% 
   left_join(site_meta, by = c("site" = "site_2018")) %>% # this needs to be changed for e/a YEAR. 
