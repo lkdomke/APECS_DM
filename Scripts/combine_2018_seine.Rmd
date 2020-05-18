@@ -14,7 +14,8 @@ Data cleaning for beach seine data
 As apart of a project studying eelgrass ecosystems in southern Southeast Alaska, beach seines were done along the outer coast of Prince of Wales Island. A 37-m variable mesh net and a 16ft skiff was used to set a 'round haul' beach seine through eelgrass meadows. Fish were identified to the finest taxonomic level, enumerated, and measured either total length for most fish species or to fork length if the caudal fin was forked (e.g. salmon, shiner perch). After 30 measured fish, fish were no longer measured and lengths will be extrapolated from the 30 measured fish. 
 
 Two different projects occured during the 2018 summer field season (one associated with a *trial* experiment and the other with monitoring and biomarker collection). However, they used the same methods and sampled the same habitat.
-They should be combined to be archieved as one data file for seines in 2018 on KNB. 
+The completed df should be combined to be archieved as one data file for seines in 2018 on KNB. 
+This script will *not* be archieved on KNB. 
 
 This script will: 
 1. Clean trial data 
@@ -23,6 +24,7 @@ This script will:
 4. Fix taxon classification
 5. Combine seines
 6. Write out combined dataframe
+
 
 # Libraries
 ```{r}
@@ -37,7 +39,7 @@ library(lubridate)
 ```{r}
 seine_trial <- read.csv("../Data/FishSeine_RawData_2018_Trial.csv", stringsAsFactors = FALSE, header = TRUE)
 
-seine <- read.csv("Data/Beach_seine_eelgrass_2018_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
+seine <- read.csv("../Data/Beach_seine_eelgrass_2018_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
 
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aad2ae4aa-13ed-44b4-a3f1-c1be66c322b1"), stringsAsFactors = FALSE, header = TRUE)
 
@@ -75,6 +77,8 @@ unique(seine_trial_sub$tide_height)
 
 # 3. Relabel cell values
 ```{r}
+# needs to be a factor to work:
+seine_trial_sub$sp_code <- as.factor(seine_trial_sub$sp_code)
 # recode Unknown ID to UNFISH to keep consistent with other data seines
 levels(seine_trial_sub$sp_code)[levels(seine_trial_sub$sp_code)=="UNID"] <- "UNFISH"
 levels(seine_trial_sub$species_common)[levels(seine_trial_sub$species_common)== "Unknown ID"] <- "Unknown juvenile teleostei"
@@ -130,6 +134,6 @@ levels(as.factor(seine_all$site)) # check!
 # 6. Write out combined dataframe
 
 ```{r}
-write.csv(seine_all, "Data/all_beach_seine_data_2018.csv")
+write.csv(seine_all, "../Data/fish_beach_seine_2018_raw.csv")
 ```
 

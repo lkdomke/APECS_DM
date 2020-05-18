@@ -23,17 +23,18 @@ library(lubridate)
 library(readxl)
 
 # Data input
-
 seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/knb.92404.1"),
                   stringsAsFactors = FALSE, header = TRUE)
-sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A91a429e4-33f0-4530-8ae9-4a40686e0a21"))
-site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
-fishLW <- read.csv("Data/fish_length_weight_conversions_05Feb2018.csv", 
-                   stringsAsFactors = FALSE, header = TRUE)
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"),
+                     stringsAsFactors = FALSE, header = TRUE)
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"))
+fishLW <- read.csv("Data/fish_length_weight_conversions_05Feb2018.csv", stringsAsFactors = FALSE, header = TRUE)
   
 ######## Step 1. Classify taxons ######## 
 levels(as.factor(seine$species_common)) 
 # 74 different species, need to remove non-fish species
+# are all species on the sp_names csv?
+anti_join(seine, sp_names, by = c("sp_code" = "SpCode"))
 
 # Based on sp_code combine with sp_names--includes taxa
 fish.tax <- seine %>%
@@ -330,7 +331,7 @@ fish.all.m <- fish.all.m %>%
 ######## Step 5. Convert site names to 2-column code system ######## 
 
 fish.all.m <- fish.all.m %>% 
-  left_join(site_meta, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
+  left_join(site_names, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
   select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study))
 
 # place name gives the physical location, bay_code and bay_sample together give you each

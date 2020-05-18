@@ -36,11 +36,11 @@ library(lubridate)
 # Data input
 
 ```{r data}
-seine_all <- read.csv("../Data/all_beach_seine_data_2018.csv", stringsAsFactors = FALSE, header = TRUE)
+seine_all <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aa595db78-ec1a-4783-b77e-43f90465bd83"), stringsAsFactors = FALSE, header = TRUE)
 
-sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aad2ae4aa-13ed-44b4-a3f1-c1be66c322b1"), stringsAsFactors = FALSE, header = TRUE)
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"), stringsAsFactors = FALSE, header = TRUE)
 
-site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"))
 
 fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
 ```
@@ -50,6 +50,8 @@ fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3
 ```{r}
 unique(seine_all$species_common)
 # 42 different species, need to remove non-fish species
+# are all species present in the sp list?
+anti_join(seine_all, sp_names, by = c("sp_code" = "SpCode"))
 
 # remove non-fish species
 fish <- seine_all %>% 
@@ -59,6 +61,26 @@ unique(fish$taxon)
 
 unique(fish$species_common) # only fish!
 unique(fish$site) # still have all the sites! 
+```
+## Adjust sp_code values based on what came back from the 'anti_join' to match sp_names
+```{r}
+# Make columns factors in order to run code
+seine_all$sp_code <- as.factor(seine_all$sp_code)
+seine_all$species_common <- as.factor(seine_all$species_common)
+seine_all$species_scientific <- as.factor(seine_all$species_scientific)
+
+# Change tubenose poacher sp_code
+levels(seine_all$sp_code)[levels(seine_all$sp_code)=="TUBEPOA"] <- "POATUBE"
+
+# Change unknown snailfish sp_code, scientific name, and common name
+levels(seine_all$species_common)[levels(seine_all$species_common)=="Snailfish"] <- "Juvenile snailfish"
+levels(seine_all$species_scientific)[levels(seine_all$species_scientific)=="Liparis sp."] <- "Liparidae"
+levels(seine_all$sp_code)[levels(seine_all$sp_code)=="SNAILFS"] <- "UNSNAILF"
+
+# Adjust sp_code for masked greenling
+levels(seine_all$sp_code)[levels(seine_all$sp_code)=="GREEMASK"] <- "GREENMAS"
+
+anti_join(seine_all, sp_names, by = c("sp_code" = "SpCode"))
 ```
 
 #Step 2. Unmeasured -> measured
@@ -193,7 +215,7 @@ unique(fish$sp_code) # 33 levels of fish species in the original dataframe, corr
 fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), paste(fish$unmeasured), 1)) 
 
 fish %>%
-  dplyr::summarise(counts = sum(abundance)) # 11033
+  dplyr::summarise(counts = sum(abundance)) # 11038
 
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
@@ -354,7 +376,7 @@ fish.all.m <- fish.all.m %>%
 # Step 5. Convert site names to 2-column code system
 ```{r}
 fish.all.m <- fish.all.m %>% 
-  left_join(site_meta, by = c("site" = "site_2018")) %>% # this needs to be changed for e/a YEAR. 
+  left_join(site_names, by = c("site" = "site_2018")) %>% # this needs to be changed for e/a YEAR. 
   select(-c(site_2017, freshwater, general_description, sediment_description, siteID_NOAA, study))
 
 # place name gives the physical location, bay_code and bay_sample together give you each
@@ -363,7 +385,7 @@ fish.all.m <- fish.all.m %>%
 
 # Export
 ```{r}
-write.csv(fish.all.m, "../Data/Fish_mass_full_2018_derived.csv", row.names = FALSE)
+write.csv(fish.all.m, "../Data/fish_mass_2018_derived.csv", row.names = FALSE)
 ```
 
 
