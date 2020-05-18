@@ -60,6 +60,23 @@ df8 <- data.frame("Kelp perch", "Brachyistius frenatus", "PERCHKE", "NA", "22.0"
 df9 <- data.frame("Northern spearnose poacher", "Agonopsis vulsa", "POASPEAR", "NA", "20.0", "TL", "NA", 
                   "Male/unsexed", "NA", "0.00389", "3.12", "NA", "NA", "NA", "NA", "NA", "0.00180",
                   "0.00842", "2.94", "3.30", "FishBase - Bayesian Ref. 93245", "NA", "93245", "NA")
+
+df10 <- data.frame("Ribbon snailfish", "Liparis cyclopus", "SNAILFR", "NA", "11.4", "TL", "NA", 
+                   "Male/unsexed", "NA", "0.00457", "3.17", "NA", "NA", "NA", "NA", "NA", "0.00217",
+                   "0.00962", "2.98", "3.36", "FishBase - Bayesian Ref. 93245", "NA", "93245", "NA")
+
+df11 <- data.frame("Tidepool snailfish", "Liparis florae", "SNAILFTI", "NA", "18.3", "TL", "NA", 
+                   "Male/unsexed", "NA", "0.00457", "3.17", "NA", "NA", "NA", "NA", "NA", "0.00217",
+                   "0.00962", "2.98", "3.36", "FishBase - Bayesian Ref. 93245", "NA", "93245", "NA")
+
+df12 <- data.frame("Showy snailfish", "Liparis pulchellus", "SNAILFSH", "NA", "25.0", "TL", "NA", 
+                   "Male/unsexed", "NA", "0.00457", "3.17", "NA", "NA", "NA", "NA", "NA", "0.00217",
+                   "0.00962", "2.98", "3.36", "FishBase - Bayesian Ref. 93245", "NA", "93245", "NA")
+
+df13 <- data.frame("Ringtail snailfish", "Liparis rutteri", "SNAILFRT", "NA", "7.0", "SL", "NA", 
+                   "Male/unsexed", "NA", "0.00457", "3.17", "NA", "NA", "NA", "NA", "NA", "0.00217",
+                   "0.00962", "2.98", "3.36", "FishBase - Bayesian Ref. 93245", "NA", "93245", "NA")
+
 names(df) <- LWnames
 names(df2) <- LWnames
 names(df3) <- LWnames
@@ -69,6 +86,10 @@ names(df6) <- LWnames
 names(df7) <- LWnames
 names(df8) <- LWnames
 names(df9) <- LWnames
+names(df10) <- LWnames
+names(df11) <- LWnames
+names(df12) <- LWnames
+names(df13) <- LWnames
 
 names(df) <- c("species_common", "species_scientific", "sp_code", "LengthMin_cm","LengthMax_cm",
                "Type", "Number", "Sex", "a_cm.g", "aTL_cm.g", "b_cm.g", "CoeffDetermination", 
@@ -76,7 +97,7 @@ names(df) <- c("species_common", "species_scientific", "sp_code", "LengthMin_cm"
                "Method", "Locality", "DataRef", "Comment")
 
 # merge together
-dat <- bind_rows(df, df2, df3, df4, df5, df6, df7, df8, df9)
+dat <- bind_rows(df, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13)
 fishLW_clean2 <- rbind(fishLW_clean, dat)
 # 3. Save as a new csv
 
