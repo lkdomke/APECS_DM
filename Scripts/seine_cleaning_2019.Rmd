@@ -38,10 +38,10 @@ library(lubridate)
 # Data input
 
 ```{r data}
-seine <- read.csv("../Data/FishSeine_2019_RAW_10-4-19.csv", stringsAsFactors = FALSE, header = TRUE) 
-sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aad2ae4aa-13ed-44b4-a3f1-c1be66c322b1"), 
-                     stringsAsFactors = FALSE, header = TRUE)
-site_meta <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A8e560dce-1ad2-44a8-9cdd-84771fdc7798"))
+seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A6552a42b-0d93-4cbd-be3c-834bf9a531a7"), stringsAsFactors = FALSE, header = TRUE) 
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"), stringsAsFactors = FALSE, header = TRUE)
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"), stringsAsFactors = FALSE, header = TRUE)
+
 fishLW <- read.csv("../Data/fish_length_weight_conversions_cleaned.csv",
                    stringsAsFactors = FALSE, header = TRUE) 
 ```
@@ -82,7 +82,9 @@ levels(seine$sp_code)[levels(seine$sp_code)=="SCULSCA"] <- "UNARTE"
 
 # roughback got entered with two species codes SCULRBCK -> SCULRGH
 levels(seine$sp_code)[levels(seine$sp_code)=="SCULRGH"] <- "SCULRBCK"
+
 # Also have to repeat this for the fishLW dataframe
+fishLW$sp_code <- as.factor(fishLW$sp_code)
 levels(fishLW$sp_code)[levels(fishLW$sp_code)=="SCULRGH"] <- "SCULRBCK"
 
 # change Bocaccio sp_code to UNROCK not because it is unknown but because its
@@ -95,14 +97,18 @@ levels(seine$sp_code)[levels(seine$sp_code)=="LORDBI"] <- "UNLORD"
 levels(seine$sp_code)[levels(seine$sp_code)=="UNSOLE"] <- "UNFLAT"
 levels(seine$species_common)[levels(seine$species_common)=="Unidentified sole"] <- "Juvenile flatfish"
 
+# change both sp_code columns back to characters
+seine$sp_code <- as.character(seine$sp_code)
+fishLW$sp_code <- as.character(fishLW$sp_code)
+
 # check
 unique(seine$sp_code) #Now 64 instead of 69 species
-
+anti_join(seine, sp_names, by = c("sp_code" = "SpCode"))
 # Note: 
 fish <- seine %>%
   filter(taxon == "fish")
-nonmatch1 <- unique(anti_join(fish, fishLW, by = c("sp_code" = "sp_code"))$sp_code)
-nonmatch1 # There a few more fish w/o length-weight relationship will be dealt with below. 
+nonmatch1 <- anti_join(fish, fishLW, by = c("sp_code" = "sp_code"))
+unique(nonmatch1$sp_code) # There a few more fish w/o length-weight relationship will be dealt with below. 
 ```
 
 ## Seperate size classes
@@ -522,7 +528,7 @@ df4 <- fish.all %>%
 # convert unmeasured fish to measured fish make sure to check the extracted site/date info. When you merge the loop
 # output with the site info if there are duplicated sites, it will duplicate the number of fish--artificially 
 # inflating the number of fish at ea site. 
-View(merge(df4, df3))
+merge(df4, df3)
 ```
 
 # Step 4. Convert length to biomass
@@ -563,7 +569,7 @@ We know that we do not have estimates for a and b estiamtes for all the species 
 4. "UNMYOXO" - Unidentified Myoxocephalus sp. will use the the average of a and b values of sampled members of the Myoxocephalus genus.
 5. "UNGUNN" - Unidentified gunnel will use average a and b values from the sampled gunnel species
 6. "UNARTE" - Unidentified Aretedius sp. will use the average a nad b values of sampled members of the Artedeius genus.
-
+7. "UNSNAIL" - Unidentified Liparis sp. will use the average a nad b values of sampled members of the Liparidae genus.
 
 ## Unique species in master data
 ```{r}
@@ -628,15 +634,22 @@ rock <- data.frame(sp_code = "UNROCK", fishLW %>%
                             | sp_code == "ROCKBLA" | sp_code == "ROCKBRO") %>% 
                      summarise(a = mean(a_cm.g),
                                b = mean(b_cm.g)))
+
+#Snailfish
+snail <- data.frame(sp_code = "UNSNAILF", fishLW %>% 
+                     filter(sp_code == "SNAILFR" | sp_code == "SNAILFTI"
+                            | sp_code == "SNAILFSH" | sp_code == "SNAILFRT") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
 ## Master a b lsit ##
-LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte, sal, rock)
+LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte, sal, rock, snail)
 
 ## Filter out UNFISH from fish.all ##
 fish.all <- fish.all %>% 
   filter(sp_code != "UNFISH")
 
 ## Check that everything is cool ##
-unique(anti_join(fish.all, LW.master, by = "sp_code")$sp_code)
+unique(anti_join(fish.all, LW.master, by = "sp_code")$sp_code) # no unmatched sp_codes! awesome
 ```
 
 ```{r}
@@ -647,7 +660,7 @@ fish.all.m <- merge(fish.all, LW.master, by = "sp_code")
 ## Convert mm to cm ##
 fish.all.m$fork_length_cm <- fish.all.m$fork_length / 10
 
-## Calculate mass in g ##
+## Calculate mass in g, a*FL^b ##
 fish.all.m$mass_g <- (fish.all.m$a * fish.all.m$fork_length_cm^fish.all.m$b)
 
 ## some plots, cuz ya know ##
@@ -693,16 +706,25 @@ fish.all.m <- fish.all.m %>%
 # Step 6. Convert site names to 2-column code system
 ```{r}
 fish.all.m <- fish.all.m %>% 
-  left_join(site_meta, by = c("site" = "site_2019")) %>% # this needs to be changed for e/a YEAR. 
-  select(-c(site_2017, freshwater, general_description, sediment_description, siteID_NOAA, study))
+  left_join(site_names, by = c("site" = "site_2019")) %>% # this needs to be changed for e/a YEAR. 
+  select(-c(site_2017, site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study, notes))
 
 # place name gives the physical location, bay_code and bay_sample together give you each
 # unique site that was sampled. 
+
 ```
+
+Do some basic checks before writing out the csv
+```{r}
+unique(fish.all.m$site) # 25 sites!
+unique(fish.all.m$sp_code) # 54 species!
+range(fish.all.m$mass_g) # makes sense there were some tiny fish. 
+```
+
 
 # Export
 ```{r}
-write.csv(fish.all.m, "../Data/Fish_mass_full_2019_derived.csv", row.names = FALSE)
+write.csv(fish.all.m, "../Data/fish_mass_2019_derived.csv", row.names = FALSE)
 ```
 
 
