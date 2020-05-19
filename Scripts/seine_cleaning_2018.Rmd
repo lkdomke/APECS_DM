@@ -377,8 +377,10 @@ fish.all.m <- fish.all.m %>%
 ```{r}
 fish.all.m <- fish.all.m %>% 
   left_join(site_names, by = c("site" = "site_2018")) %>% # this needs to be changed for e/a YEAR. 
-  select(-c(site_2017, freshwater, general_description, sediment_description, siteID_NOAA, study))
+  select(-c(site_2017, freshwater, general_description, sediment_description, siteID_NOAA, study, 
+            site_2019, a, b, fork_length_cm, site, YYYYMMDD, notes))
 
+names(fish.all.m)
 # place name gives the physical location, bay_code and bay_sample together give you each
 # unique site that was sampled. 
 ```

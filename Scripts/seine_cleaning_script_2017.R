@@ -28,15 +28,15 @@ seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/knb.92
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"),
                      stringsAsFactors = FALSE, header = TRUE)
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"))
-fishLW <- read.csv("Data/fish_length_weight_conversions_05Feb2018.csv", stringsAsFactors = FALSE, header = TRUE)
+fishLW <- read.csv("Data/fish_length_weight_conversions_cleaned.csv", stringsAsFactors = FALSE, header = TRUE)
   
 ######## Step 1. Classify taxons ######## 
-levels(as.factor(seine$species_common)) 
+unique(seine$species_common)
 # 74 different species, need to remove non-fish species
 # are all species on the sp_names csv?
-anti_join(seine, sp_names, by = c("sp_code" = "SpCode"))
+anti_join(seine, sp_names, by = c("sp_code" = "SpCode")) # yes
 
-# Based on sp_code combine with sp_names--includes taxa
+ # Based on sp_code combine with sp_names--includes taxa
 fish.tax <- seine %>%
   group_by(sp_code) %>% 
   left_join(sp_names, by = c("sp_code" = "SpCode")) %>% 
@@ -48,15 +48,10 @@ fish <- fish.tax %>%
  
 ####### Step 2. Unmeasured -> measured ######## 
 # This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
-st.er <- function(x, na.rm = TRUE) {
-  stopifnot(is.numeric(x))
-  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
-}
 
 # From the raw data this script will export a file summarized by site ready for analysis. 
 #' The goal will be to summaries this data at the site level. Summaries will occur in a few different
-#' ways to prep the data for different types on analysis. There are 2 files generated here. 
-
+#' ways to prep the data for different types on analysis. There's 1 file generated here. 
 
 #' All we need is the beach seine data and the fish length-mass conversions. 
 
@@ -72,9 +67,9 @@ fish.m <- fish %>%
 
 
 fish.um <- fish %>%
-  # filter(taxon == "Vertebrata") %>% 
+  # filter(taxon == "Vertebrata") %>% done above
   filter(unmeasured != "estimate") %>% # assume that infield estimates are accurate
-  filter(is.na(fork_length))
+  filter(is.na(fork_length)) # have 96 observations that need to be assigned lenghts
 
 
 ## Assign lengths to unmeasured fish
@@ -123,7 +118,7 @@ for(s in unique(fish.um.redu$site)){ # cycle through sites
       dat <- data.frame(size = as.character(samp$fork_length))
       dat2 <- dat %>% 
         group_by(size) %>% 
-        summarise(count = n())
+        dplyr::summarise(count = n())
       dat2$porb <- (dat2$count/sum(dat2$count))
       dat2$x <- as.numeric(paste(dat2$size))
       fx <- function(n){ # function derived from limits and probabilities of above
@@ -166,7 +161,7 @@ sum_fish <- fish %>%
   summarise(abundance = sum(abundance))
 
 sum_fish %>%
-  summarise(total = sum(abundance))
+  summarise(total = sum(abundance)) #29744
 
 # does this match the fish.all dataframe?
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
@@ -176,7 +171,7 @@ fish.all.sum <- fish.all %>%
   summarise(abundance = sum(abundance))
 
 fish.all.sum %>%
-  summarise(total = sum(abundance)) # there is a 242 fish discrepancy... less than a 1% difference. 
+  summarise(total = sum(abundance)) # 29986, there is a 242 fish discrepancy... less than a 1% difference. 
 
 
 
@@ -212,9 +207,9 @@ fishLW$sp_code <- ifelse(fishLW$species_common == "Rockfish", paste("ROCKSEB"), 
 ## Filter and summarise ##
 LW <- fishLW %>%
   filter(Type != "SL") %>% 
-  filter(sp_code != "UNFISH") %>% 
+  filter(sp_code != "UNFISH") %>%
   group_by(sp_code) %>% 
-  summarise(a = mean(a_cm.g),
+  dplyr::summarise(a = mean(a_cm.g),
             b = mean(b_cm.g))
 
 #' We know that we do not have estimates for a and b estiamtes for all the species so we need to apply other values to other species. First identify what species we need to have stand ins for
@@ -276,7 +271,7 @@ fish.all <- fish.all %>%
   filter(sp_code != "UNFISH")
 
 ## Check that everything is cool ##
-anti_join(fish.all, LW.master, by = "sp_code")
+anti_join(fish.all, LW.master, by = "sp_code") # its all cool
 
 # Finally join the a and b values from above with the master data and calcualte biomass.
 ## Merge a and b values ##
@@ -332,16 +327,17 @@ fish.all.m <- fish.all.m %>%
 
 fish.all.m <- fish.all.m %>% 
   left_join(site_names, by = c("site" = "site_2017")) %>% # this needs to be changed for e/a YEAR. 
-  select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study))
+  select(-c(site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study, a, b, fork_length_cm, 
+            site_2019, site, sex, unmeasured, abundance, YYYYMMDD))
 
+names(fish.all.m)
 # place name gives the physical location, bay_code and bay_sample together give you each
 # unique site that was sampled. 
-
 
 ## Export
 # Export of full mass derived csv
 
-write.csv(fish.all.m, "Data/Fish_mass_full_2017_derived.csv", row.names = FALSE)
+write.csv(fish.all.m, "Data/fish_mass_2017_derived.csv", row.names = FALSE)
 
 
 
