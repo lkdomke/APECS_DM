@@ -28,7 +28,7 @@ seine <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/knb.92
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"),
                      stringsAsFactors = FALSE, header = TRUE)
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"))
-fishLW <- read.csv("Data/fish_length_weight_conversions_cleaned.csv", stringsAsFactors = FALSE, header = TRUE)
+fishLW <- read.csv("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A42b3eee9-f6a3-4169-99ef-ed388f46d172", stringsAsFactors = FALSE, header = TRUE)
   
 ######## Step 1. Classify taxons ######## 
 unique(seine$species_common)
@@ -337,7 +337,7 @@ names(fish.all.m)
 ## Export
 # Export of full mass derived csv
 
-write.csv(fish.all.m, "Data/fish_mass_2017_derived.csv", row.names = FALSE)
+#write.csv(fish.all.m, "Data/fish_mass_2017_derived.csv", row.names = FALSE)
 
 
 

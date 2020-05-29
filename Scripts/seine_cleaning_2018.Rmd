@@ -42,7 +42,7 @@ sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn
 
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"))
 
-fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Acd2ff373-ba90-449d-85a2-4e1fb174a926"), stringsAsFactors = FALSE, header = TRUE) 
+fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A42b3eee9-f6a3-4169-99ef-ed388f46d172"), stringsAsFactors = FALSE, header = TRUE) 
 ```
 
 
@@ -387,7 +387,7 @@ names(fish.all.m)
 
 # Export
 ```{r}
-write.csv(fish.all.m, "../Data/fish_mass_2018_derived.csv", row.names = FALSE)
+#write.csv(fish.all.m, "../Data/fish_mass_2018_derived.csv", row.names = FALSE)
 ```
 
 
