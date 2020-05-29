@@ -1,0 +1,66 @@
+---
+title: "Eelgrass_density_2017"
+author: "Lia Domke"
+date: "5/28/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Preparing data for archival in KNB. Data has been entered and QA/QC'd and saved in csv format. These data are from field season 2017 and include data from 21 sites across the western coast of Prince of Wales Island, AK. In seagrass meadows, 8 0.25 m2 quadrats were placed along a 100 m transect that ran perpendicular to shore at a tidal elevation between -0.5 and -0.76 m MLLW. The transect was at least 5 m (linear distance) below the upper edge of the eelgrass bed. In each quadrat, we first assessed and recorded the percent cover of macroalgae and epiphytes (two-dimensional plane within quadrat), we then counted the number of eelgrass shoots and flowering eelgrass shoots so that density could later be calculated.
+
+In this script, we want to include only the data recorded from the quadrat measurements and create a clean ouput template to easier combine with future field season eelgrass density collections. 
+
+Steps:
+1. read in data
+2. clean column names
+3. combine with universal names
+4. write out clean csv
+
+```{r libraries}
+library(dplyr)
+library(lubridate)
+```
+
+# 1. read in data
+```{r data}
+eg.tran <- read.csv("Data/Eelgrass_metrics/seagrass_transect_2017_RAW.csv", stringsAsFactors = FALSE,
+                    header = TRUE, na.strings=c("","NA"))
+
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
+```
+
+# 2. clean names
+```{r}
+str(eg.tran)
+unique(eg.tran$site) # 21 sites
+unique(eg.tran$quadrat) # exactly 8 quadrats sampled
+
+eg.tran <- eg.tran %>% # rename columns, size of quadrat included in metadata in KNB
+  rename(macroalgae_cover = macroalgae_cover_0.25msq, 
+         diatom_cover = diatom_cover_0.25msq,
+         eelgrass_shoots = eelgrass_shoots_0.25msq,
+         flowering_shoots = flowering_shoots_0.25msq)
+```
+
+# 3. universal names
+```{r}
+# Combine with universal naming system that has consistent names between years. 
+eg.tran <- eg.tran %>%
+  left_join(site_names, by = c("site" = "site_2017")) %>%
+  dplyr::select(site, bay_code, bay_sample, place_name, latitude, longitude, habitat, 
+                date, YYYYMMDD, primary_observer, secondary_observer, start_time, end_time, 
+                depth_m, quadrat, macroalgae_cover, diatom_cover, eelgrass_shoots, 
+                flowering_shoots, freshwater, sediment_description, general_description, notes,
+                -c(siteID_NOAA, site_2018, site_2019, study))
+```
+
+# 4. write out csv
+```{r}
+write.csv(eg.tran, "Data/Eelgrass_metrics/seagrass_transect_2017_clean.csv")
+```
+
