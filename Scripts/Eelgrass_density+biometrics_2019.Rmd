@@ -1,7 +1,7 @@
 ---
-title: "Eelgrass_density+biometrics_2018"
+title: "Eelgrass_density+biometrics_2019"
 author: "Lia Domke"
-date: "6/2/2020"
+date: "6/3/2020"
 output: html_document
 editor_options: 
   chunk_output_type: console
@@ -38,6 +38,7 @@ Then using both files can calculate quadrat level information:
 Merge into a single dataframe with all the data calculated at the transect level
 Write out into a single csv
 
+
 ## Libraries
 Processing of this data will require the following
 ```{r libraries}
@@ -57,15 +58,65 @@ st.er <- function(x, na.rm = TRUE) {
 ## Data to import
 We want to combine a few sets of data here so that we can run meaning full analyses. These are site characterization data, eelgrass transect data, eelgrass biometrics data, sea otter index data, and site nutirent data.
 ```{r}
-eg.bio <- read.csv("Data/Eelgrass_metrics/Eelgrass_biometrics_2018_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
+eg.bio <- read.csv("Data/Eelgrass_metrics/Eelgrass_biometrics_2019_clean.csv", header = TRUE, stringsAsFactors = FALSE)
 
-eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_2018_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
+eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_2019_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
 
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 ```
 
+## Cleaning
+```{r cleaning}
+eg.tran %>%  
+  anti_join(site_names, by = c("site" = "site_2019")) %>%
+  distinct(site) # site names that need to be fixed
+
+trimws(eg.tran$site, which = "both") # trim trailing white space
+eg.tran$site <- as.factor(eg.tran$site) # set as factor in order to change
+levels(eg.tran$site)[levels(eg.tran$site)=="Refugio"] <- "Port Refugio"
+levels(eg.tran$site)[levels(eg.tran$site)=="Nossuk"] <- "Nossuk Bay"
+levels(eg.tran$site)[levels(eg.tran$site)=="Shinaku"] <- "Shinaku Inlet"
+eg.tran$site <- as.character(eg.tran$site) # change back into character
+
+# check the naming
+eg.tran %>%  
+  anti_join(site_names, by = c("site" = "site_2019")) %>%
+  distinct(site) # none!
+```
+
+Need to add columns for primary and secondary sediment scores (in numeric form)
+M<SM<MS<S<P<G<C<B<R
+```{r}
+eg.tran$primary_sediment_score <- ifelse(eg.tran$primary_sediment == "M", paste("1"), 
+                                         ifelse(eg.tran$primary_sediment == "SM", paste("2"),
+                                                ifelse(eg.tran$primary_sediment == "MS", paste("3"),
+                                                ifelse(eg.tran$primary_sediment == "S", paste("4"),
+                                                ifelse(eg.tran$primary_sediment == "CS", paste("5"),
+                                                ifelse(eg.tran$primary_sediment == "P", paste("6"),
+                                                ifelse(eg.tran$primary_sediment == "G", paste("7"),
+                                                ifelse(eg.tran$primary_sediment == "C", paste("8"),
+                                                ifelse(eg.tran$primary_sediment == "B", paste("9"),
+                                                ifelse(eg.tran$primary_sediment == "R", paste("10"),"NA"))))))))))
+
+eg.tran$secondary_sediment_score <- ifelse(eg.tran$secondary_sediment == "M", paste("1"), 
+                                         ifelse(eg.tran$secondary_sediment == "SM", paste("2"),
+                                                ifelse(eg.tran$secondary_sediment == "MS", paste("3"),
+                                                ifelse(eg.tran$secondary_sediment == "S", paste("4"),
+                                                ifelse(eg.tran$secondary_sediment == "CS", paste("5"),
+                                                ifelse(eg.tran$secondary_sediment == "P", paste("6"),
+                                                ifelse(eg.tran$secondary_sediment == "G", paste("7"),
+                                                ifelse(eg.tran$secondary_sediment == "C", paste("8"),
+                                                ifelse(eg.tran$secondary_sediment == "B", paste("9"),
+                                                ifelse(eg.tran$secondary_sediment == "R", paste("10"),"NA"))))))))))
+
+eg.tran$primary_sediment_score <- as.numeric(eg.tran$primary_sediment_score)
+eg.tran$secondary_sediment_score <- as.numeric(eg.tran$secondary_sediment_score)
+str(eg.tran)
+```
+
 ## Calculations
 Subtracting out foil weights to get clean dry weights. To convert to m-sq eelgrass data should be multiplied by 56.588.
+
 ```{r calcs}
 ### Biometrics ###
 ## Shoot mass ##
@@ -122,12 +173,19 @@ eg.tran$flowering_shoots_m <- eg.tran$flowering_shoots_0.25msq * 4
 
 ## Combine full data
 ```{r full combine}
-eg.tran <- eg.tran[, c(1:20, 24:25)] # remove extra columns
 
-dat.full <- merge(eg.tran, eg.bio[, c(1, 6:45)], by = c("site", "quadrat"))
+dat.full <- eg.tran %>%
+  left_join(eg.bio, by = c("site" = "place_name", "quadrat")) %>%
+  unite("notes", notes.x, notes.y, sep = " ") %>%
+  dplyr::rename(YYYYMMDD = YYYYMMDD.y) %>%
+  dplyr::select(-c(YYYYMMDD.x, X))
 
 ## Reduce to only include columns used in analyses  - like get rid of pantins mass ##
-dat.full <- dat.full[, c(1:12, 17:22, 28, 32, 36, 40, 44, 49:61)]
+dat.full <- dat.full %>%
+  select(-c(shoot_foil_mass_g, shoot_dw_foil_mass_g, pad_pre_mass_g, pad_dw_mass_g, 
+            idotea_dw_foil_mass_g, idotea_dw_foil_mass_g, limpet_foil_mass_g, limpet_dw_foil_mass_g,
+            caprellid_foil_mass_g, caprellid_dw_foil_mass_g, amphipod_foil_mass_g, amphipod_dw_foil_mass_g,
+            gastropod_foil_mass_g, gastropod_dw_foil_mass_g))
 ```
 
 
@@ -136,7 +194,7 @@ Caculate mean values of above for each site.
 ```{r site sum}
 ### Biometrics ###
 site.bio <- eg.bio %>% 
-  group_by(site) %>% 
+  group_by(place_name) %>% 
   summarise(eg_shoot_mass = mean(shoot_mass),
             eg_shoot_mass_se = st.er(shoot_mass, na.rm = TRUE),
             eg_shoot_mass_m = mean(shoot_mass_m),
@@ -188,18 +246,22 @@ site.tran <- eg.tran %>%
 ## Combine
 Combine summarized data
 ```{r comb}
-dat <- merge(unique(eg.tran[,c(1:9, 11)]), site.tran, by = "site")
-dat <- merge(dat, site.bio, by = "site")
+dat <- eg.tran %>%
+  dplyr::select(site, date, YYYYMMDD, primary_observer, secondary_observer, start_time, end_time, depth_m) %>%
+  left_join(site.tran, by = "site") %>%
+  distinct()
+
+dat <- left_join(dat, site.bio, by =c("site" = "place_name"))
 
 # include universal naming convention and lat/long
 dat <- dat %>%
-  left_join(site_names, by = c("site" = "site_2018")) %>%
-  dplyr::rename(latitude = latitude.x, longitude = longitude.x, place_name = place_name.y) %>%
-  dplyr::select(-c(study, habitat, freshwater, sediment_description, general_description, place_name.x, latitude.y, longitude.y, site_2017, site_2019, siteID_NOAA)) %>%
+  left_join(site_names, by = c("site" = "site_2019")) %>%
+  dplyr::select(-c(study, habitat, freshwater, sediment_description, general_description, site_2017, site_2018, siteID_NOAA)) %>%
   dplyr::select(site, bay_code, bay_sample, place_name, date, YYYYMMDD, latitude, longitude, everything())
 ```
 
 ## Export
 ```{r export}
-write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2018_derived", row.names = FALSE)
+write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2019_derived", row.names = FALSE)
 ```
+  
