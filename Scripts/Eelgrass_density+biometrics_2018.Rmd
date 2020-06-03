@@ -1,0 +1,205 @@
+---
+title: "Eelgrass_density+biometrics_2018"
+author: "Lia Domke"
+date: "6/2/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Based on scripts originally created by Wendel Raymond. 
+This script takes data from two csv files:
+1. Quadrat density and % cover data from a 100 m transect placed through seagrass meadows. 
+These data are from field season 2018 and include data from 21 sites across the western coast of Prince of Wales Island, AK. In seagrass meadows, 8, 0.25 m2 quadrats were placed along a 100 m transect that ran perpendicular to shore at a tidal elevation between -0.5 and -0.76 m MLLW. The transect was at least 5 m (linear distance) below the upper edge of the eelgrass bed. In each quadrat, we first assessed and recorded the percent cover of macroalgae and epiphytes (two-dimensional plane within quadrat), we then counted the number of eelgrass shoots and flowering eelgrass shoots so that density/m2 could later be calculated.
+
+2. Eelgrass biometric, algal epiphytes, and epifauna. 
+While the quadrats/transects were still underwater, at those 8 quadrats we sampled eelgrass, epiphytes, and epifauna. Using a metal ring (diameter = 15 cm) with an attached mesh bag we inverted the ring and bag over live seagrass shoots. We carefully pulled the eelgrass out by its roots while keeping it under the ring and directed it into the mesh bag. This way the samples in the bag represented an area of 0.0176 m^2 
+For more detailed methods see metadata on KNB. 
+
+In the lab, each bag was inverted and gently washed to remove epifauna that may have transfered to the bag. Epifauna were seperated into taxonomic groups (i.e. isopods, gammarid amphipods, caprellid amphipods, limpets, and other gastropods). We measured fresh weights for each taxonomic group and then placed the group of epifauna from each quadrat into pre-weighed foils and then were dried. The raw csv that is read in includes the freshweights, foil weights, and dried weights of epifauna and foil. 
+
+For the eelgrass within the bag, rhizomes were removed, but NO underground biomass was calculated. All leaves from each of the shoots were removed and whiped clean of epiphytes using a pre-weighed and dried cotton pad (1 pad/quadrat). After leaves were whiped, they were weighed and then dried.  
+Leaves, rhizomes, epiphytes, and epifauna were all dried for at least 18 hours at 60 degrees C and weighed to the nearest 0.0001 g
+
+Based on these two csv files the following will be calculated:
+For the first file (eg.tran)
+ 
+For the second file (eg.bio)  
+
+
+Then using both files can calculate quadrat level information:
+
+Then calculate transect level data
+      
+  4.2 merge into a single dataframe with all the data calculated at the transect level
+  4.3 write out into a single csv
+
+## Libraries
+Processing of this data will require the following
+```{r libraries}
+library(dplyr)
+library(ggplot2)
+```
+
+## Functions
+```{r standar error funciton}
+## standard error of the mean fucntion to use later ##
+st.er <- function(x, na.rm = TRUE) {
+  stopifnot(is.numeric(x))
+  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
+}
+```
+
+## Data to import
+We want to combine a few sets of data here so that we can run meaning full analyses. These are site characterization data, eelgrass transect data, eelgrass biometrics data, sea otter index data, and site nutirent data.
+```{r}
+eg.bio <- read.csv("Data/Eelgrass_metrics/Eelgrass_biometrics_2018_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
+
+eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_2018_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
+
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
+```
+
+## Calculations
+Subtracting out foil weights to get clean dry weights. To convert to m-sq eelgrass data should be multiplied by 56.588.
+```{r calcs}
+### Biometrics ###
+## Shoot mass ##
+eg.bio$shoot_mass <- (eg.bio$shoot_dw_foil_mass_g - eg.bio$shoot_foil_mass_g)
+
+## Shoot mass per meter ##
+eg.bio$shoot_mass_m <- (eg.bio$shoot_mass * 56.588)
+
+## Epiphyte mass ##
+eg.bio$epi_mass <- eg.bio$pad_dw_mass_g - eg.bio$pad_pre_mass_g
+
+## Epiphyte load , epiphyte/shoot_mass ##
+eg.bio$epi_load <- eg.bio$epi_mass / eg.bio$shoot_mass
+
+## Idotea mass ##
+eg.bio$idotea_mass <- eg.bio$idotea_dw_foil_mass_g - eg.bio$idotea_foil_mass_g
+
+## Idotea load, idotea/shoot_mass ##
+eg.bio$idotea_load <- eg.bio$idotea_mass / eg.bio$shoot_mass
+
+## Limpet mass ##
+eg.bio$limpet_mass <- eg.bio$limpet_dw_foil_mass_g - eg.bio$limpet_foil_mass_g
+
+## Limpet load, limpet/shoot_mass ##
+eg.bio$limpet_load <- eg.bio$limpet_mass / eg.bio$shoot_mass
+
+## Caprellid mass ##
+eg.bio$caprellid_mass <- eg.bio$caprellid_dw_foil_mass_g - eg.bio$caprellid_foil_mass_g
+
+## Amphipod mass ##
+eg.bio$amphipod_mass <- eg.bio$amphipod_dw_foil_mass_g - eg.bio$amphipod_foil_mass_g
+
+## Gastropod mass ##
+eg.bio$gastropod_mass <- eg.bio$gastropod_dw_foil_mass_g - eg.bio$gastropod_foil_mass_g
+
+## Convert NA to 0 ##
+eg.bio[is.na(eg.bio)] <- 0
+
+## Total grazer mass ##
+eg.bio$grazer_mass <- rowSums(eg.bio[1:48, 37:41])
+
+## Grazer load, grazer/shoot_mass ##
+eg.bio$grazer_load <- eg.bio$grazer_mass / eg.bio$shoot_mass 
+
+### Area/Transect ###
+## Eeglrass shoots m2 ##
+eg.tran$eelgrass_shoots_m <- eg.tran$eelgrass_shoots_0.25msq * 4
+
+## Eelgrass flowering shoots m2 ##
+eg.tran$flowering_shoots_m <- eg.tran$flowering_shoots_0.25msq * 4
+
+```
+
+
+## Combine full data
+```{r full combine}
+eg.tran <- eg.tran[, c(1:20, 24:25)] # remove extra columns
+
+dat.full <- merge(eg.tran, eg.bio[, c(1, 6:45)], by = c("site", "quadrat"))
+
+## Reduce to only include columns used in analyses  - like get rid of pantins mass ##
+dat.full <- dat.full[, c(1:12, 17:22, 28, 32, 36, 40, 44, 49:61)]
+```
+
+
+## Summarize by site
+Caculate mean values of above for each site.
+```{r site sum}
+### Biometrics ###
+site.bio <- eg.bio %>% 
+  group_by(site) %>% 
+  summarise(eg_shoot_mass = mean(shoot_mass),
+            eg_shoot_mass_se = st.er(shoot_mass, na.rm = TRUE),
+            eg_shoot_mass_m = mean(shoot_mass_m),
+            eg_shoot_mass_m_se = st.er(shoot_mass_m, na.rm = TRUE),
+            epiph_mass = mean(epi_mass),
+            epiph_mass_se = st.er(epi_mass, na.rm = TRUE),
+            epiph_load = mean(epi_load),
+            epiph_load_se = st.er(epi_load, na.rm = TRUE),
+            ido_mass = mean(idotea_mass, na.rm = TRUE),
+            ido_mass_se = st.er(idotea_mass, na.rm = TRUE),
+            ido_load = mean(idotea_load),
+            ido_load_se = st.er(idotea_load, na.rm = TRUE),
+            limp_mass = mean(limpet_mass, na.rm = TRUE),
+            limp_mass_se = st.er(limpet_mass, na.rm = TRUE),
+            limp_load = mean(limpet_load),
+            limp_load_se = st.er(limpet_load, na.rm = TRUE),
+            capr_mass = mean(caprellid_mass, na.rm = TRUE),
+            capr_mass_se = st.er(caprellid_mass, na.rm = TRUE),
+            amph_mass = mean(amphipod_mass, na.rm = TRUE),
+            amph_mass_se = st.er(amphipod_mass, na.rm = TRUE),
+            gast_mass = mean(gastropod_mass, na.rm = TRUE),
+            gast_mass_se = st.er(gastropod_mass, na.rm = TRUE),
+            all_crust_mass = mean((idotea_mass + caprellid_mass + amphipod_mass), na.rm = TRUE),
+            all_crust_mass_se = st.er((idotea_mass + caprellid_mass + amphipod_mass), na.rm = TRUE),
+            all_gast_mass = mean((limpet_mass + gastropod_mass), na.rm = TRUE),
+            all_gast_mass_se = st.er((limpet_mass + gastropod_mass), na.rm = TRUE),
+            graz_mass = mean(grazer_mass),
+            graz_mass_se = st.er(grazer_mass, na.rm = TRUE),
+            graz_load = mean(grazer_load),
+            graz_load_se = st.er(grazer_load, na.rm = TRUE))
+
+## Transect ##
+site.tran <- eg.tran %>% 
+  group_by(site) %>% 
+  summarise(macro_cover = mean(macroalgae_cover_0.25msq, na.rm = TRUE),
+            macro_cover_se = st.er(macroalgae_cover_0.25msq, na.rm = TRUE),
+            diatom_cover = mean(diatom_cover_0.25msq, na.rm = TRUE),
+            diatom_cover_se = st.er(diatom_cover_0.25msq, na.rm = TRUE),
+            eelgrass_shoot_dens = mean(eelgrass_shoots_m, na.rm = TRUE),
+            eelgrass_shoot_dens_se = st.er(eelgrass_shoots_m, na.rm = TRUE),
+            flowering_shoot_dens = mean(flowering_shoots_m, na.rm = TRUE),
+            flowering_shoot_dens_se = st.er(flowering_shoots_m, na.rm = TRUE),
+            sed_prime = mean(primary_sediment_score),
+            sed_prime_se = st.er(primary_sediment_score),
+            sed_second  = mean(secondary_sediment_score),
+            sed_second_se = st.er(secondary_sediment_score))
+```
+
+## Combine
+Combine summarized data
+```{r comb}
+dat <- merge(unique(eg.tran[,c(1:9, 11)]), site.tran, by = "site")
+dat <- merge(dat, site.bio, by = "site")
+
+# include universal naming convention and lat/long
+dat <- dat %>%
+  left_join(site_names, by = c("site" = "site_2018")) %>%
+  dplyr::rename(latitude = latitude.x, longitude = longitude.x, place_name = place_name.y) %>%
+  dplyr::select(-c(study, habitat, freshwater, sediment_description, general_description, place_name.x, latitude.y, longitude.y, site_2017, site_2019, siteID_NOAA)) %>%
+  dplyr::select(site, bay_code, bay_sample, place_name, date, YYYYMMDD, latitude, longitude, everything())
+```
+
+## Export
+```{r export}
+write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2018_derived", row.names = FALSE)
+```
