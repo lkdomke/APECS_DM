@@ -1,0 +1,54 @@
+---
+title: "Eelgrass_biometrics_cleaning_2019"
+author: "Lia Domke"
+date: "6/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r data}
+eg.bio <- read.csv("Data/Eelgrass_metrics/Eelgrass_biometrics_2019_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
+```
+
+```{r data checking}
+str(eg.bio)
+unique(eg.bio$place_name) # what are the place names?
+eg.bio %>%  
+  anti_join(site_names, by = c("place_name" = "site_2019")) %>%
+  distinct(place_name) # list of names that are missing from the eg.bio dataframe, these will need to be fixed
+```
+
+```{r data cleaning}
+# remove empty columns
+eg.bio <- eg.bio %>%
+  dplyr::select(2:32)
+
+# rename place name levels
+trimws(eg.bio$place_name, which = "both") # trim trailing white space
+eg.bio$place_name <- as.factor(eg.bio$place_name) # set as factor in order to change
+levels(eg.bio$place_name)[levels(eg.bio$place_name)=="North Fish Egg Island -- seagrass"] <- "North Fish Egg"
+levels(eg.bio$place_name)[levels(eg.bio$place_name)=="Nossuk"] <- "Nossuk Bay"
+levels(eg.bio$place_name)[levels(eg.bio$place_name)=="Shinako"] <- "Shinaku Inlet"
+
+eg.bio %>%
+  anti_join(site_names, by = c("place_name" = "site_2019")) %>%
+  distinct(place_name) # wooo they all match! 
+```
+
+```{r NA -> 0}
+## Convert NA to 0 ##
+eg.bio[is.na(eg.bio)] <- 0
+```
+
+```{r write out}
+write.csv(eg.bio, "Data/Eelgrass_metrics/Eelgrass_biometrics_2019_clean.csv")
+```
+
