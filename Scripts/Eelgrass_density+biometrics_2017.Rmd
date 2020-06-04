@@ -71,16 +71,19 @@ library(ggplot2)
 
 ```{r data}
 # Site related information
-eg.site <- read.csv("Data/Eelgrass_metrics/seagrass_site_2017_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
+eg.site <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A2c815154-9efc-44bd-b14c-be09f47f0ac1",
+                        method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", 
              method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 
 # Eelgrass Biometrics (lab data)
-eg.bio <- read.csv("Data/Eelgrass_metrics/seagrass_biometrics_CLEAN.csv", stringsAsFactors = FALSE, header = TRUE)
+eg.bio <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac79aa46e-5e20-4559-86e5-64166af2cf94",
+                       method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 
 # Eelgrass Transect (quadrat level)
-eg.tran <- read.csv("Data/Eelgrass_metrics/seagrass_transect_2017_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
+eg.tran <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A5e946e41-4f5f-4499-9969-766f01113971",
+                        method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 ```
 
 ```{r se function}

@@ -58,11 +58,14 @@ st.er <- function(x, na.rm = TRUE) {
 ## Data to import
 We want to combine a few sets of data here so that we can run meaning full analyses. These are site characterization data, eelgrass transect data, eelgrass biometrics data, sea otter index data, and site nutirent data.
 ```{r}
-eg.bio <- read.csv("Data/Eelgrass_metrics/Eelgrass_biometrics_2019_clean.csv", header = TRUE, stringsAsFactors = FALSE)
+eg.bio <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abd608121-ba05-4591-b3ff-993fc955a423", 
+                       method = "libcurl"), header = TRUE, stringsAsFactors = FALSE)
 
-eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_2019_RAW.csv", header = TRUE, stringsAsFactors = FALSE)
+eg.tran <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A93f3f8ca-36ad-40cb-9e8d-05f6eacf50db",
+                        method = "libcurl"), header = TRUE, stringsAsFactors = FALSE)
 
-site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b",
+                           method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 ```
 
 ## Cleaning
