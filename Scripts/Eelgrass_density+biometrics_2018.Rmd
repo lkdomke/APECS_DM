@@ -203,7 +203,7 @@ site.tran <- eg.tran %>%
 Combine summarized data
 ```{r comb}
 dat <- merge(unique(eg.tran[,c(1:9, 11)]), site.tran, by = "site")
-dat <- merge(dat, site.bio, by = "site")
+dat <- left_join(dat, site.bio, by = ("site" = "place_name"))
 
 # include universal naming convention and lat/long
 dat <- dat %>%
@@ -215,5 +215,5 @@ dat <- dat %>%
 
 ## Export
 ```{r export}
-write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2018_derived", row.names = FALSE)
+write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2018_derived.csv", row.names = FALSE)
 ```

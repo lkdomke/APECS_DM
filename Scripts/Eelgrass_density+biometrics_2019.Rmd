@@ -275,6 +275,6 @@ dat <- dat %>%
 
 ## Export
 ```{r export}
-write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2019_derived", row.names = FALSE)
+write.csv(dat, "Data/Eelgrass_metrics/eelgrass_and_grazer_2019_derived.csv", row.names = FALSE)
 ```
   
