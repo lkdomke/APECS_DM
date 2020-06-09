@@ -64,7 +64,7 @@ eg.bio <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3
 eg.tran <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A93f3f8ca-36ad-40cb-9e8d-05f6eacf50db",
                         method = "libcurl"), header = TRUE, stringsAsFactors = FALSE)
 
-site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b",
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A87744ced-530b-4bae-809e-ff1012c7ae72",
                            method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 ```
 
