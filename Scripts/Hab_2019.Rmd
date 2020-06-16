@@ -1,0 +1,124 @@
+---
+title: "Hab_2019"
+author: "Lia Domke"
+date: "6/10/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In 2019, at the same sites we conducted beach seines (see another KNB data package: https://knb.ecoinformatics.org/view/urn:uuid:04a27970-a7e7-46c8-a16b-e277a76c73c5), we also recorded data about the condition of the habitat we were seining in. We collected data from two types of habitat (eelgrass and understory kelp). 
+
+At the eelgrass (Zostera marina) sites, we sampled eelgrass using 5 haphazardly placed quadrats (0.5 x 0.5 m) in similar area/tidal depth as where the seine net passed through. At those 5 quadrats, we counted total number of flowering and non-flowering shoots in the quadrat, and then measured the total maximum length of 15 randomly selected eelgrass plants. 
+
+At the understory kelp sites (primarily laminaria and saacharina with *no* canopy forming kelps like nereocystsis or macrocystsis), we sampled the understory kelp using 5 haphazardly placed quadrats (0.5 x 0.5 m) in a similar area/tidal depth as where the seine net passed through. At those 5 quadrats, we estimated percent cover (%/0.25m2) of algae. In addition to percent cover, the dominant species was noted. 
+After estimating percent cover, all attached algae were collected and brought back to the lab for processing. 
+
+The algae was then identified to the lowest taxonomic level, generally species or genus level, and weighed. If the algae had a distinct holdfast and blade, we measured the total length of those individuals as well. 
+
+These data are composed of 3 xlsx files with keys to join the files together:
+hab_quad -- has the quadrat level habitat data, including density, total algae biomass, and site and habitat type information
+
+hab_lng -- has the lengths for Zostera marina and any measured algae lengths. 
+
+hab_biom -- has the biomass and percent cover for each measured species. 
+
+This script is primarily for basic data checking, to make sure there aren't any errors. 
+
+```{r libraries}
+library(dplyr)
+library(readxl)
+```
+
+```{r data}
+hab_quad <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 1)
+hab_lng <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 2)
+hab_biom <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 3)
+```
+
+Functions
+```{r standar error funciton}
+## standard error of the mean fucntion to use later ##
+st.er <- function(x, na.rm = TRUE) {
+  stopifnot(is.numeric(x))
+  return(sd(x, na.rm = na.rm)/sqrt(length(x)))
+}
+```
+
+Mainly need to do some basic data checking to make sure that the data connect properly and don't have any errors. 
+```{r}
+str(hab_quad)
+str(hab_lng)
+str(hab_biom)
+```
+
+
+```{r}
+unique(hab_quad$site) # 25 sites, correct
+unique(hab_lng$quadrat_ID) # 125 quadrats, correct
+length(unique(hab_biom$quadrat_ID)) # quadrats from 25 sites, correct
+unique(hab_quad$date)
+```
+
+Change seagrass to eelgrass
+```{r}
+hab_quad$habitat <- as.factor(hab_quad$habitat)
+levels(hab_quad$habitat)[levels(hab_quad$habitat)=="seagrass"] <- "eelgrass"
+hab_quad$habitat <- as.character(hab_quad$habitat)
+```
+
+Rounding issue
+```{r}
+str(hab_quad)
+hab_quad$total_biomass <- as.numeric(hab_quad$total_biomass)
+round(hab_quad$total_biomass, 1)
+
+str(hab_biom) # change the rest of the columns from character to numeric
+hab_biom$'%_cover' <- as.numeric(hab_biom$'%_cover')
+hab_quad$density <- as.numeric(hab_quad$density)
+hab_quad$flowering_shoots <- as.numeric(hab_quad$flowering_shoots)
+```
+
+Summarize data to site level
+```{r}
+site_level <- hab_quad %>%
+  group_by(site) %>%
+  mutate(avg.biom = mean(total_biomass)) %>%
+  mutate(biom.se = st.er(total_biomass)) %>%
+  mutate(avg.density = mean(density)) %>%
+  mutate(density.se = st.er(density)) %>%
+  mutate(avg.flowering = mean(flowering_shoots)) %>%
+  mutate(flowering.se = mean(flowering_shoots)) %>%  
+  dplyr::select(-c(density, flowering_shoots, total_biomass, quadrat, quadrat_ID, notes)) %>%
+  distinct()
+```
+
+Calculate quadrat level
+- calculate average length per species per quadrat
+```{r}
+
+quad_level <- hab_lng %>%
+  group_by(quadrat_ID, species) %>% # average/se by species and quadrat
+  mutate(avg.length  = mean(length)) %>%
+  mutate(length.se = st.er(length)) %>%
+  dplyr::select(-c(length, plant_ID)) %>%
+  distinct() %>%
+  left_join(hab_biom) %>% # left join with biomass/% cover measurements
+  dplyr::select(-c(species_by_quadrat_ID)) %>%
+  full_join(hab_quad) %>% # join with other quadrat data (total biomass)
+  dplyr::select(c(site, date, YYYYMMDD, habitat, quadrat_ID, species, avg.length, length.se,
+                  weight, '%_cover', total_biomass, density, flowering_shoots)) # change order of columns
+  
+```
+
+Write out files as csvs for upload to KNB (in their original format!)
+```{r}
+write.csv(hab_quad, "Data/Habitat_data/hab_quadrat_2019.csv")
+write.csv(hab_lng, "Data/Habitat_data/hab_length_2019.csv")
+write.csv(hab_biom, "Data/Habitat_data/hab_species_biomass_2019.csv")
+```
+
