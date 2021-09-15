@@ -1,0 +1,275 @@
+---
+title: "seine_cleaning_2021"
+author: "Lia Domke"
+date: "9/13/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Data cleaning for beach seine data
+
+As apart of a project studying eelgrass ecosystems in southern Southeast Alaska, beach seines were done along the outer coast of Prince of Wales Island and in the vicinity of Ketchikan (Gravina Island and Annette Island). A 37-m variable mesh net and a 18ft skiff was used to set a 'round haul' beach seine through eelgrass meadows and understory kelp. Fish were identified to the finest taxonomic level, enumerated, and measured either total length for most fish species or to fork length if the caudal fin was forked (e.g. salmon, shiner perch). After 30 measured fish, fish were no longer measured and lengths will be extrapolated from the 30 measured fish. For some fish (like sticklebacks and shiner perch) were there were TWO DISTINCT size classes (juveniles and adults) 30 fish from each approximate age class were measured and fish counted but unmeasured were classified as *large* or *small* in the notes section of the csv files or the counts included in a seperate column (unmeasured_sm). 
+
+This script is to clean the *dataset from 2021* of the eelgrass-associated and understory kelp associated fish community. The 2021 seines occured between June, July, and August and happened at sites that were previously seined in the 1990s by NMFS and 6 monitoring sites that have been seined yearly in July since 2020 (and seined 2017-2019 too just not in July). These sites were previously seined as part of the NOAA Nearshore Atlas of Fishes study that occured all throughout Alaska between 1998-2011. See  Johnson et al., 2012 or [here](https://www.fisheries.noaa.gov/alaska/habitat-conservation/nearshore-fish-atlas-alaska) for more information
+
+This script will:
+
+1. Data checking 2021 seines and adjusting dataframe appropriately
+2. Classify invertebrates and vertebrates so that only fish can be filtered
+3. Convert unmeasured fish to *length measurements*
+4. Convert length data to *biomass*
+5. Convert date to julian day and add year column
+6. Change site_code to new naming scheme that includes two column codes
+
+```{r libraries}
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(ggplot2)
+```
+
+Read in data
+```{r data}
+# 2021 seine data
+# eventually replace with knb url when the raw data file is uploaded
+seine21 <- read.csv("../2021_data/fish_beach_seine_2021_MASTER_9-3-21.csv", stringsAsFactors = FALSE, header = TRUE)
+
+# species names list
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"), stringsAsFactors = FALSE, header = TRUE)
+
+# site names (from knb 9/14/21 - doesn't have up to date sites)
+site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"), stringsAsFactors = FALSE, header = TRUE)
+
+# fish length to width
+fishLW <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A42b3eee9-f6a3-4169-99ef-ed388f46d172"), stringsAsFactors = FALSE, header = TRUE) 
+```
+
+# Step 1. Data checking
+
+## Basic data checking
+```{r}
+glimpse(seine21)
+
+# Look for data entry mistake where there are multiple dates associated with one site/sampling event
+unique(seine21[,c("place_name", "habitat", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")]) # all good
+
+# Check for any mistakes with species code entry
+unique(seine21$sp_code) # 64 unique species - including invertebrates
+
+# Change several species code entries so that we can make length to width 
+# Make species code a factor first
+seine21$sp_code <- as.factor(seine21$sp_code)
+
+# change SCULSCA scalyhead sculpin, should be classified with Artedius sp.
+# This is because fish within the Artedius genus are hard to classify to species level. 
+# Sometimes 
+levels(seine21$sp_code)[levels(seine21$sp_code)=="SCULSCA"] <- "UNARTE"
+
+# roughback got entered with two species codes SCULRBCK -> SCULRGH
+levels(seine21$sp_code)[levels(seine21$sp_code)=="SCULRGH"] <- "SCULRBCK"
+
+# Also have to repeat this for the fishLW dataframe
+fishLW$sp_code <- as.factor(fishLW$sp_code)
+levels(fishLW$sp_code)[levels(fishLW$sp_code)=="SCULRGH"] <- "SCULRBCK"
+
+
+# change LORDBI -> UNLORD b/c difficult to impossible to differenciate from Red irish lord
+#levels(seine$sp_code)[levels(seine$sp_code)=="LORDBI"] <- "UNLORD"
+
+levels(seine21$sp_code)[levels(seine21$sp_code)=="UNSOLE"] <- "UNFLAT"
+levels(seine21$species_common)[levels(seine21$species_common)=="Unidentified sole"] <- "Juvenile flatfish"
+
+# change both sp_code columns back to characters
+seine21$sp_code <- as.character(seine21$sp_code)
+fishLW$sp_code <- as.character(fishLW$sp_code)
+
+# check
+unique(seine21$sp_code) #Now 63 instead of 64 species
+anti_join(seine21, sp_names, by = c("sp_code" = "SpCode"))
+# Note: 
+seine <- seine21 %>%
+  filter(taxon == "vertebrate") %>%
+  unite(bay_ID, bay_code:bay_sample)
+nonmatch1 <- anti_join(seine, fishLW, by = c("sp_code" = "sp_code"))
+unique(nonmatch1$sp_code) # There a few more fish w/o length-weight relationship will be dealt with below.
+
+# make sure there are no "Falses" in the data checking column (leftover from QAQC in entry)
+unique(seine$same) # only true good
+# remove QAQC columns
+seine <- dplyr::select(seine, -c(FL_checking:same.))
+
+# remove any trailing whitespaces
+seine <- data.frame(lapply(seine, trimws), stringsAsFactors = FALSE)
+```
+
+## Seperate size classes
+In 2021 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
+
+```{r}
+# the unmeasured small were seperated from the large by seine location and species. So if a seine had both large and small individuals of a single species there is a number of unmeasured small in the 'unmeasured_sm' column. If not there wont be anything in that column just in 'unmeasured' (if more than 30 were caught)
+unique(seine$notes)
+unique(seine$unmeasured_sm)
+```
+# Size distributions
+For the two species that were subset into large and small subset what are their size distributions/frequency?
+Is there a break between the "juvenile" and "adult" size classes? 
+Three-spine Stickleback and Shiner Perch
+```{r}
+seine$fork_length <- as.numeric(seine$fork_length)
+# subset data by species
+shiner <- seine %>%
+  filter(sp_code == "PERCHSH")
+
+stickle <- seine %>%
+  filter(sp_code == "STICK3")
+
+tubesnout <- seine %>%
+  filter(sp_code == "TUBESNT")
+```
+
+Graph the size distributions of the measured fish
+```{r}
+# which sites had unmeasured small shiners 
+shiner %>%
+  filter(!is.na(unmeasured_sm)) # Bostwick and Nichols (BOST_A, NICH_A)
+
+sh <- shiner %>%
+  filter(bay_ID == "BOST_A" | bay_ID == "NICH_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length), binwidth = 1)
+
+sh + facet_wrap(~bay_ID)
+
+#bimodal graph-- looks like the distributional cut off varies by site, so we'll have to take that into account when we run this... Bost-a cut off around 80 mm and for Nich-a ~ 100
+
+stickle %>%
+  filter(!is.na(unmeasured_sm)) # Refu-a, nefi-a, shin-a, natz-a
+
+st <- stickle %>%
+  filter(bay_ID == "REFU_A" | bay_ID == "NEFI_A" |bay_ID == "SHIN_A"| bay_ID == "NATZ_A") %>%
+  ggplot() + 
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+st + facet_wrap(~bay_ID)
+# bimodial again, looks like 45 mm and below is the small cut off for three spine stickleback  woo!
+
+tubesnout %>%
+  filter(!is.na(unmeasured_sm)) # there's only one site w/ small tubes
+
+tubesnout %>%
+  filter(bay_ID == "BOST_B") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+# there were only a few large tubesnouts caught at this site and those were above ~ 100 mm 
+
+```
+
+### Fix taxon classification for trial seines
+```{r}
+# based on sp_code combine with seine data
+#seine <- seine %>%
+ # left_join(sp_names, by = c("sp_code" = "SpCode")) %>%
+#  mutate(taxon = Taxa, sex = Sex) %>%
+ # dplyr::select(bay_ID, place_name, date, YYYYMMDD, start_time, end_time, slope, tide_height, tide_time, 
+ #               species_common, species_scientific, sp_code, fork_length, unmeasured, unmeasured_sm, 
+  #              sex, notes, taxon)
+
+seine$taxon <- as.factor(seine$taxon)
+levels(seine$taxon)[levels(seine$taxon)=="fish"] <- "Vertebrata"
+
+```
+
+# Step 2. Classify taxons
+```{r}
+glimpse(seine)
+unique(seine$species_common)
+# 57 different species
+fish <- seine
+
+unique(fish$taxon)
+
+unique(fish$species_common) # only fish!
+unique(fish$bay_ID) # still have all the sites! 
+```
+
+#Step 3. Unmeasured -> measured
+This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
+
+```{r}
+#' From the raw data this script will export a file summarized by site ready for analysis. 
+#' The goal will be to summaries this data at the site level. Summaries will occur in a few different
+#' ways to prep the data for different types on analysis. There is 1 file generated here. 
+
+
+#' All we need is the beach seine data and the fish length-mass conversions. 
+#' make sure columns have appropriate character type
+
+fish$unmeasured <- as.numeric(fish$unmeasured)
+fish$fork_length <- as.numeric(fish$fork_length)
+
+fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), 
+                                    ifelse(is.na(fish$unmeasured), paste(fish$unmeasured_sm), paste(fish$unmeasured)), 1))
+
+df2 <- fish %>% # how many individual fish by site and species?
+  dplyr::summarise(total = sum(abundance)) # 11987
+
+df3 <- fish %>%
+  group_by(bay_ID, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+```
+
+## Separate measured and unmeasured fish
+### Loop for subset species
+First run a similar loop as below to calculate estimated fork lengths for the small and large subset species. 
+These include (for 2019) ONLY PERCHSH and 3SPINE and TUBESNT at a small subset of sites (vary by species)
+### 1. List of subset sites
+```{r}
+site_shiner <- c("NICH_A", "BOST_A")
+site_stick <- c("REFU_A", "NEFI_A", "SHIN_A", "NATZ_A")
+site_tube <- c("BOST_B")
+```
+
+### 2. Need to subset data by species and sites were they are subsampled
+```{r}
+ fish.stick <- fish %>%
+  filter(sp_code == "STICK3")
+
+fish.shiner <- fish %>%
+  filter(sp_code == "PERCHSH")
+
+fish.tube <- fish %>%
+  filter(sp_code == "TUBESNT")
+
+```
+
+### 3. subset by the sites where those species were subsampled
+```{r}
+fish.stick.sub <- subset(fish.stick, bay_ID %in% site_stick)
+fish.shiner.sub <- subset(fish.shiner, bay_ID %in% site_shiner)
+fish.tube.sub <- subset(fish.tube, bay_ID %in% site_tube)
+```
+
+### 4. cycle through loops (1 for different species)
+Sticklebacks first: based on distributions of known fork length we set a cut off at 45 mm 
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.st <- fish.stick.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 45)
+lg.m.st <- fish.stick.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 45)
+sm.um.st <- fish.stick.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.st <- fish.stick.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large subset")
+
+```
