@@ -219,4 +219,4 @@ dat <- bind_rows(df, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, d
 fishLW_clean2 <- rbind(fishLW_clean, dat)
 # 3. Save as a new csv
 
-write.csv(fishLW_clean2, "Data/fish_length_weight_conversions_cleaned_2021.csv", row.names = FALSE)
+#write.csv(fishLW_clean2, "Data/fish_length_weight_conversions_cleaned_2021.csv", row.names = FALSE)

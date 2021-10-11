@@ -42,8 +42,8 @@ seine21 <- read.csv("../2021_data/fish_beach_seine_2021_MASTER_9-3-21.csv", stri
 # species names list
 sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"), stringsAsFactors = FALSE, header = TRUE)
 
-# site names (from knb 9/14/21 - doesn't have up to date sites)
-site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"), stringsAsFactors = FALSE, header = TRUE)
+# site names (from local desktop, not uploaded to knb)
+site_names <- read.csv("Data/Site_metadata_allyears.csv", stringsAsFactors = FALSE, header = TRUE)
 
 # fish length to width (use this local csv because the updated LW w/ additional species isn't uploaded to knb yet)
 fishLW <- read.csv("Data/fish_length_weight_conversions_cleaned_2021.csv", stringsAsFactors = FALSE, header = TRUE) 
@@ -103,10 +103,10 @@ seine <- seine21 %>%
   filter(taxon == "vertebrate") %>%
   unite(bay_ID, bay_code:bay_sample)
 nonmatch1 <- anti_join(seine, fishLW, by = c("sp_code" = "sp_code"))
-unique(nonmatch1$sp_code) # There a few more fish w/o length-weight relationship will be dealt with below.
+unique(nonmatch1$sp_code) # There a few more fish w/o length-weight relationship will be dealt with below. All primarily generalized specices to higher than species level. 
 
 # make sure there are no "Falses" in the data checking column (leftover from QAQC in entry)
-unique(seine$same) # only true good
+unique(seine$same.) # only true good, and numerical values are the counted values-thats fine
 # remove QAQC columns
 seine <- dplyr::select(seine, -c(FL_checking:same.))
 
@@ -683,7 +683,7 @@ d.info <- d.info %>%
   dplyr::rename(bay_ID = site)
 
 ## were any species left out?
-anti_join(d.info, test, by = "sp_code") # none
+anti_join(d.info, fish.sp, by = "sp_code") # none
 
 ## Merge with original *measured* fishes ##
 d.info$fork_length <- as.numeric(d.info$fork_length)
@@ -703,7 +703,7 @@ unique(fish$sp_code) # 56 levels of fish species in the original dataframe, corr
 seine$abundance <- as.numeric(ifelse(is.na(seine$fork_length), 
                                     ifelse(is.na(seine$unmeasured), paste(seine$unmeasured_sm), paste(seine$unmeasured)), 1))
 seine %>%
-  dplyr::summarise(counts = sum(abundance)) # 11987
+  dplyr::summarise(counts = sum(abundance)) # 11994, updated with the additional perch
 
 # count by site and species
 df3 <- seine %>%
@@ -714,7 +714,7 @@ df3 <- seine %>%
 fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
 
 fish.all %>%
-  dplyr::summarise(counts = sum(abundance)) #11987, yes!
+  dplyr::summarise(counts = sum(abundance)) #11994, yes!
 
 df4 <- fish.all %>%
   group_by(bay_ID, sp_code) %>%
@@ -855,31 +855,12 @@ LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte, rock, sna
 ## Filter out UNFISH from fish.all ##
 fish.all <- fish.all %>% 
   filter(sp_code != "UNFISH") %>%
-  filter(sp_code != "UNLARV")
+  filter(sp_code != "UNLARV") # drops one fish identified as UNLARV
 
 ## Check that everything is cool ##
 unique(anti_join(fish.all, LW.master, by = "sp_code")$sp_code) # no unmatched sp_codes! awesome
 ```
 
-# Step 5. Convert date to JD and add year column
-```{r}
-fish.all.m <- fish.all.m %>% 
-  mutate(date = ymd(YYYYMMDD)) %>% # convert to date format
-  mutate(julian = yday(date)) %>% # make the date a julian day
-  mutate(year = year(date)) # make a new column with just year
-```
-
-# Step 6. Convert site names to 2-column code system
-```{r}
-fish.all.m <- fish.all.m %>% 
-  left_join(site_names, by = c("site" = "site_2019")) %>% # this needs to be changed for e/a YEAR. 
-  select(-c(site_2017, site_2018, freshwater, general_description, sediment_description, siteID_NOAA, study, notes, fork_length_cm, site, YYYYMMDD, a, b))
-
-names(fish.all.m)
-# place name gives the physical location, bay_code and bay_sample together give you each
-# unique site that was sampled. 
-
-```
 ```{r}
 # Finally join the a and b values from above with the master data and calcualte biomass.
 ## Merge a and b values ##
@@ -902,23 +883,62 @@ fish.all.m$taxon[is.na(fish.all.m$taxon)] <- "Vertebrata"
 # remove unused rows and readd in tide height
 # extra tide height from original df
 tide_h <- fish %>%
-  group_by(site) %>%
-  dplyr::select(site, tide_height) %>%
+  group_by(bay_ID) %>%
+  dplyr::select(bay_ID, tide_height) %>%
   distinct(tide_height)
 
 fish.all.m <- fish.all.m %>%
-  left_join(tide_h, by = "site") %>%
+  left_join(tide_h, by = "bay_ID") %>%
   mutate(tide_height = tide_height.x) %>%
-  dplyr::select(-c(sex, abundance, tide_height.y, tide_height.x))
+  dplyr::select(-c(tide_height.y, tide_height.x))
   
 
 ## Checking ##
 fish.site.g <- fish.all.m %>% 
-  group_by(site) %>% 
+  group_by(bay_ID) %>% 
   dplyr::summarise(site_mass_g = sum(mass_g))
 
 fish.site.g$mass_kg <- fish.site.g$site_mass_g / 1000
 
-boxplot(fish.site.g$site_mass_g)
+boxplot(fish.site.g$mass_kg ~ fish.site.g$bay_ID)
 
+```
+
+# Step 5. Convert date to JD and add year column
+```{r}
+fish.all.m <- fish.all.m %>% 
+  
+  mutate(date = ymd(YYYYMMDD)) %>% # convert to date format
+  mutate(julian = yday(date)) %>% # make the date a julian day
+  mutate(year = year(date)) # make a new column with just year
+```
+
+# Step 6. Convert site names to 2-column code system
+updated site_names file 10-11-21
+```{r}
+# convert bay_code:sample to bay_ID
+site_names <- unite(site_names, "bay_ID", bay_code:bay_sample)
+
+fish.all.m <- fish.all.m %>% 
+  left_join(site_names) %>% # this needs to be changed for e/a YEAR. 
+  select(-c(site_2017, site_2018, site_2019, freshwater, general_description,
+            sediment_description, study, fork_length_cm, YYYYMMDD, a, b))
+
+names(fish.all.m)
+# place name gives the physical location, bay_code and bay_sample together give you each
+# unique site that was sampled. 
+
+```
+
+Do some basic checks before writing out the csv
+```{r}
+unique(fish.all.m$bay_ID) # 22 sites!
+unique(fish.all.m$sp_code) # 55 species! (dropped on that was UNLARV, one individual)
+range(fish.all.m$mass_g) # makes sense there were some tiny fish. 
+```
+
+
+# Export
+```{r}
+#write.csv(fish.all.m, "Data/fish_mass_2021_derived.csv", row.names = FALSE)
 ```
