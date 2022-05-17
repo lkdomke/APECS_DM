@@ -870,7 +870,11 @@ fish.all.m <- merge(fish.all, LW.master, by = "sp_code")
 fish.all.m$fork_length_cm <- fish.all.m$fork_length / 10
 
 ## Calculate mass in g, a*FL^b ##
-fish.all.m$mass_g <- (fish.all.m$a * fish.all.m$fork_length_cm^fish.all.m$b)
+fish.all.m$mass_g <- (fish.all.m$a * (fish.all.m$fork_length_cm^fish.all.m$b))
+
+test <- fish.all.m %>%
+  group_by(fork_length, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
 
 ## some plots, cuz ya know ##
 hist(fish.all.m$mass_g)
@@ -942,3 +946,22 @@ range(fish.all.m$mass_g) # makes sense there were some tiny fish.
 ```{r}
 #write.csv(fish.all.m, "Data/fish_mass_2021_derived.csv", row.names = FALSE)
 ```
+
+Fish mass across sites and species
+```{r}
+names(fish.all.m)
+
+fish.sum.species <- fish.all.m %>%
+  group_by(species_common, species_scientific) %>%
+  dplyr::summarise(count = sum(abundance), weight_g = sum(mass_g))
+  
+fish.sum <- fish.all.m %>%
+  group_by(bay_ID) %>%
+  dplyr::summarise(count = sum(abundance), weight_kg = (sum(mass_g)/1000))
+ 
+range(fish.sum$weight_kg)
+mean(fish.sum$weight_kg)
+
+write.csv(fish.sum.species, "Data/fish21_species.csv")
+```
+
