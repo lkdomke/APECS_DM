@@ -1,4 +1,4 @@
-#' data cleaning/management for shell litter 
+#' data cleaning/management for shell litter after data combined from 2017 - 2021
 #' script created 5-12-2022
 #' Lia Domke
 #' 
@@ -10,7 +10,7 @@
 # read in data
 
 death <- read.csv("Data/seagrass_shelldeath_2017-2021_cleaned5-12-22.csv", stringsAsFactors = FALSE, header = TRUE)
-site.names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ab68d40de-091c-4d59-8e5e-1e01e64f261d"), 
+site.names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ae371e407-4886-4a29-a1f9-cec8ec375c67"), 
                        stringsAsFactors = FALSE, header = TRUE)
   
 library(tidyr)
@@ -36,7 +36,6 @@ death.sites <- death %>%
 site <- site.names %>%
   unite(bay_id, bay_code:bay_sample) %>%
   dplyr::select(c(bay_id, latitude, longitude))
-site2 <- site[-40,]
 
 # what species to be the same 
 macoma <- c("macoma sp.", "macoma spp", "macoma spp.", "macoma sp")
