@@ -305,7 +305,8 @@ lg.um.st <- fish.stick.sub %>%
 Loop for each size class to approximate measurements for unmeasured fish
 ```{r}
 lg_stick <- data.frame() # empty dataframe to fill with for loop
-
+ s <- "NFEI_A"
+i <- "STICK3"
 for(s in unique(fish.stick.sub$bay_ID)){ # cycle through unique sites (only one seine per site)
   m <- lg.m.st %>% # subset measured data by interation EventID
     filter(bay_ID == s)
