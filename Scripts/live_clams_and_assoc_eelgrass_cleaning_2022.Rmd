@@ -1,0 +1,88 @@
+---
+title: "live_clams_and_assoc_eelgrass_cleaning_2022"
+author: "Lia Domke"
+date: "8/11/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In 2022 we were interested in understanding the competition between belowground biomass of eelgrass and live clams. To this end, we sampled clams at the 0 ft MMLW mark in appropriate clam habitat. We set a 100-m transect and used 0.25m^3 quadrats to sample 10 quadrats along the 100-m transect. This protocol was repeated from 2021 except 
+
+At each of these quadrats we dug out the dirt, cleaned out the rocks/debris and non-clam items, and collected all live clams present, any algae, and any eelgrass (above and below ground shoots). We also recorded primary and secondary sediment type
+
+This cleaning script will remove any misentries/spelling errors and combine the clam density with the eelgrass biomass. 
+
+Read in libraries
+```{r}
+library(tidyverse)
+```
+
+read in data 
+```{r}
+live.clam <- read.csv("Data/clam_assoc_eelgrass_&density/clam_density_2022_RAW_8-12-22.csv", header = TRUE, stringsAsFactors = FALSE)
+name <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A87744ced-530b-4bae-809e-ff1012c7ae72"),stringsAsFactors = FALSE, header = TRUE)
+```
+
+
+```{r}
+unique(live.clam$IF.function) # okay so all the checking columns and entry columns match
+glimpse(live.clam)
+table(live.clam$size_mm == live.clam$size_mm_checked)
+
+clam <- live.clam %>%
+  dplyr::select(-c(IF.function, X, X.1, size_mm_checked)) %>%
+  unite(bay_ID, bay_code:bay_sample) %>%
+  mutate(common_name = tolower(common_name)) %>%
+  mutate(species_code = ifelse(scientific_name == "Macoma inquinata", "CLMPOI", species_code)) %>%
+  mutate(common_name = ifelse(scientific_name == "Macoma sp.", "macoma spp", common_name)) %>%
+  mutate(species_code = ifelse(common_name == "macoma spp", "CLMMAC", species_code)) %>%
+  mutate(scientific_name = ifelse(common_name == "macoma spp", "Macoma spp", scientific_name)) %>%
+  add_column(year = 2022)
+  
+clam %>%
+  dplyr::select(common_name:species_code) %>%
+  distinct()
+
+clam$size_mm <- as.numeric(clam$size_mm)
+clam %>%
+  group_by(bay_ID, quadrat_no, species_code, scientific_name, common_name) %>%
+  dplyr::summarise(sum = n(), avg_mm = mean(size_mm))
+  
+```
+
+```{r}
+clam21 <- read.csv("Data/clam_assoc_eelgrass_&density/density_live_clams_from_live_clam_surveys_2021.csv")
+names(clam21)
+names(clam)
+
+unique(clam21$site_name)
+unique(clam$site_name)
+
+head(name)
+sites <- name %>%
+  unite(bay_ID, bay_code:bay_sample) %>%
+  dplyr::select(bay_ID, latitude, longitude)
+
+live.clam21.22 <- clam21 %>%
+  add_column(year = 2021) %>%
+  dplyr::select(-X) %>%
+  rbind(clam) %>%
+  mutate(site_name = ifelse(bay_ID == "GUKT_A", "Guktu Bay", site_name)) %>%
+  mutate(site_name = ifelse(bay_ID == "NATZ_A", "Natzuhini Bay", site_name)) %>%
+  mutate(site_name = ifelse(bay_ID == "REFU_A", "Port Refugio", site_name)) %>%
+  mutate(site_name = ifelse(bay_ID == "NOSK_A", "Nossuk Bay", site_name)) %>%
+  left_join(sites, by = c("bay_ID")) %>%
+  separate(bay_ID, into = c("bay_code", "bay_sample")) 
+
+live.clam21.22 %>%
+  dplyr::select(bay_code, bay_sample, site_name, latitude, longitude, year) %>%
+  distinct()
+
+# write it out
+#write.csv(live.clam21.22, "Data/clam_assoc_eelgrass_&density/density_live_clams_from_live_clam_surveys_2021-2022.csv")
+```

@@ -1,0 +1,149 @@
+---
+title: "live_clams_and_assoc_eelgrass_cleaning_2021"
+author: "Lia Domke"
+date: "6/14/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+In 2021 we were interested in understanding the competition between belowground biomass of eelgrass and live clams. To this end, we sampled clams and eelgrass at the 0 ft MMLW mark in appropriate clam habitat. We set a 100-m transect and used 0.25m^3 quadrats to sample 10 quadrats along the 100-m transect. 
+
+At each of these quadrats we dug out the dirt, cleaned out the rocks/debris and non-clam items, and collected all live clams present, any algae, and any eelgrass (above and below ground shoots). We also recorded primary and secondary sediment type
+
+This cleaning script will remove any misentries/spelling errors and combine the clam density with the eelgrass biomass. 
+
+Read in libraries
+```{r}
+library(tidyverse)
+
+```
+
+Read in data
+```{r}
+assoc.eel <- read.csv("Data/clam_assoc_eelgrass_&density/clam_associated_eelgrass_algae_checked.csv", stringsAsFactors = FALSE, header = TRUE)
+live.clam <- read.csv("Data/clam_assoc_eelgrass_&density/clam_density_2021_checked.csv", stringsAsFactors = FALSE, header = TRUE)
+
+```
+
+
+Data exploration
+```{r}
+glimpse(assoc.eel)
+
+glimpse(live.clam) 
+
+
+clam <- live.clam %>%
+  dplyr::select(-c(X, X.1, X.2)) %>%
+  unite(bay_ID, bay_code:bay_sample) %>%
+  mutate(common_name = tolower(common_name)) %>%
+  mutate(species_code = ifelse(common_name == "pointed macoma", "CLMPOI", species_code)) %>%
+  mutate(common_name = ifelse(scientific_name == "Mya truncata", "truncate softshell", common_name)) %>%
+  mutate(common_name = ifelse(species_code == "CLMMAC", "macoma spp", common_name)) %>%
+  mutate(scientific_name = ifelse(species_code == "CLMMAC", "Macoma spp", scientific_name)) %>%
+  mutate(bay_ID = ifelse(site_name == "North Fish Egg Island", "NFEI_A", bay_ID))
+
+
+clam %>%
+  dplyr::select(common_name:species_code) %>%
+  distinct()
+
+unique(clam$scientific_name)
+unique(clam$species_code)
+
+clam$size_mm <- as.numeric(clam$size_mm)
+clam %>%
+  group_by(bay_ID, quadrat_no, species_code, scientific_name, common_name) %>%
+  dplyr::summarise(sum = n(), avg_mm = mean(size_mm))
+
+
+
+# everything looks good for the live clams lets look at the eelgrass
+```
+
+looking at the associated eelgrass
+```{r}
+glimpse(assoc.eel)
+
+eel <- assoc.eel %>%
+  unite(bay_ID, bay_code:bay_sample)
+
+unique(eel$bay_ID)
+unique(eel$quadrat_no)
+names(eel)
+```
+ 
+Things to do: 
+- calculate dry mass (subtract the tin mass)
+- calculate quadrat 2 that was processed in two batches
+```{r}
+
+cols <- names(dplyr::select(eel, belowground_empty_tin_mass_g:dry_algae_mass.tin_g))
+eel[cols] <- lapply(eel[cols], as.numeric)
+
+eel2 <-eel %>%
+  mutate(quadrat_no = ifelse(quadrat_no == 2.1, 2.0, quadrat_no),
+         quadrat_no = ifelse(quadrat_no == 2.2, 2.0, quadrat_no)) %>% # match up quadrat 2 in north fish egg 
+  rowwise() %>%
+  group_by(bay_ID, quadrat_no) %>% # sum up the two batches of processing for quadrat 2
+  mutate(dry_belowground_mass.tin_g = sum(dry_belowground_mass.tin_g), 
+         belowground_empty_tin_mass_g = sum(belowground_empty_tin_mass_g),
+         dry_aboveground_mass.tin_g = sum(dry_belowground_mass.tin_g),
+         aboveground_empty_tin_mass_g = sum(aboveground_empty_tin_mass_g),
+         dry_algae_mass.tin_g = sum(dry_algae_mass.tin_g),
+         algae_empty_tin_mass_g = sum(algae_empty_tin_mass_g),
+         freshweight_aboveground_mass_g = sum(freshweight_aboveground_mass_g),
+         freshweight_belowground_mass_g = sum(freshweight_belowground_mass_g),
+         freshweight_algae_mass_g = sum(freshweight_algae_mass_g)) %>%
+  distinct() %>%
+  ungroup() %>% # calculate the actual mass (dry mass - tin mass)
+  mutate(dry_belowground_eel_mass_g = dry_belowground_mass.tin_g - belowground_empty_tin_mass_g,
+         dry_aboveground_eel_mass_g = dry_aboveground_mass.tin_g - aboveground_empty_tin_mass_g,
+         dry_algae_mass_g = dry_algae_mass.tin_g - algae_empty_tin_mass_g) %>%
+  mutate(notes = ifelse(notes == "quadrat 2 processed in two batches", "NA", notes)) # edit notes so it doesn't confuse people
+
+# change na to 0 because the data was collected there just was nothing there
+eel2[is.na(eel2)] <- 0
+```
+
+# combine the two data sets
+```{r}
+# we want to combine using the sites and quadrat_no
+
+combined_clam_eel21 <- left_join(eel2, clam, by = c("bay_ID", "quadrat_no")) %>%
+  dplyr::rename(notes = notes.y) %>%
+  dplyr::select(bay_ID, site_name, sample_date, process_date, quadrat_no, quadrat_location_m, primary_sediment, secondary_sediment, belowground_empty_tin_mass_g:dry_algae_mass.tin_g, dry_belowground_eel_mass_g:samplers, notes)
+  
+```
+
+The combined_clam_eel may or may not be what is wanted for final BCO-DMO submission, but its worth a shot. 
+
+It could be best as separate csv - lets do that: 
+```{r}
+head(eel2) 
+head(clam)
+names(eel2)
+
+# missing the place name nad long/lat for the eel2
+sites <- read.csv("Data/Site_metadata_allyears_8-18-22.csv", stringsAsFactors = FALSE, header = TRUE) %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  dplyr::select(bay_id, place_name, latitude, longitude)
+
+eel3 <- eel2 %>%
+  left_join(sites, by = c("bay_ID" = "bay_id")) %>%
+  separate(bay_ID, c("bay_code", "bay_sample"))
+  
+```
+
+```{r}
+write.csv(eel3, "Data/clam_assoc_eelgrass_&density/eelgrass&algae_associated_with_live_clam_surveys_2021.csv")
+write.csv(clam, "Data/clam_assoc_eelgrass_&density/density_live_clams_from_live_clam_surveys_2021.csv")
+```
+
+
+```{r}
+#write.csv(combined_clam_eel21, "Data/clam_assoc_eelgrass_&density/live_clam_associated_eel_combined_2021.csv")
+```
+
