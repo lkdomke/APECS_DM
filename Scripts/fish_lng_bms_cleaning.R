@@ -171,6 +171,35 @@ df35 <- data.frame("Cutthroat trout", "Oncorhynchus clarkii", "CUTTHRT", "NA", "
                    "unsexed", "0.00650", "NA", "3.086", "NA", "NA", "NA", "NA", "NA", "NA", "NA",
                    "NA", "NA", "type I linear regression", "Blue Lake California, USA", "NA", "NA")
 
+df36 <- data.frame("Leister sculpin", "Enophrys lucasi", "SCULLEI", "NA", "NA", "TL", "NA", 
+                   "unsexed", "0.00661", "NA", "3.18", "NA", "NA", "NA", "NA", "NA", "0.00299", "0.01462",
+                   "2.99", "3.37", "FishBase - Bayesian Ref 93245", "NA", "93245", "NA")
+
+df37 <- data.frame("Arctic shanny", "Stichaeus punctatus", "SHANNYAR", "NA", "NA", "FL", "82", 
+                   "mixed", "0.03031", "NA", "2.220", "0.980", "NA", "NA", "NA", "NA", "NA", "NA", 
+                   "NA", "NA", "type 1 linear regression", "Nuvuk Islands", "NA", "NA")
+
+df38 <- data.frame("Arctic shanny", "Stichaeus punctatus", "SHANNYAR", "NA", "NA", "FL", "18", 
+                    "mixed", "0.02218", "NA", "2.370", "0.670", "NA", "NA", "NA", "NA", "NA", "NA", 
+                    "NA", "NA", "type 1 linear regression", "Coats Islands", "NA", "NA")
+
+df39 <- data.frame("Arctic shanny", "Stichaeus punctatus", "SHANNYAR", "NA", "NA", "FL", "100", 
+                   "mixed", "0.00371", "NA", "3.120", "0.980", "NA", "NA", "NA", "NA", "NA", "NA", 
+                   "NA", "NA", "type 1 linear regression", "Canadian Arctic", "NA", "NA")
+
+df40 <- data.frame("Arctic shanny", "Stichaeus punctatus", "SHANNYAR", "NA", "NA", "TL", "88", 
+                   "unsexed", "0.00238", "NA", "3.349", "0.980", "NA", "NA", "0.7223", "0.441", "NA", "NA", 
+                   "NA", "NA", "type 1 linear regression", "Chukchi Sea / 2009, 2010", "NA", "NA")
+
+df41 <- data.frame("Arctic shanny", "Stichaeus punctatus", "SHANNYAR", "NA", "NA", "TL", "NA", 
+                   "unsexed", "0.00363", "NA", "3.19", "NA", "NA", "NA", "NA", "NA", "0.00187", "0.00705", 
+                   "3.01", "3.37", "FishBase - Bayesian Ref 93245", "NA", "93245", "NA")
+
+df42 <- data.frame("Pacific sandfish", "Trichodon trichodon", "SANDFSHP", "NA", "NA", "TL", "NA", 
+                   "unsexed", "0.00389", "NA", "3.12", "NA", "NA", "NA", "NA", "NA", "0.00180", "0.00842", 
+                   "2.94", "3.30", "FishBase - Bayesian Ref 93245", "NA", "93245", "NA")
+
+
 names(df) <- LWnames
 names(df2) <- LWnames
 names(df3) <- LWnames
@@ -206,6 +235,13 @@ names(df32) <- LWnames
 names(df33) <- LWnames
 names(df34) <- LWnames
 names(df35) <- LWnames
+names(df36) <- LWnames
+names(df37) <- LWnames
+names(df38) <- LWnames
+names(df39) <- LWnames
+names(df40) <- LWnames
+names(df41) <- LWnames
+names(df42) <- LWnames
 
 names(df) <- c("species_common", "species_scientific", "sp_code", "LengthMin_cm","LengthMax_cm",
                "Type", "Number", "Sex", "a_cm.g", "aTL_cm.g", "b_cm.g", "CoeffDetermination", 
@@ -215,8 +251,10 @@ names(df) <- c("species_common", "species_scientific", "sp_code", "LengthMin_cm"
 # merge together
 dat <- bind_rows(df, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13, df14, 
                  df15, df16, df17, df18, df19, df20, df21, df22, df23, df24, df25, df26, df27,
-                 df28, df29, df30, df31, df32, df33, df34, df35)
+                 df28, df29, df30, df31, df32, df33, df34, df35, df36, df37, df38, df39, df40,
+                 df41, df42)
+
 fishLW_clean2 <- rbind(fishLW_clean, dat)
 # 3. Save as a new csv
 
-#write.csv(fishLW_clean2, "Data/fish_length_weight_conversions_cleaned_2021.csv", row.names = FALSE)
+#write.csv(fishLW_clean2, "Data/fish_length_weight_conversions_cleaned_2022.csv", row.names = FALSE)
