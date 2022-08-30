@@ -32,7 +32,7 @@ library(readxl)
 
 # 1. read in data
 ```{r data}
-eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_density_2019.csv", stringsAsFactors = FALSE, header = TRUE)
+eg.tran <- read.csv("Data/Eelgrass_metrics/Eelgrass_transect_2019_RAW.csv", stringsAsFactors = FALSE, header = TRUE)
 
 site_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b", method = "libcurl"), stringsAsFactors = FALSE, header = TRUE)
 
