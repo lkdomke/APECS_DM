@@ -1,0 +1,52 @@
+---
+title: "seagrass_pit_sediment_cleaning_2017"
+author: "Lia Domke"
+date: "12/12/2020"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Cleaning script for sea otter pits and qualitative sediment data that was collected at seagrass meadows along the western coast of Prince of Wales. 
+
+This dataset is composed of counts of the number of pits that were dug by sea otters, as well as a qualitative assessment of the primary and secondary sediment grain sizes (most common and second most common). The number of pits and sediment grain size were quantified at intertidal sites that included seagrass meadows (dominated by Zostera marina), in which three 100-m (year 2017) transects were placed at different locations relative to the seagrass meadow: within the seagrass meadow, along the edge of the seagrass meadow, and outside the seagrass meadow. In 2017, observations were conducted at 21 different sites total in Southeast Alaska on Prince of Wales Island.
+
+```{r libraries}
+library(dplyr)
+library(lubridate)
+```
+
+```{r data}
+pits <- read.csv("Data/Eelgrass_pits_sediment/seagrass_pit_sediment_2017_RAW.csv", 
+                 stringsAsFactors = FALSE, header = TRUE)
+name <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A87744ced-530b-4bae-809e-ff1012c7ae72"),
+                 stringsAsFactors = FALSE, header = TRUE)
+```
+
+Basic checks to make sure all the data is there
+```{r}
+glimpse(pits)
+unique(pits$site) # 21 sites
+unique(pits$YYYYMMDD)
+unique(pits$date) # dates are strange, shouldn't be 2013
+```
+
+Need to fix the date column and then add in the appropriate site information/codes
+```{r}
+pits2 <- pits %>%
+  select(-c(X, date)) %>%
+  drop_na %>% # remove the extra na only rows at the end of the df 
+  mutate(date = ymd(YYYYMMDD)) %>%
+  left_join(name, by = c("site" = "site_2017")) %>% 
+  dplyr::select(-c(siteID_NOAA:site_2019, study, habitat, freshwater, sediment_description, general_description))
+```
+
+write out file
+```{r}
+write.csv(pits2, "Data/Eelgrass_pits_sediment/seagrass_pits_sediment_2017_derived.csv")
+```
+
