@@ -38,6 +38,9 @@ library(readxl)
 hab_quad <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 1)
 hab_lng <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 2)
 hab_biom <- read_xlsx("Data/Habitat_data/Habitat_2019_RAW_2-21-2020.xlsx", sheet = 3)
+
+# universal site information
+loc <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac9c99ce9-fbdd-4879-a2c9-c90448cdba7b"), stringsAsFactors = FALSE, header = TRUE)
 ```
 
 Functions
@@ -115,9 +118,34 @@ quad_level <- hab_lng %>%
   
 ```
 
+Adjust quadrat data sheet to include bay id and bay code for ease of combination
+```{r}
+# the names are slightly off to be able to combine with the location df
+hab_quad$site <- as.factor(hab_quad$site)
+levels(hab_quad$site)[levels(hab_quad$site)=="Goats mouth inlet"]<-"Goat Mouth Inlet"
+levels(hab_quad$site)[levels(hab_quad$site)=="Naukati Bay"]<-"Naukati"
+levels(hab_quad$site)[levels(hab_quad$site)=="South Wadleigh Island"]<-"South Wadleigh"
+levels(hab_quad$site)[levels(hab_quad$site)=="Guktu Bay"]<-"Guktu"
+levels(hab_quad$site)[levels(hab_quad$site)=="North Fish Egg Island"]<-"North Fish Egg"
+levels(hab_quad$site)[levels(hab_quad$site)=="North Fish Egg - kelp"]<-"North Fish Egg-Kelp"
+levels(hab_quad$site)[levels(hab_quad$site)=="Natzuhini Bay"]<-"Natzuhini"
+levels(hab_quad$site)[levels(hab_quad$site)=="Kaguk Cove"]<-"Kaguk "
+levels(hab_quad$site)[levels(hab_quad$site)=="Farallon Bay"]<-"Farallon"
+levels(hab_quad$site)[levels(hab_quad$site)=="Chusini Cove"]<-"Chusini-Kladein Flat"
+levels(hab_quad$site)[levels(hab_quad$site)=="South Fish Egg Island"]<-"South Fish Egg"
+levels(hab_quad$site)[levels(hab_quad$site)=="Baker Island - kelp"]<-"Baker Island - kelp "
+hab_quad$site <- as.character(hab_quad$site)
+
+hab_quad2 <- left_join(hab_quad, loc, by = c("site" = "site_2019", "habitat" = "habitat")) %>%
+  dplyr::select(-c(siteID_NOAA, site_2017, site_2018, place_name, study, latitude, longitude,
+                   freshwater, sediment_description, general_description))
+  
+```
+
+
 Write out files as csvs for upload to KNB (in their original format!)
 ```{r}
-write.csv(hab_quad, "Data/Habitat_data/hab_quadrat_2019.csv")
+write.csv(hab_quad2, "Data/Habitat_data/hab_quadrat_2019.csv")
 write.csv(hab_lng, "Data/Habitat_data/hab_length_2019.csv")
 write.csv(hab_biom, "Data/Habitat_data/hab_species_biomass_2019.csv")
 ```
