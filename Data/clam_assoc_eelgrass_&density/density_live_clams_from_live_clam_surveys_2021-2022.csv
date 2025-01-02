@@ -1,0 +1,562 @@
+"","site_name","bay_code","bay_sample","sample_date","quadrat_location_m","quadrat_no","primary_sediment","secondary_sediment","common_name","scientific_name","species_code","size_mm","samplers","notes","year","latitude","longitude"
+"1","Guktu Bay","GUKT","A",20210725,2,1,3,4,"butter clam","Saxidomus gigantea","CLAMBU",26.4," Carter, Emma","",2021,55.739816,-133.312022
+"2","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",24.9," Carter, Emma","",2021,55.739816,-133.312022
+"3","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",26.3," Carter, Emma","",2021,55.739816,-133.312022
+"4","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",20.4," Carter, Emma","",2021,55.739816,-133.312022
+"5","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",15.5," Carter, Emma","",2021,55.739816,-133.312022
+"6","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",18," Carter, Emma","",2021,55.739816,-133.312022
+"7","Guktu Bay","GUKT","A",20210725,2,1,3,4,"steamer clam","Protothaca staminea","CLAMST",12.9," Carter, Emma","",2021,55.739816,-133.312022
+"8","Guktu Bay","GUKT","A",20210725,2,1,3,4,"pointed macoma","Macoma inquinata","CLMPOI",26.4," Carter, Emma","",2021,55.739816,-133.312022
+"9","Guktu Bay","GUKT","A",20210725,2,1,3,4,"pointed macoma","Macoma inquinata","CLMPOI",19.8," Carter, Emma","",2021,55.739816,-133.312022
+"10","Guktu Bay","GUKT","A",20210725,2,1,3,4,"pointed macoma","Macoma inquinata","CLMPOI",17.9," Carter, Emma","",2021,55.739816,-133.312022
+"11","Guktu Bay","GUKT","A",20210725,2,1,3,4,"pointed macoma","Macoma inquinata","CLMPOI",9.2," Carter, Emma","",2021,55.739816,-133.312022
+"12","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",35.8," Carter, Emma","",2021,55.739816,-133.312022
+"13","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",25.9," Carter, Emma","",2021,55.739816,-133.312022
+"14","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",21.1," Carter, Emma","",2021,55.739816,-133.312022
+"15","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",21.3," Carter, Emma","",2021,55.739816,-133.312022
+"16","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",16.8," Carter, Emma","",2021,55.739816,-133.312022
+"17","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",21.1," Carter, Emma","",2021,55.739816,-133.312022
+"18","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",24.4," Carter, Emma","",2021,55.739816,-133.312022
+"19","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",23.4," Carter, Emma","",2021,55.739816,-133.312022
+"20","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",26.1," Carter, Emma","",2021,55.739816,-133.312022
+"21","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",24.6," Carter, Emma","",2021,55.739816,-133.312022
+"22","Guktu Bay","GUKT","A",20210725,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",23," Carter, Emma","",2021,55.739816,-133.312022
+"23","Guktu Bay","GUKT","A",20210725,16,2,3,7,"pointed macoma","Macoma inquinata","CLMPOI",23.9," Carter, Emma","",2021,55.739816,-133.312022
+"24","Guktu Bay","GUKT","A",20210725,16,2,3,7,"pointed macoma","Macoma inquinata","CLMPOI",22.8," Carter, Emma","",2021,55.739816,-133.312022
+"25","Guktu Bay","GUKT","A",20210725,16,2,3,7,"pointed macoma","Macoma inquinata","CLMPOI",25.9," Carter, Emma","",2021,55.739816,-133.312022
+"26","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",22.3," Carter, Emma","",2021,55.739816,-133.312022
+"27","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",20," Carter, Emma","",2021,55.739816,-133.312022
+"28","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",14.5," Carter, Emma","",2021,55.739816,-133.312022
+"29","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",20," Carter, Emma","",2021,55.739816,-133.312022
+"30","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",23.6," Carter, Emma","",2021,55.739816,-133.312022
+"31","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",23.6," Carter, Emma","",2021,55.739816,-133.312022
+"32","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",19," Carter, Emma","",2021,55.739816,-133.312022
+"33","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",21.7," Carter, Emma","",2021,55.739816,-133.312022
+"34","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",27.5," Carter, Emma","",2021,55.739816,-133.312022
+"35","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",26.9," Carter, Emma","",2021,55.739816,-133.312022
+"36","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",22.3," Carter, Emma","",2021,55.739816,-133.312022
+"37","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",19.4," Carter, Emma","",2021,55.739816,-133.312022
+"38","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",20.9," Carter, Emma","",2021,55.739816,-133.312022
+"39","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",16.1," Carter, Emma","",2021,55.739816,-133.312022
+"40","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",14.9," Carter, Emma","",2021,55.739816,-133.312022
+"41","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",20.4," Carter, Emma","",2021,55.739816,-133.312022
+"42","Guktu Bay","GUKT","A",20210725,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",16.6," Carter, Emma","",2021,55.739816,-133.312022
+"43","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",30.2," Carter, Emma","",2021,55.739816,-133.312022
+"44","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",20.5," Carter, Emma","",2021,55.739816,-133.312022
+"45","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",29.7," Carter, Emma","",2021,55.739816,-133.312022
+"46","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",18.1," Carter, Emma","",2021,55.739816,-133.312022
+"47","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",23.2," Carter, Emma","",2021,55.739816,-133.312022
+"48","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",21.5," Carter, Emma","",2021,55.739816,-133.312022
+"49","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",20.2," Carter, Emma","",2021,55.739816,-133.312022
+"50","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",24.7," Carter, Emma","",2021,55.739816,-133.312022
+"51","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",24.4," Carter, Emma","",2021,55.739816,-133.312022
+"52","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",30.6," Carter, Emma","",2021,55.739816,-133.312022
+"53","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",25.5," Carter, Emma","",2021,55.739816,-133.312022
+"54","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",20.4," Carter, Emma","",2021,55.739816,-133.312022
+"55","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",21.1," Carter, Emma","",2021,55.739816,-133.312022
+"56","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",31.4," Carter, Emma","",2021,55.739816,-133.312022
+"57","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",16.3," Carter, Emma","",2021,55.739816,-133.312022
+"58","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",23.2," Carter, Emma","",2021,55.739816,-133.312022
+"59","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",20," Carter, Emma","",2021,55.739816,-133.312022
+"60","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",26.7," Carter, Emma","",2021,55.739816,-133.312022
+"61","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",18.8," Carter, Emma","",2021,55.739816,-133.312022
+"62","Guktu Bay","GUKT","A",20210725,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",22.5," Carter, Emma","",2021,55.739816,-133.312022
+"63","Guktu Bay","GUKT","A",20210725,34,4,3,7,"pointed macoma","Macoma inquinata","CLMPOI",19," Carter, Emma","",2021,55.739816,-133.312022
+"64","Guktu Bay","GUKT","A",20210725,34,4,3,7,"pointed macoma","Macoma inquinata","CLMPOI",20.8," Carter, Emma","",2021,55.739816,-133.312022
+"65","Guktu Bay","GUKT","A",20210725,34,4,3,7,"pointed macoma","Macoma inquinata","CLMPOI",23.2," Carter, Emma","",2021,55.739816,-133.312022
+"66","Guktu Bay","GUKT","A",20210725,34,4,3,7,"butter clam","Saxidomus gigantea","CLAMBU",18.8," Carter, Emma","",2021,55.739816,-133.312022
+"67","Guktu Bay","GUKT","A",20210725,50,5,2,4,"steamer clam","Protothaca staminea","CLAMST",22," Carter, Emma","",2021,55.739816,-133.312022
+"68","Guktu Bay","GUKT","A",20210725,50,5,2,4,"cockle","Clinocardium nutallii","CLAMCK",20.3," Carter, Emma","",2021,55.739816,-133.312022
+"69","Guktu Bay","GUKT","A",20210725,50,5,2,4,"bentnose macoma","Macoma nasuta","CLAMMB",31.2," Carter, Emma","",2021,55.739816,-133.312022
+"70","Guktu Bay","GUKT","A",20210725,50,5,2,4,"bentnose macoma","Macoma nasuta","CLAMMB",41.5," Carter, Emma","",2021,55.739816,-133.312022
+"71","Guktu Bay","GUKT","A",20210725,50,5,2,4,"bentnose macoma","Macoma nasuta","CLAMMB",33," Carter, Emma","",2021,55.739816,-133.312022
+"72","Guktu Bay","GUKT","A",20210725,50,5,2,4,"pointed macoma","Macoma inquinata","CLMPOI",41.1," Carter, Emma","",2021,55.739816,-133.312022
+"73","Guktu Bay","GUKT","A",20210725,50,5,2,4,"pointed macoma","Macoma inquinata","CLMPOI",33.8," Carter, Emma","",2021,55.739816,-133.312022
+"74","Guktu Bay","GUKT","A",20210725,50,5,2,4,"pointed macoma","Macoma inquinata","CLMPOI",30.4," Carter, Emma","",2021,55.739816,-133.312022
+"75","Guktu Bay","GUKT","A",20210725,60,6,2,3,"cockle","Clinocardium nutallii","CLAMCK",19.8," Carter, Emma","",2021,55.739816,-133.312022
+"76","Guktu Bay","GUKT","A",20210725,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",30.4," Carter, Emma","",2021,55.739816,-133.312022
+"77","Guktu Bay","GUKT","A",20210725,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",33.3," Carter, Emma","",2021,55.739816,-133.312022
+"78","Guktu Bay","GUKT","A",20210725,60,6,2,3,"pointed macoma","Macoma inquinata","CLMPOI",33.3," Carter, Emma","",2021,55.739816,-133.312022
+"79","Guktu Bay","GUKT","A",20210725,60,6,2,3,"pointed macoma","Macoma inquinata","CLMPOI",33.8," Carter, Emma","",2021,55.739816,-133.312022
+"80","Guktu Bay","GUKT","A",20210725,60,6,2,3,"pointed macoma","Macoma inquinata","CLMPOI",25.6," Carter, Emma","",2021,55.739816,-133.312022
+"81","Guktu Bay","GUKT","A",20210725,67,7,3,4,"steamer clam","Protothaca staminea","CLAMST",32.3," Carter, Emma","",2021,55.739816,-133.312022
+"82","Guktu Bay","GUKT","A",20210725,67,7,3,4,"steamer clam","Protothaca staminea","CLAMST",26.6," Carter, Emma","",2021,55.739816,-133.312022
+"83","Guktu Bay","GUKT","A",20210725,67,7,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",41.1," Carter, Emma","",2021,55.739816,-133.312022
+"84","Guktu Bay","GUKT","A",20210725,67,7,3,4,"pointed macoma","Macoma inquinata","CLMPOI",43.9," Carter, Emma","",2021,55.739816,-133.312022
+"85","Guktu Bay","GUKT","A",20210725,67,7,3,4,"pointed macoma","Macoma inquinata","CLMPOI",31.3," Carter, Emma","",2021,55.739816,-133.312022
+"86","Guktu Bay","GUKT","A",20210725,67,7,3,4,"pointed macoma","Macoma inquinata","CLMPOI",37.4," Carter, Emma","",2021,55.739816,-133.312022
+"87","Guktu Bay","GUKT","A",20210725,76,8,3,4,"steamer clam","Protothaca staminea","CLAMST",29.9," Carter, Emma","",2021,55.739816,-133.312022
+"88","Guktu Bay","GUKT","A",20210725,76,8,3,4,"cockle","Clinocardium nutallii","CLAMCK",24.1," Carter, Emma","",2021,55.739816,-133.312022
+"89","Guktu Bay","GUKT","A",20210725,76,8,3,4,"cockle","Clinocardium nutallii","CLAMCK",23.9," Carter, Emma","",2021,55.739816,-133.312022
+"90","Guktu Bay","GUKT","A",20210725,76,8,3,4,"pointed macoma","Macoma inquinata","CLMPOI",33.6," Carter, Emma","",2021,55.739816,-133.312022
+"91","Guktu Bay","GUKT","A",20210725,80,9,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",33.7," Carter, Emma","",2021,55.739816,-133.312022
+"92","Guktu Bay","GUKT","A",20210725,80,9,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",41," Carter, Emma","",2021,55.739816,-133.312022
+"93","Guktu Bay","GUKT","A",20210725,80,9,3,4,"pointed macoma","Macoma inquinata","CLMPOI",38.4," Carter, Emma","",2021,55.739816,-133.312022
+"94","Guktu Bay","GUKT","A",20210725,80,9,3,4,"pointed macoma","Macoma inquinata","CLMPOI",36.6," Carter, Emma","",2021,55.739816,-133.312022
+"95","Guktu Bay","GUKT","A",20210725,96,10,2,4,"bentnose macoma","Macoma nasuta","CLAMMB",34.6," Carter, Emma","",2021,55.739816,-133.312022
+"96","Guktu Bay","GUKT","A",20210725,96,10,2,4,"bentnose macoma","Macoma nasuta","CLAMMB",36.2," Carter, Emma","",2021,55.739816,-133.312022
+"97","Guktu Bay","GUKT","A",20210725,96,10,2,4,"pointed macoma","Macoma inquinata","CLMPOI",27.2," Carter, Emma","",2021,55.739816,-133.312022
+"98","Guktu Bay","GUKT","A",20210725,96,10,2,4,"pointed macoma","Macoma inquinata","CLMPOI",26.2," Carter, Emma","",2021,55.739816,-133.312022
+"99","Guktu Bay","GUKT","A",20210725,96,10,2,4,"geoduck","Panopea generosa","CLAMGD",69.4," Carter, Emma","estimate based on siphon",2021,55.739816,-133.312022
+"100","Shinaku","SHIN","A",20210722,2,1,3,7,"butter clam","Saxidomus gigantea","CLAMBU",52.8,"Emma, Ginny","",2021,55.59929,-133.16
+"101","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",24.7,"Emma, Ginny","",2021,55.59929,-133.16
+"102","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",30.2,"Emma, Ginny","",2021,55.59929,-133.16
+"103","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",34.9,"Emma, Ginny","",2021,55.59929,-133.16
+"104","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",33.1,"Emma, Ginny","",2021,55.59929,-133.16
+"105","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",24.7,"Emma, Ginny","",2021,55.59929,-133.16
+"106","Shinaku","SHIN","A",20210722,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",32,"Emma, Ginny","",2021,55.59929,-133.16
+"107","Shinaku","SHIN","A",20210722,2,1,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",40.5,"Emma, Ginny","",2021,55.59929,-133.16
+"108","Shinaku","SHIN","A",20210722,2,1,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",35.2,"Emma, Ginny","",2021,55.59929,-133.16
+"109","Shinaku","SHIN","A",20210722,16,2,3,7,NA,NA,NA,NA,"Emma, Ginny","no clams",2021,55.59929,-133.16
+"110","Shinaku","SHIN","A",20210722,27,3,3,7,"butter clam","Saxidomus gigantea","CLAMBU",39.5,"Emma, Ginny","estimate",2021,55.59929,-133.16
+"111","Shinaku","SHIN","A",20210722,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",30.8,"Emma, Ginny","",2021,55.59929,-133.16
+"112","Shinaku","SHIN","A",20210722,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",28,"Emma, Ginny","",2021,55.59929,-133.16
+"113","Shinaku","SHIN","A",20210722,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",33.4,"Emma, Ginny","",2021,55.59929,-133.16
+"114","Shinaku","SHIN","A",20210722,27,3,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",50.1,"Emma, Ginny","",2021,55.59929,-133.16
+"115","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",45,"Emma, Ginny","",2021,55.59929,-133.16
+"116","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",34.7,"Emma, Ginny","",2021,55.59929,-133.16
+"117","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",30,"Emma, Ginny","",2021,55.59929,-133.16
+"118","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",36.4,"Emma, Ginny","",2021,55.59929,-133.16
+"119","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",23.3,"Emma, Ginny","",2021,55.59929,-133.16
+"120","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",36,"Emma, Ginny","",2021,55.59929,-133.16
+"121","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",23.2,"Emma, Ginny","",2021,55.59929,-133.16
+"122","Shinaku","SHIN","A",20210722,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",14.1,"Emma, Ginny","",2021,55.59929,-133.16
+"123","Shinaku","SHIN","A",20210722,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",27.5,"Emma, Ginny","",2021,55.59929,-133.16
+"124","Shinaku","SHIN","A",20210722,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",28.4,"Emma, Ginny","",2021,55.59929,-133.16
+"125","Shinaku","SHIN","A",20210722,60,6,5,6,"butter clam","Saxidomus gigantea","CLAMBU",49.2,"Emma, Ginny","",2021,55.59929,-133.16
+"126","Shinaku","SHIN","A",20210722,60,6,5,6,"steamer clam","Protothaca staminea","CLAMST",38.2,"Emma, Ginny","",2021,55.59929,-133.16
+"127","Shinaku","SHIN","A",20210722,60,6,5,6,"steamer clam","Protothaca staminea","CLAMST",34,"Emma, Ginny","",2021,55.59929,-133.16
+"128","Shinaku","SHIN","A",20210722,60,6,5,6,"steamer clam","Protothaca staminea","CLAMST",33.6,"Emma, Ginny","",2021,55.59929,-133.16
+"129","Shinaku","SHIN","A",20210722,60,6,5,6,"bentnose macoma","Macoma nasuta","CLAMMB",49.2,"Emma, Ginny","",2021,55.59929,-133.16
+"130","Shinaku","SHIN","A",20210722,67,7,5,6,"pointed macoma","Macoma inquinata","CLMPOI",44.9,"Emma, Ginny","",2021,55.59929,-133.16
+"131","Shinaku","SHIN","A",20210722,76,8,5,6,"cockle","Clinocardium nutallii","CLAMCK",39.1,"Emma, Ginny","",2021,55.59929,-133.16
+"132","Shinaku","SHIN","A",20210722,76,8,5,6,"bentnose macoma","Macoma nasuta","CLAMMB",8.4,"Emma, Ginny","",2021,55.59929,-133.16
+"133","Shinaku","SHIN","A",20210722,80,9,5,6,"butter clam","Saxidomus gigantea","CLAMBU",57.5,"Emma, Ginny","",2021,55.59929,-133.16
+"134","Shinaku","SHIN","A",20210722,80,9,5,6,"steamer clam","Protothaca staminea","CLAMST",18.6,"Emma, Ginny","",2021,55.59929,-133.16
+"135","Shinaku","SHIN","A",20210722,80,9,5,6,"steamer clam","Protothaca staminea","CLAMST",42.9,"Emma, Ginny","",2021,55.59929,-133.16
+"136","Shinaku","SHIN","A",20210722,96,10,5,6,"steamer clam","Protothaca staminea","CLAMST",39.1,"Emma, Ginny","",2021,55.59929,-133.16
+"137","Shinaku","SHIN","A",20210722,96,10,5,6,"bentnose macoma","Macoma nasuta","CLAMMB",31.1,"Emma, Ginny","",2021,55.59929,-133.16
+"138","Shinaku","SHIN","A",20210722,96,10,5,6,"bentnose macoma","Macoma nasuta","CLAMMB",32,"Emma, Ginny","",2021,55.59929,-133.16
+"139","North Fish Egg Island","NFEI","A",20210721,2,1,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",58.7,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"140","North Fish Egg Island","NFEI","A",20210721,2,1,3,3,"pointed macoma","Macoma inquinata","CLMPOI",21.8,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"141","North Fish Egg Island","NFEI","A",20210721,16,2,3,3,"butter clam","Saxidomus gigantea","CLAMBU",59.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"142","North Fish Egg Island","NFEI","A",20210721,16,2,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",24.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"143","North Fish Egg Island","NFEI","A",20210721,16,2,3,3,"pointed macoma","Macoma inquinata","CLMPOI",48.7,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"144","North Fish Egg Island","NFEI","A",20210721,27,3,3,3,"cockle","Clinocardium nutallii","CLAMCK",80,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"145","North Fish Egg Island","NFEI","A",20210721,27,3,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",39.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"146","North Fish Egg Island","NFEI","A",20210721,27,3,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",46.9,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"147","North Fish Egg Island","NFEI","A",20210721,27,3,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",18.7,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"148","North Fish Egg Island","NFEI","A",20210721,27,3,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",20.7,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"149","North Fish Egg Island","NFEI","A",20210721,34,4,3,3,"cockle","Clinocardium nutallii","CLAMCK",35.9,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"150","North Fish Egg Island","NFEI","A",20210721,34,4,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",22.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"151","North Fish Egg Island","NFEI","A",20210721,34,4,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",26.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"152","North Fish Egg Island","NFEI","A",20210721,34,4,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",39.6,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"153","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"steamer clam","Protothaca staminea","CLAMST",53.7,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"154","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"steamer clam","Protothaca staminea","CLAMST",59.9,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"155","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"steamer clam","Protothaca staminea","CLAMST",53,"Ginny, Jessica, Emma","estimate",2021,55.49709,-133.17
+"156","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",48.2,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"157","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",19.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"158","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",29.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"159","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",32.8,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"160","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",18.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"161","North Fish Egg Island","NFEI","A",20210721,50,5,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",22.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"162","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"steamer clam","Protothaca staminea","CLAMST",30.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"163","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"cockle","Clinocardium nutallii","CLAMCK",86.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"164","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",46,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"165","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",51.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"166","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",30.8,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"167","North Fish Egg Island","NFEI","A",20210721,60,6,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",34,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"168","North Fish Egg Island","NFEI","A",20210721,67,7,3,3,"steamer clam","Protothaca staminea","CLAMST",51.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"169","North Fish Egg Island","NFEI","A",20210721,67,7,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",54,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"170","North Fish Egg Island","NFEI","A",20210721,67,7,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",19,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"171","North Fish Egg Island","NFEI","A",20210721,67,7,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",29.9,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"172","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"butter clam","Saxidomus gigantea","CLAMBU",45.1,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"173","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"steamer clam","Protothaca staminea","CLAMST",61.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"174","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"steamer clam","Protothaca staminea","CLAMST",33,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"175","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",26.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"176","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",20.3,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"177","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",28,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"178","North Fish Egg Island","NFEI","A",20210721,76,8,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",25.6,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"179","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"butter clam","Saxidomus gigantea","CLAMBU",56.3,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"180","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"butter clam","Saxidomus gigantea","CLAMBU",61.1,"Ginny, Jessica, Emma","estimate",2021,55.49709,-133.17
+"181","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",57.4,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"182","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",45.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"183","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",58.9,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"184","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",41,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"185","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",60.5,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"186","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"steamer clam","Protothaca staminea","CLAMST",61.3,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"187","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"bentnose macoma","Macoma nasuta","CLAMMB",49.6,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"188","North Fish Egg Island","NFEI","A",20210721,80,9,3,3,"truncate softshell","Mya truncata","CLAMBL",50.3,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"189","North Fish Egg Island","NFEI","A",20210721,96,10,3,7,"steamer clam","Protothaca staminea","CLAMST",58.2,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"190","North Fish Egg Island","NFEI","A",20210721,96,10,3,7,"steamer clam","Protothaca staminea","CLAMST",51.6,"Ginny, Jessica, Emma","",2021,55.49709,-133.17
+"191","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",44.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"192","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",46.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"193","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",50.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"194","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",52.5,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"195","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",54.3,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"196","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"steamer clam","Protothaca staminea","CLAMST",55.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"197","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",18,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"198","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",23.8,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"199","Natzuhini Bay","NATZ","A",20210723,2,1,3,7,"pointed macoma","Macoma inquinata","CLMPOI",28.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"200","Natzuhini Bay","NATZ","A",20210723,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",50,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"201","Natzuhini Bay","NATZ","A",20210723,16,2,3,7,"steamer clam","Protothaca staminea","CLAMST",50.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"202","Natzuhini Bay","NATZ","A",20210723,16,2,3,7,"cockle","Clinocardium nutallii","CLAMCK",53.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"203","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"butter clam","Saxidomus gigantea","CLAMBU",73.5,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"204","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"butter clam","Saxidomus gigantea","CLAMBU",54.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"205","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"steamer clam","Protothaca staminea","CLAMST",47.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"206","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"steamer clam","Protothaca staminea","CLAMST",60.1,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"207","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"cockle","Clinocardium nutallii","CLAMCK",69.8,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"208","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"cockle","Clinocardium nutallii","CLAMCK",51.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"209","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"cockle","Clinocardium nutallii","CLAMCK",21.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"210","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"cockle","Clinocardium nutallii","CLAMCK",19,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"211","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"pointed macoma","Macoma inquinata","CLMPOI",23.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"212","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"pointed macoma","Macoma inquinata","CLMPOI",22.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"213","Natzuhini Bay","NATZ","A",20210723,27,3,3,6,"pointed macoma","Macoma inquinata","CLMPOI",25.3,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"214","Natzuhini Bay","NATZ","A",20210723,34,4,3,7,"butter clam","Saxidomus gigantea","CLAMBU",64,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"215","Natzuhini Bay","NATZ","A",20210723,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",54.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"216","Natzuhini Bay","NATZ","A",20210723,34,4,3,7,"steamer clam","Protothaca staminea","CLAMST",38.5,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"217","Natzuhini Bay","NATZ","A",20210723,50,5,3,7,"butter clam","Saxidomus gigantea","CLAMBU",70.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"218","Natzuhini Bay","NATZ","A",20210723,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",60.5,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"219","Natzuhini Bay","NATZ","A",20210723,50,5,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",25.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"220","Natzuhini Bay","NATZ","A",20210723,50,5,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",20.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"221","Natzuhini Bay","NATZ","A",20210723,60,6,3,7,"na","na","na",NA,"Carter, Emmett, Jessica","no clams",2021,55.25051,-132.883
+"222","Natzuhini Bay","NATZ","A",20210723,67,7,3,7,"butter clam","Saxidomus gigantea","CLAMBU",74.6,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"223","Natzuhini Bay","NATZ","A",20210723,67,7,3,7,"pointed macoma","Macoma inquinata","CLMPOI",34.8,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"224","Natzuhini Bay","NATZ","A",20210723,76,8,3,7,"butter clam","Saxidomus gigantea","CLAMBU",70.3,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"225","Natzuhini Bay","NATZ","A",20210723,76,8,3,7,"steamer clam","Protothaca staminea","CLAMST",59.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"226","Natzuhini Bay","NATZ","A",20210723,76,8,3,7,"steamer clam","Protothaca staminea","CLAMST",57.1,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"227","Natzuhini Bay","NATZ","A",20210723,76,8,3,7,"steamer clam","Protothaca staminea","CLAMST",56.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"228","Natzuhini Bay","NATZ","A",20210723,80,9,3,7,"steamer clam","Protothaca staminea","CLAMST",51.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"229","Natzuhini Bay","NATZ","A",20210723,80,9,3,7,"steamer clam","Protothaca staminea","CLAMST",57.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"230","Natzuhini Bay","NATZ","A",20210723,80,9,3,7,"steamer clam","Protothaca staminea","CLAMST",45.4,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"231","Natzuhini Bay","NATZ","A",20210723,80,9,3,7,"steamer clam","Protothaca staminea","CLAMST",49.1,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"232","Natzuhini Bay","NATZ","A",20210723,80,9,3,7,"steamer clam","Protothaca staminea","CLAMST",57.2,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"233","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"butter clam","Saxidomus gigantea","CLAMBU",77.1,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"234","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"butter clam","Saxidomus gigantea","CLAMBU",58.7,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"235","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"steamer clam","Protothaca staminea","CLAMST",54.9,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"236","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"steamer clam","Protothaca staminea","CLAMST",33.5,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"237","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",38.8,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"238","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",31.3,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"239","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",20.1,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"240","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",16,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"241","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"bentnose macoma","Macoma nasuta","CLAMMB",21.8,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"242","Natzuhini Bay","NATZ","A",20210723,96,10,3,7,"pointed macoma","Macoma inquinata","CLMPOI",25,"Carter, Emmett, Jessica","",2021,55.25051,-132.883
+"243","Nossuk Bay","NOSK","A",20210726,2,1,1,1,"na","na","na",NA,"Carter, Emma","no clams",2021,55.7073,-133.342
+"244","Nossuk Bay","NOSK","A",20210726,16,2,1,2,"na","na","na",NA,"Carter, Emma","no clams",2021,55.7073,-133.342
+"245","Nossuk Bay","NOSK","A",20210726,27,3,1,2,"steamer clam","Protothaca staminea","CLAMST",37.2,"Carter, Emma","",2021,55.7073,-133.342
+"246","Nossuk Bay","NOSK","A",20210726,34,4,2,2,"steamer clam","Protothaca staminea","CLAMST",37.7,"Carter, Emma","estimate",2021,55.7073,-133.342
+"247","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"butter clam","Saxidomus gigantea","CLAMBU",41.4,"Carter, Emma","",2021,55.7073,-133.342
+"248","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"steamer clam","Protothaca staminea","CLAMST",34.2,"Carter, Emma","",2021,55.7073,-133.342
+"249","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"steamer clam","Protothaca staminea","CLAMST",42.9,"Carter, Emma","",2021,55.7073,-133.342
+"250","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"steamer clam","Protothaca staminea","CLAMST",36,"Carter, Emma","",2021,55.7073,-133.342
+"251","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",25.9,"Carter, Emma","",2021,55.7073,-133.342
+"252","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"pointed macoma","Macoma inquinata","CLMPOI",18.6,"Carter, Emma","",2021,55.7073,-133.342
+"253","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"pointed macoma","Macoma inquinata","CLMPOI",20.4,"Carter, Emma","",2021,55.7073,-133.342
+"254","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"pointed macoma","Macoma inquinata","CLMPOI",17.7,"Carter, Emma","",2021,55.7073,-133.342
+"255","Nossuk Bay","NOSK","A",20210726,50,5,1,2,"pointed macoma","Macoma inquinata","CLMPOI",19.3,"Carter, Emma","mussel 26.5",2021,55.7073,-133.342
+"256","Nossuk Bay","NOSK","A",20210726,60,6,3,4,"cockle","Clinocardium nutallii","CLAMCK",29.6,"Carter, Emma","",2021,55.7073,-133.342
+"257","Nossuk Bay","NOSK","A",20210726,60,6,3,4,"pointed macoma","Macoma inquinata","CLMPOI",19.2,"Carter, Emma","",2021,55.7073,-133.342
+"258","Nossuk Bay","NOSK","A",20210726,60,6,3,4,"pointed macoma","Macoma inquinata","CLMPOI",30.9,"Carter, Emma","",2021,55.7073,-133.342
+"259","Nossuk Bay","NOSK","A",20210726,67,7,3,4,"steamer clam","Protothaca staminea","CLAMST",42.3,"Carter, Emma","",2021,55.7073,-133.342
+"260","Nossuk Bay","NOSK","A",20210726,67,7,3,4,"steamer clam","Protothaca staminea","CLAMST",34.4,"Carter, Emma","",2021,55.7073,-133.342
+"261","Nossuk Bay","NOSK","A",20210726,67,7,3,4,"steamer clam","Protothaca staminea","CLAMST",23.9,"Carter, Emma","",2021,55.7073,-133.342
+"262","Nossuk Bay","NOSK","A",20210726,76,8,3,4,"butter clam","Saxidomus gigantea","CLAMBU",56,"Carter, Emma","",2021,55.7073,-133.342
+"263","Nossuk Bay","NOSK","A",20210726,76,8,3,4,"butter clam","Saxidomus gigantea","CLAMBU",29.9,"Carter, Emma","",2021,55.7073,-133.342
+"264","Nossuk Bay","NOSK","A",20210726,76,8,3,4,"steamer clam","Protothaca staminea","CLAMST",36.2,"Carter, Emma","",2021,55.7073,-133.342
+"265","Nossuk Bay","NOSK","A",20210726,76,8,3,4,"steamer clam","Protothaca staminea","CLAMST",36.2,"Carter, Emma","",2021,55.7073,-133.342
+"266","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"steamer clam","Protothaca staminea","CLAMST",37.7,"Carter, Emma","",2021,55.7073,-133.342
+"267","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"steamer clam","Protothaca staminea","CLAMST",34.5,"Carter, Emma","",2021,55.7073,-133.342
+"268","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"steamer clam","Protothaca staminea","CLAMST",40,"Carter, Emma","",2021,55.7073,-133.342
+"269","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"steamer clam","Protothaca staminea","CLAMST",39.6,"Carter, Emma","",2021,55.7073,-133.342
+"270","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"steamer clam","Protothaca staminea","CLAMST",27.8,"Carter, Emma","estimate",2021,55.7073,-133.342
+"271","Nossuk Bay","NOSK","A",20210726,80,9,2,2,"cockle","Clinocardium nutallii","CLAMCK",33.1,"Carter, Emma","",2021,55.7073,-133.342
+"272","Nossuk Bay","NOSK","A",20210726,96,10,3,2,"na","na","na",NA,"Carter, Emma","no clams",2021,55.7073,-133.342
+"273","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",49.2,"","",2021,55.282137,-133.334028
+"274","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",45.5,"","",2021,55.282137,-133.334028
+"275","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",48,"","",2021,55.282137,-133.334028
+"276","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",54.3,"","estimate",2021,55.282137,-133.334028
+"277","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",34.1,"","",2021,55.282137,-133.334028
+"278","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",41.7,"","",2021,55.282137,-133.334028
+"279","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",46.3,"","",2021,55.282137,-133.334028
+"280","Port Refugio","REFU","A",20210724,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",40.3,"","",2021,55.282137,-133.334028
+"281","Port Refugio","REFU","A",20210724,2,1,1,1,"pointed macoma","Macoma inquinata","CLMPOI",44.4,"","",2021,55.282137,-133.334028
+"282","Port Refugio","REFU","A",20210724,2,1,1,1,"pointed macoma","Macoma inquinata","CLMPOI",36.6,"","",2021,55.282137,-133.334028
+"283","Port Refugio","REFU","A",20210724,2,1,1,1,"pointed macoma","Macoma inquinata","CLMPOI",42,"","",2021,55.282137,-133.334028
+"284","Port Refugio","REFU","A",20210724,2,1,1,1,"macoma spp","Macoma spp","CLMMAC",42,"","estimate",2021,55.282137,-133.334028
+"285","Port Refugio","REFU","A",20210724,16,2,1,1,"butter clam","Saxidomus gigantea","CLAMBU",80.8,"","",2021,55.282137,-133.334028
+"286","Port Refugio","REFU","A",20210724,16,2,1,1,"butter clam","Saxidomus gigantea","CLAMBU",72.7,"","",2021,55.282137,-133.334028
+"287","Port Refugio","REFU","A",20210724,16,2,1,1,"butter clam","Saxidomus gigantea","CLAMBU",85.7,"","",2021,55.282137,-133.334028
+"288","Port Refugio","REFU","A",20210724,16,2,1,1,"steamer clam","Protothaca staminea","CLAMST",48.3,"","",2021,55.282137,-133.334028
+"289","Port Refugio","REFU","A",20210724,16,2,1,1,"steamer clam","Protothaca staminea","CLAMST",43.3,"","",2021,55.282137,-133.334028
+"290","Port Refugio","REFU","A",20210724,16,2,1,1,"cockle","Clinocardium nutallii","CLAMCK",25.8,"","",2021,55.282137,-133.334028
+"291","Port Refugio","REFU","A",20210724,16,2,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",47.3,"","",2021,55.282137,-133.334028
+"292","Port Refugio","REFU","A",20210724,16,2,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",46.6,"","",2021,55.282137,-133.334028
+"293","Port Refugio","REFU","A",20210724,16,2,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",51.9,"","",2021,55.282137,-133.334028
+"294","Port Refugio","REFU","A",20210724,16,2,1,1,"pointed macoma","Macoma inquinata","CLMPOI",30.1,"","",2021,55.282137,-133.334028
+"295","Port Refugio","REFU","A",20210724,16,2,1,1,"pointed macoma","Macoma inquinata","CLMPOI",43.8,"","",2021,55.282137,-133.334028
+"296","Port Refugio","REFU","A",20210724,16,2,1,1,"pointed macoma","Macoma inquinata","CLMPOI",22.8,"","",2021,55.282137,-133.334028
+"297","Port Refugio","REFU","A",20210724,16,2,1,1,"pointed macoma","Macoma inquinata","CLMPOI",24.5,"","",2021,55.282137,-133.334028
+"298","Port Refugio","REFU","A",20210724,27,3,1,1,"pointed macoma","Macoma inquinata","CLMPOI",22.7,"","",2021,55.282137,-133.334028
+"299","Port Refugio","REFU","A",20210724,27,3,1,1,"pointed macoma","Macoma inquinata","CLMPOI",42.9,"","",2021,55.282137,-133.334028
+"300","Port Refugio","REFU","A",20210724,27,3,1,1,"pointed macoma","Macoma inquinata","CLMPOI",36.9,"","",2021,55.282137,-133.334028
+"301","Port Refugio","REFU","A",20210724,34,4,1,1,"steamer clam","Protothaca staminea","CLAMST",36,"","",2021,55.282137,-133.334028
+"302","Port Refugio","REFU","A",20210724,34,4,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",61.6,"","",2021,55.282137,-133.334028
+"303","Port Refugio","REFU","A",20210724,34,4,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",36.1,"","",2021,55.282137,-133.334028
+"304","Port Refugio","REFU","A",20210724,34,4,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",51,"","",2021,55.282137,-133.334028
+"305","Port Refugio","REFU","A",20210724,34,4,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",33.1,"","",2021,55.282137,-133.334028
+"306","Port Refugio","REFU","A",20210724,50,5,1,2,"steamer clam","Protothaca staminea","CLAMST",56.9,"","",2021,55.282137,-133.334028
+"307","Port Refugio","REFU","A",20210724,50,5,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",57.4,"","",2021,55.282137,-133.334028
+"308","Port Refugio","REFU","A",20210724,50,5,1,2,"pointed macoma","Macoma inquinata","CLMPOI",33.2,"","",2021,55.282137,-133.334028
+"309","Port Refugio","REFU","A",20210724,60,6,1,2,"steamer clam","Protothaca staminea","CLAMST",38.2,"","",2021,55.282137,-133.334028
+"310","Port Refugio","REFU","A",20210724,60,6,1,2,"cockle","Clinocardium nutallii","CLAMCK",31.8,"","",2021,55.282137,-133.334028
+"311","Port Refugio","REFU","A",20210724,60,6,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",49.7,"","",2021,55.282137,-133.334028
+"312","Port Refugio","REFU","A",20210724,60,6,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",30.7,"","",2021,55.282137,-133.334028
+"313","Port Refugio","REFU","A",20210724,60,6,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",25.7,"","",2021,55.282137,-133.334028
+"314","Port Refugio","REFU","A",20210724,60,6,1,2,"pointed macoma","Macoma inquinata","CLMPOI",35,"","",2021,55.282137,-133.334028
+"315","Port Refugio","REFU","A",20210724,67,7,2,3,"steamer clam","Protothaca staminea","CLAMST",56.8,"","",2021,55.282137,-133.334028
+"316","Port Refugio","REFU","A",20210724,67,7,2,3,"steamer clam","Protothaca staminea","CLAMST",23.7,"","",2021,55.282137,-133.334028
+"317","Port Refugio","REFU","A",20210724,67,7,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",35.7,"","",2021,55.282137,-133.334028
+"318","Port Refugio","REFU","A",20210724,67,7,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",25.6,"","",2021,55.282137,-133.334028
+"319","Port Refugio","REFU","A",20210724,67,7,2,3,"pointed macoma","Macoma inquinata","CLMPOI",33.5,"","",2021,55.282137,-133.334028
+"320","Port Refugio","REFU","A",20210724,76,8,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",31.5,"","",2021,55.282137,-133.334028
+"321","Port Refugio","REFU","A",20210724,76,8,2,3,"pointed macoma","Macoma inquinata","CLMPOI",42.9,"","",2021,55.282137,-133.334028
+"322","Port Refugio","REFU","A",20210724,76,8,2,3,"pointed macoma","Macoma inquinata","CLMPOI",34.9,"","",2021,55.282137,-133.334028
+"323","Port Refugio","REFU","A",20210724,80,9,2,3,"steamer clam","Protothaca staminea","CLAMST",43.5,"","",2021,55.282137,-133.334028
+"324","Port Refugio","REFU","A",20210724,80,9,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",32.1,"","",2021,55.282137,-133.334028
+"325","Port Refugio","REFU","A",20210724,80,9,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",49.2,"","",2021,55.282137,-133.334028
+"326","Port Refugio","REFU","A",20210724,80,9,2,3,"pointed macoma","Macoma inquinata","CLMPOI",26.4,"","",2021,55.282137,-133.334028
+"327","Port Refugio","REFU","A",20210724,96,10,2,3,"butter clam","Saxidomus gigantea","CLAMBU",77.1,"","",2021,55.282137,-133.334028
+"328","Port Refugio","REFU","A",20210724,96,10,2,3,"butter clam","Saxidomus gigantea","CLAMBU",77.5,"","",2021,55.282137,-133.334028
+"329","Port Refugio","REFU","A",20210724,96,10,2,3,"butter clam","Saxidomus gigantea","CLAMBU",25.4,"","",2021,55.282137,-133.334028
+"330","Port Refugio","REFU","A",20210724,96,10,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",27.6,"","",2021,55.282137,-133.334028
+"331","Port Refugio","REFU","A",20210724,96,10,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",28.9,"","",2021,55.282137,-133.334028
+"332","Guktu Bay","GUKT","A",20220712,2,1,2,6,"steamer clam","Protothaca staminea","CLAMST",18.5,"Carter, Elyse","",2022,55.739816,-133.312022
+"333","Guktu Bay","GUKT","A",20220712,2,1,2,6,"bentnose macoma","Macoma nasuta","CLAMMB",23.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"334","Guktu Bay","GUKT","A",20220712,2,1,2,6,"bentnose macoma","Macoma nasuta","CLAMMB",20.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"335","Guktu Bay","GUKT","A",20220712,2,1,2,6,"pointed macoma","Macoma inquinata","CLMPOI",42,"Carter, Elyse","",2022,55.739816,-133.312022
+"336","Guktu Bay","GUKT","A",20220712,2,1,2,6,"pointed macoma","Macoma inquinata","CLMPOI",23.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"337","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",20.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"338","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",22.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"339","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",20,"Carter, Elyse","",2022,55.739816,-133.312022
+"340","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",19.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"341","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",20,"Carter, Elyse","",2022,55.739816,-133.312022
+"342","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",19.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"343","Guktu Bay","GUKT","A",20220712,2,1,2,6,"macoma spp","Macoma spp","CLMMAC",19.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"344","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",29.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"345","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",25.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"346","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",24,"Carter, Elyse","",2022,55.739816,-133.312022
+"347","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",28.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"348","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",28.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"349","Guktu Bay","GUKT","A",20220712,16,2,2,7,"steamer clam","Protothaca staminea","CLAMST",24.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"350","Guktu Bay","GUKT","A",20220712,16,2,2,7,"cockle","Clinocardium nutallii","CLAMCK",18,"Carter, Elyse","",2022,55.739816,-133.312022
+"351","Guktu Bay","GUKT","A",20220712,16,2,2,7,"bentnose macoma","Macoma nasuta","CLAMMB",29.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"352","Guktu Bay","GUKT","A",20220712,16,2,2,7,"pointed macoma","Macoma inquinata","CLMPOI",33.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"353","Guktu Bay","GUKT","A",20220712,16,2,2,7,"pointed macoma","Macoma inquinata","CLMPOI",28.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"354","Guktu Bay","GUKT","A",20220712,16,2,2,7,"pointed macoma","Macoma inquinata","CLMPOI",30.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"355","Guktu Bay","GUKT","A",20220712,16,2,2,7,"pointed macoma","Macoma inquinata","CLMPOI",25.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"356","Guktu Bay","GUKT","A",20220712,16,2,2,7,"pointed macoma","Macoma inquinata","CLMPOI",20.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"357","Guktu Bay","GUKT","A",20220712,16,2,2,7,"macoma spp","Macoma spp","CLMMAC",18.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"358","Guktu Bay","GUKT","A",20220712,16,2,2,7,"macoma spp","Macoma spp","CLMMAC",19.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"359","Guktu Bay","GUKT","A",20220712,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",23.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"360","Guktu Bay","GUKT","A",20220712,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",23.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"361","Guktu Bay","GUKT","A",20220712,27,3,3,7,"steamer clam","Protothaca staminea","CLAMST",27.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"362","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",26.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"363","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",26.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"364","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",25.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"365","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",19.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"366","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",21.5,"Carter, Elyse","",2022,55.739816,-133.312022
+"367","Guktu Bay","GUKT","A",20220712,27,3,3,7,"pointed macoma","Macoma inquinata","CLMPOI",19.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"368","Guktu Bay","GUKT","A",20220712,27,3,3,7,"macoma spp","Macoma spp","CLMMAC",16.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"369","Guktu Bay","GUKT","A",20220712,34,4,4,6,"bentnose macoma","Macoma nasuta","CLAMMB",20.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"370","Guktu Bay","GUKT","A",20220712,34,4,4,6,"pointed macoma","Macoma inquinata","CLMPOI",20,"Carter, Elyse","",2022,55.739816,-133.312022
+"371","Guktu Bay","GUKT","A",20220712,34,4,4,6,"pointed macoma","Macoma inquinata","CLMPOI",21.5,"Carter, Elyse","",2022,55.739816,-133.312022
+"372","Guktu Bay","GUKT","A",20220712,34,4,4,6,"macoma spp","Macoma spp","CLMMAC",20.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"373","Guktu Bay","GUKT","A",20220712,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",37.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"374","Guktu Bay","GUKT","A",20220712,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",17.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"375","Guktu Bay","GUKT","A",20220712,50,5,3,7,"steamer clam","Protothaca staminea","CLAMST",38.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"376","Guktu Bay","GUKT","A",20220712,50,5,3,7,"cockle","Clinocardium nutallii","CLAMCK",26.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"377","Guktu Bay","GUKT","A",20220712,50,5,3,7,"pointed macoma","Macoma inquinata","CLMPOI",22.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"378","Guktu Bay","GUKT","A",20220712,50,5,3,7,"pointed macoma","Macoma inquinata","CLMPOI",27.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"379","Guktu Bay","GUKT","A",20220712,50,5,3,7,"pointed macoma","Macoma inquinata","CLMPOI",26.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"380","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",31.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"381","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",33.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"382","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",52.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"383","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",34.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"384","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",26.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"385","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",32.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"386","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",20.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"387","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",30.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"388","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",30.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"389","Guktu Bay","GUKT","A",20220712,60,6,2,3,"bentnose macoma","Macoma nasuta","CLAMMB",35.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"390","Guktu Bay","GUKT","A",20220712,60,6,2,3,"macoma spp","Macoma spp","CLMMAC",22,"Carter, Elyse","",2022,55.739816,-133.312022
+"391","Guktu Bay","GUKT","A",20220712,67,7,1,2,"steamer clam","Protothaca staminea","CLAMST",36.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"392","Guktu Bay","GUKT","A",20220712,67,7,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",42.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"393","Guktu Bay","GUKT","A",20220712,67,7,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",36.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"394","Guktu Bay","GUKT","A",20220712,67,7,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",37.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"395","Guktu Bay","GUKT","A",20220712,67,7,1,2,"macoma spp","Macoma spp","CLMMAC",18.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"396","Guktu Bay","GUKT","A",20220712,67,7,1,2,"macoma spp","Macoma spp","CLMMAC",18.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"397","Guktu Bay","GUKT","A",20220712,67,7,1,2,"macoma spp","Macoma spp","CLMMAC",21.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"398","Guktu Bay","GUKT","A",20220712,76,8,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",34.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"399","Guktu Bay","GUKT","A",20220712,76,8,1,2,"pointed macoma","Macoma inquinata","CLMPOI",19.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"400","Guktu Bay","GUKT","A",20220712,76,8,1,2,"pointed macoma","Macoma inquinata","CLMPOI",23.3,"Carter, Elyse","",2022,55.739816,-133.312022
+"401","Guktu Bay","GUKT","A",20220712,76,8,1,2,"pointed macoma","Macoma inquinata","CLMPOI",21.2,"Carter, Elyse","",2022,55.739816,-133.312022
+"402","Guktu Bay","GUKT","A",20220712,80,9,1,2,"steamer clam","Protothaca staminea","CLAMST",36.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"403","Guktu Bay","GUKT","A",20220712,80,9,1,2,"steamer clam","Protothaca staminea","CLAMST",50.5,"Carter, Elyse","",2022,55.739816,-133.312022
+"404","Guktu Bay","GUKT","A",20220712,80,9,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",33.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"405","Guktu Bay","GUKT","A",20220712,96,10,2,5,"steamer clam","Protothaca staminea","CLAMST",32.4,"Carter, Elyse","",2022,55.739816,-133.312022
+"406","Guktu Bay","GUKT","A",20220712,96,10,2,5,"steamer clam","Protothaca staminea","CLAMST",19.6,"Carter, Elyse","",2022,55.739816,-133.312022
+"407","Guktu Bay","GUKT","A",20220712,96,10,2,5,"cockle","Clinocardium nutallii","CLAMCK",22.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"408","Guktu Bay","GUKT","A",20220712,96,10,2,5,"bentnose macoma","Macoma nasuta","CLAMMB",30.1,"Carter, Elyse","",2022,55.739816,-133.312022
+"409","Guktu Bay","GUKT","A",20220712,96,10,2,5,"pointed macoma","Macoma inquinata","CLMPOI",29.7,"Carter, Elyse","",2022,55.739816,-133.312022
+"410","Guktu Bay","GUKT","A",20220712,96,10,2,5,"pointed macoma","Macoma inquinata","CLMPOI",29.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"411","Guktu Bay","GUKT","A",20220712,96,10,2,5,"pointed macoma","Macoma inquinata","CLMPOI",19.9,"Carter, Elyse","",2022,55.739816,-133.312022
+"412","Guktu Bay","GUKT","A",20220712,96,10,2,5,"pointed macoma","Macoma inquinata","CLMPOI",26.8,"Carter, Elyse","",2022,55.739816,-133.312022
+"413","Nossuk Bay","NOSK","A",20220713,2,1,1,1,"steamer clam","Protothaca staminea","CLAMST",45,"Carter","",2022,55.7073,-133.342
+"414","Nossuk Bay","NOSK","A",20220713,2,1,1,1,"steamer clam","Protothaca staminea","CLAMST",43.6,"Carter","",2022,55.7073,-133.342
+"415","Nossuk Bay","NOSK","A",20220713,16,2,1,2,"steamer clam","Protothaca staminea","CLAMST",27.8,"Carter","",2022,55.7073,-133.342
+"416","Nossuk Bay","NOSK","A",20220713,27,3,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",40.9,"Carter","",2022,55.7073,-133.342
+"417","Nossuk Bay","NOSK","A",20220713,34,4,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",27.1,"Carter","",2022,55.7073,-133.342
+"418","Nossuk Bay","NOSK","A",20220713,50,5,4,5,"bentnose macoma","Macoma nasuta","CLAMMB",33,"Carter","",2022,55.7073,-133.342
+"419","Nossuk Bay","NOSK","A",20220713,50,5,4,5,"macoma spp","Macoma spp","CLMMAC",21.1,"Carter","",2022,55.7073,-133.342
+"420","Nossuk Bay","NOSK","A",20220713,50,5,4,5,"macoma spp","Macoma spp","CLMMAC",17.6,"Carter","",2022,55.7073,-133.342
+"421","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"steamer clam","Protothaca staminea","CLAMST",21.4,"Carter","",2022,55.7073,-133.342
+"422","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",31.6,"Carter","",2022,55.7073,-133.342
+"423","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",28.8,"Carter","",2022,55.7073,-133.342
+"424","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",20.6,"Carter","",2022,55.7073,-133.342
+"425","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"bentnose macoma","Macoma nasuta","CLAMMB",25.7,"Carter","",2022,55.7073,-133.342
+"426","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"pointed macoma","Macoma inquinata","CLMPOI",34.1,"Carter","",2022,55.7073,-133.342
+"427","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"pointed macoma","Macoma inquinata","CLMPOI",27.2,"Carter","",2022,55.7073,-133.342
+"428","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"pointed macoma","Macoma inquinata","CLMPOI",22.5,"Carter","",2022,55.7073,-133.342
+"429","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"macoma spp","Macoma spp","CLMMAC",23.7,"Carter","",2022,55.7073,-133.342
+"430","Nossuk Bay","NOSK","A",20220713,60,6,3,6,"macoma spp","Macoma spp","CLMMAC",24.3,"Carter","",2022,55.7073,-133.342
+"431","Nossuk Bay","NOSK","A",20220713,67,7,4,5,"steamer clam","Protothaca staminea","CLAMST",19.4,"Carter","",2022,55.7073,-133.342
+"432","Nossuk Bay","NOSK","A",20220713,67,7,4,5,"steamer clam","Protothaca staminea","CLAMST",43.5,"Carter","",2022,55.7073,-133.342
+"433","Nossuk Bay","NOSK","A",20220713,76,8,4,3,"butter clam","Saxidomus gigantea","CLAMBU",44.6,"Carter","",2022,55.7073,-133.342
+"434","Nossuk Bay","NOSK","A",20220713,80,9,4,3,"steamer clam","Protothaca staminea","CLAMST",40.8,"Carter","",2022,55.7073,-133.342
+"435","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"steamer clam","Protothaca staminea","CLAMST",25.9,"Carter","",2022,55.7073,-133.342
+"436","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"steamer clam","Protothaca staminea","CLAMST",37.5,"Carter","",2022,55.7073,-133.342
+"437","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",32.7,"Carter","",2022,55.7073,-133.342
+"438","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",20.4,"Carter","",2022,55.7073,-133.342
+"439","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"pointed macoma","Macoma inquinata","CLMPOI",23.1,"Carter","",2022,55.7073,-133.342
+"440","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"macoma spp","Macoma spp","CLMMAC",19.9,"Carter","",2022,55.7073,-133.342
+"441","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"macoma spp","Macoma spp","CLMMAC",19.6,"Carter","",2022,55.7073,-133.342
+"442","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"macoma spp","Macoma spp","CLMMAC",21,"Carter","",2022,55.7073,-133.342
+"443","Nossuk Bay","NOSK","A",20220713,96,10,3,4,"macoma spp","Macoma spp","CLMMAC",18,"Carter","",2022,55.7073,-133.342
+"444","Shinaku","SHIN","A",20220714,2,1,5,7,"cockle","Clinocardium nutallii","CLAMST",38,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"445","Shinaku","SHIN","A",20220714,34,4,5,6,"bentnose macoma","Macoma nasuta","CLAMMB",50.9,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"446","Shinaku","SHIN","A",20220714,67,7,4,3,"butter clam","Saxidomus gigantea","CLAMBU",41.2,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"447","Shinaku","SHIN","A",20220714,76,8,4,4,"cockle","Clinocardium nutallii","CLAMCK",40,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"448","Shinaku","SHIN","A",20220714,80,9,4,6,"butter clam","Saxidomus gigantea","CLAMBU",22.8,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"449","Shinaku","SHIN","A",20220714,96,10,5,6,"steamer clam","Protothaca staminea","CLAMST",24.6,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"450","Shinaku","SHIN","A",20220714,96,10,5,6,"steamer clam","Protothaca staminea","CLAMST",40.3,"Carter, Ginny, Jessica","",2022,55.59929,-133.16
+"451","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"butter clam","Saxidomus gigantea","CLAMBU",57.9,"Carter","",2022,55.25051,-132.883
+"452","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"butter clam","Saxidomus gigantea","CLAMBU",70.5,"Carter","",2022,55.25051,-132.883
+"453","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"butter clam","Saxidomus gigantea","CLAMBU",66.7,"Carter","",2022,55.25051,-132.883
+"454","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"steamer clam","Protothaca staminea","CLAMST",48.8,"Carter","",2022,55.25051,-132.883
+"455","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"steamer clam","Protothaca staminea","CLAMST",44.5,"Carter","",2022,55.25051,-132.883
+"456","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"steamer clam","Protothaca staminea","CLAMST",34.1,"Carter","",2022,55.25051,-132.883
+"457","Natzuhini Bay","NATZ","A",20220715,2,1,5,7,"bentnose macoma","Macoma nasuta","CLAMMB",39.5,"Carter","",2022,55.25051,-132.883
+"458","Natzuhini Bay","NATZ","A",20220715,16,2,5,7,"steamer clam","Protothaca staminea","CLAMST",37.7,"Carter","Lots of shell litter",2022,55.25051,-132.883
+"459","Natzuhini Bay","NATZ","A",20220715,16,2,5,7,"bentnose macoma","Macoma nasuta","CLAMMB",36.2,"Carter","Lots of shell litter",2022,55.25051,-132.883
+"460","Natzuhini Bay","NATZ","A",20220715,27,3,5,7,"butter clam","Saxidomus gigantea","CLAMBU",28.5,"Carter","",2022,55.25051,-132.883
+"461","Natzuhini Bay","NATZ","A",20220715,27,3,5,7,"steamer clam","Protothaca staminea","CLAMST",50.2,"Carter","",2022,55.25051,-132.883
+"462","Natzuhini Bay","NATZ","A",20220715,27,3,5,7,"bentnose macoma","Macoma nasuta","CLAMMB",35.3,"Carter","",2022,55.25051,-132.883
+"463","Natzuhini Bay","NATZ","A",20220715,27,3,5,7,"bentnose macoma","Macoma nasuta","CLAMMB",33.8,"Carter","",2022,55.25051,-132.883
+"464","Natzuhini Bay","NATZ","A",20220715,27,3,5,7,"bentnose macoma","Macoma nasuta","CLAMMB",28.6,"Carter","",2022,55.25051,-132.883
+"465","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"butter clam","Saxidomus gigantea","CLAMBU",68.1,"Carter","",2022,55.25051,-132.883
+"466","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"butter clam","Saxidomus gigantea","CLAMBU",65.5,"Carter","",2022,55.25051,-132.883
+"467","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"butter clam","Saxidomus gigantea","CLAMBU",62.1,"Carter","",2022,55.25051,-132.883
+"468","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"steamer clam","Protothaca staminea","CLAMST",48,"Carter","",2022,55.25051,-132.883
+"469","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"steamer clam","Protothaca staminea","CLAMST",42.5,"Carter","",2022,55.25051,-132.883
+"470","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"steamer clam","Protothaca staminea","CLAMST",44.3,"Carter","",2022,55.25051,-132.883
+"471","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"steamer clam","Protothaca staminea","CLAMST",49.6,"Carter","",2022,55.25051,-132.883
+"472","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"steamer clam","Protothaca staminea","CLAMST",61.1,"Carter","",2022,55.25051,-132.883
+"473","Natzuhini Bay","NATZ","A",20220715,34,4,8,5,"pointed macoma","Macoma inquinata","CLMPOI",30.4,"Carter","",2022,55.25051,-132.883
+"474","Natzuhini Bay","NATZ","A",20220715,50,5,8,5,"butter clam","Saxidomus gigantea","CLAMBU",69.9,"Carter","",2022,55.25051,-132.883
+"475","Natzuhini Bay","NATZ","A",20220715,60,6,5,7,"steamer clam","Protothaca staminea","CLAMST",52.9,"Carter","",2022,55.25051,-132.883
+"476","Natzuhini Bay","NATZ","A",20220715,60,6,5,7,"steamer clam","Protothaca staminea","CLAMST",53.8,"Carter","",2022,55.25051,-132.883
+"477","Natzuhini Bay","NATZ","A",20220715,60,6,5,7,"steamer clam","Protothaca staminea","CLAMST",56.9,"Carter","",2022,55.25051,-132.883
+"478","Natzuhini Bay","NATZ","A",20220715,60,6,5,7,"steamer clam","Protothaca staminea","CLAMST",50,"Carter","",2022,55.25051,-132.883
+"479","Natzuhini Bay","NATZ","A",20220715,60,6,5,7,"cockle","Clinocardium nutallii","CLAMCK",58.7,"Carter","",2022,55.25051,-132.883
+"480","Natzuhini Bay","NATZ","A",20220715,67,7,5,7,"butter clam","Saxidomus gigantea","CLAMBU",39.6,"Carter","",2022,55.25051,-132.883
+"481","Natzuhini Bay","NATZ","A",20220715,67,7,5,7,"steamer clam","Protothaca staminea","CLAMST",48.2,"Carter","",2022,55.25051,-132.883
+"482","Natzuhini Bay","NATZ","A",20220715,76,8,3,7,"butter clam","Saxidomus gigantea","CLAMBU",70.9,"Carter","",2022,55.25051,-132.883
+"483","Natzuhini Bay","NATZ","A",20220715,76,8,3,7,"butter clam","Saxidomus gigantea","CLAMBU",64.7,"Carter","",2022,55.25051,-132.883
+"484","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"butter clam","Saxidomus gigantea","CLAMBU",75,"Carter","",2022,55.25051,-132.883
+"485","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"butter clam","Saxidomus gigantea","CLAMBU",56.5,"Carter","",2022,55.25051,-132.883
+"486","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"butter clam","Saxidomus gigantea","CLAMBU",64.4,"Carter","",2022,55.25051,-132.883
+"487","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"steamer clam","Protothaca staminea","CLAMST",39.3,"Carter","",2022,55.25051,-132.883
+"488","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"cockle","Clinocardium nutallii","CLAMCK",27.6,"Carter","",2022,55.25051,-132.883
+"489","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"bentnose macoma","Macoma nasuta","CLAMMB",17.4,"Carter","",2022,55.25051,-132.883
+"490","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"bentnose macoma","Macoma nasuta","CLAMMB",28.5,"Carter","",2022,55.25051,-132.883
+"491","Natzuhini Bay","NATZ","A",20220715,80,9,8,2,"pointed macoma","Macoma inquinata","CLMPOI",33.1,"Carter","",2022,55.25051,-132.883
+"492","Natzuhini Bay","NATZ","A",20220715,96,10,8,2,"steamer clam","Protothaca staminea","CLAMST",49.2,"Carter","",2022,55.25051,-132.883
+"493","Natzuhini Bay","NATZ","A",20220715,96,10,8,2,"steamer clam","Protothaca staminea","CLAMST",51.9,"Carter","",2022,55.25051,-132.883
+"494","Natzuhini Bay","NATZ","A",20220715,96,10,8,2,"cockle","Clinocardium nutallii","CLAMCK",29.9,"Carter","",2022,55.25051,-132.883
+"495","Port Refugio","REFU","A",20220716,2,1,1,1,"butter clam","Saxidomus gigantea","CLAMBU",73,"Jessica","",2022,55.282137,-133.334028
+"496","Port Refugio","REFU","A",20220716,2,1,1,1,"butter clam","Saxidomus gigantea","CLAMBU",74.6,"Jessica","",2022,55.282137,-133.334028
+"497","Port Refugio","REFU","A",20220716,2,1,1,1,"cockle","Clinocardium nutallii","CLAMCK",24.7,"Jessica","",2022,55.282137,-133.334028
+"498","Port Refugio","REFU","A",20220716,2,1,1,1,"bentnose macoma","Macoma nasuta","CLAMMB",38.7,"Jessica","",2022,55.282137,-133.334028
+"499","Port Refugio","REFU","A",20220716,2,1,1,1,"pointed macoma","Macoma inquinata","CLMPOI",34,"Jessica","",2022,55.282137,-133.334028
+"500","Port Refugio","REFU","A",20220716,16,2,1,2,"steamer clam","Protothaca staminea","CLAMST",29.5,"Jessica","",2022,55.282137,-133.334028
+"501","Port Refugio","REFU","A",20220716,16,2,1,2,"bentnose macoma","Macoma nasuta","CLAMMB",44.8,"Jessica","",2022,55.282137,-133.334028
+"502","Port Refugio","REFU","A",20220716,16,2,1,2,"pointed macoma","Macoma inquinata","CLMPOI",43,"Jessica","",2022,55.282137,-133.334028
+"503","Port Refugio","REFU","A",20220716,27,3,2,3,"steamer clam","Protothaca staminea","CLAMST",44.8,"Jessica","",2022,55.282137,-133.334028
+"504","Port Refugio","REFU","A",20220716,27,3,2,3,"steamer clam","Protothaca staminea","CLAMST",54.5,"Jessica","",2022,55.282137,-133.334028
+"505","Port Refugio","REFU","A",20220716,27,3,2,3,"steamer clam","Protothaca staminea","CLAMST",40,"Jessica","",2022,55.282137,-133.334028
+"506","Port Refugio","REFU","A",20220716,34,4,3,2,"butter clam","Saxidomus gigantea","CLAMBU",80.1,"Jessica","",2022,55.282137,-133.334028
+"507","Port Refugio","REFU","A",20220716,34,4,3,2,"butter clam","Saxidomus gigantea","CLAMBU",47.3,"Jessica","",2022,55.282137,-133.334028
+"508","Port Refugio","REFU","A",20220716,34,4,3,2,"steamer clam","Protothaca staminea","CLAMST",44.5,"Jessica","",2022,55.282137,-133.334028
+"509","Port Refugio","REFU","A",20220716,50,5,4,3,"cockle","Clinocardium nutallii","CLAMCK",62,"Jessica","",2022,55.282137,-133.334028
+"510","Port Refugio","REFU","A",20220716,50,5,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",50,"Jessica","",2022,55.282137,-133.334028
+"511","Port Refugio","REFU","A",20220716,67,7,6,5,"butter clam","Saxidomus gigantea","CLAMBU",73.7,"Jessica","",2022,55.282137,-133.334028
+"512","Port Refugio","REFU","A",20220716,67,7,6,5,"butter clam","Saxidomus gigantea","CLAMBU",63.8,"Jessica","",2022,55.282137,-133.334028
+"513","Port Refugio","REFU","A",20220716,67,7,6,5,"butter clam","Saxidomus gigantea","CLAMBU",50.1,"Jessica","",2022,55.282137,-133.334028
+"514","Port Refugio","REFU","A",20220716,67,7,6,5,"steamer clam","Protothaca staminea","CLAMST",49.3,"Jessica","",2022,55.282137,-133.334028
+"515","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",79.2,"Jessica","",2022,55.282137,-133.334028
+"516","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",72.3,"Jessica","",2022,55.282137,-133.334028
+"517","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",55.7,"Jessica","",2022,55.282137,-133.334028
+"518","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",41.8,"Jessica","",2022,55.282137,-133.334028
+"519","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",74.4,"Jessica","estimate, smashed by shovel",2022,55.282137,-133.334028
+"520","Port Refugio","REFU","A",20220716,76,8,6,5,"butter clam","Saxidomus gigantea","CLAMBU",67.7,"Jessica","",2022,55.282137,-133.334028
+"521","Port Refugio","REFU","A",20220716,76,8,6,5,"steamer clam","Protothaca staminea","CLAMST",42.1,"Jessica","",2022,55.282137,-133.334028
+"522","Port Refugio","REFU","A",20220716,76,8,6,5,"steamer clam","Protothaca staminea","CLAMST",48.9,"Jessica","",2022,55.282137,-133.334028
+"523","Port Refugio","REFU","A",20220716,76,8,6,5,"pointed macoma","Macoma inquinata","CLMPOI",44.3,"Jessica","",2022,55.282137,-133.334028
+"524","Port Refugio","REFU","A",20220716,80,9,6,2,"butter clam","Saxidomus gigantea","CLAMBU",72.2,"Jessica","",2022,55.282137,-133.334028
+"525","Port Refugio","REFU","A",20220716,80,9,6,2,"steamer clam","Protothaca staminea","CLAMST",50.6,"Jessica","",2022,55.282137,-133.334028
+"526","Port Refugio","REFU","A",20220716,96,10,6,2,"butter clam","Saxidomus gigantea","CLAMBU",68.7,"Jessica","",2022,55.282137,-133.334028
+"527","Port Refugio","REFU","A",20220716,96,10,6,2,"cockle","Clinocardium nutallii","CLAMCK",40,"Jessica","",2022,55.282137,-133.334028
+"528","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",27.6,"","",2022,55.49709,-133.17
+"529","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",57.7,"","",2022,55.49709,-133.17
+"530","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",33.4,"","",2022,55.49709,-133.17
+"531","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",51.2,"","estimate, smashed by shovel",2022,55.49709,-133.17
+"532","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"pointed macoma","Macoma inquinata","CLMPOI",33.2,"","",2022,55.49709,-133.17
+"533","North Fish Egg Island","NFEI","A",20220717,2,1,4,3,"pointed macoma","Macoma inquinata","CLMPOI",31.4,"","",2022,55.49709,-133.17
+"534","North Fish Egg Island","NFEI","A",20220717,16,2,4,3,"butter clam","Saxidomus gigantea","CLAMBU",42.9,"","",2022,55.49709,-133.17
+"535","North Fish Egg Island","NFEI","A",20220717,16,2,4,3,"butter clam","Saxidomus gigantea","CLAMBU",33.9,"","estimate, smashed by shovel",2022,55.49709,-133.17
+"536","North Fish Egg Island","NFEI","A",20220717,16,2,4,3,"butter clam","Saxidomus gigantea","CLAMBU",28.6,"","",2022,55.49709,-133.17
+"537","North Fish Egg Island","NFEI","A",20220717,16,2,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",36.4,"","",2022,55.49709,-133.17
+"538","North Fish Egg Island","NFEI","A",20220717,16,2,4,3,"pointed macoma","Macoma inquinata","CLMPOI",28,"","",2022,55.49709,-133.17
+"539","North Fish Egg Island","NFEI","A",20220717,27,3,4,3,"butter clam","Saxidomus gigantea","CLAMBU",22.8,"","",2022,55.49709,-133.17
+"540","North Fish Egg Island","NFEI","A",20220717,27,3,4,3,"steamer clam","Protothaca staminea","CLAMST",47.8,"","",2022,55.49709,-133.17
+"541","North Fish Egg Island","NFEI","A",20220717,27,3,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",31.5,"","",2022,55.49709,-133.17
+"542","North Fish Egg Island","NFEI","A",20220717,27,3,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",39.2,"","",2022,55.49709,-133.17
+"543","North Fish Egg Island","NFEI","A",20220717,34,4,4,3,"cockle","Clinocardium nutallii","CLAMCK",31.7,"","",2022,55.49709,-133.17
+"544","North Fish Egg Island","NFEI","A",20220717,34,4,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",40.5,"","",2022,55.49709,-133.17
+"545","North Fish Egg Island","NFEI","A",20220717,34,4,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",31.5,"","",2022,55.49709,-133.17
+"546","North Fish Egg Island","NFEI","A",20220717,34,4,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",45.9,"","",2022,55.49709,-133.17
+"547","North Fish Egg Island","NFEI","A",20220717,50,5,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",43.5,"","",2022,55.49709,-133.17
+"548","North Fish Egg Island","NFEI","A",20220717,60,6,4,3,"butter clam","Saxidomus gigantea","CLAMBU",52.9,"","estimate, smashed by shovel",2022,55.49709,-133.17
+"549","North Fish Egg Island","NFEI","A",20220717,60,6,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",29.9,"","",2022,55.49709,-133.17
+"550","North Fish Egg Island","NFEI","A",20220717,67,7,4,3,"cockle","Clinocardium nutallii","CLAMCK",36.6,"","",2022,55.49709,-133.17
+"551","North Fish Egg Island","NFEI","A",20220717,76,8,4,4,"steamer clam","Protothaca staminea","CLAMST",51,"","",2022,55.49709,-133.17
+"552","North Fish Egg Island","NFEI","A",20220717,76,8,4,4,"bentnose macoma","Macoma nasuta","CLAMMB",36.6,"","",2022,55.49709,-133.17
+"553","North Fish Egg Island","NFEI","A",20220717,76,8,4,4,"bentnose macoma","Macoma nasuta","CLAMMB",38.9,"","",2022,55.49709,-133.17
+"554","North Fish Egg Island","NFEI","A",20220717,76,8,4,4,"pointed macoma","Macoma inquinata","CLMPOI",34,"","",2022,55.49709,-133.17
+"555","North Fish Egg Island","NFEI","A",20220717,76,8,4,4,"pointed macoma","Macoma inquinata","CLMPOI",32,"","",2022,55.49709,-133.17
+"556","North Fish Egg Island","NFEI","A",20220717,80,9,4,3,"cockle","Clinocardium nutallii","CLAMCK",36.7,"","",2022,55.49709,-133.17
+"557","North Fish Egg Island","NFEI","A",20220717,80,9,4,3,"bentnose macoma","Macoma nasuta","CLAMMB",34.9,"","",2022,55.49709,-133.17
+"558","North Fish Egg Island","NFEI","A",20220717,80,9,4,3,"pointed macoma","Macoma inquinata","CLMPOI",29.9,"","",2022,55.49709,-133.17
+"559","North Fish Egg Island","NFEI","A",20220717,96,10,3,4,"butter clam","Saxidomus gigantea","CLAMBU",31.3,"","",2022,55.49709,-133.17
+"560","North Fish Egg Island","NFEI","A",20220717,96,10,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",19.8,"","",2022,55.49709,-133.17
+"561","North Fish Egg Island","NFEI","A",20220717,96,10,3,4,"bentnose macoma","Macoma nasuta","CLAMMB",48.7,"","",2022,55.49709,-133.17

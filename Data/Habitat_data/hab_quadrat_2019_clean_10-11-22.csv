@@ -1,0 +1,126 @@
+"","quadrat_ID","site","date","YYYYMMDD","quadrat","density_0.25msq","flowering_0.25msq","notes","siteID_NOAA","place_name","bay_id","latitude","longitude","habitat_quadrat","habitat_site","total_biomass_g"
+"1",1,"Shakan - kelp","6/8/2019",20190608,1,NA,NA,"",184,"Shakan Bay","SHKN_A",56.14833333,-133.5377778,"kelp","kelp",620.9
+"2",2,"Shakan - kelp","6/8/2019",20190608,2,NA,NA,"",184,"Shakan Bay","SHKN_A",56.14833333,-133.5377778,"kelp","kelp",230.4
+"3",3,"Shakan - kelp","6/8/2019",20190608,3,NA,NA,"",184,"Shakan Bay","SHKN_A",56.14833333,-133.5377778,"kelp","kelp",869.4
+"4",4,"Shakan - kelp","6/8/2019",20190608,4,NA,NA,"",184,"Shakan Bay","SHKN_A",56.14833333,-133.5377778,"kelp","kelp",714.3
+"5",5,"Shakan - kelp","6/8/2019",20190608,5,NA,NA,"",184,"Shakan Bay","SHKN_A",56.14833333,-133.5377778,"kelp","kelp",748.7
+"6",6,"Shakan - eel","6/7/2019",20190607,1,29,0,"32.4",177,"Calder Bay","CALD_A",56.200908,-133.521038,"eelgrass","seagrass",NA
+"7",7,"Shakan - eel","6/7/2019",20190607,2,18,0,"",177,"Calder Bay","CALD_A",56.200908,-133.521038,"eelgrass","seagrass",NA
+"8",8,"Shakan - eel","6/7/2019",20190607,3,39,0,"",177,"Calder Bay","CALD_A",56.200908,-133.521038,"eelgrass","seagrass",NA
+"9",9,"Shakan - eel","6/7/2019",20190607,4,28,0,"",177,"Calder Bay","CALD_A",56.200908,-133.521038,"eelgrass","seagrass",NA
+"10",10,"Shakan - eel","6/7/2019",20190607,5,48,0,"",177,"Calder Bay","CALD_A",56.200908,-133.521038,"eelgrass","seagrass",NA
+"11",11,"Baker Island - eel","6/18/2019",20190618,1,138,0,"",108,"Baker Island","BAKE_A",55.3575,-133.5869444,"eelgrass","seagrass",NA
+"12",12,"Baker Island - eel","6/18/2019",20190618,2,246,0,"",108,"Baker Island","BAKE_A",55.3575,-133.5869444,"eelgrass","seagrass",NA
+"13",13,"Baker Island - eel","6/18/2019",20190618,3,309,0,"",108,"Baker Island","BAKE_A",55.3575,-133.5869444,"eelgrass","seagrass",NA
+"14",14,"Baker Island - eel","6/18/2019",20190618,4,255,0,"",108,"Baker Island","BAKE_A",55.3575,-133.5869444,"eelgrass","seagrass",NA
+"15",15,"Baker Island - eel","6/18/2019",20190618,5,156,0,"",108,"Baker Island","BAKE_A",55.3575,-133.5869444,"eelgrass","seagrass",NA
+"16",16,"Goat Mouth Inlet","6/17/2019",20190617,1,71,0,"",NA,"Goats mouth inlet","GOAT_A",55.192784,-132.900113,"eelgrass","seagrass",NA
+"17",17,"Goat Mouth Inlet","6/17/2019",20190617,2,95,0,"",NA,"Goats mouth inlet","GOAT_A",55.192784,-132.900113,"eelgrass","seagrass",NA
+"18",18,"Goat Mouth Inlet","6/17/2019",20190617,3,61,0,"",NA,"Goats mouth inlet","GOAT_A",55.192784,-132.900113,"eelgrass","seagrass",NA
+"19",19,"Goat Mouth Inlet","6/17/2019",20190617,4,77,0,"",NA,"Goats mouth inlet","GOAT_A",55.192784,-132.900113,"eelgrass","seagrass",NA
+"20",20,"Goat Mouth Inlet","6/17/2019",20190617,5,87,0,"",NA,"Goats mouth inlet","GOAT_A",55.192784,-132.900113,"eelgrass","seagrass",NA
+"21",21,"Naukati","5/21/2019",20190521,1,67,0,"",NA,"Naukati Bay","NAUK_A",55.862405,-133.190722,"eelgrass","seagrass",NA
+"22",22,"Naukati","5/21/2019",20190521,2,88,0,"",NA,"Naukati Bay","NAUK_A",55.862405,-133.190722,"eelgrass","seagrass",NA
+"23",23,"Naukati","5/21/2019",20190521,3,105,0,"",NA,"Naukati Bay","NAUK_A",55.862405,-133.190722,"eelgrass","seagrass",NA
+"24",24,"Naukati","5/21/2019",20190521,4,58,0,"",NA,"Naukati Bay","NAUK_A",55.862405,-133.190722,"eelgrass","seagrass",NA
+"25",25,"Naukati","5/21/2019",20190521,5,89,0,"",NA,"Naukati Bay","NAUK_A",55.862405,-133.190722,"eelgrass","seagrass",NA
+"26",26,"Dunbar Inlet","5/6/2019",20190506,1,151,0,"small thin blades for most of the bed",NA,"Dunbar Inlet","DUNB_A",55.0848,-132.826,"eelgrass","seagrass",NA
+"27",27,"Dunbar Inlet","5/6/2019",20190506,2,119,0,"",NA,"Dunbar Inlet","DUNB_A",55.0848,-132.826,"eelgrass","seagrass",NA
+"28",28,"Dunbar Inlet","5/6/2019",20190506,3,99,0,"",NA,"Dunbar Inlet","DUNB_A",55.0848,-132.826,"eelgrass","seagrass",NA
+"29",29,"Dunbar Inlet","5/6/2019",20190506,4,103,0,"",NA,"Dunbar Inlet","DUNB_A",55.0848,-132.826,"eelgrass","seagrass",NA
+"30",30,"Dunbar Inlet","5/6/2019",20190506,5,122,0,"",NA,"Dunbar Inlet","DUNB_A",55.0848,-132.826,"eelgrass","seagrass",NA
+"31",31,"Klawock airport","5/7/2019",20190507,1,141,0,"",131,"Klawock Airport","KLWA_A",55.577767,-133.0941,"eelgrass","seagrass",NA
+"32",32,"Klawock airport","5/7/2019",20190507,2,99,0,"",131,"Klawock Airport","KLWA_A",55.577767,-133.0941,"eelgrass","seagrass",NA
+"33",33,"Klawock airport","5/7/2019",20190507,3,89,0,"",131,"Klawock Airport","KLWA_A",55.577767,-133.0941,"eelgrass","seagrass",NA
+"34",34,"Klawock airport","5/7/2019",20190507,4,75,0,"",131,"Klawock Airport","KLWA_A",55.577767,-133.0941,"eelgrass","seagrass",NA
+"35",35,"Klawock airport","5/7/2019",20190507,5,57,0,"",131,"Klawock Airport","KLWA_A",55.577767,-133.0941,"eelgrass","seagrass",NA
+"36",36,"Salt Lake Bay","6/2/2019",20190602,1,154,0,"",NA,"Salt Lake Bay","SALA_A",55.672389,-133.377184,"eelgrass","seagrass",NA
+"37",37,"Salt Lake Bay","6/2/2019",20190602,2,113,0,"",NA,"Salt Lake Bay","SALA_A",55.672389,-133.377184,"eelgrass","seagrass",NA
+"38",38,"Salt Lake Bay","6/2/2019",20190602,3,105,0,"",NA,"Salt Lake Bay","SALA_A",55.672389,-133.377184,"eelgrass","seagrass",NA
+"39",39,"Salt Lake Bay","6/2/2019",20190602,4,98,0,"",NA,"Salt Lake Bay","SALA_A",55.672389,-133.377184,"eelgrass","seagrass",NA
+"40",40,"Salt Lake Bay","6/2/2019",20190602,5,77,0,"",NA,"Salt Lake Bay","SALA_A",55.672389,-133.377184,"eelgrass","seagrass",NA
+"41",41,"North Pass","5/9/2019",20190509,1,57,0,"",NA,"North Pass","NPAS_A",55.229358,-132.924121,"eelgrass","seagrass",NA
+"42",42,"North Pass","5/9/2019",20190509,2,51,0,"",NA,"North Pass","NPAS_A",55.229358,-132.924121,"eelgrass","seagrass",NA
+"43",43,"North Pass","5/9/2019",20190509,3,48,0,"",NA,"North Pass","NPAS_A",55.229358,-132.924121,"eelgrass","seagrass",NA
+"44",44,"North Pass","5/9/2019",20190509,4,56,0,"",NA,"North Pass","NPAS_A",55.229358,-132.924121,"eelgrass","seagrass",NA
+"45",45,"North Pass","5/9/2019",20190509,5,34,0,"",NA,"North Pass","NPAS_A",55.229358,-132.924121,"eelgrass","seagrass",NA
+"46",46,"South Wadleigh","5/10/2019",20190510,1,98,0,"",NA,"South Wadleigh Island","SWAD_B",55.528672,-133.14864,"eelgrass","seagrass",NA
+"47",47,"South Wadleigh","5/10/2019",20190510,2,53,0,"",NA,"South Wadleigh Island","SWAD_B",55.528672,-133.14864,"eelgrass","seagrass",NA
+"48",48,"South Wadleigh","5/10/2019",20190510,3,141,0,"",NA,"South Wadleigh Island","SWAD_B",55.528672,-133.14864,"eelgrass","seagrass",NA
+"49",49,"South Wadleigh","5/10/2019",20190510,4,100,0,"",NA,"South Wadleigh Island","SWAD_B",55.528672,-133.14864,"eelgrass","seagrass",NA
+"50",50,"South Wadleigh","5/10/2019",20190510,5,43,0,"",NA,"South Wadleigh Island","SWAD_B",55.528672,-133.14864,"eelgrass","seagrass",NA
+"51",51,"Shinaku Inlet","5/17/2019",20190517,1,86,2,"",NA,"Shinaku Inlet","SHIN_A",55.59929,-133.16,"eelgrass","seagrass",NA
+"52",52,"Shinaku Inlet","5/17/2019",20190517,2,71,0,"",NA,"Shinaku Inlet","SHIN_A",55.59929,-133.16,"eelgrass","seagrass",NA
+"53",53,"Shinaku Inlet","5/17/2019",20190517,3,71,0,"only 13 measured",NA,"Shinaku Inlet","SHIN_A",55.59929,-133.16,"eelgrass","seagrass",NA
+"54",54,"Shinaku Inlet","5/17/2019",20190517,4,54,4,"",NA,"Shinaku Inlet","SHIN_A",55.59929,-133.16,"eelgrass","seagrass",NA
+"55",55,"Shinaku Inlet","5/17/2019",20190517,5,48,0,"",NA,"Shinaku Inlet","SHIN_A",55.59929,-133.16,"eelgrass","seagrass",NA
+"56",56,"Guktu","5/18/2019",20190518,1,117,0,"",NA,"Guktu Bay","GUKT_A",55.739816,-133.312022,"eelgrass","seagrass",NA
+"57",57,"Guktu","5/18/2019",20190518,2,92,0,"",NA,"Guktu Bay","GUKT_A",55.739816,-133.312022,"eelgrass","seagrass",NA
+"58",58,"Guktu","5/18/2019",20190518,3,115,0,"",NA,"Guktu Bay","GUKT_A",55.739816,-133.312022,"eelgrass","seagrass",NA
+"59",59,"Guktu","5/18/2019",20190518,4,79,0,"",NA,"Guktu Bay","GUKT_A",55.739816,-133.312022,"eelgrass","seagrass",NA
+"60",60,"Guktu","5/18/2019",20190518,5,168,0,"only 12 measured ",NA,"Guktu Bay","GUKT_A",55.739816,-133.312022,"eelgrass","seagrass",NA
+"61",61,"Port Refugio","5/19/2019",20190519,1,109,0,"",NA,"Port Refugio","REFU_A",55.282137,-133.334028,"eelgrass","seagrass",NA
+"62",62,"Port Refugio","5/19/2019",20190519,2,122,0,"",NA,"Port Refugio","REFU_A",55.282137,-133.334028,"eelgrass","seagrass",NA
+"63",63,"Port Refugio","5/19/2019",20190519,3,117,0,"",NA,"Port Refugio","REFU_A",55.282137,-133.334028,"eelgrass","seagrass",NA
+"64",64,"Port Refugio","5/19/2019",20190519,4,79,0,"",NA,"Port Refugio","REFU_A",55.282137,-133.334028,"eelgrass","seagrass",NA
+"65",65,"Port Refugio","5/19/2019",20190519,5,84,0,"",NA,"Port Refugio","REFU_A",55.282137,-133.334028,"eelgrass","seagrass",NA
+"66",66,"North Fish Egg","5/23/19",20190523,1,202,0,"",135,"North Fish Egg Island","NFEI_A",55.49709,-133.17,"eelgrass","seagrass",NA
+"67",67,"North Fish Egg","5/23/19",20190523,2,213,3,"",135,"North Fish Egg Island","NFEI_A",55.49709,-133.17,"eelgrass","seagrass",NA
+"68",68,"North Fish Egg","5/23/19",20190523,3,302,0,"",135,"North Fish Egg Island","NFEI_A",55.49709,-133.17,"eelgrass","seagrass",NA
+"69",69,"North Fish Egg","5/23/19",20190523,4,156,0,"",135,"North Fish Egg Island","NFEI_A",55.49709,-133.17,"eelgrass","seagrass",NA
+"70",70,"North Fish Egg","5/23/19",20190523,5,166,0,"",135,"North Fish Egg Island","NFEI_A",55.49709,-133.17,"eelgrass","seagrass",NA
+"71",71,"Natzuhini","6/16/2019",20190616,1,74,1,"",NA,"Natzuhini Bay","NATZ_C",55.247155,-132.879137,"eelgrass","seagrass",NA
+"72",72,"Natzuhini","6/16/2019",20190616,2,91,0,"",NA,"Natzuhini Bay","NATZ_C",55.247155,-132.879137,"eelgrass","seagrass",NA
+"73",73,"Natzuhini","6/16/2019",20190616,3,86,1,"",NA,"Natzuhini Bay","NATZ_C",55.247155,-132.879137,"eelgrass","seagrass",NA
+"74",74,"Natzuhini","6/16/2019",20190616,4,65,0,"",NA,"Natzuhini Bay","NATZ_C",55.247155,-132.879137,"eelgrass","seagrass",NA
+"75",75,"Natzuhini","6/16/2019",20190616,5,64,2,"",NA,"Natzuhini Bay","NATZ_C",55.247155,-132.879137,"eelgrass","seagrass",NA
+"76",76,"Heceta","6/15/2019",20190615,1,53,0,"",155,"Heceta Island","HECA_A",55.77083333,-133.5361111,"eelgrass","seagrass",NA
+"77",77,"Heceta","6/15/2019",20190615,2,69,3,"",155,"Heceta Island","HECA_A",55.77083333,-133.5361111,"eelgrass","seagrass",NA
+"78",78,"Heceta","6/15/2019",20190615,3,43,5,"",155,"Heceta Island","HECA_A",55.77083333,-133.5361111,"eelgrass","seagrass",NA
+"79",79,"Heceta","6/15/2019",20190615,4,40,0,"",155,"Heceta Island","HECA_A",55.77083333,-133.5361111,"eelgrass","seagrass",NA
+"80",80,"Heceta","6/15/2019",20190615,5,54,2,"",155,"Heceta Island","HECA_A",55.77083333,-133.5361111,"eelgrass","seagrass",NA
+"81",81,"Nossuk Bay","6/14/2019",20190614,1,92,0,"",NA,"Nossuk Bay","NOSK_E",55.70802,-133.34102,"eelgrass","seagrass",NA
+"82",82,"Nossuk Bay","6/14/2019",20190614,2,63,0,"",NA,"Nossuk Bay","NOSK_E",55.70802,-133.34102,"eelgrass","seagrass",NA
+"83",83,"Nossuk Bay","6/14/2019",20190614,3,62,0,"",NA,"Nossuk Bay","NOSK_E",55.70802,-133.34102,"eelgrass","seagrass",NA
+"84",84,"Nossuk Bay","6/14/2019",20190614,4,89,2,"",NA,"Nossuk Bay","NOSK_E",55.70802,-133.34102,"eelgrass","seagrass",NA
+"85",85,"Nossuk Bay","6/14/2019",20190614,5,76,0,"",NA,"Nossuk Bay","NOSK_E",55.70802,-133.34102,"eelgrass","seagrass",NA
+"86",86,"Kaguk ","6/6/19",20190606,1,67,0,"",NA,"Kaguk Cove","KAGK_B",55.734934,-133.295111,"eelgrass","seagrass",NA
+"87",87,"Kaguk ","6/6/19",20190606,2,81,1,"",NA,"Kaguk Cove","KAGK_B",55.734934,-133.295111,"eelgrass","seagrass",NA
+"88",88,"Kaguk ","6/6/19",20190606,3,96,1,"",NA,"Kaguk Cove","KAGK_B",55.734934,-133.295111,"eelgrass","seagrass",NA
+"89",89,"Kaguk ","6/6/19",20190606,4,113,4,"",NA,"Kaguk Cove","KAGK_B",55.734934,-133.295111,"eelgrass","seagrass",NA
+"90",90,"Kaguk ","6/6/19",20190606,5,64,0,"",NA,"Kaguk Cove","KAGK_B",55.734934,-133.295111,"eelgrass","seagrass",NA
+"91",91,"Farallon","5/22/19",20190522,1,82,0,"",NA,"Farallon Bay","FARA_A",55.19112,-133.105314,"eelgrass","seagrass",NA
+"92",92,"Farallon","5/22/19",20190522,2,62,0,"",NA,"Farallon Bay","FARA_A",55.19112,-133.105314,"eelgrass","seagrass",NA
+"93",93,"Farallon","5/22/19",20190522,3,60,0,"",NA,"Farallon Bay","FARA_A",55.19112,-133.105314,"eelgrass","seagrass",NA
+"94",94,"Farallon","5/22/19",20190522,4,71,0,"",NA,"Farallon Bay","FARA_A",55.19112,-133.105314,"eelgrass","seagrass",NA
+"95",95,"Farallon","5/22/19",20190522,5,35,0,"",NA,"Farallon Bay","FARA_A",55.19112,-133.105314,"eelgrass","seagrass",NA
+"96",96,"Chusini-Kladein Flat","5/8/19",20190508,1,73,0,"",NA,"Chusini Cove","CHUS_B",55.81849,-133.1794,"eelgrass","seagrass",NA
+"97",97,"Chusini-Kladein Flat","5/8/19",20190508,2,70,0,"",NA,"Chusini Cove","CHUS_B",55.81849,-133.1794,"eelgrass","seagrass",NA
+"98",98,"Chusini-Kladein Flat","5/8/19",20190508,3,117,0,"",NA,"Chusini Cove","CHUS_B",55.81849,-133.1794,"eelgrass","seagrass",NA
+"99",99,"Chusini-Kladein Flat","5/8/19",20190508,4,84,0,"",NA,"Chusini Cove","CHUS_B",55.81849,-133.1794,"eelgrass","seagrass",NA
+"100",100,"Chusini-Kladein Flat","5/8/19",20190508,5,81,0,"",NA,"Chusini Cove","CHUS_B",55.81849,-133.1794,"eelgrass","seagrass",NA
+"101",101,"South Fish Egg","5/20/19",20190520,1,267,2,"",NA,"South Fish Egg Island","SFEI_A",55.48442,-133.17549,"eelgrass","seagrass",NA
+"102",102,"South Fish Egg","5/20/19",20190520,2,372,0,"",NA,"South Fish Egg Island","SFEI_A",55.48442,-133.17549,"eelgrass","seagrass",NA
+"103",103,"South Fish Egg","5/20/19",20190520,3,284,0,"",NA,"South Fish Egg Island","SFEI_A",55.48442,-133.17549,"eelgrass","seagrass",NA
+"104",104,"South Fish Egg","5/20/19",20190520,4,359,0,"",NA,"South Fish Egg Island","SFEI_A",55.48442,-133.17549,"eelgrass","seagrass",NA
+"105",105,"South Fish Egg","5/20/19",20190520,5,332,0,"",NA,"South Fish Egg Island","SFEI_A",55.48442,-133.17549,"eelgrass","seagrass",NA
+"106",106,"North Fish Egg-Kelp","5/11/19",20190511,1,NA,NA,"",139,"North Fish Egg Island","NFEI_B",55.50083,-133.1672,"kelp","kelp",508
+"107",107,"North Fish Egg-Kelp","5/11/19",20190511,2,NA,NA,"",139,"North Fish Egg Island","NFEI_B",55.50083,-133.1672,"kelp","kelp",128
+"108",108,"North Fish Egg-Kelp","5/11/19",20190511,3,NA,NA,"",139,"North Fish Egg Island","NFEI_B",55.50083,-133.1672,"kelp","kelp",164
+"109",109,"North Fish Egg-Kelp","5/11/19",20190511,4,NA,NA,"",139,"North Fish Egg Island","NFEI_B",55.50083,-133.1672,"kelp","kelp",180
+"110",110,"North Fish Egg-Kelp","5/11/19",20190511,5,NA,NA,"",139,"North Fish Egg Island","NFEI_B",55.50083,-133.1672,"kelp","kelp",416
+"111",111,"Heceta - kelp","6/3/19",20190603,1,NA,NA,"",157,"Heceta Island","HECA_B",55.75805556,-133.4708333,"kelp","kelp",669.6
+"112",112,"Heceta - kelp","6/3/19",20190603,2,NA,NA,"",157,"Heceta Island","HECA_B",55.75805556,-133.4708333,"kelp","kelp",613.4
+"113",113,"Heceta - kelp","6/3/19",20190603,3,NA,NA,"",157,"Heceta Island","HECA_B",55.75805556,-133.4708333,"kelp","kelp",449.6
+"114",114,"Heceta - kelp","6/3/19",20190603,4,NA,NA,"",157,"Heceta Island","HECA_B",55.75805556,-133.4708333,"kelp","kelp",778.3
+"115",115,"Heceta - kelp","6/3/19",20190603,5,NA,NA,"",157,"Heceta Island","HECA_B",55.75805556,-133.4708333,"kelp","kelp",656.3
+"116",116,"Baker Island - kelp ","6/6/19",20190606,1,NA,NA,"",110,"Baker Island","BAKE_B",55.35972222,-133.5877778,"kelp","kelp",822.3
+"117",117,"Baker Island - kelp ","6/6/19",20190606,2,NA,NA,"",110,"Baker Island","BAKE_B",55.35972222,-133.5877778,"kelp","kelp",1139.4
+"118",118,"Baker Island - kelp ","6/6/19",20190606,3,NA,NA,"",110,"Baker Island","BAKE_B",55.35972222,-133.5877778,"kelp","kelp",776.4
+"119",119,"Baker Island - kelp ","6/6/19",20190606,4,NA,NA,"",110,"Baker Island","BAKE_B",55.35972222,-133.5877778,"kelp","kelp",1701
+"120",120,"Baker Island - kelp ","6/6/19",20190606,5,NA,NA,"",110,"Baker Island","BAKE_B",55.35972222,-133.5877778,"kelp","kelp",896.2
+"121",121,"Craig Highway","5/20/19",20190520,1,NA,NA,"",146,"Klawock Hwy","KLWH_A",55.5125,-133.1297222,"kelp","kelp",574
+"122",122,"Craig Highway","5/20/19",20190520,2,NA,NA,"",146,"Klawock Hwy","KLWH_A",55.5125,-133.1297222,"kelp","kelp",1500
+"123",123,"Craig Highway","5/20/19",20190520,3,NA,NA,"",146,"Klawock Hwy","KLWH_A",55.5125,-133.1297222,"kelp","kelp",658
+"124",124,"Craig Highway","5/20/19",20190520,4,NA,NA,"",146,"Klawock Hwy","KLWH_A",55.5125,-133.1297222,"kelp","kelp",243
+"125",125,"Craig Highway","5/20/19",20190520,5,NA,NA,"",146,"Klawock Hwy","KLWH_A",55.5125,-133.1297222,"kelp","kelp",663

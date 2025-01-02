@@ -1,0 +1,990 @@
+bay_code,bay_sample,place_name,year,date,YYYYMMDD,trans_loc,trans_area_m2,species_common,species_scientific,species_code,death_estimate,width_mm,Width_checked,IF Function,notes,measurers
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,57.1,57.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,37.5,37.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,72.1,72.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,52.1,52.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,55.8,55.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,46.9,46.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,34.5,34.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,32,32,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,45.5,45.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,53,53,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,53.7,53.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,78.8,78.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,49.9,49.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,44.7,44.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,drill hole,68.4,68.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,49.3,49.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,40,40,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.2,40.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,30.7,30.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.8,34.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.1,41.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,32.1,32.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.9,33.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,45.4,45.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.9,38.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.1,38.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.1,35.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,29.1,29.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.1,34.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,32,32,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.7,41.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,crab,37.4,37.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,crab,30.9,30.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.6,39.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.2,40.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,46.2,46.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,49.5,49.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.5,42.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.6,42.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.6,31.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.5,36.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.5,33.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.2,33.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.5,39.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.1,34.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,43.8,43.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.2,34.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.3,26.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32,32,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.2,39.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.2,36.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.2,36.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.1,34.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.5,37.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.4,33.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.6,33.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.2,31.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.2,30.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32,32,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.8,32.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.2,32.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,43,43,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,33.4,33.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,30.4,30.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,40.4,40.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,31.1,31.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,28.6,28.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,22.4,22.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,38,38,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.1,28.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40,40,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33.8,33.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.7,29.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.5,29.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.5,39.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.4,42.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,25.7,25.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.7,32.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,30,30,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.2,42.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.9,37.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.4,39.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.6,28.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.1,34.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.2,28.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.3,38.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.2,32.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.9,32.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,31.8,31.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.5,34.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.9,35.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.1,38.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.8,37.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,20,20,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.8,29.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,26.9,26.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,26.8,26.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,38.9,38.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,38.6,38.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,38.1,38.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,56.6,56.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.2,66.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,61,61,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,55.5,55.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,55.9,55.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,53.1,53.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,65.7,65.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,47.3,47.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,41.2,41.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,32.4,32.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43,43,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.3,43.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.5,38.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.2,40.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,37.1,37.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.8,40.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,36.9,36.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40,40,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.5,35.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,42.1,42.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.6,40.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.1,39.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.5,33.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.5,47.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.6,33.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39,39,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.4,33.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.2,35.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.4,31.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.9,31.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,36.7,36.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,37.9,37.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,29.9,29.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.5,31.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,crab,36.1,36.1,YES,estimate,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,crab,35.5,35.5,YES,estimate,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,crab,24.1,24.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.2,39.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.1,40.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.8,40.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.6,39.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.6,33.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,41,41,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,43,43,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.9,34.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.6,40.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.9,36.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.6,40.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.2,37.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.2,41.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.7,40.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.9,40.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.9,39.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,38.6,38.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.5,39.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.1,31.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.9,37.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.4,32.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.3,31.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.6,28.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.6,39.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.7,29.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36,36,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.6,35.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.5,34.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,34.7,34.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,40.6,40.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,25.1,25.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,33.1,33.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,41.4,41.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,39.7,39.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.1,37.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,41.2,41.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,49.5,49.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.1,39.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33.6,33.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,30.5,30.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,30.7,30.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28,28,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40.1,40.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44,44,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.1,42.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,47.2,47.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.7,42.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.4,38.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.2,34.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.1,39.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.8,39.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.2,34.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.5,32.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.1,38.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.4,28.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33.6,33.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,31.5,31.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33.2,33.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,31.6,31.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.3,29.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Inside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,otter,34.1,34.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,51.1,51.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.5,33.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.3,32.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32,32,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34,34,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.6,35.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.9,36.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.6,35.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.5,30.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,18.4,18.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.4,32.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,42.5,42.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,crab,30.9,30.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.3,35.3,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.6,38.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,27.9,27.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,23.8,23.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,43.5,43.5,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,45.6,45.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,28.4,28.4,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,40.9,40.9,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,30.6,30.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,46.6,46.6,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,32.7,32.7,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,30.8,30.8,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,31.2,31.2,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,32.1,32.1,YES,,Carter
+SHIN,A,Shinaku Inlet,2022,7/14/22,20220714,Outside,100,pointed macoma,Macoma inquinata,CLMPOI,whole,33.1,33.1,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,60.6,60.6,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,50.3,50.3,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,50.2,50.2,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,54.8,54.8,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,58.3,58.3,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,47,47,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,47,47,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,crab,46.6,46.6,YES,estimate,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,54.3,54.3,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,48.5,48.5,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.9,45.9,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,56.6,56.6,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40,40,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,60.2,60.2,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,52,52,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,50.1,50.1,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,50.4,50.4,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,55.1,55.1,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,crab,26.1,26.1,YES,,Carter
+NATZ,A,Natzuhini Bay,2022,7/15/22,20220715,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,crab,71.9,71.9,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,74,74,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,62,62,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.7,42.7,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,55.2,55.2,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,46.6,46.6,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Steamer clam,Protothaca staminea,CLAMST,drill hole,19.9,19.9,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,43.5,43.5,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,56.6,56.6,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.9,37.9,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44.2,44.2,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44,44,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.6,39.6,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,48,48,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.9,34.9,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.1,35.1,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.7,35.7,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,47,47,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,drill hole,61.1,61.1,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,drill hole,33.4,33.4,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,35.9,35.9,YES,,Carter
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,91.7,91.7,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,103.1,103.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,89.6,89.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,90.9,90.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,92.3,92.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,94.3,94.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,95.9,95.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,92.4,92.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,91.6,91.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,103.4,103.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,89.7,89.7,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,100.9,100.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,90.6,90.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,96.2,96.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,90,90,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,67.9,67.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,100.7,100.7,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,94.1,94.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,101.3,101.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,48,48,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,57.6,57.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,60.3,60.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.2,41.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,51.5,51.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,48.6,48.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,69.5,69.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,61.9,61.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,67.1,67.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,72.3,72.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,67.6,67.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,54.7,54.7,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,65.3,65.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Inside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,55.3,55.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.4,41.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,64.2,64.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.2,41.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.9,41.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,50,50,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.9,45.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.9,41.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,49.4,49.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.6,32.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,51.5,51.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.6,45.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.1,40.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.5,45.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.3,41.3,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,drill hole,24.2,24.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Steamer clam,Protothaca staminea,CLAMST,drill hole,17.5,17.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,41.4,41.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,61.9,61.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,39.1,39.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,56.5,56.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,42.4,42.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,36.2,36.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,58.5,58.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,crab,31.9,31.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40.8,40.8,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.7,35.7,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40.9,40.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44.6,44.6,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,41.1,41.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.9,39.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,64.5,64.5,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40.4,40.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44.1,44.1,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,40.2,40.2,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.4,38.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.8,42.8,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,57.8,57.8,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.4,42.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,otter,46.4,46.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,53.4,53.4,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,38.9,38.9,YES,,Carter Isibelle
+REFU,A,Port Refugio,2022,7/16/22,20220716,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,drill hole,34.7,34.7,YES,,Carter Isibelle
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,91.9,91.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,59.2,59.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,86.3,86.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,47.4,47.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,49.2,49.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,42.2,42.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,41.9,41.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,46.8,46.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,39.6,39.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,41,41,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,37.6,37.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.9,33.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,36.5,36.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.9,34.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.7,47.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.7,33.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,28.5,28.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,30.3,30.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,29.1,29.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.5,35.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.1,33.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.3,38.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,37,37,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.9,29.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30,30,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.5,32.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.2,33.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.6,28.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.7,27.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.9,27.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,38,38,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.5,28.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.6,27.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.7,25.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.6,27.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.4,28.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.7,34.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.4,30.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.3,32.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,24,24,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.6,33.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25,25,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.7,31.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.5,31.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.7,31.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.2,29.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.9,26.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.1,37.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.8,33.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.2,25.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,56.1,56.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,43.4,43.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.2,30.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.9,33.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.3,30.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.1,26.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.7,32.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.7,29.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30,30,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.8,34.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.3,29.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.4,31.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.8,26.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.2,26.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.2,30.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.7,45.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.2,34.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.8,26.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.5,32.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.5,27.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.5,29.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.2,36.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.7,28.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,22.8,22.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.8,26.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.4,33.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,24,24,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27,27,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.2,25.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.2,32.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.5,34.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.8,34.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.1,27.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.2,32.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.3,26.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.6,37.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.9,36.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.2,28.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.5,30.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,48.4,48.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.9,33.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.6,25.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32,32,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,38.9,38.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.6,32.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,35,35,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.6,44.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.5,34.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.6,31.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.8,33.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.3,31.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.6,31.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.4,26.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.7,26.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.8,33.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.9,33.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.2,31.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.7,25.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.2,27.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,43.4,43.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.1,27.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.8,34.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,22.1,22.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.4,32.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,38.8,38.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,33.7,33.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,50.3,50.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,42.6,42.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,40.6,40.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,46.1,46.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.9,32.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.4,42.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,47.3,47.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,30,30,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,29.8,29.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,35.7,35.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,45.6,45.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,36,36,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,29.9,29.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,37.1,37.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,45.2,45.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,36.6,36.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,31.9,31.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,35.8,35.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,crab,29.5,29.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,crab,34.6,34.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,crab,34.6,34.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,42.5,42.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,28.9,28.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,47.2,47.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,40.6,40.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,28.8,28.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,31.9,31.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,35.5,35.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,26.8,26.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,25.6,25.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,29.2,29.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,51.1,51.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,48.7,48.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,44.3,44.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,42.8,42.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,47.1,47.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,48.6,48.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,52.8,52.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,crab,31.7,31.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,43.2,43.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,38.2,38.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,44.2,44.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,53.7,53.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,52.5,52.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,45.2,45.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,53.3,53.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,52.7,52.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,55.6,55.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,44.6,44.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,27.9,27.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.3,43.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.8,39.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,30,30,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.3,31.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,28.4,28.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.7,39.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,30.8,30.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.3,33.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.1,38.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.1,39.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.8,39.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.2,33.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33,33,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.1,40.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,30.1,30.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.6,31.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,37.4,37.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.6,39.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,32.5,32.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.5,39.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38,38,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,27.9,27.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.8,34.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.1,39.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,29.9,29.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,26,26,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,crab,23.7,23.7,YES,estimate,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.8,35.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.4,34.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.6,33.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39.1,39.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.3,34.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.1,28.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,39,39,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.8,27.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.9,29.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.5,29.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.5,36.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.2,32.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.4,33.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.9,32.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.8,25.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.9,32.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.8,30.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.2,26.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.5,35.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.6,36.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.9,33.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.3,41.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.8,26.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.5,31.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,24.9,24.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.2,27.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.8,35.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.3,34.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.8,33.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.2,27.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.6,28.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30,30,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.4,30.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.5,36.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.9,28.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.1,31.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,28.4,28.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.2,31.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.6,37.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.3,35.3,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.9,36.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.1,37.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,23.8,23.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,34.6,34.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.1,35.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27,27,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.4,30.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.5,26.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.5,37.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.1,31.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.8,31.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.4,32.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.9,35.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.6,27.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,29,29,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,20.2,20.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,42.7,42.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,39.8,39.8,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,36.5,36.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,33.7,33.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,43.7,43.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,35.9,35.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,42.2,42.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,34.4,34.4,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33.5,33.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,36.6,36.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,43.1,43.1,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.5,32.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,27.6,27.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,22.6,22.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,25.2,25.2,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.6,32.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,23.5,23.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,30.5,30.5,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,35.7,35.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,39.9,39.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,41.6,41.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,25.6,25.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,31.6,31.6,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,27.9,27.9,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,28.7,28.7,YES,,Carter Elyse
+GUKT,A,Guktu Bay,2022,7/12/22,20220712,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,24.4,24.4,YES,,Carter Elyse
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,68.6,68.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,63.9,63.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,58.3,58.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,57.2,57.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,53.8,53.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,62.2,62.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,60.2,60.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,44.7,44.7,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,45.1,45.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,42.3,42.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,44.8,44.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.2,39.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.2,41.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,46.8,46.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.6,43.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,52.4,52.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,51.6,51.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,50.6,50.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.6,40.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,46.2,46.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,39.6,39.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,55.4,55.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.7,47.7,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.2,47.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.7,41.7,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.8,38.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.6,35.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,crab,43.3,43.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.6,37.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.8,42.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,45.4,45.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.1,44.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,47,47,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.4,41.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.4,32.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,46.3,46.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.4,42.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.9,41.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.2,42.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,38,38,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,43.8,43.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.2,41.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.5,40.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.2,42.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,38,38,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.8,44.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.4,31.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,41.5,41.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,39.8,39.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,45.2,45.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,35.1,35.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,51.8,51.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,49.6,49.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,51.8,51.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,54.1,54.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,49.8,49.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,61.7,61.7,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,56.8,56.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,55.6,55.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,44.4,44.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,48.5,48.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,63.4,63.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,40,40,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,54,54,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,36.6,36.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.8,35.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,48.5,48.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,37.4,37.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.1,41.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38,38,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,45.2,45.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,49.1,49.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,49.5,49.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43,43,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,42.3,42.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.1,40.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,33.3,33.3,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.6,38.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.2,41.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.6,40.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,42.6,42.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.8,43.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.7,43.7,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,44.4,44.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,37.6,37.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.2,40.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,44.4,44.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,38.2,38.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,36.9,36.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,53,53,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,31.9,31.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,43.9,43.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,crab,23.6,23.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.2,44.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.6,44.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,29.9,29.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.5,40.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,33.5,33.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,38.8,38.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,27.6,27.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,31.5,31.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,46.1,46.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,42.8,42.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,35.1,35.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,46,46,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,37.8,37.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,32.6,32.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.4,25.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.2,44.2,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,30.4,30.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,54.6,54.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,42.6,42.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,51.5,51.5,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,27.6,27.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.9,35.9,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,22.6,22.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,24.1,24.1,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,32.6,32.6,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,36.8,36.8,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,28.4,28.4,YES,,Carter
+NOSK,A,Nossuk Bay,2022,7/13/22,20220713,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,31.4,31.4,YES,,Carter
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,62.4,62.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,81.5,81.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79,79,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,crab,27.1,27.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,crab,32.4,32.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,32.1,32.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,20.7,20.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,81.9,81.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,17.9,17.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,13.8,13.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,10.2,10.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.6,34.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,35.6,35.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Steamer clam,Protothaca staminea,CLAMST,otter,41.8,41.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Steamer clam,Protothaca staminea,CLAMST,whole,16.3,16.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,30,30,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,27.7,27.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,31.3,31.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,37.2,37.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,36,36,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,29.2,29.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,26.5,26.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,18.5,18.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,27.7,27.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.6,28.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,38.9,38.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.6,37.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,27.8,27.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,22.4,22.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,21.3,21.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,17.3,17.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,19.5,19.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,21.7,21.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.5,32.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,25,25,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,26.2,26.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.8,29.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.9,29.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,otter,35.6,35.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,crab,33.5,33.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,47.8,47.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,24.4,24.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,24.6,24.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,23.3,23.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Pointed Macoma,Macoma inquinata,CLMPOI,whole,46.2,46.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Outside,100,Truncate softshell,Mya truncata,CLAMMYA,otter,81.3,81.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,91.3,91.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,84.9,84.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,72.9,72.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,62.8,62.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,58.9,58.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79,79,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,65.5,65.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,76.7,76.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,67.4,67.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,81.7,81.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,75.5,75.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,77.1,77.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,72.8,72.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,87.9,87.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,74.3,74.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,78.2,78.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,69.8,69.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,53.6,53.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,60.5,60.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,55.6,55.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,78.8,78.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,74.2,74.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,70.1,70.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,76.9,76.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79.7,79.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,85.3,85.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,56.1,56.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,68.2,68.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,86.3,86.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79.8,79.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,77.1,77.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,63.3,63.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,75.4,75.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79.6,79.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,81.8,81.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79.2,79.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,73,73,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.1,66.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,56.8,56.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,59.3,59.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,73,73,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,68.6,68.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,63.6,63.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,59.2,59.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,48.8,48.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,50.4,50.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,crab,53.1,53.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,77.8,77.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,78.1,78.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,70.8,70.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,37.2,37.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,70.9,70.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,35.6,35.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,73.6,73.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,74.8,74.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,67.6,67.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,56.1,56.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,77.3,77.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,48.1,48.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,84.5,84.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,77.6,77.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,71.7,71.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,67.3,67.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,63.7,63.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,64.7,64.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,73.3,73.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,54.3,54.3,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,50.4,50.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,58.9,58.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,60.4,60.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,57.1,57.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,53.5,53.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,57.8,57.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,61.9,61.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,66.4,66.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,65.8,65.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,64.6,64.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,65.4,65.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,50.4,50.4,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,52,52,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,61.9,61.9,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.1,47.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,48.2,48.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,51.8,51.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,otter,56.1,56.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,63.6,63.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,41.7,41.7,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,61.5,61.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,38.2,38.2,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,51,51,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,53.8,53.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,56.5,56.5,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,66,66,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,64.6,64.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,44,44,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Steamer clam,Protothaca staminea,CLAMST,whole,40.8,40.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,41.1,41.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,otter,52.1,52.1,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,70.8,70.8,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Cockle,Clinocardium nutallii,CLAMCK,whole,47.6,47.6,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Inside,100,Bentnose Macoma,Macoma nasuta,CLAMMB,otter,51,51,YES,,Elyse Emily
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,92.2,92.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,85.1,85.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,65.2,65.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.8,66.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,79.7,79.7,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,48.6,48.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,68.8,68.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,72.4,72.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,67.4,67.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.9,66.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.8,66.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,58.4,58.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,65.8,65.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,66.4,66.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,35.3,35.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,48.6,48.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,otter,41.6,41.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,82.7,82.7,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,66,66,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,70.9,70.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,66.8,66.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,70.8,70.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,71.1,71.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,49.6,49.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,65.8,65.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,79.1,79.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,64.1,64.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,73.2,73.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,22.3,22.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,47.4,47.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,56.4,56.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,57.6,57.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,57.2,57.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.4,40.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,52.8,52.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,49.2,49.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,50.1,50.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,35,35,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,26.6,26.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,32.1,32.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,34.8,34.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,49.7,49.7,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,40.6,40.6,YES,estimate,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,otter,28.9,28.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,56.5,56.5,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,55.1,55.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,54.2,54.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,46.6,46.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,55.2,55.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,44.1,44.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,25.3,25.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,36.9,36.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Steamer clam,Protothaca staminea,CLAMST,whole,26.6,26.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,41.4,41.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,38.1,38.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,18.8,18.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,25.8,25.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,39.9,39.9,YES,estimate,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,otter,33.3,33.3,YES,estimate,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,31.8,31.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,30.3,30.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.8,28.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37.7,37.7,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.3,35.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.6,28.6,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,31.5,31.5,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.9,28.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,24.2,24.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,44.1,44.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,36.9,36.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.2,28.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,32.9,32.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.7,29.7,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,29.3,29.3,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,26.5,26.5,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,28.2,28.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,17.4,17.4,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,37,37,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,20.8,20.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,25.1,25.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,25.8,25.8,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,33,33,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,17.9,17.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Cockle,Clinocardium nutallii,CLAMCK,whole,35.2,35.2,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,46.9,46.9,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Bentnose Macoma,Macoma nasuta,CLAMMB,whole,39.5,39.5,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,31.1,31.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Pointed Macoma,Macoma inquinata,CLMPOI,otter,29.1,29.1,YES,,Emily Isibelle
+NFEI,A,North Fish Egg Island,2022,7/17/22,20220717,Edge,100,Butter clam,Saxidomus gigantea,CLAMBU,whole,32.5,32.5,YES,wack (LD photos July 18th),Emily Isibelle

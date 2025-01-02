@@ -1,0 +1,76 @@
+﻿Date,Site_Name,Site_Number,Otter_time,Surveyors,Data_Enterer,Lat,Long,Swell,Aspect,Cloud_Cover,Rock_type,Rugosity_sm,LT_time,LT_height,Transect_Num,Rugosity_lg_R,Rugosity_lg_T,Transect_max_length,Transect_max_relht,Adj_max,Transect_min_length,Transect_min_relht,Adj_min
+05/30/2018,Sonora,1975.01,1968,"Ashley, sarah, Justin, Stacey",Ashley,55.604233,-133.6392,1,94,98,GreyWacke,2,803,-0.54,1,19.1,17.5,18.1,4.14,0,0,0.85,0
+05/30/2018,Sonora,1975.01,1968,"Ashley, sarah, Justin, Stacey",Ashley,55.604233,-133.6392,1,94,98,GreyWacke,2,803,-0.54,2,17.1,15.8,17.5,4.07,0,0.45,0.75,0
+05/30/2018,Sonora,1975.01,1968,"Ashley, sarah, Justin, Stacey",Ashley,55.604233,-133.6392,1,94,98,GreyWacke,2,803,-0.54,3,13.6,12.95,13.9,4.06,0,0.2,0.75,0
+06/30/2018,Princesa,1975.02,1968,"Ashley, Sarah, Megan, Erin",Ashley,55.65932,-133.67401,1,225,75,NA,3,853,-0.45,1,10,9,9,4.23,0,0.35,1.16,0
+06/30/2018,Princesa,1975.02,1968,"Ashley, Sarah, Megan, Erin",Ashley,55.65932,-133.67401,1,225,75,NA,3,853,-0.45,2,8.4,7.4,7.9,4.21,0,0.48,0.96,0
+06/30/2018,Princesa,1975.02,1968,"Ashley, Sarah, Megan, Erin",Ashley,55.65932,-133.67401,1,225,75,NA,3,853,-0.45,3,6.1,5.5,5.9,4.13,0,0.33,1.2,0
+08/13/2018,HecetaPlatform,1975.03,1975,"Ashley, Sarah, Lia, Kenichi, Kei, Cynthia",Ashley,55.7051,-133.58238,1,90,100,GreyWacke,3,845,-0.8,1,13.6,11.6,12.9,3.84,0,0.2,0.29,0
+08/13/2018,HecetaPlatform,1975.03,1975,"Ashley, Sarah, Lia, Kenichi, Kei, Cynthia",Ashley,55.7051,-133.58238,1,90,100,GreyWacke,3,845,-0.8,2,10.3,9,10.1,3.77,0,0.4,0.2,-0.31
+08/13/2018,HecetaPlatform,1975.03,1975,"Ashley, Sarah, Lia, Kenichi, Kei, Cynthia",Ashley,55.7051,-133.58238,1,90,100,GreyWacke,3,845,-0.8,3,9.7,8.7,14.5,3.76,0,0.8,0.1,-0.31
+05/31/2018,NEEsquibel,1988.01,1968,"Ashley, Sarah, Liz, Talia",Ashley,55.650367,-133.549167,0,12,75,NA,NA,838,-0.5,1,17.8,14,14.7,4.23,0,0,1.33,0
+05/31/2018,NEEsquibel,1988.01,1968,"Ashley, Sarah, Liz, Talia",Ashley,55.650367,-133.549167,0,12,75,NA,NA,838,-0.5,2,12.8,12,12,4.2,0,0.8,1.14,0
+05/31/2018,NEEsquibel,1988.01,1968,"Ashley, Sarah, Liz, Talia",Ashley,55.650367,-133.549167,0,12,75,NA,NA,838,-0.5,3,10.2,9.3,9.8,4.13,0,0.63,1.1,0
+06/15/2018,BearHarbor,1988.02,1988,"Ashley, Sarah, Ginny, Sydney, Talia, Nicole",Ashley,56.235233,-134.082283,0.5,70,50,NA,1,851,-0.95,1,16.95,16,16,5.48,-0.21,0.3,1,0
+06/15/2018,BearHarbor,1988.02,1988,"Ashley, Sarah, Ginny, Sydney, Talia, Nicole",Ashley,56.235233,-134.082283,0.5,70,50,NA,1,851,-0.95,2,16,15.7,18.9,5.49,-0.21,0,1.17,0
+06/15/2018,BearHarbor,1988.02,1988,"Ashley, Sarah, Ginny, Sydney, Talia, Nicole",Ashley,56.235233,-134.082283,0.5,70,50,NA,1,851,-0.95,3,14.7,14,15,5.4,-0.21,0.4,0.95,0
+06/16/2018,CosmosPass,1988.03,1988,"Ashley, ginny, Sarah, Talia",Ashley,55.90955,-133.70125,0.25,114,0.75,Karst,5,915,-0.98,1,29.1,27,27.1,5.06,-0.21,1,1,0
+06/16/2018,CosmosPass,1988.03,1988,"Ashley, ginny, Sarah, Talia",Ashley,55.90955,-133.70125,0.25,114,0.75,Karst,5,915,-0.98,2,21.4,19.8,19.95,5.2,-0.21,0.15,1,0
+06/16/2018,CosmosPass,1988.03,1988,"Ashley, ginny, Sarah, Talia",Ashley,55.90955,-133.70125,0.25,114,0.75,Karst,5,915,-0.98,3,20.1,19,21.5,5,-0.21,0,0.92,0
+06/28/2018,Anguilla,1988.04,1968,"Ashley, Sarah, Adri, Marissa",Ashley,55.68443,-133.58409,0,53,100,GreyWacke,2,745,-0.49,1,1,1,9.1,4.21,0,0.2,1.4,0
+06/28/2018,Anguilla,1988.04,1968,"Ashley, Sarah, Adri, Marissa",Ashley,55.68443,-133.58409,0,53,100,GreyWacke,2,745,-0.49,2,1,1,10.9,4.26,0,0.1,0.92,0
+06/28/2018,Anguilla,1988.04,1968,"Ashley, Sarah, Adri, Marissa",Ashley,55.68443,-133.58409,0,53,100,GreyWacke,2,745,-0.49,3,1,1,12.9,4.22,0,0.5,1.23,0
+06/29/2018,SanLorenzo,1988.05,1968,"Ashley, Sarah, Megan, Ivan",Ashley,55.60237,-133.60901,0.5,32,100,NA,3,819,-0.49,1,7,6.8,7,3.45,0,0.1,0.45,0
+06/29/2018,SanLorenzo,1988.05,1968,"Ashley, Sarah, Megan, Ivan",Ashley,55.60237,-133.60901,0.5,32,100,NA,3,819,-0.49,2,13.6,12.7,12.8,3.54,0,0,0.11,0
+06/29/2018,SanLorenzo,1988.05,1968,"Ashley, Sarah, Megan, Ivan",Ashley,55.60237,-133.60901,0.5,32,100,NA,3,819,-0.49,3,8.7,8.345,8.3,3.46,0,0,0.14,0
+07/13/2018,PtDesconocida,1988.06,1988,"Ashley, Sarah, Lia, Tommy, Helena",Ashley,55.69777,-133.55077,0.5,190,20,GreyWacke,3,735,-1.04,1,8.2,8,11.4,4.2,0,0.2,0.58,0
+07/13/2018,PtDesconocida,1988.06,1988,"Ashley, Sarah, Lia, Tommy, Helena",Ashley,55.69777,-133.55077,0.5,190,20,GreyWacke,3,735,-1.04,2,14.4,13,14.6,4.19,0,0,0.84,0
+07/13/2018,PtDesconocida,1988.06,1988,"Ashley, Sarah, Lia, Tommy, Helena",Ashley,55.69777,-133.55077,0.5,190,20,GreyWacke,3,735,-1.04,3,11.6,11,12.5,4.31,0,0.1,0.39,0
+05/20/2018,Kasaan,2003.01,2003,"Ashley, Mel, Sarah",Ashley,55.926883,-133.28875,0,246,100,Karst,5,1130,-0.47,1,16.1,NA,15.45,4.03,0,1.07,0.82,0
+05/20/2018,Kasaan,2003.01,2003,"Ashley, Mel, Sarah",Ashley,55.926883,-133.28875,0,246,100,Karst,5,1130,-0.47,2,13.49,NA,13.85,4.56,0,0.5,0.85,0
+05/20/2018,Kasaan,2003.01,2003,"Ashley, Mel, Sarah",Ashley,55.926883,-133.28875,0,246,100,Karst,5,1130,-0.47,3,12.38,NA,12.5,4.07,0,0.73,0.76,0
+06/01/2018,Teal,2003.02,2003,"Ashley, sarah, Justin, Lia",Ashley,55.92405,-133.359533,0.25,180,100,NA,2,917,-0.41,1,9.1,9,9.4,3.87,0,0.5,0.98,0
+06/01/2018,Teal,2003.02,2003,"Ashley, sarah, Justin, Lia",Ashley,55.92405,-133.359533,0.25,180,100,NA,2,917,-0.41,2,9,8.7,8.9,3.84,0,0.55,1.3,0
+06/01/2018,Teal,2003.02,2003,"Ashley, sarah, Justin, Lia",Ashley,55.92405,-133.359533,0.25,180,100,NA,2,917,-0.41,3,8,7.8,8.1,3.75,0,0.46,0.78,0
+06/11/2018,JoeMace,2003.03,1994,"Ashley, Nicole, Ginny, Sarah, Sydney, Talia",Ashley,56.344883,-133.632517,0,75,100,Karst,4,536,-0.19,1,13.7,13.3,13.85,4.5,0,0.7,1.17,0
+06/11/2018,JoeMace,2003.03,1994,"Ashley, Nicole, Ginny, Sarah, Sydney, Talia",Ashley,56.344883,-133.632517,0,75,100,Karst,4,536,-0.19,2,15.2,15,14.2,4.6,0,1,1.14,0
+06/11/2018,JoeMace,2003.03,1994,"Ashley, Nicole, Ginny, Sarah, Sydney, Talia",Ashley,56.344883,-133.632517,0,75,100,Karst,4,536,-0.19,3,20.5,19,20.5,4.58,0,0.4,0.89,0
+06/12/2018,Hamilton,2003.04,2003,"Ashley, Sarah, Sydney, Ginny, Nicole",Ashley,56.143567,-133.553133,1.5,278,75,NA,1,621,-0.51,1,17,16.6,17,5.82,-0.21,0.4,1.64,0
+06/12/2018,Hamilton,2003.04,2003,"Ashley, Sarah, Sydney, Ginny, Nicole",Ashley,56.143567,-133.553133,1.5,278,75,NA,1,621,-0.51,2,15.7,15.35,16.3,5.89,-0.21,0.5,2,0
+06/12/2018,Hamilton,2003.04,2003,"Ashley, Sarah, Sydney, Ginny, Nicole",Ashley,56.143567,-133.553133,1.5,278,75,NA,1,621,-0.51,3,12.3,12,14.2,5.94,-0.21,0.1,1.65,0
+06/13/2018,SWMiddle,2003.05,2003,"Ashley, ginny, Sarah, Talia",Ashley,56.158617,-133.551,1,231,98,GreyWacke,2,706,-0.75,1,25.7,24.6,24.7,4.64,0,0.1,0.5,0
+06/13/2018,SWMiddle,2003.05,2003,"Ashley, ginny, Sarah, Talia",Ashley,56.158617,-133.551,1,231,98,GreyWacke,2,706,-0.75,2,22.1,21,21.3,4.67,0,0.1,0.54,0
+06/13/2018,SWMiddle,2003.05,2003,"Ashley, ginny, Sarah, Talia",Ashley,56.158617,-133.551,1,231,98,GreyWacke,2,706,-0.75,3,19.6,19.3,22.1,4.67,0,0.45,0.85,0
+06/14/2018,Edward,2003.06,1994,"Ashley, ginny, Sarah, Talia",Ashley,56.294833,-133.933583,0,84,80,NA,4,751,-1,1,11.7,11,11.35,5.65,-0.21,0.4,0.83,0
+06/14/2018,Edward,2003.06,1994,"Ashley, ginny, Sarah, Talia",Ashley,56.294833,-133.933583,0,84,80,NA,4,751,-1,2,11.8,11,11.5,5.65,-0.21,0.5,0.84,0
+06/14/2018,Edward,2003.06,1994,"Ashley, ginny, Sarah, Talia",Ashley,56.294833,-133.933583,0,84,80,NA,4,751,-1,3,13.45,12,12.3,5.65,-0.21,0.6,0.85,0
+07/14/2018,NEHeceta,2003.07,2003,"Ashley, Sarah, Lia, Sam, Anna",Ashley,55.79311,-133.37373,0,140,95,NA,1,822,-0.8,1,30.5,28.4,28.6,5.35,-0.21,0.8,1.14,0
+07/14/2018,NEHeceta,2003.07,2003,"Ashley, Sarah, Lia, Sam, Anna",Ashley,55.79311,-133.37373,0,140,95,NA,1,822,-0.8,2,27,26,32.2,5.3,-0.21,0.6,1.17,0
+07/14/2018,NEHeceta,2003.07,2003,"Ashley, Sarah, Lia, Sam, Anna",Ashley,55.79311,-133.37373,0,140,95,NA,2,822,-0.8,3,23.4,22.5,22.7,5.35,-0.21,1.4,1.24,0
+07/15/2018,HarmonyRock,2003.08,2003,"Ashley, Sarah, Lia, Anna, Helena",Ashley,55.70966,-133.43013,1,2,100,Conglomerate,2,908,-0.7,1,10.6,10,11.75,4.17,0,0.6,0.35,0
+07/15/2018,HarmonyRock,2003.08,2003,"Ashley, Sarah, Lia, Anna, Helena",Ashley,55.70966,-133.43013,1,2,100,Conglomerate,2,908,-0.7,2,11.7,11,11.3,4.18,0,0.4,0.37,0
+07/15/2018,HarmonyRock,2003.08,2003,"Ashley, Sarah, Lia, Anna, Helena",Ashley,55.70966,-133.43013,1,69,100,Conglomerate,2,908,-0.7,3,22.6,20.3,20.9,4.22,0,0.4,0.5,0
+07/16/2018,WhiteCliff,2003.09,2003,"Ashley, Sarah, Sydney, Tommy, Sam",Ashley,55.91413,-133.47943,1,34,100,Karst,4,955,-0.69,1,14.65,13.5,14.2,4.35,0,0.9,0.23,0
+07/16/2018,WhiteCliff,2003.09,2003,"Ashley, Sarah, Sydney, Tommy, Sam",Ashley,55.91413,-133.47943,1,34,100,Karst,4,955,-0.69,2,15,13.6,14.6,4.45,0,0.85,0.53,0
+07/16/2018,WhiteCliff,2003.09,2003,"Ashley, Sarah, Sydney, Tommy, Sam",Ashley,55.91413,-133.47943,1,34,100,Karst,4,955,-0.69,3,9.2,9,11,4.33,0,0.7,0.38,0
+05/17/2018,EMadreDeDios,2014.01,2010,"Ashley, Ginny, Sarah, Sydney",Ashley,55.393378,-133.117458,0,185,0,Karst,5,854,-0.63,1,15.2,NA,15.25,4.54,0,0.5,1.23,0
+05/17/2018,EMadreDeDios,2014.01,2010,"Ashley, Ginny, Sarah, Sydney",Ashley,55.393378,-133.117458,0,185,0,Karst,5,854,-0.63,2,17.5,NA,17.5,4.53,0,0.7,1.22,0
+05/17/2018,EMadreDeDios,2014.01,2010,"Ashley, Ginny, Sarah, Sydney",Ashley,55.393378,-133.117458,0,185,0,Karst,5,854,-0.63,3,18.7,NA,17.5,4.57,0,1.1,1.17,0
+05/19/2018,Camp,2014.02,2010,"Ashley, Ginny, Sarah, Lia",Ashley,55.124483,-133.173883,0,90,25,igneous,2,1045,-0.67,1,14.85,NA,14.57,NA,0,0.9,1.6,0
+05/19/2018,Camp,2014.02,2010,"Ashley, Ginny, Sarah, Lia",Ashley,55.124483,-133.173883,0,90,25,igneous,2,1045,-0.67,2,14.55,NA,14,4.95,-0.21,0.4,1.68,0
+05/19/2018,Camp,2014.02,2010,"Ashley, Ginny, Sarah, Lia",Ashley,55.124483,-133.173883,0,90,25,igneous,2,1045,-0.67,3,14.55,13.95,14.61,NA,0,0.9,1.24,0
+06/02/2018,Diver,2014.03,2010,"Ashley, Sarah, Lia, Justin, Stacey","Ashley, Ashley",55.177617,-133.25715,0.75,44,100,Karst,4,1008,-0.3,1,NA,NA,19.4,3.68,0,0.15,0.76,0
+06/02/2018,Diver,2014.03,2010,"Ashley, Sarah, Lia, Justin, Stacey","Ashley, Ashley",55.177617,-133.25715,0.75,44,100,Karst,4,1008,-0.3,2,NA,NA,11.5,3.55,0,0.4,0.5,0
+06/02/2018,Diver,2014.03,2010,"Ashley, Sarah, Lia, Justin, Stacey","Ashley, Ashley",55.177617,-133.25715,0.75,44,100,Karst,4,1008,-0.3,3,NA,NA,14.3,3.75,0,0.3,0.46,0
+06/18/2018,BreezyBay,2014.04,2010,"Ashley, Sarah, Talia, Liz",Ashley,55.151883,-133.062913,0.25,341,5,GreyWacke,3,1119,-0.38,1,12.5,11.6,12.3,4.86,-0.21,0.1,1.02,0
+06/18/2018,BreezyBay,2014.04,2010,"Ashley, Sarah, Talia, Liz",Ashley,55.151883,-133.062913,0.25,341,5,GreyWacke,3,1119,-0.38,2,17.9,15.9,16.4,5.18,-0.21,0.3,0.94,0
+06/18/2018,BreezyBay,2014.04,2010,"Ashley, Sarah, Talia, Liz",Ashley,55.151883,-133.062913,0.25,298,5,GreyWacke,3,1119,-0.38,3,21.4,20,19.7,4.74,-0.21,0.2,0.99,0
+07/01/2018,McFarland,2014.05,2010,"Ashley, Sarah, Traviss, Adri",Ashley,55.06216,-132.93269,0.5,93,75,NA,1,943,-0.28,1,9,8.4,8.6,3.96,0,0,0.52,0
+07/01/2018,McFarland,2014.05,2010,"Ashley, Sarah, Traviss, Adri",Ashley,55.06216,-132.93269,0.5,93,75,NA,1,943,-0.28,2,14.5,13,12.1,3.92,0,0,0.45,0
+07/01/2018,McFarland,2014.05,2010,"Ashley, Sarah, Traviss, Adri",Ashley,55.06216,-132.93269,0.5,93,75,NA,1,943,-0.28,3,10.45,10,10.05,3.94,0,0.67,0.6,0
+08/11/2018,EekInlet,2014.06,2010,"Ashley, Sarah, Sydney, Nicole, Ken, Cynthia, Ken, Kei",Ashley,55.15036,-132.652308,0,175,0,NA,2,733,-0.71,1,11.8,11.2,14.1,5.27,-0.21,0.8,0.95,0
+08/11/2018,EekInlet,2014.06,2010,"Ashley, Sarah, Sydney, Nicole, Ken, Cynthia, Ken, Kei",Ashley,55.15036,-132.652308,0,175,0,NA,2,733,-0.71,2,14.7,13.2,14.3,5.04,-0.21,0.97,0.32,0
+08/11/2018,EekInlet,2014.06,2010,"Ashley, Sarah, Sydney, Nicole, Ken, Cynthia, Ken, Kei",Ashley,55.15036,-132.652308,0,175,0,NA,2,733,-0.71,3,15.2,14.1,14.85,5.09,-0.21,0.75,0.56,0
+08/12/2018,DrSuess,2014.07,2010,"Ashley, Sarah, Nicole, Sydney, Kei, Ken, Ken, Kenichi",Ashley,55.25404,133.09889,0,17,100,NA,2,818,-0.81,1,27.8,25.1,25.8,5.03,-0.21,0,0.34,0
+08/12/2018,DrSuess,2014.07,2010,"Ashley, Sarah, Nicole, Sydney, Kei, Ken, Ken, Kenichi",Ashley,55.25404,133.09889,0,17,100,NA,2,818,-0.81,2,24.9,22,27,4.87,-0.21,0,0.05,0
+08/12/2018,DrSuess,2014.07,2010,"Ashley, Sarah, Nicole, Sydney, Kei, Ken, Ken, Kenichi",Ashley,55.25404,133.09889,0,17,100,NA,2,818,-0.81,3,27.2,25.6,27.9,4.72,0,0,0.16,0

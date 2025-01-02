@@ -1,0 +1,49 @@
+site,date,YYYYMMDD,primary_observer,secondary_observer,tertiary_obsever,start_time,end_time,depth_m,quadrat,macroalgae_cover_0.25msq,diatom_cover_0.25msq,eelgrass_shoots_0.25msq,flowering_shoots_0.25msq,primary_sediment,secondary_sediment,notes
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,1,0,,285,0,MS,MS,shrimpy
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,2,2,,203,2,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,3,0,,151,0,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,4,0,,152,0,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,5,0,,103,0,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,6,0,,256,0,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,7,0,,265,0,MS,MS,
+North Fish Egg,7/21/2021,20210721,Lia,Carter,,505,630,,8,0,,196,0,MS,MS,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,1,0,,60,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,2,0,,82,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,3,0,,87,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,4,0,,52,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,5,0,,44,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,6,0,,60,0,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,7,0,,85,2,M,M,
+Shinaku,7/22/2021,20210722,Carmen,Carter,Lia,540,600,,8,0,,50,0,M,M,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,1,20,,10,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,2,20,,16,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,3,0,,26,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,4,10,,37,0,MS,G,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,5,0,,44,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,6,10,,37,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,7,10,,23,0,C,MS,
+Natzuhini,7/23/2021,20210723,Carmen,Carter,Ginny,630,,,8,10,,27,0,C,MS,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,1,0,,62,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,2,25,,119,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,3,2,,125,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,4,10,,90,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,5,30,,127,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,6,5,,93,4,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,7,50,,125,0,M,SM,
+Refugio,7/24/2021,20210724,Carmen,Ginny,Jessica,715,,,8,5,,45,0,M,SM,% cover by feel
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,1,0,,62,0,M,M,
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,2,0,,55,5,M,M,20% bare 80% eel
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,3,0,,96,0,M,M,15% bare 85% eel
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,4,0,,58,3,M,M,
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,5,0,,111,0,M,M,85% eel 15% bare
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,6,0,,87,3,M,M,40% bare 60% eel
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,7,0,,66,1,M,M,
+Guktu,7/25/2021,20210725,Ginny,Jessica,Lia,630,845,,8,0,,92,2,M,M,
+Nossuk,7/26/2021,20210726,,,,,,,1,0,,64,0,M,M,75% eel 25% bare
+Nossuk,7/26/2021,20210726,,,,,,,2,0,,101,0,M,M,100% eel 0% bare
+Nossuk,7/26/2021,20210726,,,,,,,3,0,,87,0,M,M,80% eel 20% bare
+Nossuk,7/26/2021,20210726,,,,,,,4,0,,97,2,M,SM,100% eel 0% bare
+Nossuk,7/26/2021,20210726,,,,,,,5,0,,66,0,M,M,80% eel 20% bare
+Nossuk,7/26/2021,20210726,,,,,,,6,0,,135,0,M,M,80% eel 20% bare
+Nossuk,7/26/2021,20210726,,,,,,,7,0,,74,0,M,M,65% eel 35% bare
+Nossuk,7/26/2021,20210726,,,,,,,8,0,,78,0,M,M,60% eel 40% bare

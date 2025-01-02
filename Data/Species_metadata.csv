@@ -1,0 +1,231 @@
+Sp_CommonName,Sp_ScientificName,SpCode,Taxa
+Juvenile poacher,Agonidae,UNPOA,fish
+Northern spearnose poacher,Agonopsis vulsa,POASPEAR,fish
+Pacific sand lance,Ammodytes personatus,SANDLNCP,fish
+Wolf-eel,Anarrhichthys ocellatus,WOLFEEL,fish
+Slender cockscomb,Anoplarchus insignis,COCKSSL,fish
+Sablefish,Anoplopoma fimbria,SABLEF,fish
+Penpoint gunnel,Apodichthys flavidus,GUNNPEN,fish
+Padded sculpin,Artedius fenestralis,SCULPAD,fish
+Scalyhead sculpin,Artedius harringtoni,SCULSCA,fish
+Smoothhead sculpin,Artedius lateralis,SCULSMO,fish
+Juvenile Artedius,Artedius spp.,UNARTE,fish
+Tubesnout,Aulorhynchus flavidus,TUBESNT,fish
+Moon jellyfish,Aurelia labiata,JLYMOON,invertebrate
+Alaskan ronquil,Bathymaster caeruleofasciatus,RONQLAK,fish
+Juvenile ronquil,Bathymasteridae,UNRONQL,fish
+Crested sculpin,Blepsias bilobus,SCULCRE,fish
+Silverspotted sculpin,Blepsias cirrhosus,SCULSILV,fish
+Kelp perch,Brachyistius frenatus,PERCHKE,fish
+Baer's buccinum snail,Buccinum baeri,SNAILBB,invertebrate
+Red rock crab,"Cancer productus, Cancridae",CRABRR,invertebrate
+Clown dorid,Catalina triopha,DORIDCL,invertebrate
+Arrow worm,Chaetaganath sp.,WRMARRW,invertebrate
+Roughback sculpin,Chitonotus pugetensis,SCULRBCK,fish
+Pacific sanddab,Citharichthys sordidus,SDABPAC,fish
+Speckled sanddab,Citharichthys stigmaeus,SDABSPKL,fish
+Sharpnose sculpin,Clinocottus acuticeps,SCULSHRP,fish
+Pacific herring,Clupea pallasii,HERRING,fish
+Juvenile sculpin,Cottidae,UNSCUL,fish
+Crangon shrimp,Crangon sp.,SHRMCR,invertebrate
+Lion's mane jellyfish,Cyanea capillata,JLYLION,invertebrate
+Juvenile lumpsucker,Cyclopteridae,UNLUMP,fish
+Shiner perch,Cymatogaster aggregata,PERCHSH,fish
+Spinyhead sculpin,Dasycottus setiger,SCULSPNY,fish
+Leather star,Dermasterias imbricata,STARLEA,invertebrate
+Fish larvae,Division Teleostei,UNLARV,fish
+Pacific red hermit crab,Elassochirus gilli,CRABPRH,invertebrate
+widehand hermit crab,Elassochirus tenuimanus,CRABWIDE,invertebrate
+Saffron cod,Eleginus gracilis,CODSAF,fish
+Buffalo sculpin,Enophrys bison,SCULBUF,fish
+Antlered sculpin,Enophrys diceraus,SCULANT,fish
+Leister sculpin,Enophrys lucasi,SCULLEI,fish
+Pacific spiny lumpsucker,Eumicrotremus orbis,LUMPSPI,fish
+False white cucumber,Eupentacta psuedoquinquesemita,CUCFW,invertebrate
+"""hat"" jellyfish",Eutonina species,JLYHAT,invertebrate
+Mottled seastar,Evastarias troschelii,STARMOT,invertebrate
+Hairy triton snail,Fusitriton oregonensis,SNAILFO,fish
+Juvenile cod,Gadidae,UNCOD,fish
+Walleye pollock,Gadus chalcogrammus,POLLOCK,fish
+Pacific cod,Gadus macrocephalus,CODPAC,fish
+Threespine stickleback,Gasterosteus aculeatus,STICK3,fish
+Juvenile clingfish,Gobiescocidae,UNCLING,fish
+Armorhead sculpin,Gymnocanthus galeatus,SCULARMR,fish
+White bubble snail,Haminoea vesicula,BSNAILW,invertebrate
+Shore crab,Hemigrapsus,CRABSH,invertebrate
+Red Irish lord,Hemilepidotus hemilepidotus,LORDRI,fish
+Juvenile Irish lord,Hemilepidotus sp.,UNLORD,fish
+Brown Irish lord,Hemilepidotus spinosus,LORDBI,fish
+Opalescent nudibranch,Hermissenda crassicornis,NUDOPAL,invertebrate
+Juvenile greenling,Hexagrammidae,UNGREEN,fish
+Kelp greenling,Hexagrammos decagrammus,GREENKEL,fish
+Rock greenling,Hexagrammos lagocephalus,GREENROC,fish
+Masked greenling,Hexagrammos octogrammus,GREENMAS,fish
+Whitespotted greenling,Hexagrammos stelleri,GREENWHI,fish
+Pacific halibut,Hippoglossus stenolepis,HALIBUT,fish
+Grass shrimp,Hippolyte clarki,SHRMGRA,invertebrate
+"unidentified hippolytid shrimp (""brokenback"")",Hippolytidae,SHRMHIP,invertebrate
+Pacific lyre crab,"Hyas lyratus, Majidae",CRABLYR,invertebrate
+Surf smelt,Hypomesus pretiosus,SMELTSUR,fish
+Northern sculpin,Icelinus borealis,SCULNOR,fish
+Concave isopod,Idotea resecata,ISOPODC,invertebrate
+Green isopod,Idotea w.,ISOPODG,invertebrate
+Butter sole,Isopsetta isolepis,SOLEBUT,fish
+Variegated chink,Lacuna varigata,SNAILLV,invertebrate
+Bay goby,Lepidogobius lepidus,GOBYBAY,fish
+Rock sole,Lepidopsetta spp.,SOLEROC,fish
+6-armed seastar,Leptasterias epichlora,STAR6ARM,invertebrate
+Daubed shanny,Leptoclinus maculatus,SHANNYDA,invertebrate
+Pacific staghorn sculpin,Leptocottus armatus,SCULPSTG,fish
+Yellowfin sole,Limanda aspera,SOLEYEL,fish
+Juvenile snailfish,Liparidae,UNSNAILF,fish
+Ribbon snailfish,Liparis cyclopus,SNAILFR,fish
+Tidepool snailfish,Liparis florae,SNAILFTI,fish
+Showy snailfish,Liparis pulchellus,SNAILFSH,fish
+Ringtail snailfish,Liparis rutteri,SNAILFRT,fish
+unidentified limpet,Lottidae,UNLIMPET,invertebrate
+Snake prickleback,Lumpenus sagitta,PRICKSN,fish
+Slender sole,Lyopsetta exilis,SOLESLE,fish
+Capelin,Mallotus villosus,CAPELIN,fish
+Smooth margarites,Margarites marginatus,SNAILMM,invertebrate
+Puppet margarites,Margarites pupillus,SNAILMP,invertebrate
+Hooded nudibranch,Melibe leonina,NUDHOOD,invertebrate
+Graceful crab,Metacarcinus gracilis,CRABGRA,invertebrate
+graceful rock crab,Metacarcinus gracilis,CRABGRC,invertebrate
+Dungeness crab,Metacarcinus magister,CRABDUN,invertebrate
+Pacific tomcod,Microgadus proximus,CODTOM,fish
+Dover sole,Microstomus pacificus,SOLEDOV,fish
+Great sculpin,Myoxocephalus polyacanthocephalus,SCULGRT,fish
+Shorthorn sculpin,Myoxocephalus scorpius,SCULSHRN,fish
+Juvenile Myoxocephalus,Myoxocephalus sp.,UNMYOXO,fish
+Frog sculpin,Myoxocephalus stelleri,SCULFRO,fish
+Blue mussel,Mytilus trossulus,MUSSELBL,invertebrate
+Sailfin sculpin,Nautichthys oculofasciatus,SCULSAIL,fish
+opossum mysid,Neomysis mercedes,MYSIDOP,invertebrate
+Pygmy poacher,Odontopyxis trispinosa,POAPYGMY,fish
+Tidepool sculpin,Oligocottus maculosus,SCULTIDE,fish
+Saddleback sculpin,Oligocottus rimensis,SCULSAD,fish
+Fluffy sculpin,Oligocottus snyderi,SCULFLU,fish
+Rough mantled nudibranch,Onchidoris bilamellata,NUDRM,invertebrate
+Cutthroat trout,Oncorhynchus clarkii,CUTTHRT,fish
+Pink salmon,Oncorhynchus gorbuscha,SALPINK,fish
+Chum salmon,Oncorhynchus keta,SALCHUM,fish
+Coho salmon,Oncorhynchus kisutch,SALCOHO,fish
+Steelhead trout,Oncorhynchus mykiss,STEELHD,fish
+Sockeye salmon,Oncorhynchus nerka,SALSOCK,fish
+Chinook salmon,Oncorhynchus tshawytscha,SALCHIN,fish
+Lingcod,Ophiodon elongatus,LINGCOD,fish
+Graceful decorator crab,Oregonia gracilis,CRABGD,invertebrate
+Juvenile smelt,Osmeridae,UNSMELT,fish
+Painted greenling,Oxylebius pictus,GREENPAI,fish
+Grainyhand hermit crab,Pagarus granosimanus,CRABGH,invertebrate
+Hermit crab,Pagurus spp.,CRABHER,invertebrate
+Tubenose poacher,Pallasina barbata,POATUBE,fish
+Coonstripe shrimp,Pandalus hypsinotus,SHRMCOO,invertebrate
+Spot prawn,Pandalus platyceros,SHRMSPO,invertebrate
+English sole,Parophrys vetulus,SOLEENG,fish
+Juvenile gunnel,Pholidae,UNGUNN,fish
+Crescent gunnel,Pholis laeta,GUNNCRE,fish
+Starry flounder,Platichthys stellatus,FLOUNST,fish
+Alaska plaice,Pleuronectes quadrituberculatus,PLAICEAK,fish
+Juvenile flatfish,Pleuronectidae,UNFLAT,fish
+C-O sole,Pleuronichthys coenosus,SOLECO,fish
+Sturgeon poacher,Podothecus accipenserinus,POASTUR,fish
+Sand sole,Psettichthys melanostictus,SOLESAN,fish
+Tadpole sculpin,Psychrolutes paradoxus,SCULTAD,fish
+Soft sculpin,Psychrolutes sigalutes,SCULSOFT,fish
+Graceful kelp crab,Pugettia gracilis,CRABGKE,invertebrate
+Northern kelp crab,"Pugettia producta, Majidae",CRABNKE,invertebrate
+Cryptic kelp crab,Pugettia richii,CRABCKE,invertebrate
+Sunflower sea star ,Pycnopodia helianthoides,STARPYCN,invertebrate
+Big skate,Raja binoculata,SKATEBIG,fish
+copepod,Raja binoculata,COPPOD,invertebrate
+Blackeye goby,Rhinogobiops nicholsii,GOBYBE,fish
+Kelp clingfish,Rimicola muscarum,CLINGFKE,fish
+Northern ronquil,Ronquilus jordani,RONQLNOR,fish
+Isopod,Saduria sp.,ISOPODSA,invertebrate
+Juvenile salmonid,Salmoninae,UNSAL,fish
+Juvenile trout,Salmoninae,UNTROUT,fish
+Dolly Varden,Salvelinus malma,DOLLY,fish
+Cabezon,Scorpaenichthys marmoratus,CABEZON,fish
+Juvenile rockfish,Scorpaenidae,UNROCK,fish
+Brown rockfish,Sebastes auriculatus,ROCKBRO,fish
+silvergrey rockfish,sebastes brevispinis,ROCKSLG,fish
+Copper rockfish,Sebastes caurinus,ROCKCOP,fish
+Dark rockfish,Sebastes ciliatus,ROCKDRK,fish
+Puget Sound rockfish,Sebastes emphaeus,ROCKPUG,fish
+Yellowtail rockfish,Sebastes flavidus,ROCKYT,fish
+Quillback rockfish,Sebastes maliger,ROCKQUI,fish
+Black rockfish,Sebastes melanops,ROCKBLA,fish
+China rockfish,Sebastes nebulosus,ROCKCHI,fish
+Bocaccio,Sebastes paucispinis,BOCACCIO,fish
+Longfin smelt,Spirinchus thaleichthys,SMELTLF,fish
+"""x"" jellyfish, ""cross"", ""southern cross""",Staurophora mertensii,JLYX,invertebrate
+Pricklebreast poacher,Stellerina xyosterna,POAPRICK,fish
+Juvenile prickleback,Stichaeidae,UNPRICK,fish
+Arctic shanny,Stichaeus punctatus,SHANNYAR,fish
+Green urchin,Strongylocentrotus droebachiensis,URCHGRN,invertebrate
+unidentified dorid nudibranch,Superfamily Doridoidea,NUDDORID,invertebrate
+Manacled sculpin,Synchirus gilli,SCULMAN,fish
+Bay pipefish,Syngnathus leptorhynchus,PIPEFISH,fish
+Brown turban snail,Tegula pulligo,SNAILBT,invertebrate
+Helmet crab,Temessus cheiragonus,CRABHEL,invertebrate
+Eulachon,Thaleichthys pacificus,EULACHON,fish
+Pacific sandfish,Trichodon trichodon,SANDFSHP,fish
+Black prickleback,Xiphister atropurpureus,PRICKBLK,fish
+Dock shrimp,,SHRMDOC,invertebrate
+Northern crangon shrimp,,SHRMNC,invertebrate
+unidentified shrimp,,UNSHRM,invertebrate
+Ice cube jellyfish,,JLYICE,invertebrate
+unidentified krill,,UNKRILL,invertebrate
+Decorator crab,,CRABDEC,invertebrate
+unidentified amphipods,,UNAMPH,invertebrate
+unidentified mysid,,UNMYSID,invertebrate
+Stiletto shrimp,,SHRMSTI,invertebrate
+unidentified ctenaphore,,JLYCOMB,invertebrate
+Isopod,,UNISOPOD,invertebrate
+unidentified nudibranch,,UNNUD,invertebrate
+Stout coastal shrimp,,SHRMSTC,invertebrate
+polychaete,,POLYCHT,invertebrate
+unidentified urchin,,UNURCHIN,invertebrate
+Scaleworm,,WRMSCA,invertebrate
+Stimpson's shrimp,,SHRMSTP,invertebrate
+Red turban snail,,SNAILRT,invertebrate
+Leafy horn mouth snail,,SNAILLH,invertebrate
+Spotted aglajid bubble snail,,BSNAILSA,invertebrate
+Clinging jellyfish,,JLYCLNG,invertebrate
+Tank shrimp,,SHRMTAN,invertebrate
+unidentified isopod,,ISOPODU,invertebrate
+unidentified snail,,UNSNAIL,invertebrate
+unidentified jellyfish,,UNJLY,invertebrate
+unidentified Tunicate,,TUNICAT,invertebrate
+unidentified jellyfish,,JLYUN,invertebrate
+unidentified cockle,,UNCOCKL,invertebrate
+Olive snail,,SNAILOLV,invertebrate
+Mysid,,MYSID,invertebrate
+unidentified Pandalid shrimp,,SHRMPAN,invertebrate
+blade shrimp,,SHRMBLD,invertebrate
+Kelp crab,,CRABKE,invertebrate
+unidentified worm,,UNWRM,invertebrate
+unidentified pillbug,,PILLBUG,invertebrate
+unidentfied moon snail,,SNAILMOO,invertebrate
+Octopus,,OCTOPUS,invertebrate
+Stout shrimp,,SHRMSTO,invertebrate
+unident. Heptacarpus shrimp,,SHRMHEP,invertebrate
+unidentified invertebrate,,UNINVERT,invertebrate
+unidentified crab,,UNCRAB,invertebrate
+unidentified sea lice,,SEALICE,invertebrate
+unidentified brittlestar,,BRSTRUN,invertebrate
+unidentified chiton,,UNCHITON,invertebrate
+"""Naked"" pteropod (i.e.,  large blob)",,PTRPODNA,invertebrate
+deep blade shrimp,,SHRMDB,invertebrate
+Rough patch shrimp,,SHRMROU,invertebrate
+Sidestripe shrimp,,SHRMSID,invertebrate
+unidentified clam,,UNCLAM,invertebrate
+Skeleton shrimp,,SHRMSK,invertebrate
+unidentfied pink shrimp,,SHRMPNK,invertebrate
+ghost shrimp,,SHRMGHO,invertebrate
+Unknown juvenile teleostei,Teleostei,UNFISH,fish
+Grunt Sculpin,Rhamphocottus richardsonii,SCULGRU,fish
+Giant wyrmouth,Cryptacanthodes giganteus,WRYGI,fish
+Slender eelblenny,Lumpenus fabricii,SLENEEL,fish

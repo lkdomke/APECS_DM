@@ -1,0 +1,91 @@
+site,bay_code,bay_sample,date,YYYYMMDD,trans_type,trans_bin,trans_m,pit_bin,sed1_type,sed2_type,sed1_no,sed2_no,field_collector,notes
+Natzuhini,NATZ,C,07/09/2021,20210709,Inside,1,10,0,Muddy sand,Gravel,3,7,Ginny/Carter,small pits ~10 cm from crabs
+Natzuhini,NATZ,C,07/09/2021,20210709,Inside,2,20,0,Muddy sand,Gravel,3,7,Ginny/Carter,small pits ~10 cm from crabs
+Natzuhini,NATZ,C,07/09/2021,20210709,Inside,3,30,0,Muddy sand,Gravel,3,7,Ginny/Carter,small pits ~10 cm from crabs
+Natzuhini,NATZ,C,07/09/2021,20210709,Inside,4,40,0,Muddy sand,Cobble,3,8,Ginny/Carter,small pits ~10 cm from crabs
+Natzuhini,NATZ,C,07/09/2021,20210709,Inside,5,50,0,Muddy sand,Cobble,3,8,Ginny/Carter,small pits ~10 cm from crabs
+Natzuhini,NATZ,C,07/09/2021,20210709,Edge,1,10,0,Muddy sand,Gravel,3,7,Ginny/Carter,live cockle on transect
+Natzuhini,NATZ,C,07/09/2021,20210709,Edge,2,20,0,Muddy sand,Gravel,3,7,Ginny/Carter,live cockle on transect
+Natzuhini,NATZ,C,07/09/2021,20210709,Edge,3,30,0,Muddy sand,Gravel,3,7,Ginny/Carter,live cockle on transect
+Natzuhini,NATZ,C,07/09/2021,20210709,Edge,4,40,0,Muddy sand,Gravel,3,7,Ginny/Carter,live cockle on transect
+Natzuhini,NATZ,C,07/09/2021,20210709,Edge,5,50,0,Muddy sand,Cobble,3,8,Ginny/Carter,live cockle on transect
+Natzuhini,NATZ,C,07/09/2021,20210709,Outside,1,10,0,Sand,Gravel,4,7,Ginny/Carter,live cockles
+Natzuhini,NATZ,C,07/09/2021,20210709,Outside,2,20,0,Sand,Gravel,4,7,Ginny/Carter,live cockles
+Natzuhini,NATZ,C,07/09/2021,20210709,Outside,3,30,0,Sand,Gravel,4,7,Ginny/Carter,live cockles
+Natzuhini,NATZ,C,07/09/2021,20210709,Outside,4,40,0,Sand,Cobble,4,8,Ginny/Carter,live cockles
+Natzuhini,NATZ,C,07/09/2021,20210709,Outside,5,50,0,Sand,Cobble,4,8,Ginny/Carter,live cockles
+Port Refugio,REFU,A,07/10/2021,20210710,Inside,1,10,0,Sandy mud,Gravel,2,7,Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Inside,2,20,0,Sandy mud,Gravel,2,7,Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Inside,3,30,0,Sandy mud,Gravel,2,7,Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Inside,4,40,0,Sandy mud,Gravel,2,7,Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Inside,5,50,0,Sandy mud,Gravel,2,7,Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Edge,1,10,0,Sand,Gravel,4,7,Ginny ,
+Port Refugio,REFU,A,07/10/2021,20210710,Edge,2,20,0,Sand,Gravel,4,7,Ginny ,
+Port Refugio,REFU,A,07/10/2021,20210710,Edge,3,30,0,Sand,Gravel,4,7,Ginny ,
+Port Refugio,REFU,A,07/10/2021,20210710,Edge,4,40,0,Sand,Gravel,4,7,Ginny ,
+Port Refugio,REFU,A,07/10/2021,20210710,Edge,5,50,0,Sand,Gravel,4,7,Ginny ,
+Port Refugio,REFU,A,07/10/2021,20210710,Outside,1,10,0,Course sand,Gravel,5,7,Ginny/Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Outside,2,20,0,Course sand,Gravel,5,7,Ginny/Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Outside,3,30,0,Course sand,Gravel,5,7,Ginny/Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Outside,4,40,0,Course sand,Gravel,5,7,Ginny/Carter,
+Port Refugio,REFU,A,07/10/2021,20210710,Outside,5,50,0,Course sand,Gravel,5,7,Ginny/Carter,
+North Fish Egg,NFEI,A,07/11/2021,20210711,Inside,1,10,8,Sand,Muddy sand,4,3,Jessica/Ginny,very high intertidal transect and seagrass bed/live cockles and steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Inside,2,20,8,Sand,Muddy sand,4,3,Jessica/Ginny,very high intertidal transect and seagrass bed/live cockles and steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Inside,3,30,9,Sand,Muddy sand,4,3,Jessica/Ginny,very high intertidal transect and seagrass bed/live cockles and steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Inside,4,40,6,Sand,Muddy sand,4,3,Jessica/Ginny,very high intertidal transect and seagrass bed/live cockles and steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Inside,5,50,3,Sand,Muddy sand,4,3,Jessica/Ginny,very high intertidal transect and seagrass bed/live cockles and steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Edge,1,10,0,Course sand,Cobble,5,8,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Edge,2,20,1,Muddy sand,Cobble,3,8,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Edge,3,30,2,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Edge,4,40,0,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Edge,5,50,2,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Outside,1,10,0,Muddy sand,Cobble,3,8,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Outside,2,20,0,Muddy sand,Gravel,3,7,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Outside,3,30,0,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Outside,4,40,0,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+North Fish Egg,NFEI,A,07/11/2021,20210711,Outside,5,50,0,Muddy sand,Muddy sand,3,3,Jessica/Ginny,live steamers
+Shinaku,SHIN,A,07/12/2021,20210712,Inside,1,10,3,Mud ,Mud ,1,1,Carter/Jessica/Ginny,
+Shinaku,SHIN,A,07/12/2021,20210712,Inside,2,20,7,Mud ,Mud ,1,1,Carter/Jessica/Ginny,
+Shinaku,SHIN,A,07/12/2021,20210712,Inside,3,30,0,Mud ,Mud ,1,1,Carter/Jessica/Ginny,
+Shinaku,SHIN,A,07/12/2021,20210712,Inside,4,40,0,Mud ,Mud ,1,1,Carter/Jessica/Ginny,
+Shinaku,SHIN,A,07/12/2021,20210712,Inside,5,50,0,Mud ,Mud ,1,1,Carter/Jessica/Ginny,
+Shinaku,SHIN,A,07/12/2021,20210712,Edge,1,10,14,Sandy mud,Course Sand,2,5,Carter/Jessica/Ginny,2 live steamers on transect/live butter (tiny)
+Shinaku,SHIN,A,07/12/2021,20210712,Edge,2,20,14,Sandy mud,Course Sand,2,5,Carter/Jessica/Ginny,2 live steamers on transect/live butter (tiny)
+Shinaku,SHIN,A,07/12/2021,20210712,Edge,3,30,11,Sandy mud,Course Sand,2,5,Carter/Jessica/Ginny,2 live steamers on transect/live butter (tiny)
+Shinaku,SHIN,A,07/12/2021,20210712,Edge,4,40,8,Sandy mud,Course Sand,2,5,Carter/Jessica/Ginny,2 live steamers on transect/live butter (tiny)
+Shinaku,SHIN,A,07/12/2021,20210712,Edge,5,50,14,Sandy mud,Course Sand,2,5,Carter/Jessica/Ginny,2 live steamers on transect/live butter (tiny)
+Shinaku,SHIN,A,07/12/2021,20210712,Outside ,1,10,0,Course sand ,Pebble,5,6,Carter/Jessica/Ginny,2 live steamers 
+Shinaku,SHIN,A,07/12/2021,20210712,Outside ,2,20,0,Course sand ,Pebble,5,6,Carter/Jessica/Ginny,2 live steamers 
+Shinaku,SHIN,A,07/12/2021,20210712,Outside ,3,30,0,Course sand ,Pebble,5,6,Carter/Jessica/Ginny,2 live steamers 
+Shinaku,SHIN,A,07/12/2021,20210712,Outside ,4,40,0,Course sand ,Pebble,5,6,Carter/Jessica/Ginny,2 live steamers 
+Shinaku,SHIN,A,07/12/2021,20210712,Outside ,5,50,0,Course sand ,Pebble,5,6,Carter/Jessica/Ginny,2 live steamers 
+Nossuk ,NOSK,A,07/13/2021,20210713,Inside ,1,10,0,Mud,Mud,1,1,Carter snorkeled,
+Nossuk ,NOSK,A,07/13/2021,20210713,Inside ,2,20,0,Mud,Mud,1,1,Carter snorkeled,
+Nossuk ,NOSK,A,07/13/2021,20210713,Inside ,3,30,0,Mud,Mud,1,1,Carter snorkeled,
+Nossuk ,NOSK,A,07/13/2021,20210713,Inside ,4,40,0,Mud,Mud,1,1,Carter snorkeled,
+Nossuk ,NOSK,A,07/13/2021,20210713,Inside ,5,50,0,Mud,Mud,1,1,Carter snorkeled,
+Nossuk ,NOSK,A,07/13/2021,20210713,Edge,1,10,2,Sandy mud,Gravel,2,7,Carter snorkeled,@ water's edge lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Edge,2,20,0,Sandy mud,Mud,2,1,Carter snorkeled,@ water's edge lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Edge,3,30,0,Sandy mud,Mud,2,1,Carter snorkeled,@ water's edge lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Edge,4,40,0,Sandy mud,Mud,2,1,Carter snorkeled,@ water's edge lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Edge,5,50,1,Sandy mud,Mud,2,1,Carter snorkeled,@ water's edge lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Outside,1,10,0,Mud,Sandy mud,1,2,Carter snorkeled,Cobbles interspersed/lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Outside,2,20,1,Mud,Sandy mud,1,2,Carter snorkeled,Cobbles interspersed/lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Outside,3,30,1,Mud,Sandy mud,1,2,Carter snorkeled,Cobbles interspersed/lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Outside,4,40,0,Mud,Sandy mud,1,2,Carter snorkeled,Cobbles interspersed/lots of fouled shells
+Nossuk ,NOSK,A,07/13/2021,20210713,Outside,5,50,0,Mud,Sandy mud,1,2,Carter snorkeled,Cobbles interspersed/lots of fouled shells
+Guktu,GUKT,A,07/14/2021,20210714,Inside ,1,10,4,Sandy mud,Sandy mud,2,2,Carter/Jessica,
+Guktu,GUKT,A,07/14/2021,20210714,Inside ,2,20,0,Mud,Mud,1,1,Carter/Jessica,
+Guktu,GUKT,A,07/14/2021,20210714,Inside ,3,30,1,Mud,Mud,1,1,Carter/Jessica,
+Guktu,GUKT,A,07/14/2021,20210714,Inside ,4,40,3,Mud,Mud,1,1,Carter/Jessica,
+Guktu,GUKT,A,07/14/2021,20210714,Inside ,5,50,1,Mud,Mud,1,1,Carter/Jessica,
+Guktu,GUKT,A,07/14/2021,20210714,Edge,1,10,39,Muddy sand,Muddy sand,3,3,Ginny/Carter,
+Guktu,GUKT,A,07/14/2021,20210714,Edge,2,20,29,Muddy sand,Muddy sand,3,3,Ginny/Carter,
+Guktu,GUKT,A,07/14/2021,20210714,Edge,3,30,5,Sandy mud,Sandy mud,2,2,Ginny/Carter,
+Guktu,GUKT,A,07/14/2021,20210714,Edge,4,40,3,Mud,Sandy mud,1,2,Ginny/Carter,
+Guktu,GUKT,A,07/14/2021,20210714,Edge,5,50,4,Mud,Sandy mud,1,2,Ginny/Carter,
+Guktu,GUKT,A,07/14/2021,20210714,Outside,1,10,36,Course sand,Pebble,5,6,Lia + Jessica shells/Ginny pits + sed,
+Guktu,GUKT,A,07/14/2021,20210714,Outside,2,20,27,Course sand,Pebble,5,6,Lia + Jessica shells/Ginny pits + sed,
+Guktu,GUKT,A,07/14/2021,20210714,Outside,3,30,15,Course sand,Pebble,5,6,Lia + Jessica shells/Ginny pits + sed,
+Guktu,GUKT,A,07/14/2021,20210714,Outside,4,40,19,Muddy sand,Sandy mud,3,2,Lia + Jessica shells/Ginny pits + sed,
+Guktu,GUKT,A,07/14/2021,20210714,Outside,5,50,4,Sandy mud,Mud,2,1,Lia + Jessica shells/Ginny pits + sed,

@@ -1,0 +1,311 @@
+site_name,site_code,latitude_N,longitude_E,so_region,year,date_mm.dd.yyyy,date_yyyy.mm.dd,trans_loc,bin_no,bin_area_m2,pit_count_bin,pit_density_m2,sed1_type,sed2_type,sed1_no,sed2_no,sed_avg_no,field_collector,notes
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Edge ,1,20,1,,Sand ,Sand ,4,4,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Edge ,2,20,2,,Sand ,Sand ,4,4,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Edge ,3,20,2,,Sand ,Sand ,4,4,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Edge ,4,20,2,,Sand ,Sand ,4,4,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Edge ,5,20,0,,Sand ,Cobble ,4,8,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Inside ,3,20,4,,Sand ,Muddy Sand ,4,3,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Inside ,4,20,2,,Sand ,Muddy Sand ,4,3,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Inside ,5,20,1,,Sand ,Muddy Sand ,4,3,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Inside ,1,20,3,,Sand ,Muddy Sand ,4,3,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Inside ,2,20,3,,Sand ,Muddy Sand ,4,3,,"Ginny, Annie ",NA
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Outside ,1,20,0,,Sand ,Sand ,4,4,,"Ginny, Annie ","Stream at 50m, Lots of cobble "
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Outside ,2,20,1,,Sand ,Sand ,4,4,,"Ginny, Annie ","Stream at 50m, Lots of cobble "
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Outside ,3,20,0,,Sand ,Sand ,4,4,,"Ginny, Annie ","Stream at 50m, Lots of cobble "
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Outside ,4,20,0,,Sand ,Sand ,4,4,,"Ginny, Annie ","Stream at 50m, Lots of cobble "
+Baker Island,,55.3575,-133.5869444,mid,2019,6/18/19,20190618,Outside ,5,20,0,,Sand ,Sand ,4,4,,"Ginny, Annie ","Stream at 50m, Lots of cobble "
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Edge,1,20,22,,Sand,Muddy Sand,4,3,,"Becca, Michele",Sparse Pebbles Through First 40m
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Edge,2,20,19,,Sand,Muddy Sand,4,3,,"Becca, Michele",Sparse Pebbles Through First 40m
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Edge,3,20,16,,Sand,Muddy Sand,4,3,,"Becca, Michele",Sparse Pebbles Through First 40m
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Edge,4,20,13,,Sand,Muddy Sand,4,3,,"Becca, Michele",Sparse Pebbles Through First 40m
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Edge,5,20,2,,Sand,Muddy Sand,4,3,,"Becca, Michele",Sparse Pebbles Through First 40m
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Inside,1,20,14,,Muddy Sand,Mud,3,1,,"Becca, Michele",NA
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Inside,2,20,23,,Muddy Sand,Mud,3,1,,"Becca, Michele",NA
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Inside,3,20,17,,Muddy Sand,Mud,3,1,,"Becca, Michele",NA
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Inside,4,20,2,,Muddy Sand,Mud,3,1,,"Becca, Michele",NA
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Inside,5,20,4,,Muddy Sand,Mud,3,1,,"Becca, Michele",NA
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Outside ,1,20,22,,Course Sand,Sand,5,4,,"Becca, Michele",Sparse Cobbles throughout
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Outside ,2,20,32,,Course Sand,Sand,5,4,,"Becca, Michele",Sparse Cobbles throughout
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Outside ,3,20,36,,Course Sand,Sand,5,4,,"Becca, Michele",Sparse Cobbles throughout
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Outside ,4,20,28,,Course Sand,Sand,5,4,,"Becca, Michele",Sparse Cobbles throughout
+Chusini Cove,2017_H_03,55.81849,-133.1794,high,2019,5/8/19,20190508,Outside ,5,20,24,,Course Sand,Sand,5,4,,"Becca, Michele",Sparse Cobbles throughout
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Outside ,1,20,0,,Muddy Sand,Sandy Mud,3,2,,"Becca, Bryce",Sparse Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Outside ,2,20,0,,Muddy Sand,Sandy Mud,3,2,,"Becca, Bryce",Sparse Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Outside ,3,20,0,,Muddy Sand,Sandy Mud,3,2,,"Becca, Bryce",Sparse Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Outside ,4,20,0,,Muddy Sand,Sandy Mud,3,2,,"Becca, Bryce",Sparse Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Outside ,5,20,0,,Muddy Sand,Sandy Mud,3,2,,"Becca, Bryce",Sparse Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Edge,1,20,0,,Sand,Sand,1,1,,"Lia, Lassie",Sparse Fist Sized Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Edge,2,20,0,,Sand,Sand,1,1,,"Lia, Lassie",Sparse Fist Sized Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Edge,3,20,0,,Sand,Sand,1,1,,"Lia, Lassie",Sparse Fist Sized Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Edge,4,20,0,,Sand,Sand,1,1,,"Lia, Lassie",Sparse Fist Sized Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Edge,5,20,0,,Sand,Sand,1,1,,"Lia, Lassie",Sparse Fist Sized Cobble
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Inside,1,20,3,,Sandy Mud,Sandy Mud,2,2,,"Becca, Bryce",NA
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Inside,2,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Bryce",NA
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Inside,3,20,1,,Sandy Mud,Sandy Mud,2,2,,"Becca, Bryce",NA
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Inside,4,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Bryce",NA
+Dunbar Inlet,2017_L_05,55.0848,-132.826,low,2019,5/6/19,20190506,Inside,5,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Bryce",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Inside ,1,20,0,,Sand,Cobble,4,8,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Inside ,2,20,0,,Sand,Cobble,4,8,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Inside ,3,20,0,,Sand,Pebble,4,6,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Inside ,4,20,0,,Sand,Sand,4,4,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Inside ,5,20,0,,Sand,Sand,4,4,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Edge,1,20,0,,Sand,Cobble ,4,8,,"Bryce, Lassi",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Edge,2,20,0,,Sand,Cobble ,4,8,,"Bryce, Lassi",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Edge,3,20,0,,Sand,Pebble,4,6,,"Bryce, Lassi",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Edge,4,20,0,,Sand,Sand ,4,4,,"Bryce, Lassi",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Edge,5,20,0,,Sand,Pebble,4,6,,"Bryce, Lassi",NA
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Outside ,1,20,0,,Sand,Cobble ,4,8,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Outside ,2,20,0,,Sand,Cobble ,4,8,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Outside ,3,20,0,,Sand,Pebble,4,6,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Outside ,4,20,0,,Sand,Pebble,4,6,,"Bryce, Lassi",Sparse cobble 21m-40m
+Farallon Bay,2017_L_06,55.19112,-133.105314,low,2019,5/22/19,20190522,Outside ,5,20,0,,Sand,Cobble ,4,8,,"Bryce, Lassi",Sparse cobble 21m-40m
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,6/17/19,20190617,Inside,1,20,9,,Course Sand,Sand,5,4,,"Becca, Claire ",Lots of clam debris 
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,6/17/19,20190617,Inside,2,20,8,,Course Sand,Sand,5,4,,"Becca, Claire ",Lots of clam debris 
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,6/17/19,20190617,Inside,3,20,13,,Course Sand,Sand,5,4,,"Becca, Claire ",Lots of clam debris 
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,6/17/19,20190617,Inside,4,20,4,,Sand ,Sand,4,4,,"Becca, Claire ",Lots of clam debris 
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,6/17/19,20190617,Inside,5,20,8,,Sand,Sand,4,4,,"Becca, Claire ",Lots of clam debris 
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Edge,1,20,35,,Sand,Cobble,4,8,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Edge,2,20,14,,Muddy Sand,Cobble,3,8,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Edge,3,20,6,,Sandy Mud,Gravel,2,7,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Edge,4,20,42,,Sand,Mudddy Sand,4,3,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Edge,5,20,27,,Sand,Muddy Sand,4,3,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Outside ,1,20,12,,Sand,Gravel,4,7,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Outside ,2,20,11,,Muddy Sand,Pebble,3,6,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Outside ,3,20,20,,Sand,Pebble,4,6,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Outside ,4,20,32,,Sand,Course Sand ,4,5,,Tiffany ,NA
+Goat Mouth Inlet,2017_L_02,55.192784,-132.900113,low,2019,4/23/19,20190423,Outside ,5,20,43,,Sand,Course Sand ,4,5,,Tiffany ,NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Inside,1,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Inside,2,20,2,,Sandy Mud,Sandy Mud,2,2,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Inside,3,20,1,,Sandy Mud,Mud,2,1,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Inside,4,20,0,,Sandy Mud,Mud,2,1,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Inside,5,20,0,,Sandy Mud,Mud,2,1,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Edge,1,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Edge,2,20,0,,Sandy Mud,Mud,2,1,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Edge,3,20,0,,Sandy Mud,Mud,2,1,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Edge,4,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Edge,5,20,0,,Sandy Mud,Sandy Mud,2,2,,"Becca, Lassie",NA
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Outside ,1,20,0,,Gravel,Muddy Sand,7,3,,"Becca, Lassie",Sparse Cobble 21-30m
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Outside ,2,20,0,,Gravel,Muddy Sand,7,3,,"Becca, Lassie",Sparse Cobble 21-30m
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Outside ,3,20,0,,Muddy Sand,Muddy Sand,3,3,,"Becca, Lassie",Sparse Cobble 21-30m
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Outside ,4,20,0,,Muddy Sand,Muddy Sand,3,3,,"Becca, Lassie",Sparse Cobble 21-30m
+Guktu Cove,2017_H_06,55.739816,-133.312022,high,2019,5/18/19,20190518,Outside ,5,20,0,,Muddy Sand,Mud,3,1,,"Becca, Lassie",Sparse Cobble 21-30m
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Inside ,1,20,0,,Mud,Mud,1,1,,Lia ,"Done on snorkle, Narrow fringing bed, Ege of bed composed of Chordia, Long break in bed 12m-17m, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Inside ,2,20,0,,Mud,Mud,1,1,,Lia ,"Done on snorkle, Narrow fringing bed, Ege of bed composed of Chordia, Long break in bed 12m-17m, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Inside ,3,20,0,,Mud,Mud,1,1,,Lia ,"Done on snorkle, Narrow fringing bed, Ege of bed composed of Chordia, Long break in bed 12m-17m, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Inside ,4,20,1,,Mud,Mud,2,1,,Lia ,"Done on snorkle, Narrow fringing bed, Ege of bed composed of Chordia, Long break in bed 12m-17m, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Inside ,5,20,7,,Sandy Mud ,Gravel ,1,7,,Lia ,"Done on snorkle, Narrow fringing bed, Ege of bed composed of Chordia, Long break in bed 12m-17m, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Outside ,1,20,5,,Mud,Cobble ,1,8,,"Bryce, Adri ",NA
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Outside ,2,20,2,,Mud,Mud ,1,1,,"Bryce, Adri ",NA
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Outside ,3,20,4,,Mud,Cobble ,1,8,,"Bryce, Adri ",NA
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Outside ,4,20,2,,Mud,Mud ,1,1,,"Bryce, Adri ",NA
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Outside ,5,20,7,,Muddy Sand,Gravel ,3,7,,"Bryce, Adri ",NA
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Edge ,1,20,0,,Mud,Mud ,1,1,,Lia ,"Done on snorkle, Sparse sea grass, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Edge ,2,20,0,,Mud,Mud ,1,1,,Lia ,"Done on snorkle, Sparse sea grass, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Edge ,3,20,0,,Mud,Mud ,1,1,,Lia ,"Done on snorkle, Sparse sea grass, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Edge ,4,20,1,,Mud,Mud ,1,1,,Lia ,"Done on snorkle, Sparse sea grass, Bed ends at 45m"
+Hecta Bay - eel,,55.77583333,-133.5319444,mid,2019,6/15/19,20190615,Edge ,5,20,5,,Sandy Mud ,Gravel ,2,7,,Lia ,"Done on snorkle, Sparse sea grass, Bed ends at 45m"
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Inside ,1,20,0,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Matt",Sparse cobble 0m-10m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Inside ,2,20,1,,Muddy Sand,Sand ,3,4,,"Bryce, Matt",Sparse cobble 0m-10m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Inside ,3,20,2,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Matt",Sparse cobble 0m-10m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Inside ,4,20,1,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Matt",Sparse cobble 0m-10m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Inside ,5,20,0,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Matt",Sparse cobble 0m-10m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Edge,1,20,0,,Sand ,Cobble ,4,8,,"Bryce, Matt",Sparse boulder 10m-40m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Edge,2,20,0,,Sand,Cobble ,4,8,,"Bryce, Matt",Sparse boulder 10m-40m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Edge,3,20,0,,Sand,Cobble ,4,8,,"Bryce, Matt",Sparse boulder 10m-40m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Edge,4,20,0,,Muddy Sand,Cobble ,3,8,,"Bryce, Matt",Sparse boulder 10m-40m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,Edge,5,20,0,,Muddy Sand,Sand ,3,4,,"Bryce, Matt",Sparse boulder 10m-40m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,outside ,1,20,0,,Sand ,Cobble ,4,8,,"Bryce, Matt",Sparse cobble 41m-50m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,outside ,2,20,0,,Sand ,Muddy Sand ,4,3,,"Bryce, Matt",Sparse cobble 41m-50m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,outside ,3,20,0,,Sand ,Sand ,4,4,,"Bryce, Matt",Sparse cobble 41m-50m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,outside ,4,20,1,,Sand ,Sand ,4,4,,"Bryce, Matt",Sparse cobble 41m-50m
+Kaguk,2017_H_04,55.73361,-133.29,high,2019,6/6/19,20190606,outside ,5,20,1,,Muddy Sand,Sand ,3,4,,"Bryce, Matt",Sparse cobble 41m-50m
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Inside,1,20,0,,Mud,Mud,1,1,,"Becca, Lassie",Last 5m Had Gravel
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Inside,2,20,0,,Mud,Mud,1,1,,"Becca, Lassie",Last 5m Had Gravel
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Inside,3,20,0,,Mud,Mud,1,1,,"Becca, Lassie",Last 5m Had Gravel
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Inside,4,20,0,,Mud,Mud,1,1,,"Becca, Lassie",Last 5m Had Gravel
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Inside,5,20,0,,Mud,Mud,1,1,,"Becca, Lassie",Last 5m Had Gravel
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Edge,1,20,0,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Edge,2,20,0,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Edge,3,20,1,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Edge,4,20,0,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Edge,5,20,3,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Outside ,1,20,0,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Outside ,2,20,0,,Mud,Mud,1,1,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Outside ,3,20,0,,Mud,Sandy Mud,1,2,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Outside ,4,20,0,,Mud,Sandy Mud,1,2,,"Becca, Lassie",NA
+Klawock Airport,,55.577767,-133.094100,mid,2019,5/7/19,20190507,Outside ,5,20,2,,Mud,Sandy Mud,1,2,,"Becca, Lassie",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Inside ,1,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Inside ,2,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Inside ,3,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Inside ,4,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Inside ,5,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",NA
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Edge ,1,20,2,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",Live clams 0m-10m
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Edge ,2,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",Live clams 0m-10m
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Edge ,3,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",Live clams 0m-10m
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Edge ,4,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",Live clams 0m-10m
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Edge ,5,20,0,,Muddy Sand,Muddy Sand ,3,3,,"Becca, Adri",Live clams 0m-10m
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Outside ,1,20,0,,Sand ,Sand ,4,4,,"Becca, Adri","Live clams 0m-20m, Sparse cobble throughout"
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Outside ,2,20,0,,Sand ,Sand ,4,4,,"Becca, Adri","Live clams 0m-20m, Sparse cobble throughout"
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Outside ,3,20,0,,Sand ,Sand ,4,4,,"Becca, Adri","Live clams 0m-20m, Sparse cobble throughout"
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Outside ,4,20,0,,Sand ,Sand ,4,4,,"Becca, Adri","Live clams 0m-20m, Sparse cobble throughout"
+Natzuhini,2017_L_04,55.25051,-132.883,low,2019,6/16/19,20190616,Outside ,5,20,0,,Sand ,Sand ,4,4,,"Becca, Adri","Live clams 0m-20m, Sparse cobble throughout"
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Inside ,1,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse cobble 30m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Inside ,2,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse cobble 30m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Inside ,3,20,1,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse cobble 30m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Inside ,4,20,5,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse cobble 30m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Inside ,5,20,6,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse cobble 30m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Edge ,1,20,0,,Mud,Mud,1,1,,"Lassi, Becca ",NA
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Edge ,2,20,0,,Mud,Mud,1,1,,"Lassi, Becca ",NA
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Edge ,3,20,0,,Mud,Mud,1,1,,"Lassi, Becca ",NA
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Edge ,4,20,0,,Mud,Mud,1,1,,"Lassi, Becca ",NA
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Edge ,5,20,0,,Mud,Mud,1,1,,"Lassi, Becca ",NA
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Outside ,1,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse Cobble 0m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Outside ,2,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse Cobble 0m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Outside ,3,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Becca ",Sparse Cobble 0m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Outside ,4,20,1,,Sand,Sandy Mud,4,2,,"Lassi, Becca ",Sparse Cobble 0m-50m
+Naukati ,2017_H_05,55.862405,-133.190722,high,2019,5/21/19,20190521,Outside ,5,20,6,,Sand,Sandy Mud,4,2,,"Lassi, Becca ",Sparse Cobble 0m-50m
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Inside ,1,20,0,,Mud,Mud ,1,1,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Inside ,2,20,1,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Inside ,3,20,8,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Inside ,4,20,4,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Inside ,5,20,4,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Edge ,1,20,0,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Edge ,2,20,0,,Muddy Sand,Mud,3,1,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Edge ,3,20,0,,Muddy Sand,Mud,3,1,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Edge ,4,20,0,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Edge ,5,20,0,,Mud,Sandy Mud,1,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Outside ,1,20,2,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Outside ,2,20,1,,Sandy Mud,Muddy Sand,2,3,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Outside ,3,20,0,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Outside ,4,20,0,,Muddy Sand,Sandy Mud,3,2,,"Bryce, Lassi",NA
+North Fish Egg,2017_M_02,55.49709,-133.17,mid,2019,4/19/19,20190419,Outside ,5,20,0,,Muddy Sand,Sand,3,4,,"Bryce, Lassi",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Inside,1,20,2,,Sand,Muddy Sand,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Inside,2,20,2,,Sand,Muddy Sand,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Inside,3,20,0,,Muddy Sand,Sandy Mud,3,2,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Inside,4,20,0,,Sandy Mud,Sandy Mud,2,2,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Inside,5,20,0,,Muddy Sand,Sand,3,4,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Edge,1,20,0,,Muddy Sand,Pebble,3,6,,"Lassi, Michele",Sparse Wood Through First 10m
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Edge,2,20,0,,Sand,Muddy Sand,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Edge,3,20,0,,Sand,Muddy Sand,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Edge,4,20,0,,Sand,Sand,4,4,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Edge,5,20,0,,Sand,Sand,4,4,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Outside ,1,20,0,,Sand,Muddy Sand,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Outside ,2,20,0,,Course Sand,Pebble,5,6,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Outside ,3,20,0,,Sand ,Sand,4,4,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Outside ,4,20,0,,Sand,Muddy Sand ,4,3,,"Lassi, Michele",NA
+North Pass,2017_L_01,55.229743,-132.924047,low,2019,5/9/19,20190509,Outside ,5,20,0,,Course Sand,Pebble,5,6,,"Lassi, Michele",NA
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Inside ,1,20,1,,Mud,Mud,1,1,,Lia,Done on snorkle 
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Inside ,2,20,1,,Mud,Mud,1,1,,Lia,Done on snorkle 
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Inside ,3,20,2,,Mud,Mud,1,1,,Lia,Done on snorkle 
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Inside ,4,20,0,,Mud,Mud,1,1,,Lia,Done on snorkle 
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Inside ,5,20,0,,Mud,Mud,1,1,,Lia,Done on snorkle 
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Edge ,1,20,0,,Mud,Mud,1,1,,Lia,"Done on snorkle, Lots of wood debris, old shell hash on shore edge "
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Edge ,2,20,0,,Mud,Mud,1,1,,Lia,"Done on snorkle, Lots of wood debris, old shell hash on shore edge "
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Edge ,3,20,0,,Mud,Mud,1,1,,Lia,"Done on snorkle, Lots of wood debris, old shell hash on shore edge "
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Edge ,4,20,1,,Mud,Mud,1,1,,Lia,"Done on snorkle, Lots of wood debris, old shell hash on shore edge "
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Edge ,5,20,0,,Mud,Mud,1,1,,Lia,"Done on snorkle, Lots of wood debris, old shell hash on shore edge "
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Outside ,1,20,0,,Mud,Mud,1,1,,"Bryce, Tim",Sparse cobble 20m-50m
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Outside ,2,20,0,,Mud,Mud,1,1,,"Bryce, Tim",Sparse cobble 20m-50m
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Outside ,3,20,1,,Mud,Mud,1,1,,"Bryce, Tim",Sparse cobble 20m-50m
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Outside ,4,20,0,,Mud,Mud,1,1,,"Bryce, Tim",Sparse cobble 20m-50m
+Nossuk Bay ,2017_H_02,55.70818,-133.34164,high,2019,6/14/19,20190614,Outside ,5,20,2,,Mud,Mud,1,1,,"Bryce, Tim",Sparse cobble 20m-50m
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Inside,1,20,1,,Sandy Mud,Mud,2,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Inside,2,20,0,,Sandy Mud,Mud,2,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Inside,3,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Inside,4,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Inside,5,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Edge ,1,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Edge ,2,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Edge ,3,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Edge ,4,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Edge ,5,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Outside ,1,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Outside ,2,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Outside ,3,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Outside ,4,20,1,,Mud,Mud,1,1,,"Becca, Ilya",NA
+Port Refugio,2017_M_08,55.282137,-133.334028,low,2019,5/19/19,20190519,Outside ,5,20,0,,Mud,Mud,1,1,,"Becca, Ilya",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Inside,1,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Inside,2,20,2,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Inside,3,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Inside,4,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Inside,5,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Edge,1,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Edge,2,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Edge,3,20,2,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Edge,4,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Edge,5,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Outside ,1,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Outside ,2,20,2,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Outside ,3,20,1,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Outside ,4,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+S Wadleigh Island,2017_M_04,55.52904,-133.147,mid,2019,5/10/19,20190510,Outside ,5,20,0,,Mud,Mud,1,1,,"Becca, Bryce",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,5/5/19,20190505,Outside ,1,20,3,,Gravel,Muddy Sand,7,3,,"Lia, Becca",Some Cobble 31-40m
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,5/5/19,20190505,Outside ,2,20,9,,Gravel,Muddy Sand,7,3,,"Lia, Becca",Some Cobble 31-40m
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,5/5/19,20190505,Outside ,3,20,6,,Gravel,Sand,7,4,,"Lia, Becca",Some Cobble 31-40m
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,5/5/19,20190505,Outside ,4,20,2,,Gravel,Sand,7,4,,"Lia, Becca",Some Cobble 31-40m
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,5/5/19,20190505,Outside ,5,20,1,,Gravel,Sand,7,4,,"Lia, Becca",Some Cobble 31-40m
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Edge,1,20,9,,Muddy Sand,Pebble ,3,6,,"Lia, Nicole ",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Edge,2,20,9,,Muddy Sand,Pebble ,3,6,,"Lia, Nicole ",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Edge,3,20,9,,Muddy Sand,Pebble ,3,6,,"Lia, Nicole ",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Edge,4,20,7,,Sandy Mud,Pebble ,2,6,,"Lia, Nicole ",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Edge,5,20,2,,Sandy Mud,Pebble ,2,6,,"Lia, Nicole ",NA
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Inside,1,20,5,,Sandy Mud,Mud ,2,1,,"Lia, Nicole ",Done on snorkle 
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Inside,2,20,1,,Sandy Mud,Mud ,2,1,,"Lia, Nicole ",Done on snorkle 
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Inside,3,20,2,,Sandy Mud,Mud ,2,1,,"Lia, Nicole ",Done on snorkle 
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Inside,4,20,4,,Sandy Mud,Sandy Mud,2,2,,"Lia, Nicole ",Done on snorkle 
+Salt Lake Bay,2017_H_01,55.67565,-133.3735,high,2019,6/2/19,20190602,Inside,5,20,1,,Sandy Mud,Mud,2,1,,"Lia, Nicole ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Inside ,1,20,0,,Cobble ,Sand ,8,4,,"Bryce, Koby","Collected where seined, Sparse cobble 0m-30m"
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Inside ,2,20,0,,Cobble ,Muddy Sand ,8,3,,"Bryce, Koby","Collected where seined, Sparse cobble 0m-30m"
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Inside ,3,20,1,,Cobble ,Muddy Sand ,8,3,,"Bryce, Koby","Collected where seined, Sparse cobble 0m-30m"
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Inside ,4,20,1,,Sandy Mud ,Cobble,2,8,,"Bryce, Koby","Collected where seined, Sparse cobble 0m-30m"
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Inside ,5,20,0,,Sandy Mud ,Cobble ,2,8,,"Bryce, Koby","Collected where seined, Sparse cobble 0m-30m"
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Edge ,1,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Edge ,2,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Edge ,3,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Edge ,4,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,Edge ,5,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,outside ,1,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,outside ,2,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,outside ,3,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,outside ,4,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay  - eel,,56.193611,-133.516944,high,2019,6/7/19,20190607,outside ,5,20,0,,Mud,Mud,1,1,,"Lia, Ginny ",Done on snorkle 
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Inside ,3,20,2,,Gravel,Sand ,7,4,,"Bryce, Koby ",Sparse cobble 0m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Inside ,4,20,3,,Cobble ,Sand ,8,4,,"Bryce, Koby ",Sparse cobble 0m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Inside ,5,20,0,,Cobble ,Sand ,8,4,,"Bryce, Koby ",Sparse cobble 0m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Edge ,1,20,26,,Sand ,Gravel,4,7,,"Bryce, Koby ",Sparse cobble 11m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Edge ,2,20,19,,Sand ,Gravel,4,7,,"Bryce, Koby ",Sparse cobble 11m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Edge ,3,20,16,,Sand ,Gravel,4,7,,"Bryce, Koby ",Sparse cobble 11m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Edge ,4,20,5,,Sand ,Cobble ,4,8,,"Bryce, Koby ",Sparse cobble 11m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Edge ,5,20,3,,Cobble ,Sand ,8,4,,"Bryce, Koby ",Sparse cobble 11m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Inside ,1,20,0,,Sand ,Gravel,4,7,,"Bryce, Koby ",Sparse cobble 0m-30m
+Shakan Bay - kelp,,56.14527778,-133.5408333,high,2019,6/8/19,20190608,Inside ,2,20,3,,Gravel,Course Sand ,7,5,,"Bryce, Koby ",This is a kelp site and the kelp bed was considered edge  inside wasnt possible becasue of the sediment type. not clam habitat.
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Inside,1,20,1,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Inside,2,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Inside,3,20,1,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Inside,4,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Inside,5,20,1,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Edge,1,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Edge,2,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Edge,3,20,1,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Edge,4,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Edge,5,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Outside ,1,20,1,,Mud ,Sand,1,3,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Outside ,2,20,2,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Outside ,3,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Outside ,4,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+Shinaku Inlet,2017_M_05,55.59929,-133.16,mid,2019,5/17/19,20190517,Outside ,5,20,0,,Mud ,Mud,1,1,,"Bryce, Ilya ",NA
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,inside ,1,20,1,,Sandy Mud,Sandy Mud,2,2,,"Bryce, Ilya ","Thick seagrass, Sparse cobble 31m-40m"
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,inside ,2,20,3,,Sandy Mud,Sandy Mud,2,2,,"Bryce, Ilya ","Thick seagrass, Sparse cobble 31m-40m"
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,inside ,3,20,0,,Sandy Mud,Mud,2,1,,"Bryce, Ilya ","Thick seagrass, Sparse cobble 31m-40m"
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,inside ,4,20,1,,Sandy Mud,Mud,2,1,,"Bryce, Ilya ","Thick seagrass, Sparse cobble 31m-40m"
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,inside ,5,20,3,,Sandy Mud,Mud,2,1,,"Bryce, Ilya ","Thick seagrass, Sparse cobble 31m-40m"
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Edge ,1,20,3,,Muddy Sand,Muddy Sand ,3,3,,"Bryce, Ilya ","Sparse cobble 10m-30m,  Sea grass extends far upshore "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Edge ,2,20,1,,Muddy Sand,Sand ,3,4,,"Bryce, Ilya ","Sparse cobble 10m-30m,  Sea grass extends far upshore "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Edge ,3,20,1,,Muddy Sand,Sand ,3,4,,"Bryce, Ilya ","Sparse cobble 10m-30m,  Sea grass extends far upshore "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Edge ,4,20,0,,Muddy Sand,Cobble,3,8,,"Bryce, Ilya ","Sparse cobble 10m-30m,  Sea grass extends far upshore "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Edge ,5,20,1,,Muddy Sand,Cobble,3,8,,"Bryce, Ilya ","Sparse cobble 10m-30m,  Sea grass extends far upshore "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Outside ,1,20,0,,Muddy Sand,Cobble,3,8,,"Bryce, Ilya ","Sparse boulders 0m-30m, Thin seagrass outside of bed "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Outside ,2,20,0,,Muddy Sand,Cobble,3,8,,"Bryce, Ilya ","Sparse boulders 0m-30m, Thin seagrass outside of bed "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Outside ,3,20,1,,Sandy Mud,Cobble,2,8,,"Bryce, Ilya ","Sparse boulders 0m-30m, Thin seagrass outside of bed "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Outside ,4,20,0,,Sandy Mud,Mud,2,1,,"Bryce, Ilya ","Sparse boulders 0m-30m, Thin seagrass outside of bed "
+South Fish Egg,2017_M_03,55.48442,-133.17549,mid,2019,5/20/19,20190520,Outside ,5,20,2,,Sandy Mud,Mud,2,1,,"Bryce, Ilya ","Sparse boulders 0m-30m, Thin seagrass outside of bed "

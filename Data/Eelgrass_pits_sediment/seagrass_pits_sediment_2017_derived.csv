@@ -1,0 +1,631 @@
+"","site","YYYYMMDD","trans_type","trans_bin","trans_m","pit_bin","sed1_type","sed2_type","sed1_no","sed2_no","sedno_avg","field_collector","date","place_name","bay_code","bay_sample","latitude","longitude"
+"1","2017_H_04",20170707,"Edge",1,10,0,"Sandy mud","Mud",2,1,1.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"2","2017_H_04",20170707,"Edge",2,20,0,"Sandy mud","Mud",2,1,1.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"3","2017_H_04",20170707,"Edge",3,30,6,"Sand","Pebble",4,6,5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"4","2017_H_04",20170707,"Edge",4,40,9,"Sandy mud","Sand",2,4,3,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"5","2017_H_04",20170707,"Edge",5,50,0,"Sandy mud","Muddy sand",2,3,2.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"6","2017_H_04",20170707,"Edge",6,60,1,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"7","2017_H_04",20170707,"Edge",7,70,1,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"8","2017_H_04",20170707,"Edge",8,80,2,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"9","2017_H_04",20170707,"Edge",9,90,4,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"10","2017_H_04",20170707,"Edge",10,100,2,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"11","2017_H_04",20170707,"Inside",1,10,0,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"12","2017_H_04",20170707,"Inside",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"13","2017_H_04",20170707,"Inside",3,30,1,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"14","2017_H_04",20170707,"Inside",4,40,1,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"15","2017_H_04",20170707,"Inside",5,50,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"16","2017_H_04",20170707,"Inside",6,60,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"17","2017_H_04",20170707,"Inside",7,70,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"18","2017_H_04",20170707,"Inside",8,80,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"19","2017_H_04",20170707,"Inside",9,90,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"20","2017_H_04",20170707,"Inside",10,100,0,"Mud","Mud",1,1,1,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"21","2017_H_04",20170707,"Outside",1,10,0,"Mud","Sandy mud",1,2,1.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"22","2017_H_04",20170707,"Outside",2,20,0,"Mud","Sandy mud",1,2,1.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"23","2017_H_04",20170707,"Outside",3,30,8,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"24","2017_H_04",20170707,"Outside",4,40,9,"Sand","Pebble",4,6,5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"25","2017_H_04",20170707,"Outside",5,50,3,"Sand","Pebble",4,6,5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"26","2017_H_04",20170707,"Outside",6,60,1,"Sand","Cobble",4,8,6,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"27","2017_H_04",20170707,"Outside",7,70,0,"Sand","Cobble",4,8,6,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"28","2017_H_04",20170707,"Outside",8,80,1,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"29","2017_H_04",20170707,"Outside",9,90,0,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"30","2017_H_04",20170707,"Outside",10,100,0,"Muddy Sand","Sand",3,4,3.5,"Tiff Stephens",2017-07-07,"Kaguk Cove","KAGK","A",55.73361,-133.29
+"31","2017_H_05",20170725,"Edge",1,10,0,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"32","2017_H_05",20170725,"Edge",2,20,0,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"33","2017_H_05",20170725,"Edge",3,30,0,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"34","2017_H_05",20170725,"Edge",4,40,0,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"35","2017_H_05",20170725,"Edge",5,50,1,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"36","2017_H_05",20170725,"Edge",6,60,0,"Sandy mud","Gravel",2,7,4.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"37","2017_H_05",20170725,"Edge",7,70,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"38","2017_H_05",20170725,"Edge",8,80,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"39","2017_H_05",20170725,"Edge",9,90,0,"Sandy mud","Mud",2,1,1.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"40","2017_H_05",20170725,"Edge",10,100,0,"Sandy mud","Mud",2,1,1.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"41","2017_H_05",20170725,"Inside",1,10,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"42","2017_H_05",20170725,"Inside",2,20,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"43","2017_H_05",20170725,"Inside",3,30,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"44","2017_H_05",20170725,"Inside",4,40,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"45","2017_H_05",20170725,"Inside",5,50,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"46","2017_H_05",20170725,"Inside",6,60,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"47","2017_H_05",20170725,"Inside",7,70,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"48","2017_H_05",20170725,"Inside",8,80,1,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"49","2017_H_05",20170725,"Inside",9,90,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"50","2017_H_05",20170725,"Inside",10,100,0,"Mud","Mud",1,1,1,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"51","2017_H_05",20170725,"Outside",1,10,3,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"52","2017_H_05",20170725,"Outside",2,20,6,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"53","2017_H_05",20170725,"Outside",3,30,7,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"54","2017_H_05",20170725,"Outside",4,40,7,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"55","2017_H_05",20170725,"Outside",5,50,6,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"56","2017_H_05",20170725,"Outside",6,60,5,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"57","2017_H_05",20170725,"Outside",7,70,3,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"58","2017_H_05",20170725,"Outside",8,80,14,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"59","2017_H_05",20170725,"Outside",9,90,25,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"60","2017_H_05",20170725,"Outside",10,100,5,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-25,"Naukati Bay","NAUK","A",55.862405,-133.190722
+"61","2017_H_06",20170724,"Edge",1,10,15,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"62","2017_H_06",20170724,"Edge",2,20,8,"Sandy mud","Sand",2,4,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"63","2017_H_06",20170724,"Edge",3,30,7,"Sandy mud","Sand",2,4,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"64","2017_H_06",20170724,"Edge",4,40,9,"Mud","Sandy mud",1,2,1.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"65","2017_H_06",20170724,"Edge",5,50,12,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"66","2017_H_06",20170724,"Edge",6,60,9,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"67","2017_H_06",20170724,"Edge",7,70,15,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"68","2017_H_06",20170724,"Edge",8,80,5,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"69","2017_H_06",20170724,"Edge",9,90,10,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"70","2017_H_06",20170724,"Edge",10,100,6,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"71","2017_H_06",20170724,"Inside",1,10,5,"Muddy Sand","Mud",3,1,2,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"72","2017_H_06",20170724,"Inside",2,20,5,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"73","2017_H_06",20170724,"Inside",3,30,3,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"74","2017_H_06",20170724,"Inside",4,40,3,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"75","2017_H_06",20170724,"Inside",5,50,6,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"76","2017_H_06",20170724,"Inside",6,60,4,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"77","2017_H_06",20170724,"Inside",7,70,2,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"78","2017_H_06",20170724,"Inside",8,80,9,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"79","2017_H_06",20170724,"Inside",9,90,2,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"80","2017_H_06",20170724,"Inside",10,100,7,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"81","2017_H_06",20170724,"Outside",1,10,4,"Muddy Sand","Mud",3,1,2,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"82","2017_H_06",20170724,"Outside",2,20,15,"Pebble","Sand",6,4,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"83","2017_H_06",20170724,"Outside",3,30,14,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"84","2017_H_06",20170724,"Outside",4,40,22,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"85","2017_H_06",20170724,"Outside",5,50,19,"Mud","Cobble",1,8,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"86","2017_H_06",20170724,"Outside",6,60,12,"Mud","Gravel",1,7,4,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"87","2017_H_06",20170724,"Outside",7,70,7,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"88","2017_H_06",20170724,"Outside",8,80,4,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"89","2017_H_06",20170724,"Outside",9,90,2,"Mud","Mud",1,1,1,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"90","2017_H_06",20170724,"Outside",10,100,3,"Mud","Sandy mud",1,2,1.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-24,"Guktu Bay","GUKT","A",55.739816,-133.312022
+"91","2017_L_01",20170709,"Edge",1,10,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"92","2017_L_01",20170709,"Edge",2,20,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"93","2017_L_01",20170709,"Edge",3,30,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"94","2017_L_01",20170709,"Edge",4,40,0,"Sand","Sand",4,4,4,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"95","2017_L_01",20170709,"Edge",5,50,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"96","2017_L_01",20170709,"Edge",6,60,0,"Sand","Sand",4,4,4,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"97","2017_L_01",20170709,"Edge",7,70,0,"Sand","Sand",4,4,4,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"98","2017_L_01",20170709,"Edge",8,80,0,"Sand","Sand",4,4,4,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"99","2017_L_01",20170709,"Edge",9,90,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"100","2017_L_01",20170709,"Edge",10,100,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"101","2017_L_01",20170709,"Inside",1,10,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"102","2017_L_01",20170709,"Inside",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"103","2017_L_01",20170709,"Inside",3,30,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"104","2017_L_01",20170709,"Inside",4,40,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"105","2017_L_01",20170709,"Inside",5,50,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"106","2017_L_01",20170709,"Inside",6,60,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"107","2017_L_01",20170709,"Inside",7,70,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"108","2017_L_01",20170709,"Inside",8,80,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"109","2017_L_01",20170709,"Inside",9,90,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"110","2017_L_01",20170709,"Inside",10,100,0,"Sand","Sand",4,4,4,"Wendel Raymond",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"111","2017_L_01",20170709,"Outside",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"112","2017_L_01",20170709,"Outside",2,20,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"113","2017_L_01",20170709,"Outside",3,30,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"114","2017_L_01",20170709,"Outside",4,40,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"115","2017_L_01",20170709,"Outside",5,50,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"116","2017_L_01",20170709,"Outside",6,60,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"117","2017_L_01",20170709,"Outside",7,70,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"118","2017_L_01",20170709,"Outside",8,80,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"119","2017_L_01",20170709,"Outside",9,90,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"120","2017_L_01",20170709,"Outside",10,100,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-09,"Soda Bay","SODA","A",55.26366,-132.995
+"121","2017_L_02",20170715,"Edge",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"122","2017_L_02",20170715,"Edge",2,20,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"123","2017_L_02",20170715,"Edge",3,30,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"124","2017_L_02",20170715,"Edge",4,40,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"125","2017_L_02",20170715,"Edge",5,50,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"126","2017_L_02",20170715,"Edge",6,60,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"127","2017_L_02",20170715,"Edge",7,70,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"128","2017_L_02",20170715,"Edge",8,80,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"129","2017_L_02",20170715,"Edge",9,90,0,"Pebble","Sand",6,4,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"130","2017_L_02",20170715,"Edge",10,100,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"131","2017_L_02",20170715,"Inside",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"132","2017_L_02",20170715,"Inside",2,20,0,"Sand","Sand",4,4,4,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"133","2017_L_02",20170715,"Inside",3,30,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"134","2017_L_02",20170715,"Inside",4,40,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"135","2017_L_02",20170715,"Inside",5,50,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"136","2017_L_02",20170715,"Inside",6,60,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"137","2017_L_02",20170715,"Inside",7,70,1,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"138","2017_L_02",20170715,"Inside",8,80,0,"Sand","Sand",4,4,4,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"139","2017_L_02",20170715,"Inside",9,90,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"140","2017_L_02",20170715,"Inside",10,100,0,"Sand","Sand",4,4,4,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"141","2017_L_02",20170715,"Outside",1,10,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"142","2017_L_02",20170715,"Outside",2,20,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"143","2017_L_02",20170715,"Outside",3,30,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"144","2017_L_02",20170715,"Outside",4,40,1,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"145","2017_L_02",20170715,"Outside",5,50,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"146","2017_L_02",20170715,"Outside",6,60,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"147","2017_L_02",20170715,"Outside",7,70,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"148","2017_L_02",20170715,"Outside",8,80,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"149","2017_L_02",20170715,"Outside",9,90,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"150","2017_L_02",20170715,"Outside",10,100,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond",2017-07-15,"Goats mouth inlet","GOAT","A",55.192784,-132.900113
+"151","2017_L_03",20170724,"Edge",1,10,0,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"152","2017_L_03",20170724,"Edge",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"153","2017_L_03",20170724,"Edge",3,30,0,"Sandy mud","Mud",2,1,1.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"154","2017_L_03",20170724,"Edge",4,40,0,"Sandy mud","Mud",2,1,1.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"155","2017_L_03",20170724,"Edge",5,50,0,"Mud","Sandy mud",1,2,1.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"156","2017_L_03",20170724,"Edge",6,60,0,"Sand","Pebble",4,6,5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"157","2017_L_03",20170724,"Edge",7,70,0,"Pebble","Pebble",6,6,6,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"158","2017_L_03",20170724,"Edge",8,80,0,"Sand","Pebble",4,6,5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"159","2017_L_03",20170724,"Edge",9,90,0,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"160","2017_L_03",20170724,"Edge",10,100,0,"Sand","Sandy mud",4,2,3,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"161","2017_L_03",20170724,"Inside",1,10,0,"Mud","Sandy mud",1,2,1.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"162","2017_L_03",20170724,"Inside",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"163","2017_L_03",20170724,"Inside",3,30,1,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"164","2017_L_03",20170724,"Inside",4,40,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"165","2017_L_03",20170724,"Inside",5,50,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"166","2017_L_03",20170724,"Inside",6,60,0,"Gravel","Sand",7,4,5.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"167","2017_L_03",20170724,"Inside",7,70,0,"Gravel","Sand",7,4,5.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"168","2017_L_03",20170724,"Inside",8,80,0,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"169","2017_L_03",20170724,"Inside",9,90,0,"Mud","Gravel",1,7,4,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"170","2017_L_03",20170724,"Inside",10,100,0,"Mud","Gravel",1,7,4,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"171","2017_L_03",20170724,"Outside",1,10,0,"Gravel","Sandy mud",7,2,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"172","2017_L_03",20170724,"Outside",2,20,0,"Gravel","Pebble",7,6,6.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"173","2017_L_03",20170724,"Outside",3,30,0,"Gravel","Cobble",7,8,7.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"174","2017_L_03",20170724,"Outside",4,40,0,"Gravel","Sandy mud",7,2,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"175","2017_L_03",20170724,"Outside",5,50,0,"Gravel","Sandy mud",7,2,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"176","2017_L_03",20170724,"Outside",6,60,0,"Gravel","Sandy mud",7,2,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"177","2017_L_03",20170724,"Outside",7,70,0,"Gravel","Sandy mud",7,2,4.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"178","2017_L_03",20170724,"Outside",8,80,0,"Gravel","Cobble",7,8,7.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"179","2017_L_03",20170724,"Outside",9,90,0,"Gravel","Sand",7,4,5.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"180","2017_L_03",20170724,"Outside",10,100,0,"Gravel","Sand",7,4,5.5,"Ashley Bolwerk",2017-07-24,"North Pass","NPAS","A",55.229358,-132.924121
+"181","2017_L_04",20170628,"Edge",1,10,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"182","2017_L_04",20170628,"Edge",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"183","2017_L_04",20170628,"Edge",3,30,0,"Sandy mud","Mud",2,1,1.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"184","2017_L_04",20170628,"Edge",4,40,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"185","2017_L_04",20170628,"Edge",5,50,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"186","2017_L_04",20170628,"Edge",6,60,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"187","2017_L_04",20170628,"Edge",7,70,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"188","2017_L_04",20170628,"Edge",8,80,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"189","2017_L_04",20170628,"Edge",9,90,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"190","2017_L_04",20170628,"Edge",10,100,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"191","2017_L_04",20170628,"Inside",1,10,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"192","2017_L_04",20170628,"Inside",2,20,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"193","2017_L_04",20170628,"Inside",3,30,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"194","2017_L_04",20170628,"Inside",4,40,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"195","2017_L_04",20170628,"Inside",5,50,0,"Gravel","Muddy Sand",7,3,5,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"196","2017_L_04",20170628,"Inside",6,60,0,"Gravel","Muddy Sand",7,3,5,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"197","2017_L_04",20170628,"Inside",7,70,0,"Gravel","Muddy Sand",7,3,5,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"198","2017_L_04",20170628,"Inside",8,80,0,"Gravel","Muddy Sand",7,3,5,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"199","2017_L_04",20170628,"Inside",9,90,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"200","2017_L_04",20170628,"Inside",10,100,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"201","2017_L_04",20170628,"Outside",1,10,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"202","2017_L_04",20170628,"Outside",2,20,0,"Sandy mud","Mud",2,1,1.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"203","2017_L_04",20170628,"Outside",3,30,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"204","2017_L_04",20170628,"Outside",4,40,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"205","2017_L_04",20170628,"Outside",5,50,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"206","2017_L_04",20170628,"Outside",6,60,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"207","2017_L_04",20170628,"Outside",7,70,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"208","2017_L_04",20170628,"Outside",8,80,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"209","2017_L_04",20170628,"Outside",9,90,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"210","2017_L_04",20170628,"Outside",10,100,0,"Gravel","Sandy mud",7,2,4.5,"Tiff Stephens",2017-06-28,"Natzuhini Bay","NATZ","A",55.25051,-132.883
+"211","2017_L_05",20170627,"Edge",1,10,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"212","2017_L_05",20170627,"Edge",2,20,0,"Sandy mud","Sand",2,4,3,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"213","2017_L_05",20170627,"Edge",3,30,0,"Sandy mud","Sand",2,4,3,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"214","2017_L_05",20170627,"Edge",4,40,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"215","2017_L_05",20170627,"Edge",5,50,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"216","2017_L_05",20170627,"Edge",6,60,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"217","2017_L_05",20170627,"Edge",7,70,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"218","2017_L_05",20170627,"Edge",8,80,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"219","2017_L_05",20170627,"Edge",9,90,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"220","2017_L_05",20170627,"Edge",10,100,0,"Sandy mud","Cobble",2,8,5,"Tiff Stephens",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"221","2017_L_05",20170627,"Inside",1,10,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"222","2017_L_05",20170627,"Inside",2,20,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"223","2017_L_05",20170627,"Inside",3,30,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"224","2017_L_05",20170627,"Inside",4,40,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"225","2017_L_05",20170627,"Inside",5,50,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"226","2017_L_05",20170627,"Inside",6,60,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"227","2017_L_05",20170627,"Inside",7,70,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"228","2017_L_05",20170627,"Inside",8,80,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"229","2017_L_05",20170627,"Inside",9,90,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"230","2017_L_05",20170627,"Inside",10,100,0,"Sandy mud","Sandy mud",2,2,2,"Wendel Raymond",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"231","2017_L_05",20170627,"Outside",1,10,0,"Sandy mud","Gravel",2,7,4.5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"232","2017_L_05",20170627,"Outside",2,20,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"233","2017_L_05",20170627,"Outside",3,30,0,"Sand","Sand",4,4,4,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"234","2017_L_05",20170627,"Outside",4,40,0,"Sand","Sand",4,4,4,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"235","2017_L_05",20170627,"Outside",5,50,0,"Sand","Sand",4,4,4,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"236","2017_L_05",20170627,"Outside",6,60,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"237","2017_L_05",20170627,"Outside",7,70,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"238","2017_L_05",20170627,"Outside",8,80,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"239","2017_L_05",20170627,"Outside",9,90,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"240","2017_L_05",20170627,"Outside",10,100,0,"Sandy mud","Cobble",2,8,5,"Ginny Eckert",2017-06-27,"Dunbar Inlet","DUNB","A",55.0848,-132.826
+"241","2017_L_06",20170723,"Edge",1,10,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"242","2017_L_06",20170723,"Edge",2,20,0,"Coarse Sand","Pebble",5,6,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"243","2017_L_06",20170723,"Edge",3,30,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"244","2017_L_06",20170723,"Edge",4,40,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"245","2017_L_06",20170723,"Edge",5,50,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"246","2017_L_06",20170723,"Edge",6,60,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"247","2017_L_06",20170723,"Edge",7,70,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"248","2017_L_06",20170723,"Edge",8,80,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"249","2017_L_06",20170723,"Edge",9,90,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"250","2017_L_06",20170723,"Edge",10,100,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"251","2017_L_06",20170723,"Inside",1,10,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"252","2017_L_06",20170723,"Inside",2,20,0,"Muddy Sand","Sand",3,4,3.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"253","2017_L_06",20170723,"Inside",3,30,0,"Sand","Muddy Sand",4,3,3.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"254","2017_L_06",20170723,"Inside",4,40,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"255","2017_L_06",20170723,"Inside",5,50,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"256","2017_L_06",20170723,"Inside",6,60,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"257","2017_L_06",20170723,"Inside",7,70,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"258","2017_L_06",20170723,"Inside",8,80,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"259","2017_L_06",20170723,"Inside",9,90,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"260","2017_L_06",20170723,"Inside",10,100,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"261","2017_L_06",20170723,"Outside",1,10,0,"Gravel","Cobble",7,8,7.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"262","2017_L_06",20170723,"Outside",2,20,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"263","2017_L_06",20170723,"Outside",3,30,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"264","2017_L_06",20170723,"Outside",4,40,0,"Pebble","Gravel",6,7,6.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"265","2017_L_06",20170723,"Outside",5,50,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"266","2017_L_06",20170723,"Outside",6,60,0,"Coarse Sand","Gravel",5,7,6,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"267","2017_L_06",20170723,"Outside",7,70,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"268","2017_L_06",20170723,"Outside",8,80,0,"Sand","Sand",4,4,4,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"269","2017_L_06",20170723,"Outside",9,90,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"270","2017_L_06",20170723,"Outside",10,100,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens",2017-07-23,"Farallon Bay","FARA","A",55.19112,-133.105314
+"271","2017_L_07",20170723,"Edge",1,10,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"272","2017_L_07",20170723,"Edge",2,20,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"273","2017_L_07",20170723,"Edge",3,30,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"274","2017_L_07",20170723,"Edge",4,40,1,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"275","2017_L_07",20170723,"Edge",5,50,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"276","2017_L_07",20170723,"Edge",6,60,0,"Sand","Muddy Sand",4,3,3.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"277","2017_L_07",20170723,"Edge",7,70,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"278","2017_L_07",20170723,"Edge",8,80,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"279","2017_L_07",20170723,"Edge",9,90,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"280","2017_L_07",20170723,"Edge",10,100,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"281","2017_L_07",20170723,"Inside",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"282","2017_L_07",20170723,"Inside",2,20,0,"Gravel","Sand",7,4,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"283","2017_L_07",20170723,"Inside",3,30,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"284","2017_L_07",20170723,"Inside",4,40,0,"Sand","Sand",4,4,4,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"285","2017_L_07",20170723,"Inside",5,50,0,"Muddy Sand","Mud",3,1,2,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"286","2017_L_07",20170723,"Inside",6,60,0,"Sand","Muddy Sand",4,3,3.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"287","2017_L_07",20170723,"Inside",7,70,0,"Sand","Pebble",4,6,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"288","2017_L_07",20170723,"Inside",8,80,0,"Cobble","Pebble",8,6,7,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"289","2017_L_07",20170723,"Inside",9,90,0,"Cobble","Pebble",8,6,7,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"290","2017_L_07",20170723,"Inside",10,100,0,"Cobble","Pebble",8,6,7,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"291","2017_L_07",20170723,"Outside",1,10,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"292","2017_L_07",20170723,"Outside",2,20,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"293","2017_L_07",20170723,"Outside",3,30,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"294","2017_L_07",20170723,"Outside",4,40,1,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"295","2017_L_07",20170723,"Outside",5,50,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"296","2017_L_07",20170723,"Outside",6,60,0,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"297","2017_L_07",20170723,"Outside",7,70,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"298","2017_L_07",20170723,"Outside",8,80,0,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"299","2017_L_07",20170723,"Outside",9,90,1,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"300","2017_L_07",20170723,"Outside",10,100,2,"Sandy mud","Gravel",2,7,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-23,"Hetta Cove","HETA","A",55.155625,-132.589934
+"301","2017_M_02",20170721,"Edge",1,10,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"302","2017_M_02",20170721,"Edge",2,20,2,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"303","2017_M_02",20170721,"Edge",3,30,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"304","2017_M_02",20170721,"Edge",4,40,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"305","2017_M_02",20170721,"Edge",5,50,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"306","2017_M_02",20170721,"Edge",6,60,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"307","2017_M_02",20170721,"Edge",7,70,1,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"308","2017_M_02",20170721,"Edge",8,80,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"309","2017_M_02",20170721,"Edge",9,90,0,"Muddy Sand","Mud",3,1,2,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"310","2017_M_02",20170721,"Edge",10,100,0,"Sand","Muddy Sand",4,3,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"311","2017_M_02",20170721,"Inside",1,10,1,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"312","2017_M_02",20170721,"Inside",2,20,1,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"313","2017_M_02",20170721,"Inside",3,30,2,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"314","2017_M_02",20170721,"Inside",4,40,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"315","2017_M_02",20170721,"Inside",5,50,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"316","2017_M_02",20170721,"Inside",6,60,0,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"317","2017_M_02",20170721,"Inside",7,70,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"318","2017_M_02",20170721,"Inside",8,80,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"319","2017_M_02",20170721,"Inside",9,90,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"320","2017_M_02",20170721,"Inside",10,100,1,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"321","2017_M_02",20170721,"Outside",1,10,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"322","2017_M_02",20170721,"Outside",2,20,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"323","2017_M_02",20170721,"Outside",3,30,0,"Cobble","Sand",8,4,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"324","2017_M_02",20170721,"Outside",4,40,0,"Cobble","Sand",8,4,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"325","2017_M_02",20170721,"Outside",5,50,0,"Cobble","Sand",8,4,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"326","2017_M_02",20170721,"Outside",6,60,0,"Cobble","Sand",8,4,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"327","2017_M_02",20170721,"Outside",7,70,0,"Cobble","Sand",8,4,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"328","2017_M_02",20170721,"Outside",8,80,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"329","2017_M_02",20170721,"Outside",9,90,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"330","2017_M_02",20170721,"Outside",10,100,0,"Cobble","Gravel",8,7,7.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"North Fish Egg Island","NFEI","A",55.49709,-133.17
+"331","2017_M_03",20170721,"Edge",1,10,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"332","2017_M_03",20170721,"Edge",2,20,1,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"333","2017_M_03",20170721,"Edge",3,30,2,"Muddy Sand","Cobble",3,8,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"334","2017_M_03",20170721,"Edge",4,40,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"335","2017_M_03",20170721,"Edge",5,50,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"336","2017_M_03",20170721,"Edge",6,60,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"337","2017_M_03",20170721,"Edge",7,70,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"338","2017_M_03",20170721,"Edge",8,80,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"339","2017_M_03",20170721,"Edge",9,90,4,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"340","2017_M_03",20170721,"Edge",10,100,15,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"341","2017_M_03",20170721,"Inside",1,10,8,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"342","2017_M_03",20170721,"Inside",2,20,7,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"343","2017_M_03",20170721,"Inside",3,30,9,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"344","2017_M_03",20170721,"Inside",4,40,13,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"345","2017_M_03",20170721,"Inside",5,50,15,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"346","2017_M_03",20170721,"Inside",6,60,12,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"347","2017_M_03",20170721,"Inside",7,70,7,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"348","2017_M_03",20170721,"Inside",8,80,8,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"349","2017_M_03",20170721,"Inside",9,90,12,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"350","2017_M_03",20170721,"Inside",10,100,15,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"351","2017_M_03",20170721,"Outside",1,10,2,"Muddy Sand","Cobble",3,8,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"352","2017_M_03",20170721,"Outside",2,20,2,"Muddy Sand","Cobble",3,8,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"353","2017_M_03",20170721,"Outside",3,30,1,"Muddy Sand","Cobble",3,8,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"354","2017_M_03",20170721,"Outside",4,40,3,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"355","2017_M_03",20170721,"Outside",5,50,2,"Sand","Muddy Sand",4,3,3.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"356","2017_M_03",20170721,"Outside",6,60,11,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"357","2017_M_03",20170721,"Outside",7,70,5,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"358","2017_M_03",20170721,"Outside",8,80,5,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"359","2017_M_03",20170721,"Outside",9,90,17,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"360","2017_M_03",20170721,"Outside",10,100,14,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-07-21,"South Fish Egg Island","SFEI","A",55.48442,-133.17549
+"361","2017_M_04",20170712,"Edge",1,10,3,"Muddy Sand","Muddy Sand",3,3,3,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"362","2017_M_04",20170712,"Edge",2,20,2,"Sandy mud","Sandy mud",2,2,2,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"363","2017_M_04",20170712,"Edge",3,30,1,"Muddy Sand","Sandy mud",3,2,2.5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"364","2017_M_04",20170712,"Edge",4,40,4,"Muddy Sand","Sandy mud",3,2,2.5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"365","2017_M_04",20170712,"Edge",5,50,0,"Muddy Sand","Sandy mud",3,2,2.5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"366","2017_M_04",20170712,"Edge",6,60,2,"Muddy Sand","Sandy mud",3,2,2.5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"367","2017_M_04",20170712,"Edge",7,70,1,"Muddy Sand","Sandy mud",3,2,2.5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"368","2017_M_04",20170712,"Edge",8,80,0,"Sandy mud","Sandy mud",2,2,2,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"369","2017_M_04",20170712,"Edge",9,90,0,"Muddy Sand","Muddy Sand",3,3,3,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"370","2017_M_04",20170712,"Edge",10,100,0,"Muddy Sand","Gravel",3,7,5,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"371","2017_M_04",20170712,"Inside",1,10,2,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"372","2017_M_04",20170712,"Inside",2,20,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"373","2017_M_04",20170712,"Inside",3,30,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"374","2017_M_04",20170712,"Inside",4,40,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"375","2017_M_04",20170712,"Inside",5,50,3,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"376","2017_M_04",20170712,"Inside",6,60,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"377","2017_M_04",20170712,"Inside",7,70,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"378","2017_M_04",20170712,"Inside",8,80,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"379","2017_M_04",20170712,"Inside",9,90,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"380","2017_M_04",20170712,"Inside",10,100,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"381","2017_M_04",20170712,"Outside",1,10,5,"Muddy Sand","Muddy sand",3,3,3,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"382","2017_M_04",20170712,"Outside",2,20,1,"Sandy mud","Muddy sand",2,3,2.5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"383","2017_M_04",20170712,"Outside",3,30,5,"Sandy mud","Mud",2,1,1.5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"384","2017_M_04",20170712,"Outside",4,40,4,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"385","2017_M_04",20170712,"Outside",5,50,5,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"386","2017_M_04",20170712,"Outside",6,60,11,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"387","2017_M_04",20170712,"Outside",7,70,2,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"388","2017_M_04",20170712,"Outside",8,80,0,"Sandy mud","Sandy mud",2,2,2,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"389","2017_M_04",20170712,"Outside",9,90,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"390","2017_M_04",20170712,"Outside",10,100,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"South Wadleigh Island","SWAD","A",55.52904,-133.147
+"391","2017_M_05",20170712,"Edge",1,10,3,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"392","2017_M_05",20170712,"Edge",2,20,4,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"393","2017_M_05",20170712,"Edge",3,30,1,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"394","2017_M_05",20170712,"Edge",4,40,1,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"395","2017_M_05",20170712,"Edge",5,50,1,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"396","2017_M_05",20170712,"Edge",6,60,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"397","2017_M_05",20170712,"Edge",7,70,0,"Sandy mud","Gravel",2,7,4.5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"398","2017_M_05",20170712,"Edge",8,80,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"399","2017_M_05",20170712,"Edge",9,90,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"400","2017_M_05",20170712,"Edge",10,100,0,"Muddy Sand","Gravel",3,7,5,"Ashley Bolwerk",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"401","2017_M_05",20170712,"Inside",1,10,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"402","2017_M_05",20170712,"Inside",2,20,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"403","2017_M_05",20170712,"Inside",3,30,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"404","2017_M_05",20170712,"Inside",4,40,1,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"405","2017_M_05",20170712,"Inside",5,50,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"406","2017_M_05",20170712,"Inside",6,60,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"407","2017_M_05",20170712,"Inside",7,70,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"408","2017_M_05",20170712,"Inside",8,80,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"409","2017_M_05",20170712,"Inside",9,90,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"410","2017_M_05",20170712,"Inside",10,100,0,"Mud","Mud",1,1,1,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"411","2017_M_05",20170712,"Outside",1,10,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"412","2017_M_05",20170712,"Outside",2,20,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"413","2017_M_05",20170712,"Outside",3,30,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"414","2017_M_05",20170712,"Outside",4,40,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"415","2017_M_05",20170712,"Outside",5,50,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"416","2017_M_05",20170712,"Outside",6,60,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"417","2017_M_05",20170712,"Outside",7,70,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"418","2017_M_05",20170712,"Outside",8,80,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"419","2017_M_05",20170712,"Outside",9,90,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"420","2017_M_05",20170712,"Outside",10,100,0,"Sand","Gravel",4,7,5.5,"Ginny Eckert",2017-07-12,"Shinaku Inlet","SHIN","A",55.59929,-133.16
+"421","2017_M_07",20170726,"Edge",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"422","2017_M_07",20170726,"Edge",2,20,1,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"423","2017_M_07",20170726,"Edge",3,30,1,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"424","2017_M_07",20170726,"Edge",4,40,5,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"425","2017_M_07",20170726,"Edge",5,50,2,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"426","2017_M_07",20170726,"Edge",6,60,6,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"427","2017_M_07",20170726,"Edge",7,70,4,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"428","2017_M_07",20170726,"Edge",8,80,2,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"429","2017_M_07",20170726,"Edge",9,90,4,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"430","2017_M_07",20170726,"Edge",10,100,1,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"431","2017_M_07",20170726,"Inside",1,10,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"432","2017_M_07",20170726,"Inside",2,20,1,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"433","2017_M_07",20170726,"Inside",3,30,0,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"434","2017_M_07",20170726,"Inside",4,40,1,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"435","2017_M_07",20170726,"Inside",5,50,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"436","2017_M_07",20170726,"Inside",6,60,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"437","2017_M_07",20170726,"Inside",7,70,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"438","2017_M_07",20170726,"Inside",8,80,0,"Sand","Cobble",4,8,6,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"439","2017_M_07",20170726,"Inside",9,90,0,"Sand","Cobble",4,8,6,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"440","2017_M_07",20170726,"Inside",10,100,0,"Sand","Cobble",4,8,6,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"441","2017_M_07",20170726,"Outside",1,10,1,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"442","2017_M_07",20170726,"Outside",2,20,2,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"443","2017_M_07",20170726,"Outside",3,30,3,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"444","2017_M_07",20170726,"Outside",4,40,2,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"445","2017_M_07",20170726,"Outside",5,50,2,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"446","2017_M_07",20170726,"Outside",6,60,5,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"447","2017_M_07",20170726,"Outside",7,70,9,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"448","2017_M_07",20170726,"Outside",8,80,2,"Muddy Sand","Pebble",3,6,4.5,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"449","2017_M_07",20170726,"Outside",9,90,4,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"450","2017_M_07",20170726,"Outside",10,100,6,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Wendel Raymond, Cathy Mattson",2017-07-26,"Garcia Bay","GARC","A",55.552669,-133.431392
+"451","2017_H_01",20170819,"Edge",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"452","2017_H_01",20170819,"Edge",2,20,0,"Sandy Mud","Sand",2,3,2.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"453","2017_H_01",20170819,"Edge",3,30,2,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"454","2017_H_01",20170819,"Edge",4,40,0,"Sand","Pebble",4,3,3.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"455","2017_H_01",20170819,"Edge",5,50,0,"Muddy Sand","Muddy Sand",3,3,3,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"456","2017_H_01",20170819,"Edge",6,60,0,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"457","2017_H_01",20170819,"Edge",7,70,3,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"458","2017_H_01",20170819,"Edge",8,80,0,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"459","2017_H_01",20170819,"Edge",9,90,1,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"460","2017_H_01",20170819,"Edge",10,100,0,"Sand","Pebble",4,6,5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"461","2017_H_01",20170819,"Inside",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"462","2017_H_01",20170819,"Inside",2,20,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"463","2017_H_01",20170819,"Inside",3,30,2,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"464","2017_H_01",20170819,"Inside",4,40,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"465","2017_H_01",20170819,"Inside",5,50,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"466","2017_H_01",20170819,"Inside",6,60,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"467","2017_H_01",20170819,"Inside",7,70,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"468","2017_H_01",20170819,"Inside",8,80,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"469","2017_H_01",20170819,"Inside",9,90,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"470","2017_H_01",20170819,"Inside",10,100,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"471","2017_H_01",20170819,"Outside",1,10,5,"Muddy Sand","Muddy Sand",3,3,3,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"472","2017_H_01",20170819,"Outside",2,20,5,"Muddy Sand","Muddy Sand",3,3,3,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"473","2017_H_01",20170819,"Outside",3,30,5,"Muddy Sand","Cobble",3,8,5.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"474","2017_H_01",20170819,"Outside",4,40,5,"Muddy Sand","Cobble",3,8,5.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"475","2017_H_01",20170819,"Outside",5,50,10,"Muddy Sand","Cobble",3,8,5.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"476","2017_H_01",20170819,"Outside",6,60,5,"Muddy Sand","Muddy Sand",3,3,3,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"477","2017_H_01",20170819,"Outside",7,70,10,"Muddy Sand","Muddy Sand",3,3,3,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"478","2017_H_01",20170819,"Outside",8,80,25,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"479","2017_H_01",20170819,"Outside",9,90,30,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"480","2017_H_01",20170819,"Outside",10,100,5,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-19,"Salt Lake Bay","SALA","A",55.672389,-133.377184
+"481","2017_H_02",20170822,"Edge",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"482","2017_H_02",20170822,"Edge",2,20,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"483","2017_H_02",20170822,"Edge",3,30,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"484","2017_H_02",20170822,"Edge",4,40,3,"Sandy Mud","Coarse Sand",2,5,3.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"485","2017_H_02",20170822,"Edge",5,50,4,"Sandy Mud","Coarse Sand",2,5,3.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"486","2017_H_02",20170822,"Edge",6,60,2,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"487","2017_H_02",20170822,"Edge",7,70,3,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"488","2017_H_02",20170822,"Edge",8,80,2,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"489","2017_H_02",20170822,"Edge",9,90,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"490","2017_H_02",20170822,"Edge",10,100,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"491","2017_H_02",20170822,"Inside",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"492","2017_H_02",20170822,"Inside",2,20,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"493","2017_H_02",20170822,"Inside",3,30,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"494","2017_H_02",20170822,"Inside",4,40,1,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"495","2017_H_02",20170822,"Inside",5,50,2,"Sandy Mud","Gravel",2,7,4.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"496","2017_H_02",20170822,"Inside",6,60,1,"Sandy Mud","Mud",2,1,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"497","2017_H_02",20170822,"Inside",7,70,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"498","2017_H_02",20170822,"Inside",8,80,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"499","2017_H_02",20170822,"Inside",9,90,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"500","2017_H_02",20170822,"Inside",10,100,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"501","2017_H_02",20170822,"Outside",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"502","2017_H_02",20170822,"Outside",2,20,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"503","2017_H_02",20170822,"Outside",3,30,0,"Mud","Sandy mud",1,2,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"504","2017_H_02",20170822,"Outside",4,40,0,"Mud","Sandy mud",1,2,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"505","2017_H_02",20170822,"Outside",5,50,0,"Mud","Sandy mud",1,2,1.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"506","2017_H_02",20170822,"Outside",6,60,1,"Muddy Sand","Coarse Sand",3,5,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"507","2017_H_02",20170822,"Outside",7,70,1,"Muddy Sand","Sand",3,4,3.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"508","2017_H_02",20170822,"Outside",8,80,0,"Coarse Sand","Sand",5,4,4.5,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"509","2017_H_02",20170822,"Outside",9,90,0,"Muddy Sand","Coarse Sand",3,5,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"510","2017_H_02",20170822,"Outside",10,100,1,"Muddy Sand","Coarse Sand",3,5,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-22,"Nossuk Bay","NOSK","A",55.7073,-133.342
+"511","2017_H_03",20170821,"Edge",1,10,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"512","2017_H_03",20170821,"Edge",2,20,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"513","2017_H_03",20170821,"Edge",3,30,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"514","2017_H_03",20170821,"Edge",4,40,1,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"515","2017_H_03",20170821,"Edge",5,50,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"516","2017_H_03",20170821,"Edge",6,60,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"517","2017_H_03",20170821,"Edge",7,70,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"518","2017_H_03",20170821,"Edge",8,80,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"519","2017_H_03",20170821,"Edge",9,90,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"520","2017_H_03",20170821,"Edge",10,100,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"521","2017_H_03",20170821,"Inside",1,10,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"522","2017_H_03",20170821,"Inside",2,20,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"523","2017_H_03",20170821,"Inside",3,30,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"524","2017_H_03",20170821,"Inside",4,40,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"525","2017_H_03",20170821,"Inside",5,50,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"526","2017_H_03",20170821,"Inside",6,60,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"527","2017_H_03",20170821,"Inside",7,70,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"528","2017_H_03",20170821,"Inside",8,80,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"529","2017_H_03",20170821,"Inside",9,90,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"530","2017_H_03",20170821,"Inside",10,100,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"531","2017_H_03",20170821,"Outside",1,10,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"532","2017_H_03",20170821,"Outside",2,20,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"533","2017_H_03",20170821,"Outside",3,30,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"534","2017_H_03",20170821,"Outside",4,40,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"535","2017_H_03",20170821,"Outside",5,50,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"536","2017_H_03",20170821,"Outside",6,60,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"537","2017_H_03",20170821,"Outside",7,70,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"538","2017_H_03",20170821,"Outside",8,80,0,"Mud","Mud",1,1,1,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"539","2017_H_03",20170821,"Outside",9,90,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"540","2017_H_03",20170821,"Outside",10,100,0,"Gravel","Mud",7,1,4,"Ashley Bolwerk, Nicole LaRoche",2017-08-21,"Chusini Cove","CHUS","A",55.80692,-133.171
+"541","2017_H_07",20170820,"Edge",1,10,3,"Sandy Mud","Cobble",2,8,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"542","2017_H_07",20170820,"Edge",2,20,6,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"543","2017_H_07",20170820,"Edge",3,30,8,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"544","2017_H_07",20170820,"Edge",4,40,10,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"545","2017_H_07",20170820,"Edge",5,50,10,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"546","2017_H_07",20170820,"Edge",6,60,6,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"547","2017_H_07",20170820,"Edge",7,70,4,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"548","2017_H_07",20170820,"Edge",8,80,9,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"549","2017_H_07",20170820,"Edge",9,90,14,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"550","2017_H_07",20170820,"Edge",10,100,15,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"551","2017_H_07",20170820,"Inside",1,10,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"552","2017_H_07",20170820,"Inside",2,20,2,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"553","2017_H_07",20170820,"Inside",3,30,1,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"554","2017_H_07",20170820,"Inside",4,40,0,"Sand","Muddy Sand",4,3,3.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"555","2017_H_07",20170820,"Inside",5,50,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"556","2017_H_07",20170820,"Inside",6,60,0,"Muddy Sand","Sand",3,4,3.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"557","2017_H_07",20170820,"Inside",7,70,0,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"558","2017_H_07",20170820,"Inside",8,80,2,"Muddy Sand","Muddy Sand",3,3,3,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"559","2017_H_07",20170820,"Inside",9,90,0,"Muddy Sand","Sand",3,4,3.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"560","2017_H_07",20170820,"Inside",10,100,6,"Sandy Mud","Cobble",3,8,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"561","2017_H_07",20170820,"Outside",1,10,6,"Muddy Sand","Boulder",3,9,6,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"562","2017_H_07",20170820,"Outside",2,20,2,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"563","2017_H_07",20170820,"Outside",3,30,1,"Muddy Sand","Cobble",3,8,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"564","2017_H_07",20170820,"Outside",4,40,2,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"565","2017_H_07",20170820,"Outside",5,50,2,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"566","2017_H_07",20170820,"Outside",6,60,8,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"567","2017_H_07",20170820,"Outside",7,70,2,"Muddy Sand","Gravel",3,7,5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"568","2017_H_07",20170820,"Outside",8,80,2,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"569","2017_H_07",20170820,"Outside",9,90,4,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"570","2017_H_07",20170820,"Outside",10,100,3,"Sand","Gravel",4,7,5.5,"Tiff Stephens, Earthwatch",2017-08-20,"Blanquizal Point","BLAQ","A",55.62082,-133.38664
+"571","2017_M_06",20170821,"Edge",1,10,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"572","2017_M_06",20170821,"Edge",2,20,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"573","2017_M_06",20170821,"Edge",3,30,0,"Sand","Cobble",4,8,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"574","2017_M_06",20170821,"Edge",4,40,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"575","2017_M_06",20170821,"Edge",5,50,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"576","2017_M_06",20170821,"Edge",6,60,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"577","2017_M_06",20170821,"Edge",7,70,0,"Sand","Sand",4,4,4,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"578","2017_M_06",20170821,"Edge",8,80,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"579","2017_M_06",20170821,"Edge",9,90,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"580","2017_M_06",20170821,"Edge",10,100,0,"Gravel","Sand",7,4,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"581","2017_M_06",20170821,"Inside",1,10,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"582","2017_M_06",20170821,"Inside",2,20,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"583","2017_M_06",20170821,"Inside",3,30,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"584","2017_M_06",20170821,"Inside",4,40,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"585","2017_M_06",20170821,"Inside",5,50,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"586","2017_M_06",20170821,"Inside",6,60,0,"Sand","Pebble",4,6,5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"587","2017_M_06",20170821,"Inside",7,70,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"588","2017_M_06",20170821,"Inside",8,80,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"589","2017_M_06",20170821,"Inside",9,90,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"590","2017_M_06",20170821,"Inside",10,100,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"591","2017_M_06",20170821,"Outside",1,10,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"592","2017_M_06",20170821,"Outside",2,20,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"593","2017_M_06",20170821,"Outside",3,30,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"594","2017_M_06",20170821,"Outside",4,40,0,"Coarse Sand","Cobble",5,8,6.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"595","2017_M_06",20170821,"Outside",5,50,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"596","2017_M_06",20170821,"Outside",6,60,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"597","2017_M_06",20170821,"Outside",7,70,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"598","2017_M_06",20170821,"Outside",8,80,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"599","2017_M_06",20170821,"Outside",9,90,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"600","2017_M_06",20170821,"Outside",10,100,1,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond, Cathy Mattson, Tiff Stephens",2017-08-21,"Trocadero Bay","TROC","A",55.344914,-133.0011
+"601","2017_M_08",20170822,"Edge",1,10,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"602","2017_M_08",20170822,"Edge",2,20,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"603","2017_M_08",20170822,"Edge",3,30,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"604","2017_M_08",20170822,"Edge",4,40,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"605","2017_M_08",20170822,"Edge",5,50,0,"Coarse Sand","Coarse Sand",5,5,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"606","2017_M_08",20170822,"Edge",6,60,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"607","2017_M_08",20170822,"Edge",7,70,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"608","2017_M_08",20170822,"Edge",8,80,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"609","2017_M_08",20170822,"Edge",9,90,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"610","2017_M_08",20170822,"Edge",10,100,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"611","2017_M_08",20170822,"Inside",1,10,0,"Muddy Sand","Sandy mud",3,2,2.5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"612","2017_M_08",20170822,"Inside",2,20,0,"Muddy Sand","Muddy Sand",3,3,3,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"613","2017_M_08",20170822,"Inside",3,30,0,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"614","2017_M_08",20170822,"Inside",4,40,0,"Muddy Sand","Sand",3,4,3.5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"615","2017_M_08",20170822,"Inside",5,50,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"616","2017_M_08",20170822,"Inside",6,60,0,"Gravel","Muddy Sand",7,3,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"617","2017_M_08",20170822,"Inside",7,70,0,"Sandy Mud","Gravel",2,7,4.5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"618","2017_M_08",20170822,"Inside",8,80,0,"Sand","Gravel",4,7,5.5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"619","2017_M_08",20170822,"Inside",9,90,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"620","2017_M_08",20170822,"Inside",10,100,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"621","2017_M_08",20170822,"Outside",1,10,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"622","2017_M_08",20170822,"Outside",2,20,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"623","2017_M_08",20170822,"Outside",3,30,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"624","2017_M_08",20170822,"Outside",4,40,0,"Gravel","Coarse Sand",7,5,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"625","2017_M_08",20170822,"Outside",5,50,0,"Gravel","Coarse Sand",7,5,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"626","2017_M_08",20170822,"Outside",6,60,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"627","2017_M_08",20170822,"Outside",7,70,0,"Coarse Sand","Gravel",5,7,6,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"628","2017_M_08",20170822,"Outside",8,80,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"629","2017_M_08",20170822,"Outside",9,90,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028
+"630","2017_M_08",20170822,"Outside",10,100,0,"Muddy Sand","Gravel",3,7,5,"Wendel Raymond",2017-08-22,"Port Refugio","REFU","A",55.282137,-133.334028

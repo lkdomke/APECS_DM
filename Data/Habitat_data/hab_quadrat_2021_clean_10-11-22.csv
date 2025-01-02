@@ -1,0 +1,116 @@
+"","quadrat_ID","site","bay_id","date","YYYYMMDD","habitat_quadrat","quadrat","density_0.25msq","flowering_0.25msq","notes","siteID_NOAA","place_name","habitat_site","latitude","longitude","total_biomass_g"
+"1",1,"Reef harbor - eel","REEF_A","6/10/2021",20210610,"eelgrass",1,"21","2","Depth of survey ~4ft at low tide",607,"Reef harbor","eelgrass",54.9684,-131.2492,NA
+"2",2,"Reef harbor - eel","REEF_A","6/10/2021",20210610,"eelgrass",2,"15","0","",607,"Reef harbor","eelgrass",54.9684,-131.2492,NA
+"3",3,"Reef harbor - eel","REEF_A","6/10/2021",20210610,"eelgrass",3,"17","2","",607,"Reef harbor","eelgrass",54.9684,-131.2492,NA
+"4",4,"Reef harbor - eel","REEF_A","6/10/2021",20210610,"eelgrass",4,"15","0","",607,"Reef harbor","eelgrass",54.9684,-131.2492,NA
+"5",5,"Reef harbor - eel","REEF_A","6/10/2021",20210610,"eelgrass",5,"21","0","",607,"Reef harbor","eelgrass",54.9684,-131.2492,NA
+"6",6,"Sylburn harbor - eel","SYLB_A","6/9/2021",20210609,"eelgrass",1,"26","0","Done on Snorkel",614,"Sylburn harbor","eelgrass",55.179058,-131.582105,NA
+"7",7,"Sylburn harbor - eel","SYLB_A","6/9/2021",20210609,"eelgrass",2,"29","0","",614,"Sylburn harbor","eelgrass",55.179058,-131.582105,NA
+"8",8,"Sylburn harbor - eel","SYLB_A","6/9/2021",20210609,"eelgrass",3,"10","0","",614,"Sylburn harbor","eelgrass",55.179058,-131.582105,NA
+"9",9,"Sylburn harbor - eel","SYLB_A","6/9/2021",20210609,"eelgrass",4,"25","2","",614,"Sylburn harbor","eelgrass",55.179058,-131.582105,NA
+"10",10,"Sylburn harbor - eel","SYLB_A","6/9/2021",20210609,"eelgrass",5,"9","0","",614,"Sylburn harbor","eelgrass",55.179058,-131.582105,NA
+"11",11,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"eelgrass",1,"18","2","Ulva in eelgrass quadrat",NA,"Tah Bay","eelgrass",54.830481,-132.286086,12.1
+"12",12,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"eelgrass",2,"28","2","Red blade in eelgrass quadrat",NA,"Tah Bay","eelgrass",54.830481,-132.286086,2.5
+"13",13,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"eelgrass",3,"12","2","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,NA
+"14",14,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"eelgrass",4,"27","2","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,NA
+"15",15,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"eelgrass",5,"28","2","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,NA
+"16",16,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"kelp",1,"N/A","N/A","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,0
+"17",17,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"kelp",2,"4","0","Deep",NA,"Tah Bay","eelgrass",54.830481,-132.286086,53.7
+"18",18,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"kelp",3,"N/A","N/A","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,28
+"19",19,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"kelp",4,"N/A","N/A","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,27.7
+"20",20,"Tah bay - eel","TAHB_A","6/27/2021",20210627,"kelp",5,"N/A","N/A","",NA,"Tah Bay","eelgrass",54.830481,-132.286086,1481.4
+"21",21,"Reef harbor - kelp","REEF_B","6/13/2021",20210613,"kelp",1,"N/A","N/A","20% ulva, 10% curly red, 20% bushy re, 10% thin red with tuffs, 40% cobble",606,"Reef harbor","kelp",54.974693,-131.255107,292.5
+"22",22,"Reef harbor - kelp","REEF_B","6/13/2021",20210613,"kelp",2,"N/A","N/A","5% ulva, 5% curvy red, 50% bushy red, 15% brown kelp, 25% cobble ",606,"Reef harbor","kelp",54.974693,-131.255107,565.6
+"23",23,"Reef harbor - kelp","REEF_B","6/13/2021",20210613,"kelp",3,"N/A","N/A","50% bushy red, 15% ulva, 5% bladed red, 10% bushy red, 20% cobble",606,"Reef harbor","kelp",54.974693,-131.255107,305.4
+"24",24,"Reef harbor - kelp","REEF_B","6/13/2021",20210613,"kelp",4,"N/A","N/A","20% ulva, 15% coarse red bushy, 35% fine red bushy, 5% red baled, 25% cobble ",606,"Reef harbor","kelp",54.974693,-131.255107,153
+"25",25,"Reef harbor - kelp","REEF_B","6/13/2021",20210613,"kelp",5,"N/A","N/A","25% saccharina, 15% ulva, 20% bushy red, 20% bladed red, 5% small brown, 15% cobble ",606,"Reef harbor","kelp",54.974693,-131.255107,364.9
+"26",26,"Hunter bay - eel","HUNT_A","6/28/2021",20210628,"eelgrass",1,"11","1","Collected from outside of quadrat for canopy height",NA,"Hunter Bay","eelgrass",54.872263,-132.308073,NA
+"27",27,"Hunter bay - eel","HUNT_A","6/28/2021",20210628,"eelgrass",2,"27","0","",NA,"Hunter Bay","eelgrass",54.872263,-132.308073,NA
+"28",28,"Hunter bay - eel","HUNT_A","6/28/2021",20210628,"eelgrass",3,"6","0","Collected from outside of quadrat for canopy height",NA,"Hunter Bay","eelgrass",54.872263,-132.308073,NA
+"29",29,"Hunter bay - eel","HUNT_A","6/28/2021",20210628,"eelgrass",4,"11","0","Collected from outside of quadrat for canopy height",NA,"Hunter Bay","eelgrass",54.872263,-132.308073,NA
+"30",30,"Hunter bay - eel","HUNT_A","6/28/2021",20210628,"eelgrass",5,"9","0","Collected from outside of quadrat for canopy height",NA,"Hunter Bay","eelgrass",54.872263,-132.308073,NA
+"31",31,"Kah shakes - kelp","KAHS_B","6/12/2021",20210612,"kelp",1,"N/A","N/A","86% bare cobbles, 2% ulva, 10% brown bushy, 2%red and Red urchins at site in seine",605,"Kah shakes","kelp",55.066147,-130.989508,148.9
+"32",32,"Kah shakes - kelp","KAHS_B","6/12/2021",20210612,"kelp",2,"N/A","N/A","20% brown bushy, 15% saach, 5% ulva, 60% bare cobble/pebble ",605,"Kah shakes","kelp",55.066147,-130.989508,189.1
+"33",33,"Kah shakes - kelp","KAHS_B","6/12/2021",20210612,"kelp",3,"N/A","N/A","85% saach, 5% sparanegia pertusa, 10% bare ",605,"Kah shakes","kelp",55.066147,-130.989508,976.6
+"34",34,"Kah shakes - kelp","KAHS_B","6/12/2021",20210612,"kelp",4,"N/A","N/A","1% laminara, 5% rockweed, 60% odenthalia spp, 5% ulva, 10% green sea moss, 5% s. pertusa, 14% boulder . Rock in quadrat",605,"Kah shakes","kelp",55.066147,-130.989508,82.6
+"35",35,"Kah shakes - kelp","KAHS_B","6/12/2021",20210612,"kelp",5,"N/A","N/A","40% saach, 25% soft bushy brown, 10% bladed reds, 5% boulder, 5% ulva, 10% odonthalia, 15% spikey brown Boulder in quadrat",605,"Kah shakes","kelp",55.066147,-130.989508,246.5
+"36",36,"Dall bay - kelp","DALL_B","6/15/2021",20210615,"kelp",1,"N/A","N/A","75% saccharina, 5% ulva, 10% sea fern, 10% boulder",616,"Dall bay","kelp",55.155254,-131.742113,833.7
+"37",37,"Dall bay - kelp","DALL_B","6/15/2021",20210615,"kelp",2,"N/A","N/A","85% sacc, 5% sea fern, 5% boulder, 5% red bladed",616,"Dall bay","kelp",55.155254,-131.742113,1039.8
+"38",38,"Dall bay - kelp","DALL_B","6/15/2021",20210615,"kelp",3,"N/A","N/A","35% fucus,, 10% sacch, 10% red bladed, 5% ulva, 5% irridescent red, 20% bushy red, 15% cobble",616,"Dall bay","kelp",55.155254,-131.742113,481.1
+"39",39,"Dall bay - kelp","DALL_B","6/15/2021",20210615,"kelp",4,"N/A","N/A","75% sea fern, 5% ulva, 10% red balded, 5% sacch, 5% cobble",616,"Dall bay","kelp",55.155254,-131.742113,430.9
+"40",40,"Dall bay - kelp","DALL_B","6/15/2021",20210615,"kelp",5,"N/A","N/A","90% sacch, 10% cobble ",616,"Dall bay","kelp",55.155254,-131.742113,1504.1
+"41",41,"Kah shakes - eel","KAHS_A","6/11/2021",20210611,"eelgrass",1,"16","3","Eelgrass bed tucked between rocky/cobbly habitata with understory kelp(laminaria) had another eelgrass bed ajacent and further toward open water. Eelgrass bed begun around -2.5 ft and extended deeper out of visable ranger about 7 ft some hab quadrents had kelp and other algae ",603,"Kah shakes","eelgrass",55.0426,-130.9995,NA
+"42",42,"Kah shakes - eel","KAHS_A","6/11/2021",20210611,"eelgrass",2,"24","1","",603,"Kah shakes","eelgrass",55.0426,-130.9995,NA
+"43",43,"Kah shakes - eel","KAHS_A","6/11/2021",20210611,"eelgrass",3,"29","1","",603,"Kah shakes","eelgrass",55.0426,-130.9995,NA
+"44",44,"Kah shakes - eel","KAHS_A","6/11/2021",20210611,"eelgrass",4,"42","0","",603,"Kah shakes","eelgrass",55.0426,-130.9995,NA
+"45",45,"Kah shakes - eel","KAHS_A","6/11/2021",20210611,"eelgrass",5,"4","0","Took shoots from outside the quadrat for canopy height",603,"Kah shakes","eelgrass",55.0426,-130.9995,NA
+"46",46,"Dall bay - eel","DALL_A","6/14/2021",20210614,"eelgrass",1,"12","0","Took shoots from outside the quadrat for canopy height",617,"Dall bay","eelgrass",55.156451,-131.749909,NA
+"47",47,"Dall bay - eel","DALL_A","6/14/2021",20210614,"eelgrass",2,"19","1","Took shoots from outside the quadrat for canopy height",617,"Dall bay","eelgrass",55.156451,-131.749909,NA
+"48",48,"Dall bay - eel","DALL_A","6/14/2021",20210614,"eelgrass",3,"22","1","Took shoots from outside the quadrat for canopy height",617,"Dall bay","eelgrass",55.156451,-131.749909,NA
+"49",49,"Dall bay - eel","DALL_A","6/14/2021",20210614,"eelgrass",4,"9","0","Took shoots from outside the quadrat for canopy height",617,"Dall bay","eelgrass",55.156451,-131.749909,NA
+"50",50,"Dall bay - eel","DALL_A","6/14/2021",20210614,"eelgrass",5,"24","2","Took shoots from outside the quadrat for canopy height",617,"Dall bay","eelgrass",55.156451,-131.749909,NA
+"51",51,"Moira - eel","MOIR_A","6/22/2021",20210622,"eelgrass",1,"68","0","",596,"Moira sound","eelgrass",54.9711,-132.0924,NA
+"52",52,"Moira - eel","MOIR_A","6/22/2021",20210622,"eelgrass",2,"67","0","",596,"Moira sound","eelgrass",54.9711,-132.0924,NA
+"53",53,"Moira - eel","MOIR_A","6/22/2021",20210622,"eelgrass",3,"22","0","",596,"Moira sound","eelgrass",54.9711,-132.0924,NA
+"54",54,"Moira - eel","MOIR_A","6/22/2021",20210622,"eelgrass",4,"54","2","",596,"Moira sound","eelgrass",54.9711,-132.0924,NA
+"55",55,"Moira - eel","MOIR_A","6/22/2021",20210622,"eelgrass",5,"35","0","",596,"Moira sound","eelgrass",54.9711,-132.0924,NA
+"56",56,"Sylburn harbor - kelp","SYLB_B","6/9/2021",20210609,"kelp",1,"N/A","N/A","40% saccharina, 40% fucus, 5% fucus, 5% ulva, 5% bare",613,"Sylburn harbor","kelp",55.176,-131.5972,945.3
+"57",57,"Sylburn harbor - kelp","SYLB_B","6/9/2021",20210609,"kelp",2,"N/A","N/A","60% fucus, 10% ulva, 50% saccharina",613,"Sylburn harbor","kelp",55.176,-131.5972,473.2
+"58",58,"Sylburn harbor - kelp","SYLB_B","6/9/2021",20210609,"kelp",3,"N/A","N/A","70% fucus, 15% ulva, 15% saccharina",613,"Sylburn harbor","kelp",55.176,-131.5972,622.1
+"59",59,"Sylburn harbor - kelp","SYLB_B","6/9/2021",20210609,"kelp",4,"N/A","N/A","80% saccharina, 20% fucus",613,"Sylburn harbor","kelp",55.176,-131.5972,1060.2
+"60",60,"Sylburn harbor - kelp","SYLB_B","6/9/2021",20210609,"kelp",5,"N/A","N/A","100% fucus ",613,"Sylburn harbor","kelp",55.176,-131.5972,1016.9
+"61",61,"Moira - kelp","MOIR_B","6/23/2021",20210623,"kelp",1,"N/A","N/A","Lots of parastichopus californicus in sampling area, saccharina dominant species",595,"Moira sound","kelp",54.985511,-132.109731,795
+"62",62,"Moira - kelp","MOIR_B","6/23/2021",20210623,"kelp",2,"N/A","N/A","",595,"Moira sound","kelp",54.985511,-132.109731,420.2
+"63",63,"Moira - kelp","MOIR_B","6/23/2021",20210623,"kelp",3,"N/A","N/A","",595,"Moira sound","kelp",54.985511,-132.109731,1128
+"64",64,"Moira - kelp","MOIR_B","6/23/2021",20210623,"kelp",4,"N/A","N/A","",595,"Moira sound","kelp",54.985511,-132.109731,954.9
+"65",65,"Moira - kelp","MOIR_B","6/23/2021",20210623,"kelp",5,"N/A","N/A","",595,"Moira sound","kelp",54.985511,-132.109731,1138.7
+"66",66,"Nichols - kelp","NICH_B","6/25/2021",20210625,"kelp",1,"N/A","N/A","30% Saccharina, 5% red bladed, 20% fine red, 25% shells/sand, and cobble 20%",599,"Nichols Bay","kelp",54.726046,-132.124284,779.7
+"67",67,"Nichols - kelp","NICH_B","6/25/2021",20210625,"kelp",2,"N/A","N/A","30% Saccharina, 20% cobble, 50% sand shells",599,"Nichols Bay","kelp",54.726046,-132.124284,487.2
+"68",68,"Nichols - kelp","NICH_B","6/25/2021",20210625,"kelp",3,"N/A","N/A","35% Saccharina, 40% brown moss, 5% fine red, 5% branch red, 15% large rocks",599,"Nichols Bay","kelp",54.726046,-132.124284,702.9
+"69",69,"Nichols - kelp","NICH_B","6/25/2021",20210625,"kelp",4,"N/A","N/A","30% saccharina, 5% branching reds, 15% moss, 50% sand and shells",599,"Nichols Bay","kelp",54.726046,-132.124284,1128.1
+"70",70,"Nichols - kelp","NICH_B","6/25/2021",20210625,"kelp",5,"N/A","N/A","30% Saccharina, 20% brown moss, 20% large rock, 30% sand shells ",599,"Nichols Bay","kelp",54.726046,-132.124284,1008.7
+"71",71,"Nichols - eel","NICH_A","6/26/2021",20210626,"surfgrass",1,"103","1","Weights and lengths for individual phyllospadix plants",598,"Nichols Bay","eelgrass",54.740107,-132.153373,NA
+"72",72,"Nichols - eel","NICH_A","6/26/2021",20210626,"surfgrass",2,"20","0","Bed out of water, phyllospadix ",598,"Nichols Bay","eelgrass",54.740107,-132.153373,NA
+"73",73,"Nichols - eel","NICH_A","6/26/2021",20210626,"surfgrass",3,"89","0","phyllospadix ",598,"Nichols Bay","eelgrass",54.740107,-132.153373,NA
+"74",74,"Nichols - eel","NICH_A","6/26/2021",20210626,"surfgrass",4,"64","0","phyllospadix ",598,"Nichols Bay","eelgrass",54.740107,-132.153373,NA
+"75",75,"Nichols - eel","NICH_A","6/26/2021",20210626,"surfgrass",5,"36","0","55% algae- Pterosiphonia spp and Neorhodomela aculeata with a few cobbles",598,"Nichols Bay","eelgrass",54.740107,-132.153373,NA
+"76",76,"Bostwick inlet - kelp","BOST_B","08/11/2021",20210811,"kelp",1,"N/A","N/A","40% saccharina, 30% graceful black pine, 10% finely branched reds, 2% stephoncystis, 15 % sand, 3% cobble",164,"Bostwick Inlet","kelp",55.219938,-131.735973,180.7
+"77",77,"Bostwick inlet - kelp","BOST_B","08/11/2021",20210811,"kelp",2,"N/A","N/A","70% Saccharina, 10% ulva, 5% fucus, 5% bladed red 10 % sand",164,"Bostwick Inlet","kelp",55.219938,-131.735973,246.5
+"78",78,"Bostwick inlet - kelp","BOST_B","08/11/2021",20210811,"kelp",3,"N/A","N/A","75% fucus, 10% ulva, 10% saccharina, 5% finely branched reds",164,"Bostwick Inlet","kelp",55.219938,-131.735973,1411.3
+"79",79,"Bostwick inlet - kelp","BOST_B","08/11/2021",20210811,"kelp",4,"N/A","N/A","30% graceful black pine, 20% dying stephanocystics, 5% bladed red, 2% ulva, 15% finely branched reds, 10 % cobble, 18 % sand",164,"Bostwick Inlet","kelp",55.219938,-131.735973,229.8
+"80",80,"Bostwick inlet - kelp","BOST_B","08/11/2021",20210811,"kelp",5,"N/A","N/A","35% agarum, 5% bladed red, 5% ulva, 10% fucus, 15% stephanocystis, 5% saccharina, 15% finely branched reds, 10 % cobble, had pychnopodia and temessus",164,"Bostwick Inlet","kelp",55.219938,-131.735973,184.6
+"81",81,"Bostwick inlet - eel","BOST_A","08/12/2021",20210812,"eelgrass",1,"22","0","80 % bare, 20% eelgrass",162,"Bostwick Inlet","eelgrass",55.236796,-131.750555,NA
+"82",82,"Bostwick inlet - eel","BOST_A","08/12/2021",20210812,"eelgrass",2,"18","0","35% fucus, 20% eelgrass, 45% sand",162,"Bostwick Inlet","eelgrass",55.236796,-131.750555,NA
+"83",83,"Bostwick inlet - eel","BOST_A","08/12/2021",20210812,"eelgrass",3,"26","0","30% eelgrass, 15% fucus, 55% bare",162,"Bostwick Inlet","eelgrass",55.236796,-131.750555,NA
+"84",84,"Bostwick inlet - eel","BOST_A","08/12/2021",20210812,"eelgrass",4,"46","2","40% eelgrass, 60% bare",162,"Bostwick Inlet","eelgrass",55.236796,-131.750555,NA
+"85",85,"Bostwick inlet - eel","BOST_A","08/12/2021",20210812,"eelgrass",5,"36","1","30% eelgrass, 70% bare",162,"Bostwick Inlet","eelgrass",55.236796,-131.750555,NA
+"86",86,"Klawock Airport-eel","KLWA_A","08/07/2021",20210807,"eelgrass",1,"102","0","50% bare, 48% seagrass, 2% spaghetti kelp. ",131,"Klawock Airport","eelgrass",55.577767,-133.0941,31.3
+"87",87,"Klawock Airport-eel","KLWA_A","08/07/2021",20210807,"eelgrass",2,"65","0","60% eelgrass, 40% bare no kelp",131,"Klawock Airport","eelgrass",55.577767,-133.0941,NA
+"88",88,"Klawock Airport-eel","KLWA_A","08/07/2021",20210807,"eelgrass",3,"100","0","86% seagrass, 2% spagetti kelp, 10% bare, 2% rockweed",131,"Klawock Airport","eelgrass",55.577767,-133.0941,51.5
+"89",89,"Klawock Airport-eel","KLWA_A","08/07/2021",20210807,"eelgrass",4,"77","0","70% eelgrass 30% bare",131,"Klawock Airport","eelgrass",55.577767,-133.0941,NA
+"90",90,"Klawock Airport-eel","KLWA_A","08/07/2021",20210807,"eelgrass",5,"82","0","100% eelgrass no kelp disease present ",131,"Klawock Airport","eelgrass",55.577767,-133.0941,NA
+"91",91,"Clam Island-eel","CLAM_A","08/08/2021",20210808,"eelgrass",1,"37","0","50% ulva, 40% eel, 2% brown stringy algae, 8% gravel",NA,"Clam island","mixed",55.517981,-133.158075,103.5
+"92",92,"Clam Island-eel","CLAM_A","08/08/2021",20210808,"eelgrass",2,"81","0","100% eel has kelp",NA,"Clam island","mixed",55.517981,-133.158075,3.7
+"93",93,"Clam Island-eel","CLAM_A","08/08/2021",20210808,"eelgrass",3,"50","0","75% eel, 10% ulva, 15% bare",NA,"Clam island","mixed",55.517981,-133.158075,44.2
+"94",94,"Clam Island-eel","CLAM_A","08/08/2021",20210808,"eelgrass",4,"71","0","100% eel no kelp",NA,"Clam island","mixed",55.517981,-133.158075,NA
+"95",95,"Clam Island-eel","CLAM_A","08/08/2021",20210808,"eelgrass",5,"25","0","60% eel, 10% ulva, 30% bare,  has kelp",NA,"Clam island","mixed",55.517981,-133.158075,15.1
+"96",96,"Clam Island-kelp ","CLAM_A","08/08/2021",20210808,"kelp",1,"N/A","N/A","20% chain kelp, 80% saccharina",NA,"Clam island","mixed",55.517981,-133.158075,750.9
+"97",97,"Clam Island-kelp ","CLAM_A","08/08/2021",20210808,"kelp",2,"N/A","N/A","30% chain kelp, 70% saccharina ",NA,"Clam island","mixed",55.517981,-133.158075,279.2
+"98",98,"Clam Island-kelp ","CLAM_A","08/08/2021",20210808,"kelp",3,"N/A","N/A","15% fucus, 10% ulva, 50% saccharina, 15% bare ",NA,"Clam island","mixed",55.517981,-133.158075,31.1
+"99",99,"Clam Island-kelp ","CLAM_A","08/08/2021",20210808,"kelp",4,"N/A","N/A","50% chain, 10% ulva, 5% sccharina,  35% bare",NA,"Clam island","mixed",55.517981,-133.158075,540.5
+"100",100,"Clam Island-kelp ","CLAM_A","08/08/2021",20210808,"kelp",5,"N/A","N/A","10% macro, 40% saccharina, 25% brown stringy, 25% cobble",NA,"Clam island","mixed",55.517981,-133.158075,585.7
+"101",101,"NFEI Point-eel","NFEI_B","08/09/2021",20210809,"surfgrass",1,"121","0","95% seagrass all phyllospadix, 5% bare/shell hash ",139,"North Fish Egg Island","kelp",55.50083,-133.1672,60.4
+"102",102,"NFEI Point-eel","NFEI_B","08/09/2021",20210809,"eelgrass",2,"41","0","75% seagrass lots of dead primary zostera, 5% ulva, 20% bladed brown",139,"North Fish Egg Island","kelp",55.50083,-133.1672,80.3
+"103",103,"NFEI Point-eel","NFEI_B","08/09/2021",20210809,"eelgrass",3,"59","0","50% seagrass mainly zostera, 2% ulva, 2% bladed red, 10% bladed brown 36% bare or dead kelp",139,"North Fish Egg Island","kelp",55.50083,-133.1672,68.5
+"104",104,"NFEI Point-eel","NFEI_B","08/09/2021",20210809,"eelgrass",4,"63","0","95% seagrass, 5% brown bladed",139,"North Fish Egg Island","kelp",55.50083,-133.1672,63.5
+"105",105,"NFEI Point-eel","NFEI_B","08/09/2021",20210809,"eelgrass",5,"80","0","90% seagrass mix of zostera and phyllospadix, 10% bladed brown ",139,"North Fish Egg Island","kelp",55.50083,-133.1672,94.2
+"106",106,"NFEI Point-kelp","NFEI_B","08/09/2021",20210809,"kelp",1,"N/A","N/A","40% stephanocystis, 5% dictysiphon, 2% spagetti, 2% ulva, 2% graceful black pine, 2% punctaria lobata, 2% red stringy, 25% cobble, 20% sand ",139,"North Fish Egg Island","kelp",55.50083,-133.1672,175.1
+"107",107,"NFEI Point-kelp","NFEI_B","08/09/2021",20210809,"kelp",2,"N/A","N/A","75% stephocystis, 15% graceful black pine, 2% stringy brown, 1% dictysiphon, 1% spagetti kelp, 6% sand ",139,"North Fish Egg Island","kelp",55.50083,-133.1672,361.6
+"108",108,"NFEI Point-kelp","NFEI_B","08/09/2021",20210809,"kelp",3,"N/A","N/A","30% stephanocystis, 25% ulva, 15% graceful black pine, 2% fucus, 1% spagetti kelp, 2% dictysiphonon, 15% cobble, 10% sand",139,"North Fish Egg Island","kelp",55.50083,-133.1672,313.7
+"109",109,"NFEI Point-kelp","NFEI_B","08/09/2021",20210809,"kelp",4,"N/A","N/A","30% ulva, 20% graceful black pine, 10% saccharina, 2% dictysiphon, 2% fucus, 46% sand",139,"North Fish Egg Island","kelp",55.50083,-133.1672,279.6
+"110",110,"NFEI Point-kelp","NFEI_B","08/09/2021",20210809,"kelp",5,"N/A","N/A","45% stephanocystis, 15% graceful black pine, 15% finely branched red, 15% finely branched brown, 2% ulva, 2% dictosyphon, 2% fucus, 4% stringy brown, 10% sand ",139,"North Fish Egg Island","kelp",55.50083,-133.1672,443.3
+"111",111,"Big Tree Bay-eel","BTRB_A","08/06/2021",20210806,"eelgrass",1,"108","0","60% seagrass all eelgrass, 40% bare/shells lots of disease ",NA,"Big Tree Bay","eelgrass",55.585855,-133.215512,21.2344
+"112",112,"Big Tree Bay-eel","BTRB_A","08/06/2021",20210806,"eelgrass",2,"111","0","85% seagrass, 15% bare/shells/cobble",NA,"Big Tree Bay","eelgrass",55.585855,-133.215512,34.6856
+"113",113,"Big Tree Bay-eel","BTRB_A","08/06/2021",20210806,"eelgrass",3,"159","0","55% bare/shell hash, 45% seagrass primarily phyllospadix ",NA,"Big Tree Bay","eelgrass",55.585855,-133.215512,30.7248
+"114",114,"Big Tree Bay-eel","BTRB_A","08/06/2021",20210806,"eelgrass",4,"178","0","60% bare, 40% seagrass",NA,"Big Tree Bay","eelgrass",55.585855,-133.215512,NA
+"115",115,"Big Tree Bay-eel","BTRB_A","08/06/2021",20210806,"eelgrass",5,"130","0","35% seagrass, 65% bare/mud have a freshwater film ",NA,"Big Tree Bay","eelgrass",55.585855,-133.215512,NA
