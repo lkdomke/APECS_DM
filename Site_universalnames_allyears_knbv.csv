@@ -1,0 +1,55 @@
+siteID_NOAA,site_2017,site_2018,site_2019,place_name,bay_code,bay_sample,study,habitat,latitude,longitude,freshwater,sediment_description,general_description
+108,,,Baker Island - eel,Baker Island,BAKE,A,fish_comm,eelgrass,55.3575,-133.5869444,,,
+110,,,Baker Island - kelp ,Baker Island,BAKE,B,fish_comm,kelp,55.35972222,-133.5877778,,,
+,,,,Big Clam Bay,BCLB,A,disturbance,eelgrass,55.227691,-132.973932,,,
+,2017_H_07,,,Blanquizal Point,BLAQ,A,trophic/disturbance,eelgrass,55.62082,-133.38664,no obvious souces,muddy sand low at transect changing to gravel high. Cobble at edges of transect,Relativley small isolated eelgrass bed. Moderatly sloped. Kelp on edges and in deeper subtidal. Eelgrass wasting samples also collected
+,,,,Big Tree Bay,BTRB,A,disturbance,eelgrass,55.585855,-133.215512,,,
+177,,,Shakan - eel,Calder Bay,CALD,A,fish_comm,eelgrass,56.200908,-133.521038,,,
+,2017_H_03,,,Chusini Cove,CHUS,A,trophic,eelgrass,55.80692,-133.171,1 small stream bed mid bay,*nothing written on data sheet* WR recalls very muddy changing almost immediately to gravel cobble high,Very gradual large eelgrass bed. Back of bay with rocky outcrops around with eelgrass inbetween
+,,,Chusini-Kladein Flat,Chusini Cove,CHUS,B,fish_comm,eelgrass,55.81849,-133.1794,,,
+,,,,Chusini Cove,CHUS,C,disturbance,eelgrass,55.813558,-133.167403,,,
+,2017_L_05,,Dunbar Inlet,Dunbar Inlet,DUNB,A,trophic/disturbance/fish_comm,eelgrass,55.0848,-132.826,small groundwater seep,"semi-consolidated sand/mud mix, some small cobbles and shells on top",Relativley steep beach with eelgrass extenting up to 0 MLLW. Linear
+,2017_L_06,,Farallon,Farallon Bay,FARA,A,trophic/fish_comm,eelgrass,55.19112,-133.105314,2 small streams,semi-consolidated muddy sand with some gravel in some sections. Changes to sand only with gravel and cobble higher. Scatter rocky outccrops.,Small crecsent bay with eelgrass. Some eelgrass starts fairly high (above 0 MLLW). Fair amount of algae around more in areas without eelgrass. Water tannins
+,2017_M_07,,,Garcia Bay,GARC,A,trophic,eelgrass,55.552669,-133.431392,one moderatly sized stream,"muddy sand mixed with gravel and cobble at transect. Changing to course sand with gravel and cobble higher. Two rocky outcrops ""framing back of bay",Gradually slopping beach at back of bay. Lots of shells everywhere that appear old. Eelgrass continuos but some patches rach fairly high i.e. irregraul upper edge
+,2017_L_02,,Goat Mouth Inlet,Goats mouth inlet,GOAT,A,trophic/fish_comm/disturbance,eelgrass,55.192784,-132.900113,two moderate streams near transect,semi-consolidated sand/mud some shells. One end of transect had cobble on top,Gradually sloping beach for all of inlet
+,2017_H_06,2018_H_02,Guktu,Guktu Bay,GUKT,A,trophic/fish_comm/SGWD,eelgrass,55.739816,-133.312022,one small stream,muddy. Mud switches to pepple and sand and gravel then gravel high,Gradually slopping beach back of bay. Eeglrass bed farly narrow. Bounded low by steep drop. Sea otter pits very abundant. Lots of clam shells. One rocky outcrop near center of back of bay. Opposite shore mostly cobble.
+,,,,Guktu Bay,GUKT,B,disturbance,eelgrass,55.740264,-133.311306,,,
+155,,,Heceta,Heceta Island,HECA,A,fish_comm,eelgrass,55.77083333,-133.5361111,,,
+157,,,Heceta - kelp,Heceta Island,HECA,B,fish_comm,kelp,55.75805556,-133.4708333,,,
+,2017_L_07,,,Hetta Cove,HETA,A,trophic,eelgrass,55.155625,-132.589934,one large stream,muddy sand with some gravel mixed in at transect. Changes to gravel and cobble high.,Small embayment with rocky outcrops on edges. Large stream at one end of transect. Gradual sloping. Visable (while in water) freshwater lense.
+,2017_H_04,,,Kaguk Cove,KAGK,A,eel_exp,eelgrass,55.73361,-133.29,2 small streams,sand/mud with some shells. Some areas of larger sediments where eelgrass density of a bit lower. Higher shore gravel changing to cobble,Back of narrow inlet. Bedrock at entrance. Part of bay has fucus patch in mid intertidal
+,,2018_H_01,Kaguk ,Kaguk Cove,KAGK,B,trophic/fish_comm,eelgrass,55.734934,-133.295111,,,
+,,,,Kaguk Cove,KAGK,C,disturbance,eelgrass,55.733423,-133.29047,,,
+131,,,Klawock airport,Klawock Airport,KLWA,A,fish_comm,eelgrass,55.577767,-133.0941,,,
+146,,,Craig Highway,Klawock Hwy,KLWH,A,fish_comm,kelp,55.5125,-133.1297222,,,
+,,,,Kinani Point,KNPT,A,disturbance,eelgrass,55.889904,-133.250006,,,
+,,,,Mushroom Island,MUSH,A,disturbance,eelgrass,55.21407,-132.847233,,,
+,2017_L_04,2018_L_02,,Natzuhini Bay,NATZ,A,trophic/SGWD,eelgrass,55.25051,-132.883,small stream plus few tiny streamlets,"muddy sand, semi-consolidated shells on top. Lost of shells around -0.3m. Upper shore gradually increases grain size ot gravel and then cobble",Gradually slopping beach 1 small rock outcrop nob thing in middle of bay at mid intertidal
+,,,,Natzuhini Bay,NATZ,B,eel_exp,eelgrass,55.274668,-132.852571,,,
+,,,Natzuhini,Natzuhini Bay,NATZ,C,disturbance/fish_comm,eelgrass,55.247155,-132.879137,,,
+,,,,Natzuhini Bay,NATZ,D,disturbance,eelgrass,55.241887,-132.837131,,,
+,2017_H_05,,Naukati,Naukati Bay,NAUK,A,trophic,eelgrass,55.862405,-133.190722,no obvious sources,"Transect muddy, quickly changes to sand with gravel then to gravel with cobble high",Moderatly sloped beach along straight section of beach. To right of transect near house more gradual slopping and connect to island the transect is on. Some human debris on beach
+,,Hauti Island,,Naukati Bay,NAUK,B,disturbance,eelgrass,55.865721,-133.156399,,,
+135,2017_M_02,North Fish Egg,North Fish Egg,North Fish Egg Island,NFEI,A,trophic/disturbance/fish_comm/SGWD,eelgrass,55.49709,-133.17,two small streams,soft fine grain sand at transect. Changes to gravel cobble high,gentle slopping beach with gentle arc. Small island protect most of site
+139,,,North Fish Egg-Kelp,North Fish Egg Island,NFEI,B,fish_comm,kelp,55.50083,-133.1672,,,
+,2017_H_02,2018_H_03,,Nossuk Bay,NOSK,A,trophic/SGWD,eelgrass,55.7073,-133.342,one stream,soft mud with shells intermixed. Changes to sand/mud higher. Cobble outcrops around edge of bay,Gently sloping beach with lots of eelgrass extending to 0 MLLW
+,,Nossuk Photographers point,,Nossuk Bay,NOSK,B,trial_exp/disturbance,eelgrass,55.723677,-133.324157,,,
+,,,,Nossuk Bay,NOSK,C,eel_exp,eelgrass,55.724944,-133.322124,,,
+,,,,Nossuk Bay,NOSK,D,disturbance,eelgrass,55.709094,-133.348326,,,
+,,,Nossuk Bay,Nossuk Bay,NOSK,E,fish_comm,eelgrass,55.70802,-133.34102,,,
+,2017_L_03,2018_L_01,North Pass,North Pass,NPAS,A,trophic,eelgrass,55.229358,-132.924121,moderate stream off one end of transect,semi-consolidated mud. Lots of clam shells on surface and just below. Turns to sand/mud then cobble high. Two rocky outcrops high,"Fairly linear beach, gradual slope. Lots of clam shell litter "
+,,,,North Pass,NPAS,B,eel_exp,eelgrass,55.230093,-132.923181,,,
+,,,,North Pass,NPAS,B,disturbance,eelgrass,55.228334,-132.910392,,,
+,,,,Port Caldera,PCAL,A,disturbance,eelgrass,55.36209,-133.161232,,,
+,2017_M_08,,Port Refugio,Port Refugio,REFU,A,trophic/fish_comm/SGWD/disturbance,eelgrass,55.282137,-133.334028,"many streams in bay, lots of tannins","mostly muddy sand with occasional gravel and sand at transect. Higher becomes more consolidated sand with gravel, cobble and gravel high.",Large gradual sloping bay with eelgrass throughut. Many streams bisect eelgrass throughout. Eelgrass persists in low elevation stream beds. Its Pete's birthday
+,2017_H_01,,Salt Lake Bay,Salt Lake Bay,SALA,A,trophic/fish_comm,eelgrass,55.672389,-133.377184,stream near one end of transect,fine sand/mud. Lots of clam shells,"Gradually sloping back of bay. Eelgrass extensive, pits throughout"
+,,,,Salt Lake Bay,SALA,B,disturbance,eelgrass,55.684275,-133.377377,,,
+,2017_M_03,,South Fish Egg,South Fish Egg Island,SFEI,A,trophic/disturbance,eelgrass,55.48442,-133.17549,one stream about 20m from transect,semi-consolidated sand/mud transitioning to cobble,half moon bay filled with eelgrass. Hard substrate on edges with soft in middle. Flowering shoots present around most of site up to at least 0 MLLW
+,2017_M_05,,Shinaku Inlet,Shinaku Inlet,SHIN,A,trophic/fish_comm/SGWD,eelgrass,55.59929,-133.16,small stream in back of bay,very soft mud at transect changing to sand/mud then to cobble high,Long narrow inlet with eelgrass all around. Bed is consistent throughout
+,,,,Shinaku Inlet,SHIN,B,disturbance,eelgrass,55.599299,-133.157644,,,
+184,,,Shakan - kelp,Shakan Bay,SHKN,A,fish_comm,kelp,56.14833333,-133.5377778,,,
+,2017_L_01,,,Soda Bay,SODA,A,trophic/disturbance,eelgrass,55.26366,-132.995,no obvious souces,fine sand/mud changing to gravel and cobble high,small embayment with eelgrass throuhgout. Moderatly sloped on edges and gradual in back of bay
+,,2018_L_03,,Sukkwan,SUKK,A,biomarker/disturbance,eelgrass,55.189095,-132.84324,,,
+,2017_M_04,,,South Wadleigh Island,SWAD,A,trophic/disturbance,eelgrass,55.52904,-133.147,some seepage in hight intertidal,"soft, sink to mid calf, mud, changed to sand/mud then gravel/cobble as you move up the beach","gradually sloping beach, fairly consistent grade. Start of eeglrass variable but consistent at transect level"
+,,,South Wadleigh,South Wadleigh Island,SWAD,B,fish_comm,eelgrass,55.528672,-133.14864,,,
+,2017_M_06,,,Trocadero Bay,TROC,A,trophic,eelgrass,55.344914,-133.0011,two streams adjacent to transect,"sand, gravel, cobble mix. Changes to cobble and gravel high","Fluvial plain eelgrass throughout, relativlye narrow. About 200m off transect sulfur gas seep in low intertidal, salmon close to transect"

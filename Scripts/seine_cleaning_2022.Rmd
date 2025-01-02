@@ -1,0 +1,1387 @@
+---
+title: "seine_cleaning_2022"
+author: "Lia Domke"
+date: "8/11/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+Holding off on finishign this because the fish seine isn't fully checked. 
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Data cleaning for beach seine data
+
+As apart of a project studying eelgrass ecosystems in southern Southeast Alaska, beach seines were done along the outer coast of Prince of Wales Island. A 37-m variable mesh net and a 18ft skiff was used to set a 'round haul' beach seine through eelgrass meadows. Fish were identified to the finest taxonomic level, enumerated, and measured either total length for most fish species or to fork length if the caudal fin was forked (e.g. salmon, shiner perch). After 30 measured fish, fish were no longer measured and lengths will be extrapolated from the 30 measured fish. For some fish (like sticklebacks and shiner perch) were there were TWO DISTINCT size classes (juveniles and adults) 30 fish from each approximate age class were measured and fish counted but unmeasured were classified as *large* or *small* in the notes section of the csv files or the counts included in a seperate column (unmeasured_sm). 
+
+This script is to clean the *dataset from 2022* of the eelgrass-associated associated fish community. The 2022 seines occured between June and July and happened at sites that were selected because they were either primarily eelgrass meadows or eelgrass meadows with several or other adjacent habitats and then 6 additional monitoring sites that have been seined yearly in July since 2020 (and seined 2017-2019 too just not in July). These sites were previously seined as part of the NOAA Nearshore Atlas of Fishes study that occured all throughout Alaska between 1998-2011. See  Johnson et al., 2012 or [here](https://www.fisheries.noaa.gov/alaska/habitat-conservation/nearshore-fish-atlas-alaska) for more information
+
+This script will:
+
+1. Data checking 2022 seines and adjusting dataframe appropriately
+2. Classify invertebrates and vertebrates so that only fish can be filtered
+3. Convert unmeasured fish to *length measurements*
+4. Convert length data to *biomass*
+5. Convert date to julian day and add year column
+6. Change site_code to new naming scheme that includes two column codes
+
+```{r libraries}
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(ggplot2)
+```
+
+Read in data
+```{r data}
+# 2022 seine data
+# eventually replace with knb url when the raw data file is uploaded
+seine22 <- read.csv("Data/Fish_Seine/fish_seine_checked_2022_8-17-2022.csv", stringsAsFactors = FALSE, header = TRUE)
+
+# species names list
+sp_names <- read.csv(url("https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Abc823c8e-7be3-444b-a872-2e450ea3e85b"), stringsAsFactors = FALSE, header = TRUE)
+
+# site names (from local desktop, not uploaded to knb)
+site_names <- read.csv("Data/Site_metadata_allyears_8-18-22.csv", stringsAsFactors = FALSE, header = TRUE)
+
+# fish length to width (use this local csv because the updated LW w/ additional species isn't uploaded to knb yet)
+fishLW <- read.csv("Data/fish_length_weight_conversions_cleaned_2022.csv", stringsAsFactors = FALSE, header = TRUE) 
+```
+
+# Step 1. Data checking
+
+## Basic data checking
+```{r}
+sp.list <- seine22 %>%
+  dplyr::select(species_common:sp_code) %>%
+  distinct()
+sp.list
+
+unique(sp.list$sp_code)
+trimws(sp.list$species_common)
+
+seine22 %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  group_by(species_common, species_scientific, bay_id) %>%
+  dplyr::summarise(n = n())
+
+seine22$unmeasured <- as.numeric(seine22$unmeasured)
+range(seine22$unmeasured)
+range(seine22$unmeasured_sm)
+max(seine22$unmeasured_sm)
+seine22$fork_length<- as.numeric(seine22$fork_length)
+min(seine22$fork_length)
+
+table(seine22$fork_length == seine22$fork_length_checked)
+table(seine22$unmeasured == seine22$unmeasured_checked)
+table(seine22$unmeasured_sm == seine22$unmeasured_sm_checked)
+
+# lets fix the unidentified crab that has no species code
+seine <- seine22 %>%
+  mutate(sp_code = ifelse(species_common == "unidentified crab", "UNCRAB", sp_code)) %>%
+  mutate(sp_code = ifelse(species_scientific == "Metacarcinus gracilis", "CRABGRA", sp_code)) %>%
+  dplyr::select(bay_code:fork_length, unmeasured, unmeasured_sm, taxon, Sex, notes) %>%
+  mutate(species_common = ifelse(notes == "juvenile yellowtail/black rockfish", "Yellowtail/black juvenile rockfish complex", 
+                                 species_common), 
+         species_scientific = ifelse(notes == "juvenile yellowtail/black rockfish", "Sebastes sp", species_scientific), 
+         sp_code = ifelse(notes == "juvenile yellowtail/black rockfish", "ROCKSP", sp_code)) %>% # the species ID of juvenile   yellowtail/black rockfish is including in the notes not in species columns - fix it
+  mutate(species_common = ifelse(place_name == "Blanquizal Point" & species_common == "Unknown juvenile teleostei", "Manacled sculpin", species_common),
+        species_scientific = ifelse(place_name == "Blanquizal Point" & species_scientific == "Teleostei", "Synchirus gilli", species_scientific),
+        sp_code = ifelse(place_name == "Blanquizal Point" & sp_code == "UNFISH", "SCULMAN", sp_code)) # adjusting the species code of unfish
+# to manacled sculpin because they were identified after data entry took place from photos. 
+```
+
+
+```{r}
+glimpse(seine)
+
+# Look for data entry mistake where there are multiple dates associated with one site/sampling event
+unique(seine[,c("bay_code", "bay_sample", "place_name", "habitat", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")]) # missing slope
+
+sites <- seine %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  dplyr::select(bay_id, place_name) %>%
+  distinct()
+
+slopes <- c("moderate", "moderate", "gradual", "moderate", "moderate", "gentle", "moderate/steep", "moderate/steep", "gradual/steep", "gentle", "gentle", "gentle", "gentle", "moderate", "gentle", "gradual", "gentle", "moderate", "moderate")
+
+sites$slope <- slopes
+
+# lets run a small loop to add in the correct slopes for the fish sites
+seine2 <- seine %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  mutate(taxon = ifelse(taxon == "invertebrates" | taxon == "invertebrate ", "invertebrate", taxon),
+         taxon = ifelse(taxon == "", "fish", taxon)) %>% # the one instance its missing is STICK3
+  filter(taxon == "fish")
+
+df <- data.frame()
+for(s in unique(sites$bay_id)){
+  slope.s <- sites %>%
+    filter(bay_id == s)
+  d <- seine2 %>%
+    filter(bay_id == s) %>%
+    mutate(slope = ifelse(bay_id == s, paste(slope.s$slope), slope))
+  df <- rbind(df, d)
+  }
+
+unique(df[,c("bay_id", "place_name", "habitat", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")]) # okay its correct now! 
+
+# Check for any mistakes with species code entry or site entry
+unique(df$sp_code) # 66 unique species - including invertebrates
+unique(df$bay_id) # 18 sites
+
+# Change several species code entries so that we can make length to width 
+# Make species code a factor first
+df$sp_code <- as.factor(df$sp_code)
+
+# change SCULSCA scalyhead sculpin, should be classified with Artedius sp.
+# This is because fish within the Artedius genus are hard to classify to species level. 
+# Sometimes 
+levels(df$sp_code)[levels(df$sp_code)=="SCULSCA"] <- "UNARTE"
+
+# roughback got entered with two species codes SCULRBCK -> SCULRGH
+levels(df$sp_code)[levels(df$sp_code)=="SCULRGH"] <- "SCULRBCK"
+
+# Also have to repeat this for the fishLW dataframe
+fishLW$sp_code <- as.factor(fishLW$sp_code)
+levels(fishLW$sp_code)[levels(fishLW$sp_code)=="SCULRGH"] <- "SCULRBCK"
+
+
+# change LORDBI -> UNLORD b/c difficult to impossible to differenciate from Red irish lord
+#levels(seine$sp_code)[levels(seine$sp_code)=="LORDBI"] <- "UNLORD"
+
+levels(df$sp_code)[levels(df$sp_code)=="UNSOLE"] <- "UNFLAT"
+levels(df$species_common)[levels(df$species_common)=="Unidentified sole"] <- "Juvenile flatfish"
+
+# change both sp_code columns back to characters
+df$sp_code <- as.character(df$sp_code)
+fishLW$sp_code <- as.character(fishLW$sp_code)
+
+# check
+unique(df$sp_code) #Now 66 species
+anti_join(df, sp_names, by = c("sp_code" = "SpCode")) %>%
+  dplyr::select(c(species_common, species_scientific, sp_code)) %>%
+  distinct() # three species codes not present in the sp_names list "ROCKSP", "SCULPSAIL", "UNNARTE"
+# should be: UNARTE and SCULSAIL
+df1 <- df %>%
+  mutate(sp_code = ifelse(sp_code == "UNNARTE", "UNARTE", sp_code),
+         sp_code = ifelse(sp_code == "SCULPSAIL", "SCULSAIL", sp_code))
+
+anti_join(df1, sp_names, by = c("sp_code" = "SpCode")) %>%
+  dplyr::select(c(species_common, species_scientific, sp_code)) %>%
+  distinct() # just one left ROCKSP which copperquillback juvenile rockfish which will get combined later 
+
+# Note of species that don't have LW
+nonmatch1 <- anti_join(df1, fishLW, by = c("sp_code" = "sp_code"))
+unique(nonmatch1$sp_code) # There a few more fish w/o length-weight relationship will be dealt with below. All primarily generalized specices to higher than species level. 
+
+# remove any trailing whitespaces
+seine_clean <- data.frame(lapply(df1, trimws), stringsAsFactors = FALSE)
+```
+
+## Seperate size classes
+In 2022 there were fish--like shiner perch that included two different size classes (adults and juveniles). Therefore when there were more than 30 individuals of those species 30 of *each* size class were measured creating a bimodial distribution. When extrapolating lengths to the unmeasured fish it is important to use probabilities from the correct distribution. 
+
+```{r}
+# the unmeasured small were seperated from the large by seine location and species. So if a seine had both large and small individuals of a single species there is a number of unmeasured small in the 'unmeasured_sm' column. If not there wont be anything in that column just in 'unmeasured' (if more than 30 were caught)
+unique(seine_clean$notes)
+unique(seine_clean$unmeasured_sm)
+
+# which species have unmeasured_small?
+seine_clean %>%
+  filter(!is.na(unmeasured_sm)) %>%
+  dplyr::select(species_common, species_scientific, sp_code) %>%
+  distinct() # bay pipefish, snack prickleback, whitespotted greenling, crescent gunnel, threespine stickleback, shiner perch
+
+# which are large? 
+seine_clean %>%
+  filter(notes == "large") %>%
+  dplyr::select(species_common, species_scientific, sp_code) %>%
+  distinct() # snake, bay pipe, crescent gunnels, three spines, and shiners
+```
+# Size distributions
+For the two species that were subset into large and small subset what are their size distributions/frequency?
+Is there a break between the "juvenile" and "adult" size classes? 
+ 
+*Small subsets*
+- bay pipefish
+- snake pricklebacks
+- whitespotted greenlings
+- crescent gunnels
+- threespine sticklebacks
+- shiner perch
+
+*Large subsets*
+- snake pricklebacks
+- bay pipefish
+- crescent gunnels
+- threespine sticklebacks
+- shiner perch
+```{r}
+seine_clean$fork_length <- as.numeric(seine_clean$fork_length)
+# subset data by species
+shiner <- seine_clean %>%
+  filter(sp_code == "PERCHSH")
+
+stickle <- seine_clean %>%
+  filter(sp_code == "STICK3")
+
+pipefish <- seine_clean %>%
+  filter(sp_code == "PIPEFISH")
+
+whitespot <- seine_clean %>%
+  filter(sp_code == "GREENWHI")
+
+gunnel <- seine_clean %>%
+  filter(sp_code == "GUNNCRE")
+
+snake <- seine_clean %>%
+  filter(sp_code == "PRICKSN")
+```
+
+Graph the size distributions of the measured fish - based on sites with small subsets
+```{r}
+# which sites had unmeasured small shiners 
+shiner %>%
+  filter(!is.na(unmeasured_sm)) # SHIN_A and KLWA_A
+filter(shiner, !is.na(unmeasured)) # ILDE_A, NATZ_A, ABES_A, SHIN_A
+
+sh <- shiner %>%
+  filter(bay_id == "SHIN_A" | bay_id == "KLWA_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length), binwidth = 1)
+
+sh + facet_wrap(~bay_id)
+
+#bimodal graph-- looks like 90 cm is a good cut off
+
+stickle %>%
+  filter(!is.na(unmeasured_sm)) # NOS_A, NATZ_A, SHIN_A, REFU_A, KLWA_A
+filter(stickle, !is.na(unmeasured))
+
+st <- stickle %>%
+  filter(bay_id == "NOSK_A" | bay_id == "NATZ_A" |bay_id == "SHIN_A"| bay_id == "REFU_A" |
+           bay_id == "KLWA_A") %>%
+  ggplot() + 
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+st + facet_wrap(~bay_id)
+# bimodial again, looks like 35 mm and below is the small cut off for three spine stickleback  woo!
+
+pipefish %>%
+  filter(!is.na(unmeasured_sm)) # harm_a, sari_a, blaq_a, nstp_a
+
+pi <- pipefish %>%
+  filter(bay_id == "HARM_A" | bay_id == "SARI_A" | bay_id == "BLAQ_A" | bay_id == "NSTP_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+
+pi + facet_wrap(~bay_id)
+# its somewhat variable but it looks like 175 mm is probably the best cut off
+
+whitespot %>%
+  filter(!is.na(unmeasured_sm)) # blaq a
+
+whitespot %>%
+  filter(bay_id == "BLAQ_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+
+# not that many, but I'd say 120 mm is a fine cut off
+
+gunnel %>%
+  filter(!is.na(unmeasured_sm)) # NFEI a
+
+gunnel %>%
+  filter(bay_id == "NFEI_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+# kind difficult to see a clean break between large and small crescent gunnels but perhaps at 110 mm (which I think corresponds to our cut off in the field anyway) 
+
+snake %>%
+  filter(!is.na(unmeasured_sm)) # SARI_A, BLAQ_A, GUKT_A, NOSK_A, NATZ_A, ABES_A, SHIN_A, REFU_A, HALI_A
+
+sn <- snake %>%
+  filter(bay_id == "SARI_A"| bay_id ==  "BLAQ_A"| bay_id ==  "GUKT_A"| bay_id ==  "NOSK_A"| bay_id ==  "NATZ_A" 
+         | bay_id == "ABES_A" | bay_id == "SHIN_A" | bay_id ==  "REFU_A" | bay_id ==  "HALI_A") %>%
+  ggplot() +
+  geom_histogram(mapping = aes(x = fork_length)) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 10))
+
+sn + facet_wrap(~bay_id)
+
+# lets have the snake pricklebacks at 110 mm across all sites
+```
+
+
+# Step 2. Classify taxons
+```{r}
+glimpse(seine_clean)
+unique(seine_clean$species_common)
+# 58 different species
+fish <- seine_clean
+
+unique(fish$taxon)
+
+unique(fish$species_common) # only fish!
+unique(fish$bay_id) # still have all the sites!, 19 sites
+```
+
+#Step 3. Unmeasured -> measured
+This code comes from WR original script (Eelgrass_biometrics_data_analysis, L 325)
+
+```{r}
+#' From the raw data this script will export a file summarized by site ready for analysis. 
+#' The goal will be to summaries this data at the site level. Summaries will occur in a few different
+#' ways to prep the data for different types on analysis. There is 1 file generated here. 
+
+
+#' All we need is the beach seine data and the fish length-mass conversions. 
+#' make sure columns have appropriate character type
+
+fish$unmeasured <- as.numeric(fish$unmeasured)
+fish$fork_length <- as.numeric(fish$fork_length)
+
+fish$abundance <- as.numeric(ifelse(is.na(fish$fork_length), 
+                                    ifelse(is.na(fish$unmeasured), paste(fish$unmeasured_sm), paste(fish$unmeasured)), 1))
+
+df2 <- fish %>% # how many individual fish by site and species?
+  dplyr::summarise(total = sum(abundance)) # 21515
+
+df3 <- fish %>%
+  group_by(bay_id, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+
+df3.2 <- fish %>%
+  group_by(sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+```
+
+## Separate measured and unmeasured fish
+### Loop for subset species
+First run a similar loop as below to calculate estimated fork lengths for the small and large subset species. 
+These include (for 2022) only PERCHSH, STICK3, PIPEFISH, GREENWHI, GUNNEL, SNAKE at a small subset of sites (vary by species)
+
+### 1. Need to subset data by species were they are subsampled
+```{r}
+fish$unmeasured <- as.numeric(fish$unmeasured)
+fish$unmeasured_sm <- as.numeric(fish$unmeasured_sm)
+
+fish.stick <- fish %>%
+  filter(sp_code == "STICK3")
+
+fish.shiner <- fish %>%
+  filter(sp_code == "PERCHSH")
+
+fish.snake <- fish %>%
+  filter(sp_code == "PRICKSN")
+
+fish.pipe <- fish %>%
+  filter(sp_code == "PIPEFISH")
+
+fish.gunn <- fish %>%
+  filter(sp_code == "GUNNCRE")
+
+fish.white <- fish %>%
+  filter(sp_code == "GREENWHI")
+
+```
+
+### 2. List of subset sites
+Only include the sites that have either small, large or both small/large subsets
+```{r}
+site_stick <- filter(fish.stick, notes == "small" | notes == "large" | notes == "small; estimated abundance") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+
+site_shiner <- filter(fish.shiner, notes == "small" | notes == "large") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+
+site_snake <- filter(fish.snake, notes == "small" | notes == "large") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+
+site_pipe <- filter(fish.pipe, notes == "small" | notes == "large") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+
+site_gunn <- filter(fish.gunn, notes == "small" | notes == "large") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+
+site_white <- filter(fish.white, notes == "small" | notes == "large") %>%
+  dplyr::select(bay_id) %>% distinct() %>% as.list()
+```
+
+
+### 3. subset by the sites where those species were subsampled
+```{r}
+fish.stick.sub <- subset(fish.stick, bay_id %in% site_stick$bay_id)
+fish.stick.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 7689 unmeasured sticks
+fish.shiner.sub <- subset(fish.shiner, bay_id %in% site_shiner$bay_id)
+fish.shiner.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 1533 unmeasured shiners
+fish.snake.sub <- subset(fish.snake, bay_id %in% site_snake$bay_id)
+fish.snake.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 2583 unmeasured snakes
+fish.pipe.sub <- subset(fish.pipe, bay_id %in% site_pipe$bay_id)
+fish.pipe.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 327 unmeasured pipes
+fish.gunn.sub <- subset(fish.gunn, bay_id %in% site_gunn$bay_id)
+fish.gunn.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 108 unmeasured gunnels
+fish.white.sub <- subset(fish.white, bay_id %in% site_white$bay_id)
+fish.white.sub %>%
+    filter(is.na(fork_length)) %>%
+    summarise(sum(abundance)) # 28 unmeasured whitespotted greenlings
+
+# total fish that need to be measured 12268
+
+
+```
+
+### 4. cycle through loops (1 for different species)
+Sticklebacks first: based on distributions of known fork length we set a cut off at 35 mm. Both large and small subset
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.st <- fish.stick.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 35)
+lg.m.st <- fish.stick.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 35)
+sm.um.st <- fish.stick.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.st <- fish.stick.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large")
+```
+
+####Loop for stickleback
+Loop for each size class to approximate measurements for unmeasured fish
+```{r}
+lg_stick <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(lg.um.st$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- lg.m.st %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- lg.um.st %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.stick.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    lg_stick <- rbind(lg_stick, dat.temp3) # append iteration to full data
+    lg_stick[] <- lapply(lg_stick, as.character)
+  }
+} 
+
+lg_stick %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+```
+
+RE DO FOR THE SMALL SUBSET - sticklebacks
+```{r}
+sm_stick <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.st$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.st %>% # subset measured data by interation EventID
+    filter(bay_id == s)
+  u <- sm.um.st %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.stick.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = "STICK3", fork_length = fx(unmeas))
+    sm_stick <- rbind(sm_stick, dat.temp3) # append iteration to full data
+    sm_stick[] <- lapply(sm_stick, as.character)
+  }
+} 
+
+sm_stick %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+  
+
+m_stick <- bind_rows(sm_stick, lg_stick) # 7689
+m_stick %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_stick$fork_length <- as.numeric(m_stick$fork_length)
+```
+
+
+####Loop for shiner perch 
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.sh <- fish.shiner.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 90)
+lg.m.sh <- fish.shiner.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 90)
+sm.um.sh <- fish.shiner.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.sh <- fish.shiner.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large")
+```
+
+```{r}
+lg_shiner <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(lg.um.sh$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- lg.m.sh %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- lg.um.sh %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.shiner.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    lg_shiner <- rbind(lg_shiner, dat.temp3) # append iteration to full data
+    lg_shiner[] <- lapply(lg_shiner, as.character)
+  }
+} 
+
+lg_shiner %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+```
+
+shiner small subset
+```{r}
+# Do for small subset 
+sm_shiner <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.sh$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.sh %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- sm.um.sh %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.shiner.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    sm_shiner <- rbind(sm_shiner, dat.temp3) # append iteration to full data
+    sm_shiner[] <- lapply(sm_shiner, as.character)
+  }
+} 
+
+sm_shiner %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_shiner <- bind_rows(sm_shiner, lg_shiner) # 1533
+m_shiner %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_shiner$fork_length <- as.numeric(m_shiner$fork_length)
+```
+
+####Loop for prickleback snakes 
+
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.sn <- fish.snake.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 110)
+lg.m.sn <- fish.snake.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 110)
+sm.um.sn <- fish.snake.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.sn <- fish.snake.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large")
+```
+
+```{r}
+lg_snake <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(lg.um.sn$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- lg.m.sn %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- lg.um.sn %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.snake.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    lg_snake <- rbind(lg_snake, dat.temp3) # append iteration to full data
+    lg_snake[] <- lapply(lg_snake, as.character)
+  }
+} 
+
+lg_shiner %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+```
+
+Small snake pricklebacks
+```{r}
+# Do for small subset 
+sm_snake <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.sn$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.sn %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- sm.um.sn %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.snake.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    sm_snake <- rbind(sm_snake, dat.temp3) # append iteration to full data
+    sm_snake[] <- lapply(sm_snake, as.character)
+  }
+} 
+
+sm_snake %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_snake <- bind_rows(sm_snake, lg_snake) # 2583
+m_snake %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_snake$fork_length <- as.numeric(m_snake$fork_length)
+```
+
+####Loop for pipes
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.pi <- fish.pipe.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 175)
+lg.m.pi <- fish.pipe.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 175)
+sm.um.pi <- fish.pipe.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.pi <- fish.pipe.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large")
+```
+ Large subset
+```{r}
+lg_pipe <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(lg.um.pi$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- lg.m.pi %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- lg.um.pi %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.pipe.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    lg_pipe <- rbind(lg_pipe, dat.temp3) # append iteration to full data
+    lg_pipe[] <- lapply(lg_pipe, as.character)
+  }
+} 
+
+lg_pipe %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+```
+ 
+Do for small subset (there was no large subset that need to be estimated)
+```{r}
+sm_pipe <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.pi$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.pi %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- sm.um.pi %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.pipe.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    sm_pipe <- rbind(sm_pipe, dat.temp3) # append iteration to full data
+    sm_pipe[] <- lapply(sm_pipe, as.character)
+  }
+} 
+
+sm_pipe %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_pipe <- bind_rows(sm_pipe, lg_pipe) # 327
+m_pipe %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_pipe$fork_length <- as.numeric(m_pipe$fork_length)
+```
+
+####Loop for crescent gunnels
+Loop for each size class to approximate measurements for unmeasured fish
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.gu <- fish.gunn.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 110)
+lg.m.gu <- fish.gunn.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length > 110)
+sm.um.gu <- fish.gunn.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+lg.um.gu <- fish.gunn.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(notes == "large")
+```
+
+
+```{r}
+lg_gunn <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(lg.um.gu$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- lg.m.gu %>% # subset measured data by iteration EventID
+    filter(bay_id == s)
+  u <- lg.um.gu %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.gunn.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    lg_gunn <- rbind(lg_gunn, dat.temp3) # append iteration to full data
+    lg_gunn[] <- lapply(lg_gunn, as.character)
+  }
+} 
+
+lg_gunn %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+```
+
+RE DO FOR THE SMALL SUBSET - crescent gunnels
+```{r}
+sm_gunn <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.gu$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.gu %>% # subset measured data by interation EventID
+    filter(bay_id == s)
+  u <- sm.um.gu %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.gunn.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    sm_gunn <- rbind(sm_gunn, dat.temp3) # append iteration to full data
+    sm_gunn[] <- lapply(sm_gunn, as.character)
+  }
+} 
+
+sm_gunn %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+  
+
+m_gunn <- bind_rows(sm_gunn, lg_gunn) # 108
+m_stick %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_stick$fork_length <- as.numeric(m_stick$fork_length)
+```
+
+####Loop for whitespotted greenlings
+Loop for each size class to approximate measurements for unmeasured fish
+```{r}
+# Need dataframes by species, size, and measured v. unmeasured
+sm.m.wi <- fish.white.sub %>%
+  filter(fork_length != "NA") %>%
+  filter(fork_length <= 120)
+
+sm.um.wi <- fish.white.sub %>%
+  filter(is.na(fork_length)) %>%
+  filter(unmeasured_sm != "NA")
+
+# no large subset
+```
+
+RE DO FOR THE SMALL SUBSET - whitespotted greenling, no large subset
+```{r}
+sm_white <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(sm.um.wi$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- sm.m.wi %>% # subset measured data by interation EventID
+    filter(bay_id == s)
+  u <- sm.um.wi %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(fish.white.sub$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured_sm))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    sm_white <- rbind(sm_white, dat.temp3) # append iteration to full data
+    sm_white[] <- lapply(sm_white, as.character)
+  }
+} 
+
+sm_white %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+  
+
+m_white <- sm_white # 28
+m_white %>%
+  group_by(site) %>%
+  dplyr::summarise(n())
+
+m_white$fork_length <- as.numeric(m_white$fork_length)
+
+```
+
+###Loop for rest
+Subset the rest of the data into m and um 
+```{r}
+# need to filter out the small and large subsets for each species
+# how many fish are there total
+fish %>%
+  summarise(sum(abundance)) # 21515
+
+# remove the already extrapolated "unmeasured" species (done above)
+remove_fish <- bind_rows(fish.shiner.sub, fish.stick.sub, fish.snake.sub, fish.pipe.sub,
+                         fish.gunn.sub, fish.white.sub) %>%
+  filter(is.na(fork_length)) 
+
+remove_fish %>%
+  dplyr::summarise(sum(abundance)) # 12268 fish extrapolated above
+
+fish.sub <- fish %>%
+  dplyr::select(-notes) %>% # remove notes otherwise the antijoin won't work correctly
+  anti_join(remove_fish) # joins by whatever ISN'T in remove_fish
+
+# are there the right number of fish? (21515-12268 = 9247)
+fish.sub %>%
+  summarise(sum(abundance)) # yes! 
+
+# seperate by umeasured and measured
+fish.m <- fish.sub %>%
+  filter(fork_length != "NA")
+
+fish.um <- fish.sub %>%
+  filter(is.na(fork_length))
+```
+
+
+## Assign lengths to unmeasured fish for other species
+
+When beach seining we only measured the first 30 individuals of a species, and counted the rest. We can use the measured fishes to create a distribution from which we
+can assign lengths to the unmeasured fishes.
+
+Assign lengths to unmeasured fish based on sampled distribution. This assignment should happen at the EventID level. i.e. use the distribution of fishes at a 
+EventID to assign unmeasured fishes at that EventID. 
+
+We will assume the least and just use the sampled proportions to assign lenghts to unmeasured fish. Exclued fishes that do not have a measured counterpart. 
+These were insantces when we tossed a fish without knowing what it was other than it was a sculpin thing
+
+
+Figure out which species at sites that there is not a measured conterpart 
+```{r}
+x <- fish.um %>%
+  group_by(bay_ID, sp_code) %>%
+  anti_join(fish.m, by = c("bay_ID", "sp_code")) # none!
+
+fish.um %>%
+  dplyr::summarise(sum(unmeasured)) # 4006 unmeasured to be measured
+
+# Now calculate a fork_length/total_length for each unmeasured fish based on the 
+# distribution of the existing fish BY site (one site per seine).
+```
+
+## Run loop to fill unmeasured fish length to measured
+```{r}
+w <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(fish.um$bay_id)){ # cycle through unique sites (only one seine per site)
+  m <- fish.m %>% # subset measured data by interation EventID
+    filter(bay_id == s)
+  u <- fish.um %>% # subset unmeasured data by iteration EventID
+      filter(bay_id == s)
+  for(i in unique(u$sp_code)){ # cycle through species that are in UNMEASURED data
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- (as.numeric(sum(unmeas$unmeasured))) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site = s, sp_code = i, fork_length = fx(unmeas))
+    w <- rbind(w, dat.temp3) # append iteration to full data
+    w[] <- lapply(w, as.character)
+  }
+}
+
+w %>%
+  dplyr::summarise(n()) # thats the same as above, loop worked
+
+# Bind the now measured fish with fish from above (stick and shiner and tube and pipe)
+w$fork_length <- as.numeric(w$fork_length)
+m_shiner$fork_length <- as.numeric(m_shiner$fork_length)
+m_stick$fork_length <- as.numeric(m_stick$fork_length)
+m_snake$fork_length <- as.numeric(m_snake$fork_length)
+m_pipe$fork_length <- as.numeric(m_pipe$fork_length)
+m_gunn$fork_length <- as.numeric(m_gunn$fork_length)
+m_white$fork_length <- as.numeric(m_white$fork_length)
+
+all.unmeasured <- bind_rows(w, m_shiner, m_stick, m_snake, m_pipe, m_gunn, m_white)
+
+all.unmeasured %>%
+  dplyr::summarise(n())
+```
+
+## Loop check/add site info
+Append assigned lengths to master data with all site level data
+
+```{r}
+# Extract site and sp data
+fish.site <- unique(seine_clean[,c("bay_id", "date", "YYYYMMDD", "start_time", "end_time", "slope", "tide_height", "tide_time")])
+
+seine_clean$species_common <- trimws(seine_clean$species_common, "r") # remove hanging white space on right side
+fish.sp <- unique(seine_clean[,c("species_common", "species_scientific", "sp_code", "taxon")])
+
+
+## Merge with loop output, the lengths of unmeasured fishes ##
+d.info <- left_join(all.unmeasured, fish.site, by = c("site"= "bay_id")) # but this dropped 2 sites because there were two sites w/o any unmeasured fishes
+
+## Add species detail ##
+d.info <- d.info %>%
+  left_join(fish.sp, by = "sp_code") %>%
+  dplyr::rename(bay_id = site)
+
+## were any species left out?
+anti_join(d.info, fish.sp, by = "sp_code") # none
+
+## Merge with original *measured* fishes ##
+d.info$fork_length <- as.numeric(d.info$fork_length)
+fish.all <- seine_clean %>%
+  filter(fork_length != "NA") %>%
+  dplyr::select(bay_id, date, YYYYMMDD, start_time, end_time, slope, tide_height,
+                tide_time, species_common, species_scientific, sp_code, fork_length, 
+                taxon) %>%
+  bind_rows(d.info)
+
+# Do some basic checks to make sure the the conversion from unmeasured to measured worked correctly
+unique(fish.all$bay_id) # 19 sites
+unique(fish.all$sp_code) # 56 levels of fish species
+unique(fish$sp_code) # 56 levels of fish species in the original dataframe, correct! 
+unique(fish$bay_id) # 19 sites
+
+# count total number of fish in original dataframe
+seine_clean$abundance <- as.numeric(ifelse(is.na(seine_clean$fork_length), 
+                                    ifelse(is.na(seine_clean$unmeasured), paste(seine_clean$unmeasured_sm), paste(seine_clean$unmeasured)), 1))
+
+seine_clean %>%
+  dplyr::summarise(counts = sum(abundance)) # 21515, updated with the additional perch
+
+# count by site and species
+df3 <- seine_clean %>%
+  group_by(bay_id, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+
+# does this match the new fish.all dataframe?
+fish.all$abundance <- as.numeric(ifelse(is.na(fish.all$fork_length), paste(fish.all$unmeasured), 1)) 
+
+fish.all %>%
+  dplyr::summarise(counts = sum(abundance)) #21515, yes!
+
+df4 <- fish.all %>%
+  group_by(bay_id, sp_code) %>%
+  dplyr::summarise(counts = sum(abundance))
+
+# check w/ previous numbers (df3) If there are issues with more individuals of e/a species after the forloop to 
+# convert unmeasured fish to measured fish make sure to check the extracted site/date info. When you merge the loop
+# output with the site info if there are duplicated sites, it will duplicate the number of fish--artificially 
+# inflating the number of fish at ea site. 
+check_fish_no <- merge(df4, df3)
+check_fish_no$same <- ifelse(df4$counts == df3$total, TRUE, FALSE)
+unique(check_fish_no$same) # no false!
+
+```
+
+# Step 4. Convert length to biomass
+## Calculate Biomass
+Using the length-weight conversion values individual lengths will be converted to biomass. Coefficients are in cm*g so fork lengths will need to be converted to cm from mm.
+
+First the L-W conversion data will need to be prepped for use. This will include defineing one a value (collapse the a TL column), define sp_code for new species, and filter out estimates that were made from SL (standard length) and fish calssified as UNFISH or unidentified fish, and then summarise by taking the average a and b value for each species.
+
+
+## Put parameters into one column 
+```{r}
+fishLW$a_cm.g <- ifelse(is.na(fishLW$a_cm.g), fishLW$aTL_cm.g, fishLW$a_cm.g)
+
+## define sp_code for new species ##
+# Shorthorn sculpin #
+fishLW$sp_code <- ifelse(fishLW$species_common == "Shorthorn sculpin", paste("SCULSHRN"), fishLW$sp_code)
+
+# Longhorn sculpin #
+fishLW$sp_code <- ifelse(fishLW$species_common == "Longhorn sculpin", paste("SCULLHRN"), fishLW$sp_code)
+
+# Rockfish general #
+fishLW$sp_code <- ifelse(fishLW$species_common == "Rockfish", paste("ROCKSEB"), fishLW$sp_code)
+
+## Filter and summarise ##
+LW <- fishLW %>%
+  filter(Type != "SL") %>% 
+  filter(sp_code != "UNFISH") %>% 
+  group_by(sp_code) %>% 
+  dplyr::summarise(a = mean(a_cm.g),
+            b = mean(b_cm.g))
+```
+
+We know that we do not have estimates for a and b estiamtes for all the species so we need to apply other values to other species. First identify what species we need to have stand ins for:
+
+1. "UNSCUL" - Unidentified sculpins will use the average a and b values for all sculpins species.
+2. "UNFLAT" - Unidentified flatfish will use the average a and b values for all flatfish species.
+3. "UNGREEN" - Unidentified greenling will use the average a and b values for all greenling speices.
+4. "UNMYOXO" - Unidentified Myoxocephalus sp. will use the the average of a and b values of sampled members of the Myoxocephalus genus.
+5. "UNGUNN" - Unidentified gunnel will use average a and b values from the sampled gunnel species
+6. "UNARTE" - Unidentified Aretedius sp. will use the average a nad b values of sampled members of the Artedeius genus.
+7. "UNSNAIL" - Unidentified Liparis sp. will use the average a nad b values of sampled members of the Liparidae genus.
+
+## Unique species in master data
+If there isn't already alpha and beta values for each species required can use *fish_lng_bms_cleaning.R* script to add in info. Most of the values are from fishbase
+```{r}
+sp <- data.frame(sp_code = unique(fish.all$sp_code))
+
+## Species that need stand ins ##
+nomatch <- anti_join(sp, LW, by = "sp_code") 
+# UNARTE, ROCKSP, UNLORD, UNROCK
+
+## Summarising stand ins ##
+# Sculpins
+scul <- data.frame(sp_code = "UNSCUL", fishLW %>% 
+        filter(sp_code == "SCULBUF" | sp_code == "SCULGRT" | sp_code == "SCULGRU" |
+                 sp_code == "SCULLHRN" | sp_code == "SCULMAN" |sp_code == "SCULPAD" | 
+                 sp_code == "SCULPSTG" | sp_code == "SCULSAIL" | sp_code == "SCULSHRN" | 
+                 sp_code =="SCULSILV" | sp_code == "SCULSMO" | sp_code == "SCULTIDE") %>% 
+        summarise(a = mean(a_cm.g),
+                  b = mean(b_cm.g)))
+
+# Flats
+flat <- data.frame(sp_code = "UNFLAT", fishLW %>% 
+                     filter(sp_code == "SDABPAC" | sp_code == "SDABSPKL" | sp_code == "SOLEBUT" |
+                              sp_code == "SOLECO" | sp_code == "SOLEENG" |sp_code == "SOLEROC" | 
+                              sp_code == "FLOUNST" | sp_code == "SOLEYEL") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+# Greenlings
+grns <- data.frame(sp_code = "UNGREEN", fishLW %>% 
+                     filter(sp_code == "GREENKEL" | sp_code == "GREENMAS" | sp_code == "GREENWHI" |
+                              sp_code == "GREENPAI") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+# Myoxocephalus
+myoxo <- data.frame(sp_code = "UNMYOXO", fishLW %>% 
+                      filter(sp_code == "SCULGRT" | sp_code == "SCULLHRN" | sp_code == "SCULSHRN") %>% 
+                      summarise(a = mean(a_cm.g),
+                                b = mean(b_cm.g)))
+
+# Gunnels
+gunn <- data.frame(sp_code = "UNGUNN", fishLW %>% 
+                     filter(sp_code == "GUNNCRE" | sp_code == "GUNNPEN") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+# Artedius
+arte <- data.frame(sp_code = "UNARTE", fishLW %>% 
+                     filter(sp_code == "SCULPAD" | sp_code == "SCULSMO") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+# Rockfish
+rock <- data.frame(sp_code = "UNROCK", fishLW %>% 
+                     filter(sp_code == "ROCKSEB" | sp_code == "ROCKSLG"
+                            | sp_code == "ROCKCOP" | sp_code == "ROCKQUI"
+                            | sp_code == "ROCKBLA" | sp_code == "ROCKBRO") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+rock2 <- data.frame(sp_code = "ROCKSP", fishLW %>% 
+                     filter(sp_code == "ROCKSEB" | sp_code == "ROCKSLG"
+                            | sp_code == "ROCKCOP" | sp_code == "ROCKQUI"
+                            | sp_code == "ROCKBLA" | sp_code == "ROCKBRO") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+# Snailfish
+snail <- data.frame(sp_code = "UNSNAILF", fishLW %>% 
+                     filter(sp_code == "SNAILFR" | sp_code == "SNAILFTI"
+                            | sp_code == "SNAILFSH" | sp_code == "SNAILFRT") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+# Irish Lord
+lord <- data.frame(sp_code = "UNLORD", fishLW %>% 
+                     filter(sp_code == "LORDBI" | sp_code == "LORDRI") %>% 
+                     summarise(a = mean(a_cm.g),
+                               b = mean(b_cm.g)))
+
+## Master a b lsit ##
+LW.master <- rbind.data.frame(LW, scul, flat, grns, myoxo, gunn, arte, rock, snail, lord, rock2)
+
+## Check that everything is cool ##
+unique(anti_join(fish.all, LW.master, by = "sp_code")$sp_code) # no unmatched sp_codes! awesome
+```
+
+```{r}
+# Finally join the a and b values from above with the master data and calcualte biomass.
+## Merge a and b values ##
+fish.all.m <- merge(fish.all, LW.master, by = "sp_code")
+
+## Convert mm to cm ##
+fish.all.m$fork_length_cm <- fish.all.m$fork_length / 10
+
+## Calculate mass in g, a*FL^b ##
+fish.all.m$mass_g <- (fish.all.m$a * (fish.all.m$fork_length_cm^fish.all.m$b))
+
+test <- fish.all.m %>%
+  group_by(fork_length, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+
+## some plots, cuz ya know ##
+hist(fish.all.m$mass_g)
+hist(log(fish.all.m$mass_g))
+range(fish.all.m$mass_g)
+
+## Clean up ##
+fish.all.m$taxon[is.na(fish.all.m$taxon)] <- "Vertebrata"
+
+# remove unused rows and readd in tide height
+# extra tide height from original df
+tide_h <- fish %>%
+  group_by(bay_id) %>%
+  dplyr::select(bay_id, tide_height) %>%
+  distinct(tide_height)
+
+
+## Checking ##
+fish.site.g <- fish.all.m %>% 
+  group_by(bay_id) %>% 
+  dplyr::summarise(site_mass_g = sum(mass_g))
+
+fish.site.g$mass_kg <- fish.site.g$site_mass_g / 1000
+
+boxplot(fish.site.g$mass_kg ~ fish.site.g$bay_id)
+
+```
+
+# Step 5. Convert date to JD and add year column
+```{r}
+fish.all.m <- fish.all.m %>% 
+  
+  mutate(date = ymd(YYYYMMDD)) %>% # convert to date format
+  mutate(julian = yday(date)) %>% # make the date a julian day
+  mutate(year = year(date)) # make a new column with just year
+```
+
+# Step 6. Convert site names to 2-column code system
+this was done during data entry
+```{r}
+names(fish.all.m)
+# place name gives the physical location, bay_code and bay_sample together give you each
+# unique site that was sampled. 
+
+# need lat/long
+sites <- site_names %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  dplyr::select(bay_id, latitude, longitude, habitat, place_name)
+
+fish.all.m <- fish.all.m %>%
+  left_join(sites, by = "bay_id") %>%
+  dplyr::select(-c(fork_length_cm, YYYYMMDD, a, b))
+```
+
+Do some basic checks before writing out the csv
+```{r}
+unique(fish.all.m$bay_id) # 19 sites!
+unique(fish.all.m$sp_code) # 56 species! (dropped on that was UNLARV, one individual)
+range(fish.all.m$mass_g) # makes sense there were some tiny fish. And also soem large ones... mainly stags
+```
+
+
+# Export
+```{r}
+#write.csv(fish.all.m, "Data/Fish_Seine/fish_mass_2022_derived.csv", row.names = FALSE)
+```
+
+Fish mass across sites and species
+```{r}
+names(fish.all.m)
+
+fish.sum.species <- fish.all.m %>%
+  group_by(species_common, species_scientific) %>%
+  dplyr::summarise(count = sum(abundance), weight_g = sum(mass_g))
+  
+fish.sum <- fish.all.m %>%
+  group_by(bay_id) %>%
+  dplyr::summarise(count = sum(abundance), weight_kg = (sum(mass_g)/1000))
+ 
+range(fish.sum$weight_kg)
+mean(fish.sum$weight_kg)
+
+#write.csv(fish.sum.species, "Data/fish22_species.csv")
+```
+

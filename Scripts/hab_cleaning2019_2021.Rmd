@@ -1,0 +1,653 @@
+---
+title: "Hab_2021"
+author: "Lia Domke"
+date: "6/14/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+In 2021, at the same sites we conducted beach seines (see another KNB data package: https://knb.ecoinformatics.org/view/urn:uuid:04a27970-a7e7-46c8-a16b-e277a76c73c5), we also recorded data about the condition of the habitat we were seining in. We collected data from two types of habitat (eelgrass and understory kelp). 
+
+At the eelgrass (primarily Zostera marina, but sometimes a mixture of Phyllospadix/Zostera and other times exclusively Phyllospadix) sites, we sampled eelgrass using 5 haphazardly placed quadrats (0.5 x 0.5 m) in similar area/tidal depth as where the seine net passed through. At those 5 quadrats, we counted total number of flowering and non-flowering shoots in the quadrat, and then measured the total maximum length of 15 randomly selected eelgrass plants. 
+
+At the understory kelp sites (primarily laminaria and saacharina with *no* canopy forming kelps like nereocystsis or macrocystsis), we sampled the understory kelp using 5 haphazardly placed quadrats (0.5 x 0.5 m) in a similar area/tidal depth as where the seine net passed through. At those 5 quadrats, we estimated percent cover (%/0.25m2) of algae. In addition to percent cover, the dominant species was noted. 
+
+At other sites still where there were adjacent understory kelp habitats we collected 5 eelgrass and 5 understory kelp quadrats for a total of 10 quadrats at a single seine site. 
+
+After estimating percent cover, all attached algae were collected and brought back to the lab for processing. 
+
+The algae was then identified to the lowest taxonomic level, generally species or genus level, and weighed. If the algae had a distinct holdfast and blade, we measured the total length of those individuals as well. 
+
+These data are composed of 3 csvs files with keys to join the files together:
+
+hab_quad -- has the quadrat level habitat data, including density, total algae biomass, and site and habitat type information
+
+hab_lng -- has the lengths for Zostera marina/Phyllospadix and any measured algae lengths. 
+
+hab_weight -- has the biomass and percent cover for each measured species. 
+
+sp_list -- has the species scientific name for each year
+
+This script is primarily for basic data checking, to make sure there aren't any errors. 
+
+libraries
+```{r}
+library(tidyverse)
+
+```
+
+read in data - this has been visually checked and ready to be manipulated
+```{r}
+# 2019 data
+qrt19 <- read.csv("Data/Habitat_data/hab_quadrat_2019_9-27-22.csv")
+length19 <- read.csv("Data/Habitat_data/hab_length_2019_9-27-22.csv")
+weight19 <- read.csv("Data/Habitat_data/hab_weight_2019_9-27-22.csv")
+sp_list19 <- read.csv("Data/Habitat_data/hab_species_name_2019_9-27-22.csv")
+
+# 2021 data, date at the end indicates download date in sept 2022 (after jess edited the 2019, 2021 hab data to make it consistent)
+qrt21 <- read.csv("Data/Habitat_data/hab_quadrat_2021_9-27-22.csv")
+length21 <- read.csv("Data/Habitat_data/hab_length_2021_9-27-22.csv")
+weight21 <- read.csv("Data/Habitat_data/hab_weight_2021_9-27-22.csv")
+sp_list21 <- read.csv("Data/Habitat_data/hab_species_name_2021_9-27-22.csv")
+
+# 2022 data, downloaded in march 2023 (jess entered and edited to make consistent with 2019, 2021 - in 08-2022)
+# updated some mistaken quadrat numbers (3-14-23)
+qrt22 <- read.csv("Data/Habitat_data/hab_quadrat_2022_03-14-23.csv")
+length22 <- read.csv("Data/Habitat_data/hab_length_2022_03-14-23.csv")
+weight22 <- read.csv("Data/Habitat_data/hab_weight_2022_03-14-23.csv")
+sp_list22 <- read.csv("Data/Habitat_data/hab_species_name_2022_03-14-23.csv")
+
+# site.ids and names
+sites <- read.csv("Data/Site_metadata_allyears_8-18-22.csv")
+
+```
+
+Want to check to make sure there aren't any errors, but first lets join the columns together. 
+That means we need to: 
+
+- add in bay_id to the 2019 dataset
+- match the column names 
+- add in any units missing in column titles
+- add in weight_g column to 2019 (even tho there won't be any measurements)
+- in each year, make sure the species listed are present (and correctly spelled) in the species is column. 
+- calculate total_biomass for each quadrat and make sure its correct
+- when joining together the datasets, each df has the key (in this case quadrat_ID), in each year we started over at 1. In order to combine across years we need to either combine the quadratID with the year or re do quadrat numbers
+
+```{r}
+glimpse(qrt19)
+unique(qrt19[,c("quadrat_ID", "site", "date", "YYYYMMDD", "notes")]) # looks pretty good
+unique(qrt19$quadrat_ID) # 125 quadrats representing 25 sites
+
+glimpse(qrt21)
+unique(qrt21[,c("quadrat_ID", "site", "bay_ID", "date", "YYYYMMDD")]) # looks pretty good
+unique(qrt21$quadrat_ID) # 115 quadrats representing 23 sites (not all were resampling of noaa sites)
+
+glimpse(qrt22)
+unique(qrt22[,c("quadrat_ID", "site", "bay_ID", "date", "YYYYMMDD")])
+unique(qrt22$quadrat_ID) # 105 representing 13 sites
+```
+
+add in bay id to 2019 dataset
+```{r}
+unique(qrt19$site)
+
+qrt19$site <- as.factor(qrt19$site)
+levels(qrt19$site)[levels(qrt19$site)=="Goats mouth inlet"]<-"Goat Mouth Inlet"
+levels(qrt19$site)[levels(qrt19$site)=="Naukati Bay"]<-"Naukati"
+levels(qrt19$site)[levels(qrt19$site)=="South Wadleigh Island"]<-"South Wadleigh"
+levels(qrt19$site)[levels(qrt19$site)=="Guktu Bay"]<-"Guktu"
+levels(qrt19$site)[levels(qrt19$site)=="North Fish Egg Island"]<-"North Fish Egg"
+levels(qrt19$site)[levels(qrt19$site)=="North Fish Egg - kelp"]<-"North Fish Egg-Kelp"
+levels(qrt19$site)[levels(qrt19$site)=="Natzuhini Bay"]<-"Natzuhini"
+levels(qrt19$site)[levels(qrt19$site)=="Kaguk Cove"]<-"Kaguk "
+levels(qrt19$site)[levels(qrt19$site)=="Farallon Bay"]<-"Farallon"
+levels(qrt19$site)[levels(qrt19$site)=="Chusini Cove"]<-"Chusini-Kladein Flat"
+levels(qrt19$site)[levels(qrt19$site)=="South Fish Egg Island"]<-"South Fish Egg"
+levels(qrt19$site)[levels(qrt19$site)=="Baker Island - kelp"]<-"Baker Island - kelp "
+levels(qrt19$site)[levels(qrt19$site)=="Shinaku Inlet "] <- "Shinaku Inlet"
+qrt19$site <- as.character(qrt19$site)
+
+qrt19.2 <- qrt19 %>%
+  left_join(sites, by = c("site" = "site_2019")) %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  mutate(habitat_quadrat = habitat.y,
+         habitat_site = habitat.x) %>%
+  dplyr::select(-c(freshwater, sediment_description, general_description, habitat.x, habitat.y, site_2017, site_2018, study))
+  
+
+unique(qrt19.2[,c("site", "date", "YYYYMMDD", "bay_id", "habitat_quadrat", "siteID_NOAA")]) # looks pretty good
+
+```
+
+do the quadrat column names match between 21 and 19
+```{r}
+names(qrt19.2)
+names(qrt21)
+site.id <- unite(sites, bay_id, bay_code:bay_sample)
+
+qrt19.3 <- qrt19.2 %>%
+  dplyr::rename(total_biomass_g = total_biomass, density_0.25msq = density,
+                flowering_0.25msq = flowering_shoots) %>%
+  mutate(depth_ft = NA, time = NA)
+
+qrt21.2 <- qrt21 %>%
+  left_join(site.id, by = c("bay_ID" = "bay_id")) %>%
+  dplyr::rename(habitat_quadrat = habitat.x, habitat_site = habitat.y, bay_id = bay_ID) %>%
+  dplyr::select(-c(X, X.1, site_2017, site_2018, site_2019, freshwater, sediment_description, general_description, study)) %>%
+  mutate(depth_ft = NA, time = NA)
+
+names(qrt21.2)
+
+unique(qrt21.2[,c("site", "date", "YYYYMMDD", "bay_id", "habitat_quadrat", "habitat_site", "siteID_NOAA")]) # looks pretty good
+
+# adjust columns for 2022
+# which sites are mixed?
+sites.hab <- sites %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  dplyr::select(bay_id, habitat, siteID_NOAA, latitude, longitude, place_name)
+
+qrt22.1 <- qrt22 %>%
+  dplyr::rename(bay_id = bay_ID,
+         habitat_quadrat = habitat) %>%
+  left_join(sites.hab, by = "bay_id") %>%
+  dplyr::rename(habitat_site = habitat)
+  
+
+
+names(qrt19.3)
+names(qrt21.2)
+names(qrt22.1) # check, names match!
+
+
+```
+
+- add in weight_g column to 2019 (even tho there won't be any measurements)
+```{r}
+glimpse(length19)
+glimpse(length21)
+glimpse(length22)
+
+length19.2 <- length19 %>%
+  dplyr::rename(length_mm = length) %>%
+  mutate(weight_g = "NA")
+
+# both match column names!
+names(length19.2); names(length21); names(length22)
+```
+
+- in each year, make sure the species listed are present (and correctly spelled) in the species is column. 
+```{r}
+sp_list19$species.scientific.name <- trimws(sp_list19$species.scientific.name)
+
+sp_list19 %>%
+  arrange()
+
+# raname the species that aren't correct
+
+length19.3 <- length19.2 %>%
+  mutate(species = ifelse(species == "Cumantamnion decipiens", "Cumanthamnion decipiens", species),
+         species = ifelse(species == "Desmersita spp", "Desmarestia spp", species),
+         species = ifelse(species == "Farlomia mollis" | species == "Falonia mollis", "Farlowia mollis", species),
+         species = ifelse(species == "Phyllospadix" | species == "Phyllospadix scouleri", "Phyllospadix serratus", species), # this one is because likely this was a mistake in identification. Phyllospadix scouleri does not occur mixed with eelgrass, Phyllospadix serratus does. 
+         species = ifelse(species == "Saccharina groelandica", "Saccharina groenlandica", species),
+         species = ifelse(species == "Sargassum", "Sargassum spp", species),
+         species = ifelse(species == "Sparangia pertula", "Sparlingia pertusa", species),
+         species = ifelse(species == "Ulva lactuca ", "Ulva lactuca", species),
+         species = ifelse(species == "Ulva Spp", "Ulva spp", species),
+         species = ifelse(species == "Saacharina spp", "Saccharina spp", species))
+
+weight19.2 <- weight19 %>%
+   mutate(species = ifelse(species == "Cumantamnion decipiens", "Cumanthamnion decipiens", species),
+         species = ifelse(species == "Desmersita spp", "Desmarestia spp", species),
+         species = ifelse(species == "Farlomia mollis" | species == "Falonia mollis", "Farlowia mollis", species),
+         species = ifelse(species == "Phyllospadix" | species == "Phyllospadix scouleri", "Phyllospadix serratus", species),
+         species = ifelse(species == "Saccharina groelandica", "Saccharina groenlandica", species),
+         species = ifelse(species == "Sargassum", "Sargassum spp", species),
+         species = ifelse(species == "Sparangia pertula", "Sparlingia pertusa", species),
+         species = ifelse(species == "Ulva lactuca ", "Ulva lactuca", species),
+         species = ifelse(species == "Ulva Spp", "Ulva spp", species),
+         species = ifelse(species == "Saacharina spp", "Saccharina spp", species)) %>%
+  rename(percent_cover = X._cover,
+         weight_g = weight)
+
+species19 <- length19.3 %>%
+  dplyr::select(species) %>%
+  distinct()
+
+species19 <- weight19.2 %>%
+  dplyr::select(species) %>%
+  distinct() %>%
+  rbind(species19) %>%
+  distinct() %>%
+  arrange(species)
+
+anti_join(sp_list19, species19, by = c("species.scientific.name" = "species")) # only one species on sp_list that doesn't occur in the dataset, its the phyllospadix scouleri that we removed above. 
+
+# create new species list that includes all the species that occur in the data set
+# remove the sediment and non species (like biomass)
+remove <- c("bare", "bare rock", "bare rock/sediment exposed/uncovered", "Biomass", "course sand w/green algae", "Micellaneous", "rock",
+            "shell hash/boulders")
+list19.2 <- full_join(species19, sp_list19, by = c("species" = "species.scientific.name")) %>%
+  subset(!(species %in% remove)) %>%
+  filter(species != "Phyllospadix scouleri")
+```
+
+Check names in 2021 too
+```{r}
+sp_list21$species_scientific_name <- trimws(sp_list21$species_scientific_name)
+sp_list22$species_scientific_name <- trimws(sp_list22$species_scientific_name)
+
+sp_list21 <- sp_list21 %>%
+  dplyr::select(-alternative_species_names) %>%
+  arrange()
+
+sp_list22 <- sp_list22 %>%
+  dplyr::select(-alternative_species_names) %>%
+  arrange()
+
+species21 <- length21 %>%
+  dplyr::select(species) %>%
+  distinct()
+
+species22 <- length22 %>%
+  dplyr::select(species) %>%
+  distinct()
+
+species21 <- weight21 %>%
+  dplyr::select(species) %>%
+  distinct() %>%
+  rbind(species21) %>%
+  distinct() %>%
+  arrange(species)
+
+species22 <- weight22 %>%
+  dplyr::select(species) %>%
+  distinct() %>%
+  rbind(species22) %>%
+  distinct() %>%
+  arrange(species)
+
+anti_join(sp_list21, species21, by = c("species_scientific_name" = "species")) # a few species missing 
+missing21 <- species21 %>%
+  dplyr::select(species) %>%
+  arrange(species) %>%
+  full_join(sp_list21, by = c("species" = "species_scientific_name"), keep = TRUE, na_matches = "na")
+
+anti_join(sp_list22, species22, by = c("species_scientific_name" = "species")) # a few species missing 
+
+missing22 <- species22 %>%
+  dplyr::select(species) %>%
+  arrange(species) %>%
+  full_join(sp_list22, by = c("species" = "species_scientific_name"), keep = TRUE, na_matches = "na")
+
+# change the names to make sure that there is consistency between data
+length21$species <- trimws(length21$species)
+length21.2 <- length21 %>%
+  mutate(species = ifelse(species == "Acrosiphinia arcta", "Acrosiphonia arcta", species),
+         species = ifelse(species == "bare/shell", "bare/shells", species),
+         species = ifelse(species == "branch red", "branching red", species),
+         species = ifelse(species == "cobble", "Cobble", species), 
+         species = ifelse(species == "eelgrass" | species == "Zostera marina " | species == "seagrass", "Zostera marina", species),
+         species = ifelse(species == "eudesme virescens", "Eudesme virescens", species), 
+         species = ifelse(species == "Fucus gardneri", "Fucus distichus", species),
+         species = ifelse(species == "macrocystis pyrifera", "Macrocystis pyrifera", species), 
+         species = ifelse(species == "saccharina spp", "Saccharina spp", species),
+         species = ifelse(species == "sand/shells", "Sand/shells", species),
+         species = ifelse(species == "cobble/sand", "Cobble/sand", species),
+         species = ifelse(species == "sand", "Sand", species),
+         species = ifelse(species == "Shells/sand", "Sand/shells", species),
+         species = ifelse(species == "Schizymena pacifica", "Schizymenia pacifica", species))
+
+weight21$species <- trimws(weight21$species)
+
+weight21.2 <- weight21 %>%
+  mutate(species = ifelse(species == "Acrosiphinia arcta", "Acrosiphonia arcta", species),
+         species = ifelse(species == "bare/shell", "bare/shells", species),
+         species = ifelse(species == "branch red", "branching red", species),
+         species = ifelse(species == "cobble", "Cobble", species), 
+         species = ifelse(species == "eelgrass" | species == "seagrass", "Zostera marina", species),
+         species = ifelse(species == "eudesme virescens", "Eudesme virescens", species), 
+         species = ifelse(species == "Fucus gardneri", "Fucus distichus", species),
+         species = ifelse(species == "macrocystis pyrifera", "Macrocystis pyrifera", species), 
+         species = ifelse(species == "saccharina spp", "Saccharina spp", species),
+         species = ifelse(species == "sand/shells", "Sand/shells", species),
+         species = ifelse(species == "cobble/sand", "Cobble/sand", species),
+         species = ifelse(species == "sand", "Sand", species),
+         species = ifelse(species == "Shells/sand", "Sand/shells", species),
+         species = ifelse(species == "Schizymena pacifica", "Schizymenia pacifica", species))
+
+remove21 <- c("bare", "bare and shell hash", "bare cobble/pebble", "bare/dead kelp", "bare/shells", 
+            "bare rock/sediment exposed/uncovered", "boulder", "Cobble", "Cobble/boulder",
+            "Cobble/pebbles", "Cobble/sand", "gravel", "large rock", "mud", "Sand", "Sand/shells")
+
+
+length22$species <- trimws(length22$species)
+length22.2 <- length22 %>%
+  mutate(species = ifelse(species == "Acrosiphinia arcta" | species == "Arcosiphonia arcta", "Acrosiphonia arcta", species),
+         species = ifelse(species == "Cymathaene triplicata", "Cymathaere triplicata",species),
+         species = ifelse(species == "Desmarestia acuelata", "Desmarestia aculeata", species),
+         species = ifelse(species == "Mazzaella phylocarpa", "Mazzaella phyllocarpa", species),
+         species = ifelse(species == "Neorhodomela acuelata", "Neorhodomela aculeata", species),
+         species = ifelse(species == "cobble", "Cobble", species),
+         species = ifelse(species == "boulder", "Boulder", species),
+         species = ifelse(species == "sand", "Sand", species),
+         species = ifelse(species == "corallina officinalis", "Corallina officinalis", species),
+         species = ifelse(species == "dictyosiphon foeniculaceus", "Dictyosiphon foeniculaceus", species),
+         species = ifelse(species == "farlowia mollis", "Farlowia mollis", species),
+         species = ifelse(species == "fucus gardenari", "Fucus gardenari", species),
+         species = ifelse(species == "leathesia marina", "Leathesia marina", species),
+         species = ifelse(species == "mazzaella sp", "Mazzaella sp", species),
+         species = ifelse(species == "mazzaella splendens", "mazzaella splendens", species),
+         species = ifelse(species == "neodilsea borealis", "Neodilsea borealis", species),
+         species = ifelse(species == "sacharina groenlandica", "Sacharina groenlandica", species),
+         species = ifelse(species == "saccharina spp", "Saccharina spp", species),
+         species = ifelse(species == "saccharina spp biomass", "Saccharina spp biomass", species),
+         species = ifelse(species == "sarcodiotheca gaudichaudii", "Sarcodiotheca gaudichaudii", species),
+         species = ifelse(species == "sphacelaria spp", "Sphacelaria spp", species),
+         species = ifelse(species == "ulva lactuca", "Ulva lactuca", species),
+         species = ifelse(species == "ulvaria sp" | species == "ulvaria spp", "Ulvaria spp", species))
+
+weight22$species <- trimws(weight22$species)
+weight22.2 <- weight22 %>%
+  mutate(species = ifelse(species == "Acrosiphinia arcta" | species == "Arcosiphonia arcta", "Acrosiphonia arcta", species),
+         species = ifelse(species == "Cymathaene triplicata", "Cymathaere triplicata",species),
+         species = ifelse(species == "Desmarestia acuelata", "Desmarestia aculeata", species),
+         species = ifelse(species == "Mazzaella phylocarpa", "Mazzaella phyllocarpa", species),
+         species = ifelse(species == "Neorhodomela acuelata", "Neorhodomela aculeata", species),
+         species = ifelse(species == "cobble", "Cobble", species),
+         species = ifelse(species == "boulder", "Boulder", species),
+         species = ifelse(species == "sand", "Sand", species),
+         species = ifelse(species == "corallina officinalis", "Corallina officinalis", species),
+         species = ifelse(species == "dictyosiphon foeniculaceus", "Dictyosiphon foeniculaceus", species),
+         species = ifelse(species == "farlowia mollis", "Farlowia mollis", species),
+         species = ifelse(species == "fucus gardenari", "Fucus gardenari", species),
+         species = ifelse(species == "leathesia marina", "Leathesia marina", species),
+         species = ifelse(species == "mazzaella sp", "Mazzaella sp", species),
+         species = ifelse(species == "mazzaella splendens", "mazzaella splendens", species),
+         species = ifelse(species == "neodilsea borealis", "Neodilsea borealis", species),
+         species = ifelse(species == "sacharina groenlandica", "Sacharina groenlandica", species),
+         species = ifelse(species == "saccharina spp", "Saccharina spp", species),
+         species = ifelse(species == "saccharina spp biomass", "Saccharina spp biomass", species),
+         species = ifelse(species == "sarcodiotheca gaudichaudii", "Sarcodiotheca gaudichaudii", species),
+         species = ifelse(species == "sphacelaria spp", "Sphacelaria spp", species),
+         species = ifelse(species == "ulva lactuca", "Ulva lactuca", species),
+         species = ifelse(species == "ulvaria sp" | species == "ulvaria spp", "Ulvaria spp", species))
+
+remove22 <- c("bare", "bare and shell hash", "bare cobble/pebble", "bare/dead kelp", "bare/shells", 
+            "bare rock/sediment exposed/uncovered", "boulder", "Cobble", "Cobble/boulder",
+            "Cobble/pebbles", "Cobble/sand", "gravel", "large rock", "mud", "Sand", "Sand/shells")
+
+#_____________________
+species21.2 <- length21.2 %>%
+  dplyr::select(species) %>%
+  distinct()
+
+species21.3 <- weight21.2 %>%
+  dplyr::select(species) %>%
+  distinct() %>%
+  rbind(species21.2) %>%
+  distinct() %>%
+  arrange(species)
+
+list21.2 <- species21.3 %>%
+  subset(!(species %in% remove21))
+anti_join(list21.2, species21.3, by = "species") # no species!
+
+#--------------
+
+species22.2 <- length22.2 %>%
+  dplyr::select(species) %>%
+  distinct()
+
+species22.3 <- weight22.2 %>%
+  dplyr::select(species) %>%
+  distinct() %>%
+  rbind(species22.2) %>%
+  distinct() %>%
+  arrange(species)
+
+list22.2 <- species22.3 %>%
+  subset(!(species %in% remove22))
+anti_join(list21.2, species21.3, by = "species") # no species!
+```
+
+
+- calculate total_biomass for each quadrat and make sure its correct: 2019
+```{r}
+head(qrt19.3)
+head(length19.3)
+glimpse(weight19.2)
+
+# no weights in the length (that would've been invidual plant weights)
+total.biom19 <- weight19.2 %>%
+  group_by(quadrat_ID) %>%
+  dplyr::summarise(total_biomass_g2 = sum(weight, na.rm = TRUE))
+
+g_check <- qrt19.3 %>%
+  filter(habitat_quadrat == "kelp") %>%
+  left_join(total.biom19, by = "quadrat_ID") 
+
+g_check$check <- g_check$total_biomass_g == g_check$total_biomass_g2
+g_check$g_diff <- round(g_check$total_biomass_g - g_check$total_biomass_g2, digits = 2)
+
+filter(g_check, check == FALSE) # all these cases are either rounding errors or a legit calculation error. Go with the R calc ##
+
+qrt19.4 <- qrt19.3 %>%
+  left_join(total.biom19, by = "quadrat_ID") %>%
+  dplyr::select(-total_biomass_g) %>%
+  rename(total_biomass_g = total_biomass_g2)
+```
+
+- calculate total_biomass for each quadrat and make sure its correct: 2021
+```{r}
+head(qrt21.2)
+head(length21.2)
+glimpse(weight21.2)
+
+# 2021 has weights associated with the individual lengths of certain plants (mainly phyllospadix). And this is eventually to develop a length to weight relationship if need to better est biomass of phyllospadix meadows or mixed phyllo/zos meadows
+weight21.2$weight_g <- as.numeric(weight21.2$weight_g)
+
+total.biom21 <- weight21.2 %>%
+  group_by(quadrat_ID) %>%
+  dplyr::summarise(total_biomass_g_2 = sum(weight_g, na.rm = TRUE))
+
+g_check <- qrt21.2 %>%
+  left_join(total.biom21, by = "quadrat_ID") 
+
+g_check$total_biomass_g <- as.numeric(g_check$total_biomass_g)
+g_check$check <- g_check$total_biomass_g == g_check$total_biomass_g_2
+g_check$g_diff <- round(g_check$total_biomass_g - g_check$total_biomass_g_2, digits = 2)
+
+filter(g_check, check == FALSE) # all these cases are either rounding errors or a legit calculation error. Go with the R calc ##
+
+qrt21.3 <- qrt21.2 %>%
+  left_join(total.biom21, by = "quadrat_ID") %>%
+  dplyr::select(-total_biomass_g) %>%
+  rename(total_biomass_g = total_biomass_g_2)
+
+
+#### because there are lengths associated with weights lets make sure they're correct
+weight.sp.quad21 <- length21.2 %>%
+  filter(!(is.na(weight_g))) %>%
+  group_by(quadrat_ID, species) %>%
+  dplyr::summarise(weight_g = sum(weight_g))
+
+weight.sp.quad21$X._cover <- NA
+weight.sp.quad21$species_by_quadrat_ID <- seq(from = 471, length.out = 9)
+weight.sp.quad21$notes <- NA
+
+#lets add in an entry that didn't make it from clam island
+missingwgt <- setNames(data.frame(matrix(ncol = 6, nrow = 0)), c("quadrat_ID", "species", "weight_g", "percent_cover", "species_by_quadrat_ID", "notes"))
+missingwgt <- rbind(missingwgt, c("94", "Zostera marina", "NA", "100", "476", "NA"))
+colnames(missingwgt) <- c("quadrat_ID", "species", "weight_g", "percent_cover", "species_by_quadrat_ID", "notes")
+missingwgt$quadrat_ID <- as.integer(missingwgt$quadrat_ID)
+missingwgt$weight_g <- as.numeric(missingwgt$weight_g)
+missingwgt$species_by_quadrat_ID <- as.numeric(missingwgt$species_by_quadrat_ID)
+
+weight21.3.1 <- weight.sp.quad21 %>%
+  filter(quadrat_ID < 76) %>%
+  rbind(weight21.2) %>%
+  rename(percent_cover = X._cover)
+
+weight21.3.2 <- rbind(weight21.3.1, missingwgt)
+
+# lets adjust an instance where MOIR_B had the wrong percent cover numbers
+weight21.3 <- mutate(weight21.3.2, percent_cover = ifelse(quadrat_ID == 61 & species == "boulder" & percent_cover == 33, 23, percent_cover))
+
+
+## make sure it all matches up
+quad.weights <- weight21.3 %>%
+  subset(quadrat_ID %in% weight.sp.quad21$quadrat_ID) %>%
+  group_by(quadrat_ID) %>%
+  dplyr::summarise(sum = sum(weight_g)) %>%
+  filter(quadrat_ID < 76)
+
+qrt21.4 <- qrt21.3 %>%
+  left_join(quad.weights)
+```
+
+- calculate total_biomass for each quadrat and make sure its correct: 2022
+```{r}
+head(qrt22.1)
+head(length22.2)
+glimpse(weight22.2)
+
+# 2021 has weights associated with the individual lengths of certain plants (mainly phyllospadix). And this is eventually to develop a length to weight relationship if need to better est biomass of phyllospadix meadows or mixed phyllo/zos meadows
+
+
+# HI LIA THERE ARE DEFINITELY SOME INSTANCES WHERE THE DIFFERENCES IN WEIGHT ARE SUBSTANTIAL. 
+# Blanquizal quadrat ID 60, quadrat 5 in kelp has a .2 g diff - macrocystis biomass should be 28.6 NOT 28.8
+# Halibut nose quadrat 94, quadrat 4 has a 5 gram diff - it says that cobble is 5 g, but its not 
+# the rest are looking like rounding errors. 
+
+qrt22.2 <- qrt22.1 
+
+weight22.3 <- weight22.2 %>%
+  mutate(weight_g = ifelse(species_by_quadrat_ID == 260 & species == "Macrocystis pyrifera biomass", 28.6, weight_g),
+         weight_g = ifelse(species_by_quadrat_ID == 313 & species == "Cobble", NA, weight_g)) %>%
+  # theres a duplicate entry of neodilsea borealis 50.3 that needs to be removed from SARI_A
+  filter(!(quadrat_ID == 36 & species == "Neodilsea borealis" & X._cover == "not collected" & species_by_quadrat_ID == 147)) # one less row good. 
+
+weight22.3$weight_g <- as.numeric(weight22.3$weight_g)
+
+total.biom22 <- weight22.3 %>%
+  group_by(quadrat_ID) %>%
+  dplyr::summarise(total_biomass_g_2 = sum(weight_g, na.rm = TRUE))
+
+g_check <- qrt22.2 %>%
+  left_join(total.biom22, by = "quadrat_ID") 
+
+g_check$total_biomass_g <- as.numeric(g_check$total_biomass_g)
+g_check$check <- g_check$total_biomass_g == g_check$total_biomass_g_2
+g_check$g_diff <- round(g_check$total_biomass_g - g_check$total_biomass_g_2, digits = 2)
+
+filter(g_check, check == FALSE) # all rounding errors
+##############
+qrt21.3 <- qrt21.2 %>%
+  left_join(total.biom21, by = "quadrat_ID") %>%
+  dplyr::select(-total_biomass_g) %>%
+  rename(total_biomass_g = total_biomass_g_2)
+
+
+#### because there are lengths associated with weights lets make sure they're correct
+weight.sp.quad21 <- length21.2 %>%
+  filter(!(is.na(weight_g))) %>%
+  group_by(quadrat_ID, species) %>%
+  dplyr::summarise(weight_g = sum(weight_g))
+
+weight.sp.quad21$X._cover <- NA
+weight.sp.quad21$species_by_quadrat_ID <- seq(from = 471, length.out = 9)
+weight.sp.quad21$notes <- NA
+
+
+#lets add in an entry that didn't make it from clam island
+missingwgt <- setNames(data.frame(matrix(ncol = 6, nrow = 0)), c("quadrat_ID", "species", "weight_g", "percent_cover", "species_by_quadrat_ID", "notes"))
+missingwgt <- rbind(missingwgt, c("94", "Zostera marina", "NA", "100", "476", "NA"))
+colnames(missingwgt) <- c("quadrat_ID", "species", "weight_g", "percent_cover", "species_by_quadrat_ID", "notes")
+missingwgt$quadrat_ID <- as.integer(missingwgt$quadrat_ID)
+missingwgt$weight_g <- as.numeric(missingwgt$weight_g)
+missingwgt$species_by_quadrat_ID <- as.numeric(missingwgt$species_by_quadrat_ID)
+
+weight21.3.1 <- weight.sp.quad21 %>%
+  filter(quadrat_ID < 76) %>%
+  rbind(weight21.2) %>%
+  rename(percent_cover = X._cover)
+
+weight21.3.2 <- rbind(weight21.3.1, missingwgt)
+
+# lets adjust an instance where MOIR_B had the wrong percent cover numbers
+weight21.3 <- mutate(weight21.3.2, percent_cover = ifelse(quadrat_ID == 61 & species == "boulder" & percent_cover == 33, 23, percent_cover))
+
+
+## make sure it all matches up
+quad.weights <- weight21.3 %>%
+  subset(quadrat_ID %in% weight.sp.quad21$quadrat_ID) %>%
+  group_by(quadrat_ID) %>%
+  dplyr::summarise(sum = sum(weight_g)) %>%
+  filter(quadrat_ID < 76)
+
+qrt21.4 <- qrt21.3 %>%
+  left_join(quad.weights)
+```
+
+remove any of the df that we're not interested in
+```{r}
+rm(list = c("g_check", "length19", "length19.2","qrt19", "qrt19.2", 
+            "qrt19.3", "qrt21", 
+            "sp_list19", "species19", 
+            "weight19", 
+            "length21", "weight21", "sp_list21", "species21", "species21.2", "species21.3", 
+            "weight21.2",
+            "length22", "qrt22", "qrt22.1", "weight22.2"))
+```
+
+- when joining together the datasets, each df has the key (in this case quadrat_ID), in each year we started over at 1. In order to combine across years we need to either combine the quadratID with the year or re do quadrat numbers
+
+```{r}
+# the data from 2019 includes
+head(qrt19.4)
+head(length19.3)
+head(weight19.2)
+head(list19.2)
+
+head(qrt21.3)
+head(length21.2)
+head(weight21.3)
+head(list21.2)
+
+head(qrt22.2)
+head(length22.2)
+head(weight22.3)
+head(list22.2)
+
+names(qrt19.4)
+names(qrt21.3)
+names(qrt22.2)
+
+names(length19.3)
+names(length21.2)
+names(length22.2)
+
+names(weight19.2)
+names(weight21.3)
+names(weight22.3)
+# for now (10/11/22) lets read out the cleanish data from 2021 
+#write.csv(qrt21.3, "Data/Habitat_data/hab_quadrat_2021_clean_10-11-22.csv")
+#write.csv(length21.2, "Data/Habitat_data/hab_length_2021_clean_10-11-22.csv")
+#write.csv(weight21.3, "Data/Habitat_data/hab_weight_2021_clean_10-11-22.csv")
+#write.csv(list21.2, "Data/Habitat_data/hab_sp_list_2021_clean_10-11-22.csv")
+
+#write.csv(qrt19.4, "Data/Habitat_data/hab_quadrat_2019_clean_10-11-22.csv")
+#write.csv(length19.3, "Data/Habitat_data/hab_length_2019_clean_10-11-22.csv")
+#write.csv(weight19.2, "Data/Habitat_data/hab_weight_2019_clean_10-11-22.csv")
+#write.csv(list19.2, "Data/Habitat_data/hab_sp_list_2019_clean_10-11-22.csv")
+
+#write.csv(qrt22.2, "Data/Habitat_data/hab_quadrat_2022_clean_3-14-23.csv")
+#write.csv(length22.2, "Data/Habitat_data/hab_length_2022_clean_3-14-23.csv")
+#write.csv(weight22.3, "Data/Habitat_data/hab_weight_2022_clean_3-14-23.csv")
+#write.csv(list22.2, "Data/Habitat_data/hab_sp_list_2022_clean_3-14-23.csv")
+
+
+```
+

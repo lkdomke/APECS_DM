@@ -1,0 +1,158 @@
+---
+title: "Biobands_Cleaning"
+author: "Ashley Bolwerk"
+date: "5/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r loading packages, include=FALSE, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(lattice)
+library(lubridate)
+library(ggforce)
+library(splus2R)
+
+```
+
+# Load Data
+```{r}
+Height.data <- read.csv("C:/GradSchool/APECS/RockyIntertidal/Data/2018_BiobandElevationData_AllSites.csv", stringsAsFactors = FALSE)
+
+Meta <- read.csv("C:/GradSchool/APECS/RockyIntertidal/Data/2018_MetaData_calcs.csv", stringsAsFactors = FALSE)
+
+```
+# Clean Data
+
+## Fix Column Names
+```{r}
+Meta <- Meta[,-1]   # removes column 1
+Height.data <- Height.data[,-1]  # removes column 1
+
+```
+
+
+## fix misspelled
+```{r}
+bioband.lg <- Height.data
+bioband.lg[bioband.lg=="Na"] <- NA
+```
+
+# Calculate elevation w/ a segway to look at issues with Hairy/Wiry Red Algae
+```{r}
+ht <- select(bioband.lg, 1:8, contains("Height"))
+Band.elev <- ht
+
+# Substitute in values for NB, NP, and ST 
+
+Band.elev[ Band.elev == "NB" ] <- 100                     #Change NB to 100
+Band.elev[ Band.elev == "NP" ] <- 500                    #Change NP to 500
+Band.elev[ Band.elev == "ST" ] <- 1000                  #Change ST 1000
+Band.elev[Band.elev=="ST "] <- 1000
+Band.elev[Band.elev=="Na"] <- NA
+
+Band.elev[,9:ncol(Band.elev)] <- lapply(Band.elev[,9:ncol(Band.elev)], as.numeric)
+
+elev_calc <- function(x) (Meta$ave_max_relht + Meta$Adj_max - x + Meta$LT_height)
+Band.elev[,9:ncol(Band.elev)] <- lapply(Band.elev[,9:ncol(Band.elev)], elev_calc)
+
+#### Check for changes to be made in Hairy Red Algae, where Wiry Red Algae occurs outside the recorded bounds of Hairy Red Algae
+# Checking upper edge boundary
+probs_upper <- select(Band.elev, Site_Number, Transect_Num, U_WiryRed_Height, U_HairyRed_Height)
+probs_upper$diff <- probs_upper$U_WiryRed_Height - probs_upper$U_HairyRed_Height
+which(probs_upper$diff >0, arr.ind = TRUE) # row 70 = difference of 0.01m -> ignore
+                                                # row 19 has NA for Hairy red and a value for Wiry Red -> use Wiry red
+
+# Checking lower edge boundary
+probs_lower <- select(Band.elev, L_WiryRed_Height, L_HairyRed_Height) %>%
+  mutate(diff=(L_HairyRed_Height - L_WiryRed_Height))
+which(probs_lower$diff >0, arr.ind = TRUE) # rows 20 22 23 24 26 27 52 53 54 67 68 69 71 73
+                                                # 22, 23, 24, 26, 52, 53, 54, 67, 68, 69, 73 -> Wiry red were NB
+                                                # 20, 27, 71 -> need to be fixed below        
+                                                # for 19, 47, 48, 50, 51, 72 use Wiry because Hairy is NA
+
+
+  
+
+# Fix ST, NP, and NB values after elev conversion
+Band.elev[,9:ncol(Band.elev)] <- as.data.frame(lapply(Band.elev[,9:ncol(Band.elev)], function(x) {ifelse(x < -970, 1000,ifelse(x < -470, 500,ifelse(x < -70, 100, x)))})) 
+Band.elev[,9:ncol(Band.elev)] <- sapply(Band.elev[,9:ncol(Band.elev)],as.character)
+Band.elev[Band.elev == "100"] <- "NB"
+Band.elev[Band.elev == "500"] <- "NP"
+Band.elev[Band.elev == "1000"] <- "ST"
+
+```
+
+## Fix Hairy/Wiry red algae problems
+```{r}
+Band.fix <- Band.elev
+
+   # UPPER row 70 = difference of 0.01m -> ignore
+        # row 19 has NA for Hairy red and a value for Wiry Red -> use Wiry red
+Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==1, "U_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==1, "U_WiryRed_Height"]
+
+test <- select(Band.fix, Site_Number, Transect_Num, U_HairyRed_Height, U_WiryRed_Height) %>%
+  filter(Site_Number=="1988.04" & Transect_Num==1)
+
+   # LOWER rows 20 22 23 24 26 27 52 53 54 67 68 69 71 73
+        # 22, 23, 24, 26, 52, 53, 54, 67, 68, 69, 73 = Wiry red were NB -> ignore
+        # 20, 27, 71 -> need to be fixed below        
+        # for 19, 72 use Wiry because Hairy is NA
+Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==2, "L_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==2, "L_WiryRed_Height"] #20
+Band.fix[Band.fix$Site_Number=="1988.06" & Band.fix$Transect_Num==3, "L_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="1988.06" & Band.fix$Transect_Num==3, "L_WiryRed_Height"] #27
+Band.fix[Band.fix$Site_Number=="2014.06" & Band.fix$Transect_Num==2, "L_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="2014.06" & Band.fix$Transect_Num==2, "L_WiryRed_Height"] #71
+
+Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==1, "L_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="1988.04" & Band.fix$Transect_Num==1, "L_WiryRed_Height"] #19
+Band.fix[Band.fix$Site_Number=="2014.06" & Band.fix$Transect_Num==3, "L_HairyRed_Height"] <- Band.fix[Band.fix$Site_Number=="2014.06" & Band.fix$Transect_Num==3, "L_WiryRed_Height"] #72
+
+test <- select(Band.fix, Site_Number, Transect_Num, L_HairyRed_Height, L_WiryRed_Height) %>%
+  filter(Site_Number=="2014.06" & Transect_Num==3)
+
+
+```
+
+
+# Convert to tall format
+```{r}
+elev <- select(Band.fix, 1:8, contains("Height"))
+loc <- select(bioband.lg, 1:8, contains("Location"))
+loc[,9:ncol(loc)] <- sapply(loc[,9:ncol(loc)],as.character)
+notes <- select(bioband.lg, 1:8, contains("Notes"))
+notes[,9:ncol(notes)] <- sapply(notes[,9:ncol(notes)],as.character)
+elev.tl <- pivot_longer(elev, cols = 9:ncol(elev))
+colnames(elev.tl)[9:10] <- c("Org", "Elevation")
+loc.tl <- pivot_longer(loc, cols = 9:ncol(loc))
+colnames(loc.tl)[9:10] <- c("Orgs","Location" )
+loc.short <- select(loc.tl, "Orgs","Location" )
+notes.tl <- pivot_longer(notes, cols = 9:ncol(notes))
+colnames(notes.tl)[9:10] <- c("O", "Notes")
+note.short <- select(notes.tl, "O", "Notes")
+
+
+band.tl <- cbind(elev.tl, loc.short, note.short)
+
+```
+
+## Separate column information to tall format
+```{r}
+band.tl$Edge <- ifelse(grepl("U_", band.tl$Org), "Upper", "Lower")
+band.tl$Organism <-rep(c("Fucus","AcBarnacle","Mussel", "Fucus", "EncCoraline", "WiryRed", "HairyRed", "Mussel", "AcBarnacle", "ThBarnacle","BladedGreen","HairyGreen", "WiryRed", "BladedRed", "BladedRed", "HairyRed", "SurfGrass", "BraCoraline", "Kelp", "Halosaccion", "Halosaccion", "EncCoraline","BraCoraline", "OliveUlva", "DeadManFingers", "BladedGreen", "ThBarnacle", "StrawSeaweed","StrawSeaweed", "HairyGreen", "BubbleAlg","BubbleAlg", "Kelp1", "Kelp2","Bryozoan", "SurfGrass", "JingleShell"), times=75)
+band.tl <- select(band.tl, Site_Number:Transect_Num, Organism, Edge, Elevation, Location, Notes)
+```
+
+# Remove uncommon species because they were likely not recorded at all sites 
+```{r}
+
+Biobands <- filter(band.tl, Organism!='StrawSeaweed'& Organism!='JingleShell' & Organism!='OliveUlva' & Organism!='WiryRed')
+
+# BubbleAlg = Leathesia marina
+# Bryozoan = bryozoan and Ralfsia fungiformis (brown algae curst)
+
+write.csv(Biobands, "C:/GradSchool/APECS/RockyIntertidal/Data/2018_BiobandElev_AllSites_CLEAN.csv")
+```
+

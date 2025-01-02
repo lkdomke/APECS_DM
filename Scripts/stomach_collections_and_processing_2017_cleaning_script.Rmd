@@ -1,0 +1,10 @@
+---
+title: "stomach_collections_and_processing_2017_cleaning_script"
+author: "Lia Domke"
+date: "8/30/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

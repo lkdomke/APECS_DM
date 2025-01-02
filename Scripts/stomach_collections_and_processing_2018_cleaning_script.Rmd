@@ -1,0 +1,74 @@
+---
+title: "stomach_collections_and_processing_2018_cleaning_script"
+author: "Lia Domke"
+date: "8/30/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+In 2018, Wendel collected staghorn sculpins and shiner perch and euthansized them to collect their stomachs and tissue for biometric analyses (see the biometrics dataset for biometric data etc). 
+
+The fish were collected either by beach seine or crab pot at approximately six sites on Prince of Wales Island. Two sites were considered "high" otter impact sites (Nossuk and Kaguk?), two were "middle" sites (Shinaku and North Fish Egg), the last two were "low" sites (Sukkwan and North Pass). Fish were euthanized, preserved on iceand transported back to the lab where the stomachs were dissected out and then preserved in ethanol until stomach/sample processing could occur back in Juneau. 
+
+The stomach collection dataset includes collection location, time, species information (size, species) and then identifies the corresponding Sample/Stomach ID which connects the stomach collection dataset with the stomach processing dataset (these are related). 
+
+ *cleaning required for stomach collection csv*
+ - remove any stomaches collected in 2017, these were "test" to try out the methodology
+ - add in missing site information for a couple of staghorns that were collected via crab pots rather than beach seine (as most others were collected). 
+ 
+ The second dataset that will be cleaned is the stomach processing sheet. The stomach processing includes the stomach/sample ID that connects the processing dataset with the collections dataset. Stomaches were removed from the ethanol for processing. The stomachs were weighed before emptying, all contents were attempted to be identified to the lowest taxonomic level possible and then weighed. Additionally, a "digestion code" was given to the samples to indicate their level of digestion. 
+ 
+ *cleaning required for stomach processing csv*
+ - make sure that the stomach processing and stomach collections connect 
+ - clarify any metadata related questions relating to the column headers. 
+
+# read in data and libraries 
+```{r}
+library(tidyverse)
+
+collection <- read.csv("Data/Stomach_collections_2018_FINAL_WR.xlsx - Stomach_collections.csv")
+processing <- read.csv("Data/Stomach_processing_2018_1.18.2019_WR - Sheet1.csv")
+
+site.names <- read.csv("Data/Site_metadata_allyears_8-18-22.csv", stringsAsFactors = FALSE, header = TRUE)
+```
+
+## clean collection csv 
+general data checks
+```{r}
+head(collection)
+unique(collection$site)
+unique(collection$place_name)
+
+unique(collection[,c("site", "place_name", "date", "YYYYMMDD", "latitude", "longitude", "notes")]) 
+# missing site information for data collected on 7/22/2018
+
+unique(collection[,c("species_common", "species_scientific", "sp_code")])
+```
+
+
+```{r}
+collection2 <- collection %>%
+  mutate(bay_id = "",
+         bay_id = ifelse(place_name == "Nossuk Bay Experiment", "NOSK_B", bay_id),
+         place_name = ifelse(place_name == "North Fish Egg Experiment", "North Fish Egg Island", place_name),
+         place_name = ifelse(place_name == "Nossuk Bay Experiment", "Nossuk Bay", place_name),
+         bay_id = ifelse(date == "7/22/2018" & species_common == "Pacific staghorn sculpin", "GUKT_A", bay_id),
+         place_name = ifelse(bay_id == "GUKT_A", "Guktu Bay", place_name),
+         site = ifelse(bay_id == "GUKT_A", "2018_H_02", site))
+
+# based on what we know from the original datasheets, the biomarker data, and conversations with wendel - these staghorns were collected using crab pots at Guktu
+
+# add in bay codes and bay samples
+sites <- site.names %>%
+  unite(bay_id, bay_code:bay_sample) %>%
+  dplyr::select(site_2018, place_name, latitude, longitude)
+
+subset(sites, site_2018 %in% unique(collection2$site))
+```
+

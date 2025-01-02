@@ -1,0 +1,356 @@
+---
+title: "NOAA_cleaning_lw"
+author: "Lia Domke"
+date: "10/20/2022"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+We have data from the nearshore fish atlas that include seines from 1990s - early 2000s. The atlas is constantly changing and being contributed to. 
+We use a version of the nearshore atlas that we extracted from the ACCESS database in early 2020/late 2019 so the database is several years "out of date". However, since we aren't looking for the most recent data this will work. 
+
+We also used the best available sea otter survey data to assign seines to either before or after and control or impact in ArcGIS. 
+
+Our goals for this script are:
+
+1. use the proportion of lengths to assign lengths to unmeasured fishes are each site
+
+2. use the known length to weight ratio (mainly from FishBase) to assign biomass to the measured fishes. 
+
+3. read out the script as nearly to identical as it was read in, just one more column (this is to make sure the scripts that are already written with this dataset wont have to be changed)
+
+
+read in data
+```{r}
+ba <- read.csv("../BACI-analysis/Data/ba_noaa_combined.csv")
+noaa <- read.csv("../APECS Master repository/APECS Master repo/ALL_DATA/Lia_fish/noaa_seak_fish_atlas_CLEAN_LD.csv")
+
+```
+
+libraries
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+
+```{r}
+glimpse(ba) # has the before after infomration for relevant sites but no mass_g, doesn't have a full list of the BACI sites we're using. 
+glimpse(noaa) # has all the BACI sites we're planning on using
+```
+
+
+So lets subset the sites by the seso sites and remove any incorrectly identified as vertebrate rather than invertebrate. 
+Also keep before/after and control/impact
+```{r}
+seso <- c(177,178,183,184,158,157,155,156,131,132,133,134,142,141,340,339,338,335,146,145,
+          135,136,139,140,137,138,337,336,108,109,110,107,598,599,600,601,596,595,597,616,
+          617,618,164,165,163,613,614,615,607,606,608,603,602,604,605,111,112,144,143,162)
+
+seso_fish <- subset(noaa, SiteID %in% seso) #60 sites, includes all habitat types
+unique(seso_fish$SiteID)
+
+before_after <- ba %>%
+  dplyr::select(SiteID, EventID, before_after) %>%
+  distinct()
+
+incor <- c("SHRMGRA", "BSNAILW", "CRABHEL", "JLYMOON", "JLYCLNG", "TUNICAT", "SHRMDOC", 
+           "STARLEA", "SHRMSTI", "SHRMSPO", "CRABHER", "SHRMHIP", "ISOPODG", "CRABGD", 
+           "CRABDUN", "SHRMCR", "ISOPODC", "SHRMCOO", "CRABGKE", "UNMYSID", "CRABNKE", 
+           "NUDOPAL", "NUDHOOD")
+
+seso.ba <- seso_fish %>%
+  #filter(Habitat != "Bedrock") %>% # remove these filters so we can use adjacent seines on the same day to do length-unmeasured 
+  #filter(Habitat != "Sand-Gravel") %>%
+  left_join(before_after, by = c("SiteID", "EventID")) %>%
+  # theres a few b/a missing that are control sites meaning no sea ottters have ever been there we'll add that in
+  mutate(before_after = ifelse(is.na(before_after) & SiteID != 112 & SiteID != 111, "control", before_after)) %>%
+# we're making sure siteID 112 and 111 are not included in the control because they weren't resampled and I'm not positive they are a control. 
+# there are some misclassified taxons as fish that are invertes fix this
+  mutate(taxon = ifelse(SpCode %in% incor, "invertebrate", taxon)) %>%
+  filter(taxon == "fish")
+
+# make sure its right
+seso.ba %>%
+  filter(before_after == "control") %>%
+  dplyr::select(SiteID, EventID, Location, Habitat, Locale, SubLocale, before_after) %>%
+  distinct() # looks good
+
+```
+
+# Step 1. Data checking
+
+## Basic data checking
+```{r}
+seso.ba2 <- seso.ba %>%
+  rename(siteID = SiteID, eventID = EventID, date = Date, season = Season,
+         month = Mon, year = Year, sp_code = SpCode, species_common = Sp_CommonName,
+         species_scientific = Sp_ScientificName, fork_length = Length, unmeasured = Unmeasured) 
+
+sp.list <- seso.ba2 %>%
+  dplyr::select(c(species_common, species_scientific, sp_code)) %>%
+  distinct()
+sp.list
+
+unique(sp.list$sp_code)
+trimws(sp.list$species_common)
+
+seso.ba2 %>%
+  group_by(species_common, species_scientific, sp_code, siteID, eventID) %>%
+  dplyr::summarise(n = n())
+
+seso.ba2$unmeasured <- as.numeric(seso.ba2$unmeasured)
+range(seso.ba2$unmeasured)
+seso.ba2$fork_length<- as.numeric(seso.ba2$fork_length)
+```
+
+Lets adjust species groups based on conversations with Darcie Neff
+She mentioned several groups that should probably be coded differently. 
+- Frog sculpins (Myoxocephalus stelleri, "SCULFRO") aren't present in Alaska and should be adjusted to Myoxocephalus sp
+- Northern sculpin (Icelinus borealis, "SCULNOR") weren't ever found in modern seines (2017-2021), they're similar to artedius so we're going to keep it as Icelinus borealis but shift the species code to UNARTE
+- Also adjust the Padded, smoothhead, scalyhead to UNARTE because in modern seines they are combined
+
+# species adjustment
+```{r}
+arte <- c("SCULSCA", "SCULSMO", "SCULPAD")
+seso.ba2 <- seso.ba2 %>%
+  mutate(species_common = ifelse(sp_code == "SCULFRO", "Myoxocephalus spp", species_common),
+         species_scientific = ifelse(sp_code == "SCULFRO", "Myoxocephalus spp", species_scientific),
+         sp_code = ifelse(sp_code == "SCULFRO", "SCULMYX", sp_code)) %>%
+  mutate(species_common = ifelse(sp_code %in% arte, "Artedius sculpin", species_common),
+         species_scientific = ifelse(sp_code %in% arte, "Artedius spp", species_scientific),
+         sp_code = ifelse(sp_code %in% arte, "UNARTE", sp_code))
+
+```
+
+
+# extract site/sp info
+```{r}
+# extract the site information and the species information to add back into the looped df later
+seso.sites <- unique(seso.ba2[c("siteID", "eventID", "date", "season", "month", "year", "Gear", "Temp", "Salinity",
+                  "Region", "Locale", "Location", "SubLocale", "Nickname", "Habitat", "Lat1", 
+                  "Long1", "before_after")])
+
+seso.sp <- unique(seso.ba2[c("sp_code", "species_common", "species_scientific", "taxon")])
+
+```
+
+# Step 2. Unmeasured -> measured
+
+```{r}
+seso.ba2$abundance <- as.numeric(ifelse(is.na(seso.ba2$fork_length), paste(seso.ba2$unmeasured), 1))
+
+
+df2 <- seso.ba2 %>% # how many individual fish by site and species?
+  dplyr::summarise(total = sum(abundance)) # 39773
+
+df3 <- seso.ba2 %>%
+  group_by(siteID, eventID, sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+
+df3.2 <- seso.ba2 %>%
+  group_by(sp_code) %>%
+  dplyr::summarise(total = sum(abundance))
+```
+
+## Separate measured and unmeasured fish
+First run a similar loop as below to calculate estimated fork lengths for the species
+
+```{r}
+# How many fish are there total?
+seso.ba2 %>%
+  #filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>%
+  summarise(sum(abundance)) # 39772 in all habitats, in just eelgrass/kelp 31438
+
+# separate measured and unmeasured
+fish.m <- seso.ba2 %>%
+  filter(fork_length != "NA")
+
+fish.m %>%
+  #filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>%
+  summarise(sum(abundance)) # 4245 measured fish all habitats, 3552 in just eelgrass/kelp
+
+fish.um <- seso.ba2 %>%
+  filter(is.na(fork_length)) # 35527 unmeasured fish in all habitats
+
+fish.um %>%
+  filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>%
+  summarise(sum(abundance)) # 27886 unmeasured fish in just eelgrass or kelp 
+```
+
+## Assign lengths to unmeasured fish for other species
+When beach seining we only measured the first few individuals of a species, and counted the rest. We can use the measured fishes to create a distribution from which we
+can assign lengths to the unmeasured fishes.
+
+Assign lengths to unmeasured fish based on sampled distribution. This assignment should happen at the EventID level. i.e. use the distribution of fishes at a 
+EventID to assign unmeasured fishes at that EventID. 
+
+We will assume the least and just use the sampled proportions to assign lenghts to unmeasured fish. Exclued fishes that do not have a measured counterpart. 
+These were insantces when we tossed a fish without knowing what it was other than it was a sculpin thing
+
+
+Figure out which species at sites that there is not a measured conterpart 
+```{r}
+x <- fish.um %>% # this looks at all the dates seines occurred and for each 
+  group_by(date,  sp_code) %>% # date and species code it tells me where there isn't a date and species code
+  anti_join(fish.m, by = c("date", "sp_code")) %>% # counterpart in the fish.m data frame. 
+  filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>% # we then filter that result by just the habitats we care about
+  unite(site_eventID, c(siteID, eventID)) # and out put the dataframe x, which has all the sites and species where we dont have
+# any measured species counter parts to our unmeasured species. 
+
+fish.um.sub <- fish.um %>% # this creates a dataframe that has all our unmeasured counterparts that we do have
+  filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>% # measured fish (on the same day) for. We include only
+  unite(site_eventID, c(siteID, eventID)) %>% # eelgrass and kelp habitats
+  anti_join(x) # and remove all the no measured fish (x) from above, this is the input for the loop to assign lengths below
+
+# HOWEVER, even within the fish.um.sub we have fish where there is only one measured fish and we cant determine a probability for lenghts
+# can we do a quick loop/ifelse to look for all instances in measured fish where there is only one measured counterpart?
+dates.unmeas <- unique(fish.um.sub[c("date", "sp_code", "site_eventID")]) # list of 78 of instances where there are unique dates seined and unmeasured fish present, this is regardless of site or eventID. But seines that happened on the same day (max = 4) were close to each other
+
+
+q <- data.frame() # create empty dataframe to fill
+
+for(d in unique(dates.unmeas$date)) { # cycle through the the dates and species codes where fish are unmeasured
+  s <- filter(fish.m, date == d)
+  sp.unmeas <- filter(dates.unmeas, date == d)
+  for(i in unique(sp.unmeas$sp_code)) {
+    m <- filter(s, sp_code == i)
+    meas <- sum(m$abundance)
+    dat.temp1 <- as.character(ifelse(meas == 1, paste(m$date), NA)) # look for instances where theres only one measured instance
+    dat.temp2 <- as.character(ifelse(meas == 1, paste(m$sp_code), NA))
+    dat.temp <- cbind(dat.temp1, dat.temp2)
+    q <- rbind(q, dat.temp)
+  }
+}
+
+q # okay this has a bunch of NA and then also some rows with real info
+only.onemeasured <- q %>% # this outputs a dataframe that list the dates there was only one measured counterpart
+  filter(!is.na(dat.temp1)) %>% # for the unmeasured species that were counted that day
+  dplyr::rename(date = dat.temp1, sp_code = dat.temp2) %>%
+  left_join(dates.unmeas, by = c("date", "sp_code")) # add back in the site and event ID information
+
+# so only.onemeasured is a dataframe of species that were counted on a specific day (but not connected to a specific site) 
+# that we want to remove from the fish.um.sub and also add into the x dataframe that has all our difficult unmeasured fish
+# two goals: 
+# 1. remove only.onemeasured from the fish.um.sub dataframe
+# 2. reconstitute the only.onemeasured to site/eventID level and add it to x
+
+# remove those species from the date species code specific
+fish.um.sub2 <- fish.um.sub %>% 
+  anti_join(only.onemeasured, 
+            by = c("date", "sp_code", "site_eventID"))
+
+# create dataframe to add in to x
+unmeas.nocounterpart <- only.onemeasured %>% 
+  left_join(fish.um.sub, by = c("date","sp_code", "site_eventID")) %>%
+  rbind(x)
+
+unmeas.nocounterpart %>%
+  ungroup() %>%
+  dplyr::summarise(sum(unmeasured)) # 12033 # new dataframe with complete set of unmeasure fish with no counterpart
+
+fish.um.sub2 %>%  
+dplyr::summarise(sum(unmeasured)) # 15853 unmeasured to be measured in just eel and kelp habs
+# so total we still have 27886 unmeasured fish - which iis what we calculated above
+```
+
+So one of the problems we've encountered is that there are lots of fish that don't have any measured counterparts. 
+We've expanded our matching to allow fish from other sites seined on the same day but perhaps in a different habitat.
+These seines were done on the same tide and in the same bay but in an adjacent habitat. 
+
+This reduces our number of unmeasured fish without measured counterparts by a lot. We still have ~ 12,000 unmeasured fish
+But there are a total of 27,800 fish that aren't measured so its more than half we can assign lengths to
+
+Lets loop through the species and sites for the ones we have measured counterparts for - this code is based on a loop Wendel created
+in 2017 and that I've admended over the years. 
+```{r}
+glimpse(fish.um.sub2) # dataframe that has all the unmeasured fish (n = 15853) that we will run through the loop below
+glimpse(unmeas.nocounterpart) # dataframe that has the unmeasured fish (n = 12033) that we will have to deal with later. These have either one measured coutnerpart or none. 
+glimpse(fish.m) # our measured fish - regardless of habitat type
+```
+
+
+```{r}
+w <- data.frame() # empty dataframe to fill with for loop
+
+for(s in unique(fish.um.sub2$site_eventID)){ # cycle through unique sites (only one seine per site)
+  d <- fish.um.sub2 %>%
+    filter(site_eventID == s) %>%
+    dplyr::select(date) %>%
+    distinct() # identify the date that the unique siteID and eventID seine took place
+  m <- fish.m %>% # subset measured data by the date that the seine took place on, so we get all measured counterparts 
+    filter(date == d$date) # regardless of habitat type
+  u <- fish.um.sub2 %>% # subset unmeasured data by iteration EventID
+      filter(site_eventID == s)
+  for(i in unique(u$sp_code)){ # cycle through species that are in UNMEASURED data (that have been subset by the site/EventID)
+    samp <- m %>% # create sample from which to make distrubution
+      filter(sp_code == i)
+    unmeas <- u %>% # isolate unmeasured fish
+      filter(sp_code == i)
+    unmeas <- as.numeric(sum(unmeas$unmeasured)) # save unmeasured value
+    dat.temp1 <- data.frame(size = as.numeric(samp$fork_length))
+    dat.temp2 <- dat.temp1 %>% 
+      group_by(size) %>% 
+      dplyr::summarize(count = n())
+    dat.temp2$prob <- (dat.temp2$count/sum(dat.temp2$count))
+    dat.temp2$x <- as.numeric(dat.temp2$size)
+    fx <- function(n){ # function derived from limits and probabilities of above
+    sample(x = (dat.temp2$x), size = n, replace = TRUE, prob = dat.temp2$prob)
+    }
+    dat.temp3 <- data.frame(site_eventID = s, sp_code = i, fork_length = fx(unmeas))
+    w <- rbind(w, dat.temp3) # append iteration to full data
+    w[] <- lapply(w, as.character)
+  }
+}
+
+w %>%
+  dplyr::summarise(n()) # thats the same as above, 15853 perfect!
+```
+
+## Add back sp info
+Lets add back in the site and species information
+```{r}
+seso.sites <- unite(seso.sites, site_eventID, c(siteID, eventID))
+
+measured <- left_join(w, seso.sites, by = c("site_eventID")) %>%
+  left_join(seso.sp, by = "sp_code")
+
+# so now we have fish measured from unmeasured and measured (fish.m)
+unique(measured$Habitat) # just kelp and eelgrass
+unique(fish.m$Habitat) # subset fish.m to the correct habs and add it into the measured 
+
+fish.comb.m <- fish.m %>%
+  filter(Habitat == "Eelgrass" | Habitat == "Kelp") %>%
+  unite(site_eventID, c(siteID, eventID)) %>%
+  dplyr::select(-c(SeasonNoYear, unmeasured, abundance, X)) %>%
+  rbind(measured)
+
+# fish.comb.m has 19405 rows which is correct. matches the total number of fish that we are able to easily extrapolate measurements for. 
+```
+
+Okay so we were able to use any bay specific length measurement where there was more than 1 measured counterpart to estimate (or extrapolate) measurements for the unmeasured fish. 
+
+There are still the instances where there were no measured counterparts or only one (this is unmeas.nocounterpart) - this has 12033 individuals in it. 
+
+```{r}
+glimpse(unmeas.nocounterpart)
+
+unmeas.nocounterpart %>%
+  dplyr::summarise(sum(abundance)) # 12033
+
+unique(unmeas.nocounterpart$date) # 27 sampling dates where there are between 1 and 648 species
+unique(unmeas.nocounterpart$sp_code) # 40 species
+
+# can we use seines from nearby to better est. length? 
+
+unmeas.nocounterpart %>% # this looks at all the dates seines occurred and for each 
+  #group_by(date,  sp_code) %>% # date and species code it tells me where there isn't a date and species code
+  anti_join(fish.m, by = c("date", "sp_code"))  # counterpart in the fish.m data frame. 
+
+```
+
